@@ -6,7 +6,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ontology="http://uni-mannheim.de/ontologies/ontology#">
+     xmlns:ontology="http://elog.com/ontologies/ontology#">
     <owl:Ontology rdf:about="http://ekaw/">
         <owl:versionIRI rdf:resource="file:/home/jan/Workspace/OWLELProbabilisticReasoning/data/output/ontology2_Greedy.owl"/>
     </owl:Ontology>
@@ -21,7 +21,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://uni-mannheim.de/ontologies/ontology#confidence"/>
+    <owl:AnnotationProperty rdf:about="http://elog.com/ontologies/ontology#confidence"/>
     
 
 

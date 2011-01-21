@@ -3,7 +3,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns="http://ekaw/"
-    xmlns:ontology="http://uni-mannheim.de/ontologies/ontology#"
+    xmlns:ontology="http://elog.com/ontologies/ontology#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://ekaw/">
 
@@ -19,7 +19,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://uni-mannheim.de/ontologies/ontology#confidence"/>
+    <owl:AnnotationProperty rdf:about="http://elog.com/ontologies/ontology#confidence"/>
     
 
 
