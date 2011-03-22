@@ -386,7 +386,7 @@ public class Reasoner {
 	}
 	
 	public ArrayList<String> returnOntologyWithHighestProbability(Model model) throws ParseException, SolveException, SQLException, ReadOrWriteToFileException{
-		LogFileWriter logFile = LogFileWriter.openLogFile("logFile.log");
+		LogFileWriter logFile = LogFileWriter.openNewLogFile("logFile.log");
 		StandardGrounder grounder = new StandardGrounder();
 		grounder.ground(model);
 		System.out.println(new Date());

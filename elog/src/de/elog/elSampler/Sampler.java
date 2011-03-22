@@ -34,7 +34,7 @@ public class Sampler {
 		sampler.setNumberOfRounds(numberOfLargeSamplings);
 		sampler.setNumberOfSmallGIPSSamplingRounds(0);
 		
-		LogFileWriter logfilewriter = LogFileWriter.openLogFile("sampling.log");
+		LogFileWriter logfilewriter = LogFileWriter.openNewLogFile("sampling.log");
 		sampler.setLogFileWriter(logfilewriter);
 		sampler.setResetILPForEachLargeRun(false);
 		
