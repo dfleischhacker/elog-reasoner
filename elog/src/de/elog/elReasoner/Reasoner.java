@@ -34,6 +34,8 @@ import de.unima.javaAPI.types.Type;
 
 public class Reasoner {
 
+	private boolean useCuttingPlaneInference = true;
+	
 	public Model generateModel(
 			ArrayList<String[]> objectProperty,ArrayList<String[]> concept, ArrayList<String[]> subsumesEvidence,
 			ArrayList<String[]> intersectionEvidence,ArrayList<String[]> opsubEvidence,ArrayList<String[]> opsupEvidence,
@@ -94,6 +96,7 @@ public class Reasoner {
 		// CONNECTION HARD TO HIDDEN
 		// =========================================
 		FormularHard subsumesHardF = new FormularHard();
+		subsumesHardF.useCuttingPlaneInference(false);
 		subsumesHardF.setName("subsumesHardF");
 		subsumesHardF.setForVariables(c1, c2);
 		subsumesHardF.setIfExpressions(
@@ -102,6 +105,7 @@ public class Reasoner {
 				new PredicateExpression(true, subsumesP, c1, c2));
 		
 		FormularHard intersectionHardF = new FormularHard();
+		intersectionHardF.useCuttingPlaneInference(false);
 		intersectionHardF.setName("intersectionHardF");
 		intersectionHardF.setForVariables(c1, c2, c3);
 		intersectionHardF.setIfExpressions(
@@ -110,6 +114,7 @@ public class Reasoner {
 				new PredicateExpression(true, intersectionP, c1, c2, c3));
 		
 		FormularHard opsubHardF = new FormularHard();
+		opsubHardF.useCuttingPlaneInference(false);
 		opsubHardF.setName("opsubHardF");
 		opsubHardF.setForVariables(p1, c1, c2);
 		opsubHardF.setIfExpressions(
@@ -118,6 +123,7 @@ public class Reasoner {
 				new PredicateExpression(true, opsubP, p1, c1, c2));
 		
 		FormularHard opsupHardF = new FormularHard();
+		opsupHardF.useCuttingPlaneInference(false);
 		opsupHardF.setName("opsupHardF");
 		opsupHardF.setForVariables(p1, c1, c2);
 		opsupHardF.setIfExpressions(
@@ -126,6 +132,7 @@ public class Reasoner {
 				new PredicateExpression(true, opsupP, p1, c1, c2));
 		
 		FormularHard psubsumesHardF = new FormularHard();
+		
 		psubsumesHardF.setName("psubsumesHardF");
 		psubsumesHardF.setForVariables(p1, p2);
 		psubsumesHardF.setIfExpressions(
@@ -370,6 +377,18 @@ public class Reasoner {
 		f10.setRestrictions(
 			new PredicateExpression(false, subsumesP, c1, c2));
 		
+		if(!useCuttingPlaneInference){
+			f1.useCuttingPlaneInference(false);
+			f2.useCuttingPlaneInference(false);
+			f3.useCuttingPlaneInference(false);
+			f4.useCuttingPlaneInference(false);
+			f5.useCuttingPlaneInference(false);
+			f6.useCuttingPlaneInference(false);
+			f8.useCuttingPlaneInference(false);
+			f9.useCuttingPlaneInference(false);
+			f10.useCuttingPlaneInference(false);
+		}
+		
 		
 		// Model
 		Model model = new Model(
@@ -431,6 +450,7 @@ public class Reasoner {
 			System.out.println("Reason ontology: Get the most probable consistent ontology");
 			System.out.println("====================================================");
 			Reasoner reasoner = new Reasoner();
+			//reasoner.setUseCuttingPlaneInference(false);
 			Model model = reasoner.generateModel(
 					reader.getObjectProperty(), 
 					reader.getConcept(), 
@@ -474,6 +494,14 @@ public class Reasoner {
 				
 			}
 		}
+	}
+
+	public void setUseCuttingPlaneInference(boolean useCuttingPlaneInference) {
+		this.useCuttingPlaneInference = useCuttingPlaneInference;
+	}
+
+	public boolean isUseCuttingPlaneInference() {
+		return useCuttingPlaneInference;
 	}
 	
 }
