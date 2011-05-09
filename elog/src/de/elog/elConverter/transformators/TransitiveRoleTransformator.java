@@ -8,6 +8,8 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLSubPropertyChainOfAxiom;
 
+import de.elog.elConverter.ELOntology;
+
 import uk.ac.manchester.cs.owl.owlapi.OWLTransitiveObjectPropertyAxiomImpl;
 
 /**
@@ -23,7 +25,7 @@ import uk.ac.manchester.cs.owl.owlapi.OWLTransitiveObjectPropertyAxiomImpl;
 
 public class TransitiveRoleTransformator implements Transformator {
 
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory) {
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology) {
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		
 		if(axiom instanceof OWLTransitiveObjectPropertyAxiomImpl ){

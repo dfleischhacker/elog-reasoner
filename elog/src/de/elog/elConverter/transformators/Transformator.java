@@ -5,6 +5,8 @@ import java.util.HashSet;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 
+import de.elog.elConverter.ELOntology;
+
 /**
  * Interface for Transformators.
  * 
@@ -18,5 +20,5 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 
 public interface Transformator {
 	
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom,OWLDataFactory factory);
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom,OWLDataFactory factory, ELOntology ontology);
 }

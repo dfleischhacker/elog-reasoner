@@ -1,25 +1,106 @@
 package de.elog.elSampler;
 
-import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
 
-import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.model.OWLAnnotationValue;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyID;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
 
-import uk.ac.manchester.cs.owl.owlapi.OWLFunctionalObjectPropertyAxiomImpl;
-import uk.ac.manchester.cs.owl.owlapi.OWLSymmetricObjectPropertyAxiomImpl;
-import uk.ac.manchester.cs.owl.owlapi.OWLTransitiveObjectPropertyAxiomImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLLiteralImpl;
+import de.elog.Constants;
+import de.elog.elConverter.ELOntology;
+import de.elog.elConverter.GroundAxiom;
 
 
 public class OWLSamplingEventReader {
 	
 	private ArrayList<String> event0 = new ArrayList<String>();
 	private ArrayList<String> event1 = new ArrayList<String>();
+	
+	/**
+	 * Gets the polarity of an event via the annotation property.
+	 * 
+	 * Returns true if the event is positive, false if it is negative.
+	 * 
+	 * If no confidence value exist, the function returns "null".
+	 * 
+	 * @param axiom
+	 * @return
+	 * @throws Exception 
+	 */
+	private Boolean isPositiveEvent(OWLAxiom axiom) {
+		for(OWLAnnotation annotation : axiom.getAnnotations()){
+			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(Constants.ANNOTATION_PROPERTY_FOR_SAMPLING_POSITIVE_EVENT)){
+				OWLAnnotationValue annValue = annotation.getValue();
+				if(annValue instanceof OWLLiteralImpl){
+					OWLLiteral literalValue = (OWLLiteral) annValue;
+					if(literalValue.isBoolean()){
+						return literalValue.parseBoolean();
+					}					
+				}
+			}			
+		}
+		System.err.println("The boolean annotation-property " + Constants.ANNOTATION_PROPERTY_FOR_SAMPLING_POSITIVE_EVENT + " is missing. " +
+				"The application will assume that the axiom " + axiom + " is a positive event.");
+		return true;
+	}
+
+	/**
+	 * Builds variable name of form: subsumes|a|b|c.
+	 * 
+	 * @param axiom
+	 * @param elOntology
+	 */
+	private String buildVariable(OWLAxiom axiom, ELOntology elOntology){
+		String type = null;
+		String[] stringValue = null;
+		GroundAxiom newAxiom = elOntology.get_C1_subclassof_d(axiom);
+		if(newAxiom!=null){
+			type="subsumes";
+			stringValue = newAxiom.getValue();
+			
+		}
+		newAxiom = elOntology.get_C1_and_c2_subclassof_d(axiom);
+		if(newAxiom!=null){
+			type="intersection";
+			stringValue = newAxiom.getValue();
+		}
+		newAxiom = elOntology.get_Exists_r_c1_subclassof_d(axiom);
+		if(newAxiom!=null){
+			type="opsub";
+			stringValue = newAxiom.getValue();
+		}
+		newAxiom = elOntology.get_C1_subclassof_exists_r_c2(axiom);
+		if(newAxiom!=null){
+			type="opsup";
+			stringValue = newAxiom.getValue();
+		}
+		newAxiom = elOntology.get_R_subpropertyof_s(axiom);
+		if(newAxiom!=null){
+			type="psubsumes";
+			stringValue = newAxiom.getValue();
+		}
+		newAxiom = elOntology.get_R1_com_r2_subpropertyof_s(axiom);
+		if(newAxiom!=null){
+			type="pcom";
+			stringValue = newAxiom.getValue();
+		}		
+		if(stringValue==null){
+			return null;
+		}else{
+			StringBuilder returnValue = new StringBuilder();
+			returnValue.append(type);
+			for(int i=0;i<stringValue.length;i++){
+				returnValue.append("|").append(stringValue[i]);
+			}
+			return returnValue.toString();
+		}
+	}
+
 	
 	/**
 	 * Reads the ontology and transforms it to the basic EL++ axioms:
@@ -37,44 +118,34 @@ public class OWLSamplingEventReader {
 	 * @throws OWLOntologyCreationException
 	 */
 	public IRI read(String ontologyFilePath) throws OWLOntologyCreationException{
-		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		File file = new File(ontologyFilePath);
-		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
+
+		ELOntology elOntology = new ELOntology();
+		HashSet<OWLAxiom> originalAxioms = elOntology.loadOntology(ontologyFilePath);
+		HashSet<OWLAxiom> prenormalizedOntology = elOntology.normalizeAll();
+
 		
-		SamplingEventAxiomConverter converter = new SamplingEventAxiomConverter();
-		
-		// do not print the added axioms
-		converter.setPrintAddedAxioms(true);
-		System.out.println("Not converted axioms:");
-		for(OWLAxiom axiom : ontology.getAxioms()){
-			if(converter.addSubsumes(axiom, event1, event0)){
-				// the add is already performed in the if part.
-			}else if(converter.addIntersection(axiom, event1, event0)){
-				// the add is already performed in the if part.				
-			}else if(converter.addOpsub(axiom, event1, event0)){
-				// the add is already performed in the if part.		
-			}else if(converter.addOpsup(axiom, event1, event0)){
-				// the add is already performed in the if part.		
-			}else if(converter.addPsubsumes(axiom, event1, event0)){
-				// the add is already performed in the if part.		
-			}else if(converter.addPcom(axiom, event1, event0)){
-				// the add is already performed in the if part.		
-			}else{
-				// data properties are not considered. Only object properties.
-				// All annotation assertions do not contain important information for the ontology. Therefore, they are not considered.
-				// The symmetric, transitive and functional object properties are already considered as "normal" object properties. Only the additional infromation about transitivity and functional is lost.
-				if(!axiom.toString().contains("DataProperty") 
-					&& !axiom.toString().contains("AnnotationAssertion")
-					&& !(axiom instanceof OWLTransitiveObjectPropertyAxiomImpl)
-					&& !(axiom instanceof OWLFunctionalObjectPropertyAxiomImpl)
-					&& !(axiom instanceof OWLSymmetricObjectPropertyAxiomImpl)
-				){
-					System.out.println("- " + axiom);
+		for(OWLAxiom axiom : originalAxioms){
+			boolean eventPositive = false;
+			if(this.isPositiveEvent(axiom)) eventPositive=true;
+			
+			HashSet<OWLAxiom> specificNormalizationAxioms = elOntology.normalizeAxiom(axiom, prenormalizedOntology);
+			
+			String variableName;
+			for(OWLAxiom specificAxioms:specificNormalizationAxioms){
+				variableName = this.buildVariable(specificAxioms, elOntology);
+				if(variableName !=null){
+					if(eventPositive){
+						event1.add(variableName);
+					}else{
+						event0.add(variableName);
+					}
 				}
 			}
+			
+			
 		}
-		OWLOntologyID id = ontology.getOntologyID();
-		return id.getOntologyIRI();
+		
+		return elOntology.getOntologyId();
 	}
 
 	public ArrayList<String> getEvent0() {

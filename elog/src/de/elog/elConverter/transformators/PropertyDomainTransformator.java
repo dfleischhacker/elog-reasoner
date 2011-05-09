@@ -10,6 +10,8 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+import de.elog.elConverter.ELOntology;
+
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectPropertyDomainAxiomImpl;
 
 /**
@@ -25,7 +27,7 @@ import uk.ac.manchester.cs.owl.owlapi.OWLObjectPropertyDomainAxiomImpl;
 
 public class PropertyDomainTransformator implements Transformator {
 
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory) {
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology) {
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		
 		if(axiom instanceof OWLObjectPropertyDomainAxiomImpl ){

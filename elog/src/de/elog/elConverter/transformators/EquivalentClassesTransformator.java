@@ -9,6 +9,8 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+import de.elog.elConverter.ELOntology;
+
 /**
  * Transformator for equivalent classes. 
  * 
@@ -21,7 +23,7 @@ import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
  */
 public class EquivalentClassesTransformator implements Transformator {
 
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory) {
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology) {
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		
 		if(axiom instanceof OWLEquivalentClassesAxiom){

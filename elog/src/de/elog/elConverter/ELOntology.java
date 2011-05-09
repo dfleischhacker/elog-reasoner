@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
@@ -70,6 +71,15 @@ public class ELOntology{
 	private OWLOntologyManager manager;
 
 
+	public void addClass(OWLClass concept){
+		this.classes.add(concept);
+	}
+	
+
+	public void addProperty(OWLObjectProperty property){
+		this.properties.add(property);
+	}
+	
 	public OWLOntologyManager getManager() {
 		return manager;
 	}
@@ -84,6 +94,10 @@ public class ELOntology{
 	 */
 	private static final long serialVersionUID = 1L;
 
+	public IRI getOntologyId(){
+		return this.owlOntology.getOntologyID().getOntologyIRI();
+	}
+	
 	/**
 	 * Reads an ontology from the given path and downsize it to EL++.
 	 * 
@@ -92,7 +106,7 @@ public class ELOntology{
 	 * @param path
 	 * @throws OWLOntologyCreationException
 	 */
-	public void loadOntology(String path) throws OWLOntologyCreationException{
+	public HashSet<OWLAxiom> loadOntology(String path) throws OWLOntologyCreationException{
 		manager = OWLManager.createOWLOntologyManager();
 		this.factory =OWLManager.getOWLDataFactory();
 		owlOntology = manager.loadOntologyFromOntologyDocument(new File(path));
@@ -112,6 +126,7 @@ public class ELOntology{
 			RemoveAxiom r = new RemoveAxiom(owlOntology, v.getAxiom());
 			manager.applyChange(r);
 		}
+		return axioms;
 	}
 
 
@@ -148,6 +163,7 @@ public class ELOntology{
 		}
 		// normalize range (now the range axioms have been transformed)
 		this.axioms=result;
+		
 		result = new HashSet<OWLAxiom>();
 		for(OWLAxiom axiom:axioms){
 			result.addAll(this.normalizeRange(axiom, result));
@@ -158,8 +174,9 @@ public class ELOntology{
 		for(OWLAxiom axiom:axioms){
 			result.addAll(this.normalizeWithoutRange(axiom));
 		}
+		
 		this.axioms=result;
-		return result;
+		return axioms;
 	}
 
 	/**
@@ -170,8 +187,8 @@ public class ELOntology{
 	 * @param axiom
 	 * @return
 	 */
-	public HashSet<OWLAxiom> normalizeWithoutRange(OWLAxiom axiom){
-		return converterManager.convert(axiom, this.getFactory());
+	private HashSet<OWLAxiom> normalizeWithoutRange(OWLAxiom axiom){
+		return converterManager.convert(axiom, this.getFactory(), this);
 	}
 	
 	/**
@@ -182,9 +199,37 @@ public class ELOntology{
 	 * @param allOtherNormalizedAxioms
 	 * @return
 	 */
-	public HashSet<OWLAxiom> normalizeRange(OWLAxiom axiom, HashSet<OWLAxiom> allOtherNormalizedAxioms){
+	private HashSet<OWLAxiom> normalizeRange(OWLAxiom axiom, HashSet<OWLAxiom> allOtherNormalizedAxioms){
 		this.rangeConverter = new PropertyRangeTransformator(allOtherNormalizedAxioms);
-		return rangeConverter.convert(axiom, this.getFactory());
+		return rangeConverter.convert(axiom, this.getFactory(),this);
+	}
+	
+	public HashSet<OWLAxiom> normalizeAxiom(OWLAxiom axiom, HashSet<OWLAxiom> allOtherNormalizedAxioms){
+		HashSet<OWLAxiom> temp = new HashSet<OWLAxiom>();
+		HashSet<OWLAxiom> results = new HashSet<OWLAxiom>();
+		results.add(axiom);
+		// normalize everything without range
+		for(OWLAxiom a:results){
+			temp.addAll(this.normalizeWithoutRange(a));
+		}
+		// normalize range (now the range axioms have been transformed)
+		results=temp;
+		
+		temp = new HashSet<OWLAxiom>();
+		for(OWLAxiom a:results){
+			temp.addAll(this.normalizeRange(a, temp));
+		}
+		// normalize everything (inclusive transformed range axioms). This should work very fast.
+		results=temp;
+		temp = new HashSet<OWLAxiom>();
+		for(OWLAxiom a:results){
+			temp.addAll(this.normalizeWithoutRange(a));
+		}
+		results = temp;
+		return results;
+		
+		
+		
 	}
 	
 	public OWLDataFactory getFactory() {

@@ -1,27 +1,52 @@
 package de.elog.elGreedy;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
-import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.model.OWLAnnotationValue;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyID;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLFunctionalObjectPropertyAxiomImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLLiteralImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLSymmetricObjectPropertyAxiomImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLTransitiveObjectPropertyAxiomImpl;
-import de.elog.elReasoner.AxiomConverter;
+import de.elog.Constants;
+import de.elog.elConverter.ELOntology;
 
 
 public class OWLGreedyReader {
 
-	private ArrayList<OwnAxiom> hardAxioms = new ArrayList<OwnAxiom>();
-	private HashMap<OwnAxiom,Double> softAxioms = new HashMap<OwnAxiom,Double>();
+	private ArrayList<OWLAxiom> hardAxioms = new ArrayList<OWLAxiom>();
+	private HashMap<OWLAxiom,Double> softAxioms = new HashMap<OWLAxiom,Double>();
+	
+	/**
+	 * Gets the confidence value via the "confidence" annotation property. 
+	 * 
+	 * If no confidence value exist, the function returns "null".
+	 * 
+	 * @param axiom
+	 * @return
+	 */
+	private Double getConfidenceValue(OWLAxiom axiom){
+		for(OWLAnnotation annotation : axiom.getAnnotations()){
+			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(
+					Constants.ANNOTATION_PROPERTY_FOR_REASONING_CONFIDENCE_VALUE)){
+				OWLAnnotationValue annValue = annotation.getValue();
+				if(annValue instanceof OWLLiteralImpl){
+					OWLLiteral literalValue = (OWLLiteral) annValue;
+					if(literalValue.isDouble()){
+						return literalValue.parseDouble();
+					}					
+				}
+			}			
+		}
+		return null;
+	}
 	
 	/**
 	 * Reads the ontology and transforms it to the basic EL++ axioms:
@@ -39,94 +64,37 @@ public class OWLGreedyReader {
 	 * @throws OWLOntologyCreationException
 	 */
 	public IRI read(String ontologyFilePath) throws OWLOntologyCreationException{
-		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		File file = new File(ontologyFilePath);
-		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
+		ELOntology ontology = new ELOntology();
+		HashSet<OWLAxiom> elAxioms = ontology.loadOntology(ontologyFilePath);
 		
-		AxiomConverter converter = new AxiomConverter();
-		
-		// do not print the added axioms
-		converter.setPrintAddedAxioms(false);
-		System.out.println("Not converted axioms:");
-		for(OWLAxiom axiom : ontology.getAxioms()){
-			ArrayList<String[]> hardList = new ArrayList<String[]>();
-			ArrayList<String[]> softList = new ArrayList<String[]>();
-			
-			if(converter.addSubsumes(axiom, hardList, softList)){
-				if(hardList.size()!=0){
-					this.hardAxioms.add(new OwnAxiom(this.convertHard("subsumes", hardList),axiom,0));
-					
+		for(OWLAxiom axiom : elAxioms){			
+			// data properties are not considered. Only object properties.
+			// All annotation assertions do not contain important information for the ontology. Therefore, they are not considered.
+			// The symmetric, transitive and functional object properties are already considered as "normal" object properties. Only the additional infromation about transitivity and functional is lost.
+			if(!axiom.toString().contains("DataProperty") 
+				&& !axiom.toString().contains("AnnotationAssertion")
+				&& !axiom.toString().contains("Declaration")
+				&& !(axiom instanceof OWLTransitiveObjectPropertyAxiomImpl)
+				&& !(axiom instanceof OWLFunctionalObjectPropertyAxiomImpl)
+				&& !(axiom instanceof OWLSymmetricObjectPropertyAxiomImpl)
+			){
+				Double conf = this.getConfidenceValue(axiom);
+				if(conf==null){
+					this.hardAxioms.add(axiom);
 				}else{
-					ArrayList<String> result = new ArrayList<String>();
-					double value = this.convertSoft("subsumes", softList, result);
-					this.softAxioms.put(new OwnAxiom(result,axiom,value),value);
+					this.softAxioms.put(axiom, conf);
 				}
 				
-			}else if(converter.addIntersection(axiom, hardList, softList)){
-				if(hardList.size()!=0){
-					
-					this.hardAxioms.add(new OwnAxiom(this.convertHard("intersection", hardList),axiom,0));
-				}else{
-					ArrayList<String> result = new ArrayList<String>();
-					double value = this.convertSoft("intersection", softList, result);
-					this.softAxioms.put(new OwnAxiom(result,axiom,value),value);
-				}
-			}else if(converter.addOpsub(axiom, hardList, softList)){
-				if(hardList.size()!=0){
-					this.hardAxioms.add(new OwnAxiom(this.convertHard("opsub", hardList),axiom,0));
-				}else{
-					ArrayList<String> result = new ArrayList<String>();
-					double value = this.convertSoft("opsub", softList, result);
-					this.softAxioms.put(new OwnAxiom(result,axiom,value),value);
-				}
-			}else if(converter.addOpsup(axiom, hardList, softList)){
-				if(hardList.size()!=0){
-					this.hardAxioms.add(new OwnAxiom(this.convertHard("opsup", hardList),axiom,0));
-				}else{
-					ArrayList<String> result = new ArrayList<String>();
-					double value = this.convertSoft("opsup", softList, result);
-					this.softAxioms.put(new OwnAxiom(result,axiom,value),value);
-				}
-				
-			}else if(converter.addPsubsumes(axiom, hardList, softList)){
-				if(hardList.size()!=0){
-					this.hardAxioms.add(new OwnAxiom(this.convertHard("psubsumes", hardList),axiom,0));
-				}else{
-					ArrayList<String> result = new ArrayList<String>();
-					double value = this.convertSoft("psubsumes", softList, result);
-					this.softAxioms.put(new OwnAxiom(result,axiom,value),value);
-				}
-			}else if(converter.addPcom(axiom, hardList, softList)){
-				if(hardList.size()!=0){
-					this.hardAxioms.add(new OwnAxiom(this.convertHard("pcom", hardList),axiom,0));
-				} else {
-					ArrayList<String> result = new ArrayList<String>();
-					double value = this.convertSoft("pcom", softList, result);
-					this.softAxioms.put(new OwnAxiom(result,axiom,value),value);
-				}
-			}else{
-				// data properties are not considered. Only object properties.
-				// All annotation assertions do not contain important information for the ontology. Therefore, they are not considered.
-				// The symmetric, transitive and functional object properties are already considered as "normal" object properties. Only the additional infromation about transitivity and functional is lost.
-				if(!axiom.toString().contains("DataProperty") 
-					&& !axiom.toString().contains("AnnotationAssertion")
-					&& !axiom.toString().contains("Declaration")
-					&& !(axiom instanceof OWLTransitiveObjectPropertyAxiomImpl)
-					&& !(axiom instanceof OWLFunctionalObjectPropertyAxiomImpl)
-					&& !(axiom instanceof OWLSymmetricObjectPropertyAxiomImpl)
-				){
-					System.out.println("- " + axiom);
-				}
 			}
 		}
-		OWLOntologyID id = ontology.getOntologyID();
-		return id.getOntologyIRI();
+		
+		return ontology.getOntologyId();
 	}
-	public ArrayList<OwnAxiom> getHardAxioms() {
+	public ArrayList<OWLAxiom> getHardAxioms() {
 		return hardAxioms;
 	}
 
-	public HashMap<OwnAxiom,Double> getSoftAxioms() {
+	public HashMap<OWLAxiom,Double> getSoftAxioms() {
 		return softAxioms;
 	}
 	public ArrayList<String> convertHard(String predName, ArrayList<String[]> varsList){

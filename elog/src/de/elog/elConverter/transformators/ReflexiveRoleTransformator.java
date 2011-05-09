@@ -10,6 +10,7 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLReflexiveObjectPropertyAxiom;
 
 import de.elog.elConverter.Constants;
+import de.elog.elConverter.ELOntology;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLReflexiveObjectPropertyAxiomImpl;
 
@@ -33,12 +34,12 @@ public class ReflexiveRoleTransformator implements Transformator{
 	 * epsilon subclassof r.
 	 */
 	@Override
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory) {
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology) {
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		if(axiom instanceof OWLReflexiveObjectPropertyAxiomImpl){
 			OWLReflexiveObjectPropertyAxiom reflexive = (OWLReflexiveObjectPropertyAxiom) axiom;
 			OWLObjectPropertyExpression r = reflexive.getProperty();
-			OWLObjectProperty epsilon = this.getNextEpsilonProperty(factory);
+			OWLObjectProperty epsilon = this.getNextEpsilonProperty(factory, ontology);
 			result.add(factory.getOWLSubObjectPropertyOfAxiom(epsilon, r));
 			return result;
 		}
@@ -46,10 +47,12 @@ public class ReflexiveRoleTransformator implements Transformator{
 		return result;
 	}
 	
-	private OWLObjectProperty getNextEpsilonProperty(OWLDataFactory factory){
+	private OWLObjectProperty getNextEpsilonProperty(OWLDataFactory factory, ELOntology ontology){
 		StringBuilder sb=new StringBuilder();
 		sb.append(Constants.NEW_REFLEXIVE_ROLE_SUB_IRI).append(TransformatorManager.getNextFreeVariableCounter());
-		return factory.getOWLObjectProperty(IRI.create(sb.toString()));
+		OWLObjectProperty result = factory.getOWLObjectProperty(IRI.create(sb.toString()));
+		ontology.addProperty(result);
+		return result;
 	}
 
 }

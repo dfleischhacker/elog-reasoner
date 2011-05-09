@@ -6,6 +6,8 @@ import java.util.HashSet;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 
+import de.elog.elConverter.ELOntology;
+
 /**
  * This class manages Transformators. You can register, delete and execute (with convert()) them. 
  * 
@@ -19,14 +21,14 @@ public class TransformatorManager {
 	
 	private ArrayList<Transformator> converters = new ArrayList<Transformator>();
 	
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory){
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology){
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		result.add(axiom);
 		for(Transformator c : converters){
 			// every converter needs the input of the last one.
 			HashSet<OWLAxiom> tempResult = new HashSet<OWLAxiom>();
 			for(OWLAxiom a : result){
-				tempResult.addAll(c.convert(a, factory));
+				tempResult.addAll(c.convert(a, factory, ontology));
 			}
 			result = tempResult;
 		}

@@ -802,9 +802,11 @@
         <owl:disjointWith rdf:resource="Conference_Trip"/>
         <owl:disjointWith rdf:resource="Demo_Chair"/>
         <owl:disjointWith rdf:resource="Demo_Paper"/>
+        <owl:disjointWith rdf:resource="Demo_Session"/>
         <owl:disjointWith rdf:resource="Document"/>
         <owl:disjointWith rdf:resource="Early-Registered_Participant"/>
         <owl:disjointWith rdf:resource="Evaluated_Paper"/>
+        <owl:disjointWith rdf:resource="Event"/>
         <owl:disjointWith rdf:resource="Flyer"/>
         <owl:disjointWith rdf:resource="Industrial_Paper"/>
         <owl:disjointWith rdf:resource="Invited_Speaker"/>
@@ -1113,7 +1115,6 @@
     <!-- Demo_Session -->
 
     <owl:Class rdf:about="Demo_Session">
-        <rdfs:subClassOf rdf:resource="Conference_Session"/>
         <rdfs:subClassOf rdf:resource="Event"/>
         <rdfs:subClassOf rdf:resource="Session"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -2905,7 +2906,6 @@
     <!-- Social_Event -->
 
     <owl:Class rdf:about="Social_Event">
-        <rdfs:subClassOf rdf:resource="Conference_Session"/>
         <rdfs:subClassOf rdf:resource="Event"/>
         <rdfs:subClassOf rdf:resource="Session"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>

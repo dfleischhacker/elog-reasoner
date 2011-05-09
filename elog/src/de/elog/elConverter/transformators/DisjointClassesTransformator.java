@@ -10,6 +10,8 @@ import org.semanticweb.owlapi.model.OWLDisjointClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+import de.elog.elConverter.ELOntology;
+
 import uk.ac.manchester.cs.owl.owlapi.OWLDisjointClassesAxiomImpl;
 
 /**
@@ -24,7 +26,7 @@ import uk.ac.manchester.cs.owl.owlapi.OWLDisjointClassesAxiomImpl;
  */
 public class DisjointClassesTransformator implements Transformator {
 
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory) {
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology) {
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		if(axiom instanceof OWLDisjointClassesAxiomImpl){
 			OWLDisjointClassesAxiom disjointClasses = (OWLDisjointClassesAxiom) axiom;

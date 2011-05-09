@@ -2,6 +2,7 @@ package de.elog.evaluator;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -15,6 +16,8 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
+
+import de.elog.elConverter.Constants;
 
 public class Evaluator {
 	
@@ -135,28 +138,43 @@ public class Evaluator {
 	public Set<OWLClass> getClasses(OWLOntology ont1, OWLOntology ont2){
 		Set<OWLClass> result1 = ont1.getClassesInSignature();
 		Set<OWLClass> result2 = ont2.getClassesInSignature();
+		
+		Set<OWLClass> result = new HashSet<OWLClass>();
+		for(OWLClass c : result2){
+			if(!c.toString().contains(Constants.NEW_NAMESPACE)){
+				result.add(c);
+			}
+		}
+		
 		for(OWLClass c1 : result1){
 			if(result2.contains(c1)){
 				// do nothing
 			}else{
-				result2.add(c1);
+				result.add(c1);
 			}
 		}
-		return result2;
+		return result;
 	}
 	
 	public Set<OWLObjectProperty> getObjectProperties(OWLOntology ont1, OWLOntology ont2){
 		Set<OWLObjectProperty> result1 = ont1.getObjectPropertiesInSignature();
 		Set<OWLObjectProperty> result2 = ont2.getObjectPropertiesInSignature();
 		
-		for(OWLObjectProperty c1 : result1){
-			if(result2.contains(c1)){
-				// do nothing
-			}else{
-				result2.add(c1);
+		Set<OWLObjectProperty> result = new HashSet<OWLObjectProperty>();
+		for(OWLObjectProperty p : result2){
+			if(!p.toString().contains(Constants.NEW_NAMESPACE)){
+				result.add(p);
 			}
 		}
-		return result2;
+		
+		for(OWLObjectProperty c1 : result1){
+			if(c1.toString().contains(Constants.NEW_NAMESPACE) || result2.contains(c1) ){
+				// do nothing
+			}else{
+				result.add(c1);
+			}
+		}
+		return result;
 	}
 
 	public void setAxiomsToCheck(AxiomsToCheck axiomsToCheck) {

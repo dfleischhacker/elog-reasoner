@@ -21,6 +21,7 @@ import uk.ac.manchester.cs.owl.owlapi.OWLSubClassOfAxiomImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLSubObjectPropertyOfAxiomImpl;
 
 import de.elog.elConverter.Constants;
+import de.elog.elConverter.ELOntology;
 
 
 /**
@@ -49,7 +50,7 @@ public class PropertyRangeTransformator implements Transformator{
 	 * 2. if \epsilon subclassof r then add TOP subclassof A.
 	 */
 	@Override
-	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory) {
+	public HashSet<OWLAxiom> convert(OWLAxiom axiom, OWLDataFactory factory, ELOntology ontology) {
 		HashSet<OWLAxiom> result = new HashSet<OWLAxiom>();
 		if(axiom instanceof OWLObjectPropertyRangeAxiomImpl){
 			OWLObjectPropertyRangeAxiom range = (OWLObjectPropertyRangeAxiom) axiom;

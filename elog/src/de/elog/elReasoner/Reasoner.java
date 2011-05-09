@@ -96,7 +96,7 @@ public class Reasoner {
 		// CONNECTION HARD TO HIDDEN
 		// =========================================
 		FormularHard subsumesHardF = new FormularHard();
-		subsumesHardF.useCuttingPlaneInference(false);
+		//subsumesHardF.useCuttingPlaneInference(false);
 		subsumesHardF.setName("subsumesHardF");
 		subsumesHardF.setForVariables(c1, c2);
 		subsumesHardF.setIfExpressions(
@@ -105,7 +105,7 @@ public class Reasoner {
 				new PredicateExpression(true, subsumesP, c1, c2));
 		
 		FormularHard intersectionHardF = new FormularHard();
-		intersectionHardF.useCuttingPlaneInference(false);
+		//intersectionHardF.useCuttingPlaneInference(false);
 		intersectionHardF.setName("intersectionHardF");
 		intersectionHardF.setForVariables(c1, c2, c3);
 		intersectionHardF.setIfExpressions(
@@ -114,7 +114,7 @@ public class Reasoner {
 				new PredicateExpression(true, intersectionP, c1, c2, c3));
 		
 		FormularHard opsubHardF = new FormularHard();
-		opsubHardF.useCuttingPlaneInference(false);
+		//opsubHardF.useCuttingPlaneInference(false);
 		opsubHardF.setName("opsubHardF");
 		opsubHardF.setForVariables(p1, c1, c2);
 		opsubHardF.setIfExpressions(
@@ -123,7 +123,7 @@ public class Reasoner {
 				new PredicateExpression(true, opsubP, p1, c1, c2));
 		
 		FormularHard opsupHardF = new FormularHard();
-		opsupHardF.useCuttingPlaneInference(false);
+		//opsupHardF.useCuttingPlaneInference(false);
 		opsupHardF.setName("opsupHardF");
 		opsupHardF.setForVariables(p1, c1, c2);
 		opsupHardF.setIfExpressions(
@@ -134,6 +134,7 @@ public class Reasoner {
 		FormularHard psubsumesHardF = new FormularHard();
 		
 		psubsumesHardF.setName("psubsumesHardF");
+		//psubsumesHardF.useCuttingPlaneInference(false);
 		psubsumesHardF.setForVariables(p1, p2);
 		psubsumesHardF.setIfExpressions(
 				new PredicateExpression(true, psubsumesHardP, p1, p2));
@@ -141,6 +142,7 @@ public class Reasoner {
 				new PredicateExpression(true, psubsumesP, p1, p2));
 		
 		FormularHard pcomHardF = new FormularHard();
+		//pcomHardF(false);
 		pcomHardF.setName("pcomHardF");
 		pcomHardF.setForVariables(p1, p2, p3);
 		pcomHardF.setIfExpressions(

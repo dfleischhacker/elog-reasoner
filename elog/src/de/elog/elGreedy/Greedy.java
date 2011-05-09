@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Random;
 
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAxiom;
 
 import de.elog.evaluator.DisjointClassAxiomsToCheck;
 import de.elog.evaluator.Evaluator;
@@ -19,11 +20,11 @@ import de.elog.evaluator.SubClassAxiomsToCheck;
 public class Greedy {
 	
 	private Ontology m_ontology;
-	private HashMap<OwnAxiom, Double> axioms;
+	private HashMap<OWLAxiom, Double> axioms;
 	ArrayList<String> addedAxioms = new ArrayList<String>();
 
 	
-	public Greedy(HashMap<OwnAxiom, Double> softAxioms, ArrayList<OwnAxiom> hardAxioms, String filenameOfNewOnt, IRI iriofNewOnt) throws Exception {
+	public Greedy(HashMap<OWLAxiom, Double> softAxioms, ArrayList<OWLAxiom> hardAxioms, String filenameOfNewOnt, IRI iriofNewOnt) throws Exception {
 
 		// Now create the ontology - we use the ontology IRI (not the physical URI)
 		m_ontology = new Ontology();
@@ -35,29 +36,24 @@ public class Greedy {
 		// the hard axioms are put initially into the ontology and in the string list of hard axioms for evaluation.
 		System.out.println("Added " + hardAxioms.size() + " hard axioms.");
 		addedAxioms = new ArrayList<String>();
-		for(OwnAxiom hardAxiom : hardAxioms){
-			addedAxioms.addAll(hardAxiom.getVariableNames());
-			m_ontology.addAxiom(hardAxiom.getAxiom());
+		for(OWLAxiom hardAxiom : hardAxioms){
+			m_ontology.addAxiom(hardAxiom);
 		}
 		
 	}
 
 	
 	public ArrayList<String> greedy() throws Exception {
-
 		
-		List<OwnAxiom> sortedAxioms = this.sort(axioms);
+		List<OWLAxiom> sortedAxioms = this.sort(axioms);
 		
 		System.out.println( "axioms: "+ axioms.size() );
 		int i=0;
 		long iCheckTime = 0;
 		double sum = 0;
-		for( OwnAxiom axiom: sortedAxioms )
+		for( OWLAxiom axiom: sortedAxioms )
 		{
-			for(String s :axiom.getVariableNames()){
-				addedAxioms.add(s);
-			}
-			m_ontology.addAxiom( axiom.getAxiom() );
+			m_ontology.addAxiom( axiom );
 			
 			
 			long iCheckStart = System.currentTimeMillis();
@@ -69,12 +65,11 @@ public class Greedy {
 			{
 				
 				//System.out.println( "remove ("+ i +"): "+ axiom.getAxiom() );
-				m_ontology.removeAxiom( axiom.getAxiom() );
-				addedAxioms.removeAll(axiom.getVariableNames());
+				m_ontology.removeAxiom( axiom );
 			}else{
-				System.out.println("add ("+i+"): " + axiom.getValue()+" "+axiom.getAxiom());
-				m_ontology.removeAnnotations(axiom.getAxiom());
-				sum=sum+axiom.getValue();
+				m_ontology.removeAnnotations(axiom);
+				System.out.println("add ("+i+"): " + axioms.get(axiom)+" "+axiom.toString());
+				sum=sum+axioms.get(axiom);
 			}
 			i++;
 		}
@@ -84,29 +79,28 @@ public class Greedy {
 		return addedAxioms;
 	}
 	
-	private List<OwnAxiom> sort( HashMap<OwnAxiom,Double> hmAxioms ){
+	private List<OWLAxiom> sort( HashMap<OWLAxiom,Double> hmAxioms ){
 		// Random ordering
 		Random r = new Random();
-		for(OwnAxiom a : hmAxioms.keySet()){
+		for(OWLAxiom a : hmAxioms.keySet()){
 			double newValue = hmAxioms.get(a)+(r.nextDouble()*0.0001);
-			a.setValue(newValue);
 			hmAxioms.put(a, newValue);
 		}
 		
-		List<OwnAxiom> axioms = new ArrayList<OwnAxiom>( hmAxioms.keySet() );
+		List<OWLAxiom> axioms = new ArrayList<OWLAxiom>( hmAxioms.keySet() );
 		Collections.sort( axioms, new AxiomComparator( hmAxioms ) );
 		return axioms;
 	}
 	
-	public class AxiomComparator implements Comparator<OwnAxiom> 
+	public class AxiomComparator implements Comparator<OWLAxiom> 
 	{
-		private HashMap<OwnAxiom,Double> hmAxioms;
+		private HashMap<OWLAxiom,Double> hmAxioms;
 		
-		public AxiomComparator( HashMap<OwnAxiom,Double> hmAxioms ){
+		public AxiomComparator( HashMap<OWLAxiom,Double> hmAxioms ){
 			this.hmAxioms = hmAxioms;
 		}
 		// TODO: ascending or descending order
-		public int compare( OwnAxiom axiom1, OwnAxiom axiom2 ){
+		public int compare( OWLAxiom axiom1, OWLAxiom axiom2 ){
 			Double d1 = hmAxioms.get( axiom1 );
 			Double d2 = hmAxioms.get( axiom2 );
 			return Double.compare( d2, d1 );
@@ -115,8 +109,6 @@ public class Greedy {
 			return false;
 		}
 	}
-	
-	
 	
 	public static void main( String args[] ) throws Exception {
 		if(args.length!=2 && args.length!=3){
