@@ -378,13 +378,13 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasReview"/>
+                <owl:onProperty rdf:resource="hasReviewer"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasReviewer"/>
+                <owl:onProperty rdf:resource="hasReview"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -682,12 +682,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="partOfEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -700,13 +694,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="hasEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -784,18 +784,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOfEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -808,7 +796,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="partOf"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1016,13 +1016,13 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
+                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1103,6 +1103,12 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="partOf"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="hasPart"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -1115,19 +1121,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1194,19 +1194,13 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOfEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasPart"/>
+                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1218,7 +1212,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="hasPart"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1300,7 +1300,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:onProperty rdf:resource="hasPart"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1318,13 +1324,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="hasPart"/>
+                <owl:onProperty rdf:resource="partOfEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1517,7 +1517,19 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="partOf"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="hasPart"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1530,18 +1542,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="hasEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="hasPart"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1718,13 +1718,13 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasReviewer"/>
+                <owl:onProperty rdf:resource="hasReview"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasReview"/>
+                <owl:onProperty rdf:resource="hasReviewer"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1784,13 +1784,13 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
+                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2976,12 +2976,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -3001,6 +2995,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="volumeContainsPaper"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3208,12 +3208,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="hasPart"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -3221,6 +3215,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="hasEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3271,13 +3271,13 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasReview"/>
+                <owl:onProperty rdf:resource="hasReviewer"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasReviewer"/>
+                <owl:onProperty rdf:resource="hasReview"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3419,19 +3419,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="partOf"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="presentationOfPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3443,7 +3443,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="presentationOfPaper"/>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3478,7 +3478,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOf"/>
+                <owl:onProperty rdf:resource="hasPart"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="partOfEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3490,13 +3496,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasPart"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3544,13 +3544,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="volumeContainsPaper"/>
+                <owl:onProperty rdf:resource="partOfEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3568,7 +3562,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:onProperty rdf:resource="volumeContainsPaper"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3659,12 +3659,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="hasPart"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="partOf"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -3672,6 +3666,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="volumeContainsPaper"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="hasPart"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3782,6 +3782,18 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="hasEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="partOfEvent"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="volumeContainsPaper"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
@@ -3794,19 +3806,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="partOfEvent"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="partOf"/>
-                <owl:someValuesFrom rdf:resource="Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="hasEvent"/>
                 <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3838,67 +3838,7 @@
 
     <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="hasReview"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="listsEvent"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Person"/>
-        <owl:onProperty rdf:resource="reviewerOfPaper"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="writtenBy"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Paper"/>
-        <owl:onProperty rdf:resource="hasReviewer"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="eventOnList"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="hasEvent"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Organisation"/>
-        <owl:onProperty rdf:resource="scientificallyOrganises"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Review"/>
         <owl:onProperty rdf:resource="reviewWrittenBy"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="updatedVersionOf"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="presentationOfPaper"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="partOfEvent"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="scientificallyOrganisedBy"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
@@ -3907,38 +3847,28 @@
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Organisation"/>
+        <owl:onProperty rdf:resource="technicallyOrganises"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="organisedBy"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Paper"/>
-        <owl:onProperty rdf:resource="hasReview"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Academic_Institution"/>
-        <owl:onProperty rdf:resource="scientificallyOrganises"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Review"/>
-        <owl:onProperty rdf:resource="reviewOfPaper"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Research_Topic"/>
-        <owl:onProperty rdf:resource="topicCoveredBy"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Person"/>
-        <owl:onProperty rdf:resource="authorOf"/>
+        <owl:onProperty rdf:resource="presentationOfPaper"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="hasReviewer"/>
+        <owl:onProperty rdf:resource="hasReview"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Event"/>
+        <owl:onProperty rdf:resource="technicallyOrganisedBy"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Document"/>
+        <owl:onProperty rdf:resource="reviewOfPaper"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
@@ -3947,38 +3877,33 @@
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Individual_Presentation"/>
-        <owl:onProperty rdf:resource="presentationOfPaper"/>
+        <rdfs:subClassOf rdf:resource="Academic_Institution"/>
+        <owl:onProperty rdf:resource="scientificallyOrganises"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Organisation"/>
+        <owl:onProperty rdf:resource="scientificallyOrganises"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="reviewWrittenBy"/>
+        <owl:onProperty rdf:resource="writtenBy"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="reviewOfPaper"/>
+        <owl:onProperty rdf:resource="hasReviewer"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="hasUpdatedVersion"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Location"/>
-        <owl:onProperty rdf:resource="locationOf"/>
-        <owl:someValuesFrom rdf:resource="Thing"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Document"/>
-        <owl:onProperty rdf:resource="paperPresentedAs"/>
+        <rdfs:subClassOf rdf:resource="Person"/>
+        <owl:onProperty rdf:resource="reviewerOfPaper"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="heldIn"/>
+        <owl:onProperty rdf:resource="partOfEvent"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
@@ -3988,12 +3913,87 @@
     </owl:Restriction>
     <owl:Restriction>
         <rdfs:subClassOf rdf:resource="Event"/>
-        <owl:onProperty rdf:resource="technicallyOrganisedBy"/>
+        <owl:onProperty rdf:resource="eventOnList"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
     <owl:Restriction>
-        <rdfs:subClassOf rdf:resource="Organisation"/>
-        <owl:onProperty rdf:resource="technicallyOrganises"/>
+        <rdfs:subClassOf rdf:resource="Review"/>
+        <owl:onProperty rdf:resource="reviewOfPaper"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Event"/>
+        <owl:onProperty rdf:resource="organisedBy"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Event"/>
+        <owl:onProperty rdf:resource="scientificallyOrganisedBy"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Person"/>
+        <owl:onProperty rdf:resource="authorOf"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Location"/>
+        <owl:onProperty rdf:resource="locationOf"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Document"/>
+        <owl:onProperty rdf:resource="updatedVersionOf"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Individual_Presentation"/>
+        <owl:onProperty rdf:resource="presentationOfPaper"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Event"/>
+        <owl:onProperty rdf:resource="heldIn"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Document"/>
+        <owl:onProperty rdf:resource="hasUpdatedVersion"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Document"/>
+        <owl:onProperty rdf:resource="paperPresentedAs"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Research_Topic"/>
+        <owl:onProperty rdf:resource="topicCoveredBy"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Document"/>
+        <owl:onProperty rdf:resource="listsEvent"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Paper"/>
+        <owl:onProperty rdf:resource="hasReview"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Paper"/>
+        <owl:onProperty rdf:resource="hasReviewer"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Event"/>
+        <owl:onProperty rdf:resource="hasEvent"/>
+        <owl:someValuesFrom rdf:resource="Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="Review"/>
+        <owl:onProperty rdf:resource="reviewWrittenBy"/>
         <owl:someValuesFrom rdf:resource="Thing"/>
     </owl:Restriction>
 </rdf:RDF>
