@@ -27,31 +27,7 @@ public class OWLReader {
 	private OWLOntologyManager manager;
 	private HashMap<String, OwnAxiom> axioms = new HashMap<String,OwnAxiom>();	
 	
-	public ArrayList<String[]> getSoftAxioms(){
-		ArrayList<String[]> result = new ArrayList<String[]>();
-		for(OwnAxiom a : axioms.values()){
-			if(!a.isHard()){
-				String[] s = new String[]{
-						a.getId(), Double.toString(a.getConfidenceValue())
-				};
-				result.add(s);
-			}
-		}
-		return result;	
-	}
-	
-	public ArrayList<String[]> getHardAxioms(){
-		ArrayList<String[]> result = new ArrayList<String[]>();
-		for(OwnAxiom a : axioms.values()){
-			if(a.isHard()){
-				String[] s = new String[]{
-						a.getId()
-				};
-				result.add(s);
-			}
-		}
-		return result;	
-	}
+
 	
 	public IRI read(String filename) throws OWLOntologyCreationException{
 		axioms = new HashMap<String, OwnAxiom>();	

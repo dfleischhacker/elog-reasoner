@@ -17,6 +17,7 @@ public class OwnAxiom {
 		this.axiomWithoutAnnotation = axiomWithoutAnnotation;
 		this.confidenceValue = confidenceValue;
 		this.hard = hard;
+		this.id=id;
 	}
 	public OWLAxiom getAxiom() {
 		return axiom;

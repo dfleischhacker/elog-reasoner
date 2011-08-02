@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
@@ -50,63 +51,9 @@ import de.unima.javaAPI.types.Type;
 
 public class Reasoner {
 	
-	public Model generateModel(
-			ArrayList<String[]> hardAxioms,
-			ArrayList<String[]> softAxioms) throws ParseException{
-		
-		Type ThAxiom = new Type("HAxiom");
-		Type TsAxiom = new Type("SAxiom");
-		
-		// Predicate (observed)
-		Predicate hObserved = new Predicate("hAxiom", false, ThAxiom);hObserved.setGroundValues(hardAxioms);
-		PredicateDouble sObserved = new PredicateDouble("sAxiom",false, TsAxiom);sObserved.setGroundValues(softAxioms);
-
-		// Predicate (hidden)
-		Predicate hHidden = new Predicate("hAxiomHidden", true, ThAxiom);
-		PredicateDouble sHidden = new PredicateDouble("sAxiomHidden",true, TsAxiom);
-
-		
-		// Variables
-		VariableType hVar = new VariableType("hVar", ThAxiom);
-		VariableType sVar = new VariableType("sVar", TsAxiom);
-		VariableDouble conf = new VariableDouble("conf");
-		
-		// Formulars
-		// =========================================
-		// CONNECTION HARD TO HIDDEN
-		// =========================================
-		FormularHard hardF = new FormularHard();
-		//subsumesHardF.useCuttingPlaneInference(false);
-		hardF.setName("hardF");
-		hardF.setForVariables(hVar);
-		hardF.setIfExpressions(
-				new PredicateExpression(true, hObserved, hVar));
-		hardF.setRestrictions(
-				new PredicateExpression(true, hHidden, hVar));
-		
-		// Formulars
-		// =========================================
-		// CONNECTION SOFT TO HIDDEN
-		// =========================================
-		FormularObjective softF = new FormularObjective();
-		softF.setName("softF");
-		softF.setForVariables(sVar, conf);
-		softF.setIfExpressions(
-				new PredicateExpression(true, sObserved, sVar, conf)
-		);
-		softF.setObjectiveExpression(
-				new PredicateExpression(true, sHidden, sVar)
-				);
-		softF.setDoubleVariable(conf);
-		// Model
-		Model model = new Model(
-				hardF, softF);
-		System.out.println(model.toString());
-		return model;
-	}
 
 
-	private static OWLOntology getOntologyWithHighestProbability(Model model, HashMap<String, OwnAxiom> axioms) throws OWLOntologyCreationException, SQLException, ParseException, SolveException{
+	private static OWLOntology getOntologyWithHighestProbability(OWLReader reader) throws OWLOntologyCreationException, SQLException, ParseException, SolveException{
 
 		//initialize Pellet's explanation engine
 		PelletExplanation.setup();
@@ -115,6 +62,7 @@ public class Reasoner {
 		// create OWLEntities
 		OWLOntologyManager manager = OWL.manager;
 		
+		HashMap<String, OwnAxiom> axioms = reader.getAxioms();
 		
 			
 		//initially load the ontology
@@ -125,89 +73,84 @@ public class Reasoner {
 		OWLOntology ontology = manager.createOntology(ontAxioms);
 		
 		// initialize the ILP
-		StandardGrounder grounder = new StandardGrounder();
-		grounder.ground(model);
-		StandardSolver solver = new StandardSolver(model);
-		ArrayList<String> result = solver.solve();
-		System.err.println("Siiiiiiize of ress ONE :" + result.size());
 		GurobiConnector connector = GurobiConnector.getGurobiConnector();
+		for(OwnAxiom a : axioms.values()){
+			if(a.isHard()){
+				connector.addHardConstraint(new String[]{a.getId()}, new boolean[]{true});
+			}else{
+				connector.updateObjectiveVariable(a.getId(), a.getConfidenceValue());
+			}
+		}
+		ArrayList<String> result = connector.solve();
+		System.err.println("Siiiiiiize of ress ONE :" + result.size());
 		
-		// TODO Start loop
-		
-		// Create the reasoner and load the ontology
-		PelletReasoner reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology );
-		// Create an explanation generator
-		PelletExplanation expGen = new PelletExplanation( reasoner );
-		
-		//stores the conflicts as a set of axiom sets
 		Set<Set<OWLAxiom>> conflictSet = new HashSet<Set<OWLAxiom>>();
-		
-		//determine all incoherent classes in the ontology
-		Set<OWLClass> incoherentAxioms = reasoner.getUnsatisfiableClasses().getEntitiesMinusBottom();
-		System.out.println("There are " + incoherentAxioms.size() + "unsatisfiable concepts.");
-		
-		//iterate over all incoherent classes in the merged ontology
-		Iterator<OWLClass> flavoursIter = incoherentAxioms.iterator();
-		while (flavoursIter.hasNext() ){
-			//incoherent class
-			OWLClass incoh = flavoursIter.next();
+		int counter = 0;
+		do {
+			// Create the reasoner and load the ontology
+			PelletReasoner reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology );
+			// Create an explanation generator
+			PelletExplanation expGen = new PelletExplanation( reasoner );
 			
-			System.out.println("-----------> " + incoh + " <-----------");
+			//stores the conflicts as a set of axiom sets
+			conflictSet = new HashSet<Set<OWLAxiom>>();
 			
-			//Set<OWLAxiom> exp = expGen.getUnsatisfiableExplanation(incoh);
-			Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoh, 5);
-			Iterator<Set<OWLAxiom>> explanationSet = exp.iterator();
-			while ( explanationSet.hasNext() ) {
-				Set<OWLAxiom> axiomSet = explanationSet.next();
-				//exp.retainAll(alignment);
-				//axiomSet.retainAll(alignment.keySet());
-				System.out.println(axiomSet);
+			//determine all incoherent classes in the ontology
+			Set<OWLClass> incoherentAxioms = reasoner.getUnsatisfiableClasses().getEntitiesMinusBottom();
+			System.out.println("There are " + incoherentAxioms.size() + " unsatisfiable concepts.");
+			
+			//iterate over all incoherent classes in the merged ontology
+			Iterator<OWLClass> flavoursIter = incoherentAxioms.iterator();
+			while (flavoursIter.hasNext() ){
+				//incoherent class
+				OWLClass incoh = flavoursIter.next();
 				
-				//add the axioms as ILP constraint
-				String[] variableNames = new String[axiomSet.size()];
-				boolean[] mustBePositive = new boolean[axiomSet.size()];
-				int i = 0;
-				for(OWLAxiom a : axiomSet){
-					mustBePositive[i] = true;
-					variableNames[i] = a.toString();
-					if(!axioms.containsKey(a.toString())) {
-						System.err.println("Axiom " + a.toString() + " of conflict set not found in original axioms.");
+				//System.out.println("-----------> " + incoh + " <-----------");
+				
+				//Set<OWLAxiom> exp = expGen.getUnsatisfiableExplanation(incoh);
+				Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoh, 5);
+				Iterator<Set<OWLAxiom>> explanationSet = exp.iterator();
+				while ( explanationSet.hasNext() ) {
+					Set<OWLAxiom> axiomSet = explanationSet.next();
+					//exp.retainAll(alignment);
+					//axiomSet.retainAll(alignment.keySet());
+					//System.out.println(axiomSet);
+					
+					//add the axioms as ILP constraint
+					TreeSet<String> variableNames = new TreeSet<String>();
+					for(OWLAxiom a : axiomSet){
+						variableNames.add(a.toString());
+						if(!axioms.containsKey(a.toString())) {
+							System.err.println("Axiom " + a.toString() + " of conflict set not found in original axioms.");
+						}
 					}
-					i++;
+					connector.addCardinalityConstraint(variableNames, (variableNames.size()-1));
+					
+					//add the set of axioms (a conflict) to the set of conflicts
+					conflictSet.add(axiomSet);
 				}
-				connector.addHardConstraint(variableNames, mustBePositive);
+			}
+			System.out.println("Still " + conflictSet.size() + " conflicts remaining.");
+			if(conflictSet.size()>0){
+				result = connector.solve();
+				System.err.println("Size of actual Result set :" + result.size());
+				ontAxioms = new HashSet<OWLAxiom>();
+				for(String r : result){
+					OwnAxiom ownAxiom = axioms.get(r);
+					if(ownAxiom!=null){
+						ontAxioms.add(ownAxiom.getAxiomWithoutAnnotation());
+					}else{
+						System.err.println("Axiom " +r + " of ilp solution not found in original ont.");
+					}
+					
+				}
 				
-				//add the set of axioms (a conflict) to the set of conflicts
-				conflictSet.add(axiomSet);
-
+				ontology = manager.createOntology(ontAxioms);
 			}
-			
-		}
-		if(conflictSet.size()>0){
-			result = connector.solve();
-			System.err.println("Siiiiiiize of ress :" + result.size());
-			ontAxioms = new HashSet<OWLAxiom>();
-			for(String r : result){
-				OwnAxiom ownAxiom = axioms.get(r);
-				if(ownAxiom!=null){
-					ontAxioms.add(ownAxiom.getAxiomWithoutAnnotation());
-				}else{
-					System.err.println("Axiom " +r + " of ilp solution not found in original ont.");
-				}
-			}
-			ontology = manager.createOntology(ontAxioms);
-		}
-		
-		
-		// TODO end loop if conflictSet.size == 0.
-		
-		
-		
-		System.out.println("Explanation computation finished!");
-		System.out.println(conflictSet.size() + " MIS found.");
-		System.out.println(conflictSet);
-
-		return null;
+			counter ++;
+			System.out.println("Finished cutting plane loop number " + counter);
+		} while (conflictSet.size()>0);
+		return ontology;
 		
 	}
 	
@@ -243,10 +186,7 @@ public class Reasoner {
 			System.out.println("====================================================");
 			Reasoner reasoner = new Reasoner();
 			//reasoner.setUseCuttingPlaneInference(false);
-			Model model = reasoner.generateModel(
-					reader.getHardAxioms(), 
-					reader.getSoftAxioms());
-			OWLOntology resultOntology = Reasoner.getOntologyWithHighestProbability(model, reader.getAxioms());
+			OWLOntology resultOntology = Reasoner.getOntologyWithHighestProbability(reader);
 			
 			System.out.println("Successfully reasoned in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			

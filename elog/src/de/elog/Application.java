@@ -11,7 +11,8 @@ public class Application {
 			System.out.println("-r for the el reasoner");
 			System.out.println("-r2 for the pellet-based reasoner");
 			System.out.println("-g for the greedy approach");
-			System.out.println("-s for the sampling");
+			System.out.println("-si for the MC ILP sampling");
+			System.out.println("-sm for the MIS sampling");
 			System.out.println("You will get further help when you type the correct parameters.");
 			System.out.println("Example:");
 			System.out.println("elog -r");
@@ -31,7 +32,9 @@ public class Application {
 				de.elog.elReasoner.Reasoner.main(remainingInputs);
 			}else if(args[0].equals("-r2")){
 				de.elog.pelletReasoner.Reasoner.main(remainingInputs);
-			}else if(args[0].equals("-s")){
+			}else if(args[0].equals("-si")){
+				Sampler.main(remainingInputs);
+			}else if(args[0].equals("-sm")){
 				Sampler.main(remainingInputs);
 			}else if(args[0].equals("-g")){
 				Greedy.main(remainingInputs);
