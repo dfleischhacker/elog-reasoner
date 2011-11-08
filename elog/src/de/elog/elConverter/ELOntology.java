@@ -115,16 +115,20 @@ public class ELOntology{
 		this.properties =owlOntology.getObjectPropertiesInSignature();
 		
 		axioms = new HashSet<OWLAxiom>();
-		axioms.addAll(owlOntology.getAxioms());
 		
+		axioms.addAll(owlOntology.getAxioms());
+		System.out.println("Axioms:" + axioms.size());
 		OWL2ELProfile profile = new OWL2ELProfile();
 		OWLProfileReport report = profile.checkOntology(owlOntology);
-		System.out.println("The following axioms are higher than OWL EL. They are deleted:");
+		System.out.println("The following axioms are more expressive than OWL EL. They are deleted:");
 		for(OWLProfileViolation v :report.getViolations()){
 			System.out.println(v);
-			axioms.remove(v.getAxiom());
-			RemoveAxiom r = new RemoveAxiom(owlOntology, v.getAxiom());
-			manager.applyChange(r);
+			
+			if(v.getAxiom()!=null){
+				axioms.remove(v.getAxiom());
+				RemoveAxiom r = new RemoveAxiom(owlOntology, v.getAxiom());
+				manager.applyChange(r);
+			}
 		}
 		return axioms;
 	}

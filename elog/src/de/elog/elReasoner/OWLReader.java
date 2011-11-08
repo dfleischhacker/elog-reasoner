@@ -182,6 +182,8 @@ public class OWLReader {
 	 */
 	private Double getConfidenceValue(OWLAxiom axiom){
 		for(OWLAnnotation annotation : axiom.getAnnotations()){
+			System.out.println(annotation);
+			
 			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(
 					Constants.ANNOTATION_PROPERTY_FOR_REASONING_CONFIDENCE_VALUE)){
 				OWLAnnotationValue annValue = annotation.getValue();
@@ -218,8 +220,8 @@ public class OWLReader {
 		ELOntology elOntology = new ELOntology();
 		
 		// Number of axioms schould stay constant.
+		System.out.println("Loading ontology");
 		HashSet<OWLAxiom> originalAxioms = elOntology.loadOntology(ontologyFilePath);
-		
 		HashSet<OWLAxiom> prenormalizedOntology = elOntology.normalizeAll();
 		
 		int numberOfComplexSoft = 0;
@@ -240,7 +242,6 @@ public class OWLReader {
 		}
 		
 		for(OWLAxiom axiom : originalAxioms){
-			
 			// get confidence value (null if hard)
 			Double confidenceValue = this.getConfidenceValue(axiom);
 
