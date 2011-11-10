@@ -21,7 +21,6 @@ public class DisjointClassAxiomsToCheck implements AxiomsToCheck {
 		}
 		return results;
 	}
-
 	@Override
 	public String getName() {
 		return "DisjointClassAxioms";

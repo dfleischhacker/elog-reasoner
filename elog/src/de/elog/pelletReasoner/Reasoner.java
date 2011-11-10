@@ -1,17 +1,14 @@
 package de.elog.pelletReasoner;
 
 
-import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -25,29 +22,14 @@ import com.clarkparsia.owlapiv3.OWL;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 
-import de.elog.Constants;
 import de.elog.evaluator.DisjointClassAxiomsToCheck;
 import de.elog.evaluator.Evaluator;
 import de.elog.evaluator.SubClassAxiomsToCheck;
-import de.unima.app.grounder.StandardGrounder;
-import de.unima.app.solver.StandardSolver;
 import de.unima.conn.ilpSolver.GurobiConnector;
 import de.unima.exception.ParseException;
 import de.unima.exception.ReadOrWriteToFileException;
 import de.unima.exception.SolveException;
-import de.unima.helper.LogFileWriter;
-import de.unima.javaAPI.Model;
-import de.unima.javaAPI.formulars.FormularHard;
-import de.unima.javaAPI.formulars.FormularObjective;
-import de.unima.javaAPI.formulars.expressions.impl.EqualStringExpression;
-import de.unima.javaAPI.formulars.expressions.impl.EqualVariableExpression;
-import de.unima.javaAPI.formulars.expressions.impl.PredicateExpression;
-import de.unima.javaAPI.formulars.expressions.impl.ThresholdExpression;
-import de.unima.javaAPI.formulars.variables.impl.VariableDouble;
-import de.unima.javaAPI.formulars.variables.impl.VariableType;
-import de.unima.javaAPI.predicates.Predicate;
-import de.unima.javaAPI.predicates.PredicateDouble;
-import de.unima.javaAPI.types.Type;
+
 
 public class Reasoner {
 	
