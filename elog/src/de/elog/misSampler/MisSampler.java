@@ -34,15 +34,16 @@ public class MisSampler {
 
 	public static void main(String[] args) throws OWLOntologyCreationException {
 		
-		if ( args.length!=2 && args.length!=3) {
+		if (args.length != 1 ) {
 			
 			System.out.println("Start the reasoner with 2 or 3 arguments:");
 			System.out.println("- existing filename of input ontology");
-			System.out.println("- new filename of materialized output ontology");
-			System.out.println("- reference Ontology / Gold standard (optional)");
+			//System.out.println("- new filename of materialized output ontology");
+			//System.out.println("- reference Ontology / Gold standard (optional)");
 			System.out.println();
-			System.out.println("Example: elog -r2 \"data/input/ontology1.owl\" \"data/output/ontology1_reasoner.owl\"");
-			System.out.println("Example: elog -r2 \"data/input/ontology2.owl\" \"data/output/ontology2_reasoner.owl\" \"data/input/goldStandard.owl\"");
+			System.out.println("Example: elog -ms \"data/input/ontology1.owl\" ");
+			System.out.println("Example: elog -ms \"data/input/ontology2.owl\" ");
+			
 		} else {
 			
 			System.out.println("start program");

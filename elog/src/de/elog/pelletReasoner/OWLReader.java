@@ -1,16 +1,13 @@
 package de.elog.pelletReasoner;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLAnnotationValue;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -23,16 +20,14 @@ import de.elog.Constants;
 public class OWLReader {
 
 	private OWLOntology owlOntology;
-	private OWLDataFactory factory ;
 	private OWLOntologyManager manager;
 	private HashMap<String, OwnAxiom> axioms = new HashMap<String,OwnAxiom>();	
 	
 
-	
 	public IRI read(String filename) throws OWLOntologyCreationException{
+		
 		axioms = new HashMap<String, OwnAxiom>();	
 		manager = OWLManager.createOWLOntologyManager();
-		this.factory =OWLManager.getOWLDataFactory();
 		owlOntology = manager.loadOntologyFromOntologyDocument(new File(filename));
 		
 		for(OWLAxiom axiom : owlOntology.getAxioms()){

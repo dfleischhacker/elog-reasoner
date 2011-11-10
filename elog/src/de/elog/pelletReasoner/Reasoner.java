@@ -9,7 +9,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -161,13 +160,12 @@ public class Reasoner {
 			System.out.println("Read ontology from file: " + args[0]);
 			System.out.println("====================================================");
 			OWLReader reader = new OWLReader();
-			IRI ontologyIRI = reader.read(args[0]);
+			reader.read(args[0]);
 			System.out.println("Successfully read in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			System.out.println("====================================================");
 			System.out.println("Reason ontology: Get the most probable consistent ontology");
 			System.out.println("====================================================");
-			Reasoner reasoner = new Reasoner();
-			//reasoner.setUseCuttingPlaneInference(false);
+
 			OWLOntology resultOntology = Reasoner.getOntologyWithHighestProbability(reader);
 			
 			System.out.println("Successfully reasoned in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
