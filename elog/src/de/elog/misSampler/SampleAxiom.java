@@ -1,16 +1,6 @@
 package de.elog.misSampler;
 
-import java.util.Iterator;
-import java.util.Set;
-
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLDataProperty;
-import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
-import org.semanticweb.owlapi.model.OWLEquivalentDataPropertiesAxiom;
-import org.semanticweb.owlapi.model.OWLEquivalentObjectPropertiesAxiom;
-import org.semanticweb.owlapi.model.OWLObjectProperty;
-
 
 
 public class SampleAxiom implements Comparable<SampleAxiom> {
