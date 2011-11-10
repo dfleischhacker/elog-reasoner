@@ -7,6 +7,8 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
@@ -118,6 +120,9 @@ public class ELOntology{
 		
 		axioms.addAll(owlOntology.getAxioms());
 		System.out.println("Axioms:" + axioms.size());
+		
+		
+		
 		OWL2ELProfile profile = new OWL2ELProfile();
 		OWLProfileReport report = profile.checkOntology(owlOntology);
 		System.out.println("The following axioms are more expressive than OWL EL. They are deleted:");

@@ -181,8 +181,8 @@ public class OWLReader {
 	 * @return
 	 */
 	private Double getConfidenceValue(OWLAxiom axiom){
+		
 		for(OWLAnnotation annotation : axiom.getAnnotations()){
-			System.out.println(annotation);
 			
 			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(
 					Constants.ANNOTATION_PROPERTY_FOR_REASONING_CONFIDENCE_VALUE)){
@@ -243,6 +243,7 @@ public class OWLReader {
 		
 		for(OWLAxiom axiom : originalAxioms){
 			// get confidence value (null if hard)
+			
 			Double confidenceValue = this.getConfidenceValue(axiom);
 
 			// get normalization for this specific axiom
