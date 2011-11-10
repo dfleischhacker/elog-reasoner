@@ -1,8 +1,8 @@
 package de.elog;
 
 import de.elog.elGreedy.Greedy;
-import de.elog.elReasoner.Reasoner;
 import de.elog.elSampler.Sampler;
+import de.elog.misSampler.MisSampler;
 
 public class Application {
 	public static void main(String[] args) throws Exception {
@@ -35,7 +35,7 @@ public class Application {
 			}else if(args[0].equals("-si")){
 				Sampler.main(remainingInputs);
 			}else if(args[0].equals("-sm")){
-				Sampler.main(remainingInputs);
+				MisSampler.main(remainingInputs);
 			}else if(args[0].equals("-g")){
 				Greedy.main(remainingInputs);
 			}
