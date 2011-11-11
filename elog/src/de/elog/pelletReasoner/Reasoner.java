@@ -63,7 +63,7 @@ public class Reasoner {
 			}
 		}
 		ArrayList<String> result = connector.solve();
-		System.err.println("Siiiiiiize of ress ONE :" + result.size());
+		//System.err.println("Siiiiiiize of ress ONE :" + result.size());
 		
 		Set<Set<OWLAxiom>> conflictSet = new HashSet<Set<OWLAxiom>>();
 		int counter = 0;
@@ -152,8 +152,8 @@ public class Reasoner {
 			System.out.println("- new filename of materialized output ontology");
 			System.out.println("- reference Ontology / Gold standard (optional)");
 			System.out.println();
-			System.out.println("Example: elog -r2 \"data/input/ontology1.owl\" \"data/output/ontology1_reasoner.owl\"");
-			System.out.println("Example: elog -r2 \"data/input/ontology2.owl\" \"data/output/ontology2_reasoner.owl\" \"data/input/goldStandard.owl\"");
+			System.out.println("Example: elog -rp \"data/input/ontology1.owl\" \"data/output/ontology1_reasoner.owl\"");
+			System.out.println("Example: elog -rp \"data/input/ontology2.owl\" \"data/output/ontology2_reasoner.owl\" \"data/input/goldStandard.owl\"");
 		}else{
 			long startTime = System.currentTimeMillis();
 			System.out.println("====================================================");
