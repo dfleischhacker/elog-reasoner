@@ -420,7 +420,7 @@ public class MisSampler {
 	public Double getConfidenceValue(OWLAxiom axiom){
 		for(OWLAnnotation annotation : axiom.getAnnotations()){
 			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(
-					"d3")){
+					Constants.ANNOTATION_PROPERTY_FOR_REASONING_CONFIDENCE_VALUE)){
 				OWLAnnotationValue annValue = annotation.getValue();
 				if(annValue instanceof OWLLiteralImpl){
 					OWLLiteral literalValue = (OWLLiteral) annValue;
