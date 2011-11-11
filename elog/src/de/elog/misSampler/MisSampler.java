@@ -45,38 +45,37 @@ public class MisSampler {
 		//path of the ontology file
 		String filePath = args[args.length-1];
 		
-		System.out.println(filePath);
+		//System.out.println(args[0]);
 		
 		switch (args.length) {
+		
+		case 1:
+			break;
 			
 			case 2:
-				//dont do anything here
+				if (args[0].startsWith("-s")) {
+					numOfSamples = Integer.valueOf(args[0].substring(2));
+				} else if (args[0].startsWith("-e")) {
+					numOfExplanations = Integer.valueOf(args[0].substring(2));
+				} else {
+					System.err.println("Arguments -e or -s expected.");
+					return;
+				}
 				break;
 				
 			case 3:
-				if (args[1].startsWith("-s")) {
-					numOfSamples = Integer.valueOf(args[1].substring(2));
-				} else if (args[1].startsWith("-e")) {
-					numOfExplanations = Integer.valueOf(args[1].substring(2));
+				if (args[0].startsWith("-s")) {
+					numOfSamples = Integer.valueOf(args[0].substring(2));
+				} else if (args[0].startsWith("-e")) {
+					numOfExplanations = Integer.valueOf(args[0].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
 					return;
 				}
-				break;
-				
-			case 4:
 				if (args[1].startsWith("-s")) {
 					numOfSamples = Integer.valueOf(args[1].substring(2));
 				} else if (args[1].startsWith("-e")) {
 					numOfExplanations = Integer.valueOf(args[1].substring(2));
-				} else {
-					System.err.println("Arguments -e or -s expected.");
-					return;
-				}
-				if (args[2].startsWith("-s")) {
-					numOfSamples = Integer.valueOf(args[2].substring(2));
-				} else if (args[2].startsWith("-e")) {
-					numOfExplanations = Integer.valueOf(args[2].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
 					return;
@@ -86,12 +85,14 @@ public class MisSampler {
 			default:
 				//error!
 				System.out.println("Start the reasoner with 2, 3 or 4 arguments:");
-				System.out.println("- existing filename of input ontology");
+				System.out.println("-sNUMBER number of samples (optional)");
+				System.out.println("-eNUMBER number of explanations per unsatisfiable class (optional)");
+				System.out.println("filename of input ontology");
 				//System.out.println("- new filename of materialized output ontology");
 				//System.out.println("- reference Ontology / Gold standard (optional)");
 				System.out.println();
 				System.out.println("Example: elog -ms \"data/input/ontology1.owl\" ");
-				System.out.println("Example: elog -ms -s 1000 -e 10 \"data/input/ontology2.owl\"");
+				System.out.println("Example: elog -ms -s1000 -e10 \"data/input/ontology2.owl\"");
 				return;
 		}
 		
