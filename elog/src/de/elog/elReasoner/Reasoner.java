@@ -449,7 +449,7 @@ public class Reasoner {
 			IRI ontologyIRI = reader.read(args[0]);
 			System.out.println("Successfully read in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			System.out.println("====================================================");
-			System.out.println("Reason ontology: Get the most probable consistent ontology");
+			System.out.println("Computing the maximum a-posteriori state: the most probable coherent ontology");
 			System.out.println("====================================================");
 			Reasoner reasoner = new Reasoner();
 			//reasoner.setUseCuttingPlaneInference(false);
@@ -470,7 +470,7 @@ public class Reasoner {
 					reader.getPcomHard());
 			ArrayList<String> output = reasoner.returnOntologyWithHighestProbability(model);
 			
-			System.out.println("Successfully reasoned in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
+			System.out.println("Computed MAP state in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			
 			
 			System.out.println("====================================================");
@@ -478,7 +478,7 @@ public class Reasoner {
 			System.out.println("====================================================");
 			OWLWriter writer = new OWLWriter();
 			writer.write(ontologyIRI, args[1], output);
-			System.out.println("Successfully written in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
+			System.out.println("Most probable coherent ontology written in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			
 			if(args.length==3){
 				System.out.println("====================================================");
