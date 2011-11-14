@@ -14,11 +14,6 @@
 	<classpathentry kind="lib" path="lib/pellet/pellet-query.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/pellet-rules.jar"/>
 	<classpathentry kind="lib" path="lib/rockIt.jar"/>
-	<classpathentry kind="lib" path="lib/gurobi/gurobi.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/mathias/gurobi452/linux32/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="lib/pellet/pellet-cli.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/pellet-dig.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/pellet-explanation.jar"/>
@@ -27,5 +22,6 @@
 	<classpathentry kind="lib" path="lib/pellet/pellet-test.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/servlet.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/mathias/gurobi460/linux32/lib/gurobi.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
