@@ -74,7 +74,7 @@ public class Sampler {
 			eventReader.read(args[1]);
 			System.out.println("Successfully read in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			System.out.println("====================================================");
-			System.out.println("Reason ontology: Get the most probable consistent ontology");
+			System.out.println("Sample marginal probabilities using MC-ILP...");
 			System.out.println("====================================================");
 			// get the model.
 			Reasoner reasoner = new Reasoner();
