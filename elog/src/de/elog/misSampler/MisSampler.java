@@ -396,11 +396,11 @@ public class MisSampler {
 		
 		System.out.println("Sampling process finished.");
 		
-		
+		//compute the probabilities form the generated samples
 		for (int i = 0; i < sampleAxioms.size(); i++) {
 			
-			OWLAxiom currAx = sampleAxioms.get(i);
-			axiomProbability.add(new SampleAxiom(currAx, (double)count.get(currAx)/(double)(numOfSamples-burn_in)));
+			OWLAxiom currenAxiom = sampleAxioms.get(i);
+			axiomProbability.add(new SampleAxiom(currenAxiom, (double)count.get(currenAxiom)/(double)(numOfSamples-burn_in)));
 		}	
 		
 		//sort the axioms using the probabilities
@@ -430,6 +430,7 @@ public class MisSampler {
         	System.out.println(wAxiom.getAxiom().toString() + "   " + wAxiom.getWeight());
         }
         
+        //store the probabilities in an OWL file
         File file = new File("data/output/test.owl");
         try {
 			manager.saveOntology(outputOntology, IRI.create(file.toURI()));
