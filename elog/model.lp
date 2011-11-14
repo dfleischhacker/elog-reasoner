@@ -1,2727 +1,7557 @@
 Maximize
-  intersection|Species|Village|owl_Nothing
-   + intersection|AutomobileEngine|Person|owl_Nothing
-   + intersection|Animal|Village|owl_Nothing
-   + intersection|AdministrativeRegion|MusicalWork|owl_Nothing
-   + intersection|MeanOfTransportation|Settlement|owl_Nothing
-   + intersection|Insect|Work|owl_Nothing
-   + intersection|Athlete|Eukaryote|owl_Nothing
-   + intersection|EducationalInstitution|Work|owl_Nothing
-   + intersection|Animal|Athlete|owl_Nothing
-   + intersection|School|Work|owl_Nothing
-   + intersection|Album|SoccerPlayer|owl_Nothing
-   + intersection|Film|Species|owl_Nothing
-   + intersection|MusicalWork|TelevisionEpisode|owl_Nothing
-   + intersection|MusicalWork|Plant|owl_Nothing
-   + intersection|HistoricPlace|Work|owl_Nothing
-   + intersection|Species|TelevisionEpisode|owl_Nothing
-   + intersection|Athlete|Village|owl_Nothing
-   + intersection|AdministrativeRegion|Eukaryote|owl_Nothing
-   + intersection|Athlete|MusicalWork|owl_Nothing
-   + intersection|AdministrativeRegion|Animal|owl_Nothing
-   + intersection|SoccerPlayer|Species|owl_Nothing
-   + intersection|Animal|TelevisionEpisode|owl_Nothing
-   + intersection|Settlement|Single|owl_Nothing
-   + intersection|Actor|Eukaryote|owl_Nothing
-   + intersection|Album|TelevisionEpisode|owl_Nothing
-   + intersection|Animal|SoccerPlayer|owl_Nothing
-   + intersection|Athlete|Settlement|owl_Nothing
-   + intersection|Device|Place|owl_Nothing
-   + intersection|Settlement|TelevisionEpisode|owl_Nothing
-   + intersection|Eukaryote|TelevisionEpisode|owl_Nothing
-   + intersection|Single|Species|owl_Nothing
-   + intersection|Settlement|SoccerPlayer|owl_Nothing
-   + intersection|SoccerPlayer|Work|owl_Nothing
-   + intersection|Athlete|Film|owl_Nothing
-   + intersection|Album|Athlete|owl_Nothing
-   + intersection|Town|Work|owl_Nothing
-   + intersection|Fish|Place|owl_Nothing
-   + intersection|Eukaryote|Village|owl_Nothing
-   + intersection|Actor|Species|owl_Nothing
-   + intersection|AdministrativeRegion|Album|owl_Nothing
-   + intersection|Album|Village|owl_Nothing
-   + intersection|MusicalWork|Village|owl_Nothing
-   + intersection|Plant|Work|owl_Nothing
-   + intersection|Device|Work|owl_Nothing
-   + intersection|Actor|Settlement|owl_Nothing
-   + intersection|GridironFootballPlayer|Work|owl_Nothing
-   + intersection|AutomobileEngine|Place|owl_Nothing
-   + intersection|Athlete|TelevisionEpisode|owl_Nothing
-   + intersection|Album|Settlement|owl_Nothing
-   + intersection|AdministrativeRegion|Athlete|owl_Nothing
-   + intersection|MusicalWork|Settlement|owl_Nothing
-   + intersection|RadioStation|Work|owl_Nothing
-   + intersection|Eukaryote|SoccerPlayer|owl_Nothing
-   + intersection|MusicalWork|SoccerPlayer|owl_Nothing
-   + intersection|Actor|MusicalWork|owl_Nothing
-   + intersection|Eukaryote|Film|owl_Nothing
-   + intersection|Settlement|Ship|owl_Nothing
-   + intersection|AdministrativeRegion|Species|owl_Nothing
-   + intersection|Settlement|Software|owl_Nothing
-   + intersection|Village|Work|owl_Nothing
-   + intersection|AutomobileEngine|Work|owl_Nothing
-   + intersection|Athlete|Species|owl_Nothing
-   + intersection|AdministrativeRegion|TelevisionEpisode|owl_Nothing
-   + intersection|Device|Settlement|owl_Nothing
-   + intersection|Insect|Settlement|owl_Nothing
+  0.8889 subsumes|University|Academic_Institution
+   + 0.6667 subsumes|Conference_Trip|Event
+   + 0.6667 subsumes|Poster_Session|Event
+   + 0.6667 subsumes|Rejected_Paper|Evaluated_Paper
+   + 0.5556 subsumes|Workshop_Session|Workshop
+   + 0.5556 subsumes|Evaluated_Paper|Regular_Paper
+   + 0.5556 subsumes|Invited_Speaker|Person
+   + 0.7778 subsumes|Conference_Session|Session
+   + 0.6667 subsumes|Research_Institute|Organisation
+   + 0.5556 subsumes|SC_Member|Agency_Staff_Member
+   + 0.6667 subsumes|Conference_Proceedings|Proceedings
+   + 0.5556 subsumes|Industrial_Paper|Document
+   + 0.7778 subsumes|Session_Chair|Conference_Participant
+   + 0.7778 subsumes|Camera_Ready_Paper|Paper
+   + 0.8889 subsumes|Student|Person
+   + 0.7778 subsumes|Poster_Session|Session
+   + 0.5556 subsumes|Person|Possible_Reviewer
+   + 0.6667 subsumes|Presenter|Conference_Participant
+   + 0.5556 subsumes|Evaluated_Paper|Document
+   + 0.7778 subsumes|Scientific_Event|Event
+   + 0.7778 subsumes|OC_Member|Person + 0.6667 subsumes|OC_Chair|Person
+   + 0.5556 subsumes|Demo_Session|Conference_Session
+   + 0.6667 subsumes|Invited_Talk_Abstract|Abstract
+   + 0.5556 subsumes|Conference|Session
+   + 0.6667 subsumes|OC_Member|Possible_Reviewer
+   + 0.6667 subsumes|Presenter|Person
+   + 0.8889 subsumes|Conference_Paper|Document
+   + 0.7778 subsumes|SC_Member|Person
+   + 0.8889 subsumes|Neutral_Review|Review
+   + 0.7778 subsumes|Demo_Paper|Paper
+   + 0.5556 subsumes|Contributed_Talk|Conference_Session
+   + 0.5556 subsumes|Conference_Banquet|Event
+   + subsumes|Positive_Review|Review + 0.7778 subsumes|PC_Member|Person
+   + 0.5556 subsumes|Demo_Chair|Tutorial_Chair
+   + 0.6667 subsumes|Late-Registered_Participant|Person
+   + 0.6667 subsumes|Session_Chair|Person
+   + 0.6667 subsumes|Tutorial|Session
+   + 0.6667 subsumes|Submitted_Paper|Paper
+   + 0.6667 subsumes|Demo_Session|Event
+   + 0.6667 subsumes|Accepted_Paper|Paper
+   + 0.5556 subsumes|Conference|Event
+   + 0.6667 subsumes|Proceedings|Document
+   + 0.6667 subsumes|Accepted_Paper|Evaluated_Paper
+   + 0.5556 subsumes|Regular_Session|Conference_Session
+   + subsumes|Agency_Staff_Member|Person
+   + 0.5556 subsumes|Conference_Paper|Submitted_Paper
+   + 0.5556 subsumes|Assigned_Paper|Document
+   + 0.7778 subsumes|Rejected_Paper|Document
+   + 0.6667 subsumes|Social_Event|Event
+   + 0.5556 subsumes|Assigned_Paper|Paper
+   + 0.6667 subsumes|Conference_Participant|Person
+   + 0.5556 subsumes|Poster_Paper|Submitted_Paper
+   + 0.6667 subsumes|Evaluated_Paper|Submitted_Paper
+   + 0.6667 subsumes|Poster_Paper|Document
+   + 0.5556 subsumes|Conference_Participant|Possible_Reviewer
+   + 0.6667 subsumes|Evaluated_Paper|Paper
+   + 0.5556 subsumes|Demo_Session|Session
+   + 0.5556 subsumes|Invited_Speaker|Possible_Reviewer
+   + 0.6667 subsumes|Tutorial_Abstract|Abstract
+   + 0.5556 subsumes|Camera_Ready_Paper|Document
+   + 0.7778 subsumes|Early-Registered_Participant|Person
+   + 0.5556 subsumes|Conference_Proceedings|Conference_Session
+   + 0.7778 subsumes|Workshop_Paper|Paper
+   + 0.8889 subsumes|Industrial_Paper|Paper
+   + 0.5556 subsumes|Accepted_Paper|Document
+   + 0.7778 subsumes|Regular_Session|Session
+   + 0.5556 subsumes|Possible_Reviewer|Person
+   + 0.5556 subsumes|Event|Contributed_Talk
+   + 0.6667 subsumes|Accepted_Paper|Regular_Paper
+   + 0.7778 subsumes|Submitted_Paper|Document
+   + 0.7778 subsumes|Industrial_Session|Session
+   + 0.7778 subsumes|Regular_Paper|Paper
+   + 0.7778 subsumes|Workshop_Session|Session
+   + 0.6667 subsumes|Paper|Document
+   + 0.5556 subsumes|Scientific_Event|Proceedings
+   + 0.7778 subsumes|Organising_Agency|Organisation
+   + 0.6667 subsumes|Early-Registered_Participant|Conference_Participant
+   + 0.6667 subsumes|Paper_Author|Person
+   + 0.5556 subsumes|PC_Chair|Conference_Participant
+   + 0.5556 subsumes|Abstract|Document
+   + 0.6667 subsumes|Accepted_Paper|Submitted_Paper
+   + 0.5556 subsumes|Industrial_Session|Conference_Session
+   + 0.44445 intersection|OC_Member|Web_Site|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Session|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Demo_Paper|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|PC_Member|owl_Nothing
+   + 0.5 intersection|Individual_Presentation|PC_Chair|owl_Nothing
+   + 0.361125 intersection|Assigned_Paper|Poster_Session|owl_Nothing
+   + 0.416675 intersection|Invited_Talk|Student|owl_Nothing
+   + 0.416675 intersection|Location|Session|owl_Nothing
+   + 0.5 intersection|Person|Poster_Paper|owl_Nothing
+   + 0.2778 intersection|Demo_Chair|OC_Chair|owl_Nothing
+   + 0.416675 intersection|Invited_Speaker|Programme_Brochure|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|OC_Chair|owl_Nothing
+   + 0.2778 intersection|Demo_Session|Event|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Proceedings|owl_Nothing
+   + 0.361125 intersection|Proceedings|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Regular_Session|SC_Member|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Tutorial_Abstract|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Track|owl_Nothing
+   + 0.305575 intersection|Conference|Conference_Trip|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Research_Topic|owl_Nothing
+   + 0.44445 intersection|OC_Chair|Organisation|owl_Nothing
+   + 0.416675 intersection|Event|Location|owl_Nothing
+   + 0.416675 intersection|Review|Workshop|owl_Nothing
+   + 0.33335 intersection|Conference_Session|Research_Topic|owl_Nothing
+   + 0.5 intersection|Possible_Reviewer|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|University|owl_Nothing
+   + 0.44445 intersection|OC_Chair|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Event|Invited_Speaker|owl_Nothing
+   + 0.416675 intersection|Flyer|Research_Institute|owl_Nothing
+   + 0.5 intersection|Social_Event|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Student|Web_Site|owl_Nothing
+   + 0.2778 intersection|Document|Flyer|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Session|owl_Nothing
+   + 0.2778 intersection|Conference|Research_Topic|owl_Nothing
+   + 0.2778 intersection|Poster_Session|Workshop_Session|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|Conference_Proceedings|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|PC_Chair|owl_Nothing
+   + 0.2778 intersection|Conference_Participant|Session_Chair|owl_Nothing
+   + 0.2778 intersection|Event|Review|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Presenter|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Scientific_Event|owl_Nothing
+   + 0.305575 intersection|Programme_Brochure|Workshop_Paper|owl_Nothing
+   + 0.305575 intersection|Document|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Presenter|Web_Site|owl_Nothing
+   + 0.3889 intersection|Agency_Staff_Member|Review|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Demo_Paper|owl_Nothing
+   + 0.5 intersection|Late-Registered_Participant|Paper|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Conference_Session|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Multi-author_Volume|owl_Nothing
+   + 0.416675 intersection|Research_Institute|Session|owl_Nothing
+   + 0.3889 intersection|Organisation|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Social_Event|Tutorial|owl_Nothing
+   + 0.44445 intersection|Abstract|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Negative_Review|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Conference|owl_Nothing
+   + 0.472225 intersection|Conference_Session|University|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Poster_Session|owl_Nothing
+   + 0.5 intersection|Early-Registered_Participant|Regular_Paper|owl_Nothing
+   + 0.361125 intersection|Early-Registered_Participant|Paper|owl_Nothing
+   + 0.416675 intersection|Person|Social_Event|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|SC_Member|University|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Demo_Session|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Person|owl_Nothing
+   + 0.2778 intersection|Early-Registered_Participant|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Industrial_Paper|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Submitted_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Track|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Social_Event|owl_Nothing
+   + 0.44445 intersection|Conference|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Invited_Talk|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Abstract|Workshop|owl_Nothing
+   + 0.44445 intersection|Scientific_Event|Session_Chair|owl_Nothing
+   + 0.5 intersection|Proceedings|SC_Member|owl_Nothing
+   + 0.44445 intersection|Session_Chair|Track|owl_Nothing
+   + 0.361125 intersection|OC_Chair|Possible_Reviewer|owl_Nothing
+   + 0.361125 intersection|Conference_Trip|Proceedings|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Social_Event|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Social_Event|owl_Nothing
+   + 0.2778 intersection|Regular_Session|Workshop_Session|owl_Nothing
+   + 0.33335 intersection|Contributed_Talk|Industrial_Session|owl_Nothing
+   + 0.3889 intersection|Tutorial_Abstract|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|PC_Member|owl_Nothing
+   + 0.44445 intersection|OC_Member|Tutorial|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Programme_Brochure|owl_Nothing
+   + 0.5 intersection|Individual_Presentation|Location|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Event|Flyer|owl_Nothing
+   + 0.5 intersection|Rejected_Paper|University|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Track|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Early-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|Regular_Paper|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|PC_Chair|owl_Nothing
+   + 0.472225 intersection|Location|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Regular_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Evaluated_Paper|owl_Nothing
+   + 0.416675 intersection|Invited_Speaker|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Web_Site|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Workshop|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|Paper_Author|owl_Nothing
+   + 0.3889 intersection|Individual_Presentation|Neutral_Review|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Web_Site|owl_Nothing
+   + 0.44445 intersection|Tutorial|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|OC_Member|Regular_Session|owl_Nothing
+   + 0.5 intersection|Demo_Chair|University|owl_Nothing
+   + 0.33335 intersection|Industrial_Session|Scientific_Event|owl_Nothing
+   + 0.305575 intersection|Agency_Staff_Member|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Proceedings|owl_Nothing
+   + 0.5 intersection|Evaluated_Paper|Track|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Demo_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Organisation|owl_Nothing
+   + 0.416675 intersection|Abstract|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|University|owl_Nothing
+   + 0.2778 intersection|Conference_Paper|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Presenter|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Workshop_Paper|owl_Nothing
+   + 0.361125 intersection|Abstract|Evaluated_Paper|owl_Nothing
+   + 0.361125 intersection|Demo_Session|Proceedings|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Paper_Author|owl_Nothing
+   + 0.416675 intersection|Abstract|Academic_Institution|owl_Nothing
+   + 0.2778 intersection|Conference_Paper|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Person|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Location|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|Regular_Paper|University|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Poster_Session|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Submitted_Paper|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Flyer|owl_Nothing
+   + 0.416675 intersection|Camera_Ready_Paper|Individual_Presentation|owl_Nothing
+   + 0.2778 intersection|Late-Registered_Participant|OC_Member|owl_Nothing
+   + 0.33335 intersection|Paper_Author|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Document|Regular_Session|owl_Nothing
+   + 0.3889 intersection|Individual_Presentation|Workshop|owl_Nothing
+   + 0.5 intersection|Flyer|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Review|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Social_Event|owl_Nothing
+   + 0.3889 intersection|Evaluated_Paper|Possible_Reviewer|owl_Nothing
+   + 0.416675 intersection|Abstract|Track|owl_Nothing
+   + 0.472225 intersection|Location|Positive_Review|owl_Nothing
+   + 0.361125 intersection|Event|Invited_Talk_Abstract|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Late-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|Person|Track|owl_Nothing
+   + 0.2778 intersection|Accepted_Paper|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Session|owl_Nothing
+   + 0.361125 intersection|Conference|Workshop|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Industrial_Session|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Session|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|Track|owl_Nothing
+   + 0.416675 intersection|Research_Institute|Student|owl_Nothing
+   + 0.44445 intersection|Paper_Author|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Research_Institute|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Flyer|Individual_Presentation|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Invited_Talk|owl_Nothing
+   + 0.3889 intersection|Proceedings|Session|owl_Nothing
+   + 0.5 intersection|Abstract|Conference_Participant|owl_Nothing
+   + 0.44445 intersection|Tutorial_Abstract|Workshop_Session|owl_Nothing
+   + 0.3889 intersection|Organisation|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Poster_Paper|owl_Nothing
+   + 0.361125 intersection|Abstract|Industrial_Session|owl_Nothing
+   + 0.5 intersection|Invited_Talk|Paper|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|Late-Registered_Participant|owl_Nothing
+   + 0.2778 intersection|Late-Registered_Participant|PC_Chair|owl_Nothing
+   + 0.3889 intersection|Conference_Paper|Presenter|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Individual_Presentation|owl_Nothing
+   + 0.5 intersection|Contributed_Talk|Location|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Programme_Brochure|owl_Nothing
+   + 0.2778 intersection|Invited_Talk|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Research_Topic|Workshop|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|PC_Member|owl_Nothing
+   + 0.3889 intersection|Conference|University|owl_Nothing
+   + 0.416675 intersection|Abstract|Negative_Review|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Conference|owl_Nothing
+   + 0.5 intersection|Abstract|Paper_Author|owl_Nothing
+   + 0.5 intersection|Invited_Speaker|University|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Workshop|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Invited_Speaker|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Paper|Paper_Author|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Session|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|OC_Chair|owl_Nothing
+   + 0.361125 intersection|Agency_Staff_Member|Multi-author_Volume|owl_Nothing
+   + 0.3889 intersection|Workshop|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Conference_Session|Organisation|owl_Nothing
+   + 0.361125 intersection|Contributed_Talk|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Tutorial_Abstract|owl_Nothing
+   + 0.361125 intersection|Industrial_Paper|Negative_Review|owl_Nothing
+   + 0.416675 intersection|OC_Member|Social_Event|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Conference_Banquet|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Research_Topic|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Social_Event|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Workshop|owl_Nothing
+   + 0.416675 intersection|Proceedings_Publisher|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Session_Chair|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|OC_Member|Paper|owl_Nothing
+   + 0.361125 intersection|Organising_Agency|Web_Site|owl_Nothing
+   + 0.3889 intersection|Conference_Paper|Individual_Presentation|owl_Nothing
+   + 0.33335 intersection|OC_Chair|OC_Member|owl_Nothing
+   + 0.416675 intersection|Regular_Paper|Workshop|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Invited_Talk|Organisation|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Evaluated_Paper|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Person|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Tutorial|owl_Nothing
+   + 0.5 intersection|Session_Chair|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|Student|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Invited_Talk_Abstract|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Tutorial_Abstract|owl_Nothing
+   + 0.33335 intersection|Invited_Talk|Social_Event|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Session_Chair|owl_Nothing
+   + 0.33335 intersection|Invited_Speaker|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|OC_Member|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Location|owl_Nothing
+   + 0.5 intersection|Industrial_Paper|PC_Member|owl_Nothing
+   + 0.472225 intersection|Proceedings_Publisher|Regular_Paper|owl_Nothing
+   + 0.416675 intersection|Abstract|Submitted_Paper|owl_Nothing
+   + 0.5 intersection|Demo_Session|Session_Chair|owl_Nothing
+   + 0.33335 intersection|OC_Chair|PC_Member|owl_Nothing
+   + 0.3889 intersection|Review|Session_Chair|owl_Nothing
+   + 0.5 intersection|SC_Member|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|University|owl_Nothing
+   + 0.44445 intersection|Positive_Review|Session_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Proceedings|Presenter|owl_Nothing
+   + 0.472225 intersection|Event|OC_Member|owl_Nothing
+   + 0.3889 intersection|Programme_Brochure|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|PC_Member|owl_Nothing
+   + 0.33335 intersection|Evaluated_Paper|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Conference|Session_Chair|owl_Nothing
+   + 0.361125 intersection|Regular_Session|Social_Event|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Individual_Presentation|owl_Nothing
+   + 0.5 intersection|Review|SC_Member|owl_Nothing
+   + 0.5 intersection|Conference|Evaluated_Paper|owl_Nothing
+   + 0.3889 intersection|Social_Event|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Presenter|owl_Nothing
+   + 0.416675 intersection|Early-Registered_Participant|Individual_Presentation|owl_Nothing
+   + 0.472225 intersection|Session_Chair|Tutorial|owl_Nothing
+   + 0.361125 intersection|Conference|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Industrial_Session|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Rejected_Paper|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Social_Event|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Multi-author_Volume|owl_Nothing
+   + 0.5 intersection|Event|Student|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Submitted_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.33335 intersection|Industrial_Session|Invited_Talk|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Conference_Paper|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Poster_Session|owl_Nothing
+   + 0.3889 intersection|Possible_Reviewer|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|OC_Member|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Web_Site|owl_Nothing
+   + 0.472225 intersection|Abstract|Flyer|owl_Nothing
+   + 0.5 intersection|Early-Registered_Participant|Negative_Review|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Neutral_Review|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Event|Proceedings|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Research_Topic|University|owl_Nothing
+   + 0.472225 intersection|Student|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Presenter|Review|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|SC_Member|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Abstract|Web_Site|owl_Nothing
+   + 0.44445 intersection|Flyer|SC_Member|owl_Nothing
+   + 0.472225 intersection|Location|Web_Site|owl_Nothing
+   + 0.361125 intersection|Abstract|Research_Topic|owl_Nothing
+   + 0.2778 intersection|OC_Member|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Early-Registered_Participant|owl_Nothing
+   + 0.2778 intersection|Agency_Staff_Member|Demo_Chair|owl_Nothing
+   + 0.3889 intersection|Conference_Proceedings|Workshop|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|OC_Member|Poster_Session|owl_Nothing
+   + 0.33335 intersection|Event|Invited_Talk|owl_Nothing
+   + 0.44445 intersection|OC_Chair|Track|owl_Nothing
+   + 0.2778 intersection|Contributed_Talk|Session|owl_Nothing
+   + 0.472225 intersection|SC_Member|Submitted_Paper|owl_Nothing
+   + 0.2778 intersection|Scientific_Event|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Student|owl_Nothing
+   + 0.305575 intersection|Paper_Author|SC_Member|owl_Nothing
+   + 0.5 intersection|Neutral_Review|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Early-Registered_Participant|owl_Nothing
+   + 0.361125 intersection|Camera_Ready_Paper|Conference_Proceedings|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|SC_Member|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Research_Institute|owl_Nothing
+   + 0.5 intersection|Location|Proceedings|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Paper|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|OC_Chair|University|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Presenter|Tutorial_Abstract|owl_Nothing
+   + 0.33335 intersection|Conference_Paper|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|Person|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Invited_Talk|Neutral_Review|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Research_Institute|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Programme_Brochure|owl_Nothing
+   + 0.361125 intersection|Assigned_Paper|Conference_Proceedings|owl_Nothing
+   + 0.44445 intersection|Organisation|Tutorial|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Document|PC_Member|owl_Nothing
+   + 0.5 intersection|Person|Programme_Brochure|owl_Nothing
+   + 0.33335 intersection|Session|Tutorial|owl_Nothing
+   + 0.5 intersection|Demo_Paper|Invited_Speaker|owl_Nothing
+   + 0.44445 intersection|Poster_Paper|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Negative_Review|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Paper|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Paper_Author|owl_Nothing
+   + 0.305575 intersection|Proceedings|Review|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|OC_Chair|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Location|owl_Nothing
+   + 0.33335 intersection|Event|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Presenter|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|PC_Member|owl_Nothing
+   + 0.416675 intersection|Programme_Brochure|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Early-Registered_Participant|owl_Nothing
+   + 0.5 intersection|Industrial_Session|SC_Member|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Presenter|owl_Nothing
+   + 0.3889 intersection|Possible_Reviewer|Review|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Industrial_Session|owl_Nothing
+   + 0.472225 intersection|SC_Member|Workshop|owl_Nothing
+   + 0.5 intersection|PC_Member|Paper|owl_Nothing
+   + 0.3889 intersection|Paper_Author|Tutorial|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Paper_Author|owl_Nothing
+   + 0.472225 intersection|PC_Chair|University|owl_Nothing
+   + 0.33335 intersection|Individual_Presentation|Paper|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|PC_Chair|owl_Nothing
+   + 0.3889 intersection|Proceedings|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Poster_Paper|Social_Event|owl_Nothing
+   + 0.361125 intersection|Conference_Banquet|Proceedings|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Social_Event|owl_Nothing
+   + 0.416675 intersection|Regular_Session|Student|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Document|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Poster_Session|owl_Nothing
+   + 0.2778 intersection|Conference_Session|Poster_Session|owl_Nothing
+   + 0.416675 intersection|PC_Member|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Workshop|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Web_Site|owl_Nothing
+   + 0.2778 intersection|Paper_Author|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|OC_Chair|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Person|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Student|owl_Nothing
+   + 0.2778 intersection|OC_Member|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Social_Event|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Track|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Event|owl_Nothing
+   + 0.5 intersection|OC_Chair|Web_Site|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|Presenter|owl_Nothing
+   + 0.33335 intersection|PC_Chair|Possible_Reviewer|owl_Nothing
+   + 0.3889 intersection|Organisation|Person|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Organisation|owl_Nothing
+   + 0.3889 intersection|Conference_Trip|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Regular_Session|Session_Chair|owl_Nothing
+   + 0.2778 intersection|Conference_Proceedings|Regular_Session|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|Research_Topic|owl_Nothing
+   + 0.3889 intersection|Scientific_Event|Track|owl_Nothing
+   + 0.3889 intersection|Invited_Talk_Abstract|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Tutorial_Chair|owl_Nothing
+   + 0.33335 intersection|Evaluated_Paper|Review|owl_Nothing
+   + 0.44445 intersection|Regular_Session|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|Proceedings|owl_Nothing
+   + 0.472225 intersection|Research_Topic|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Track|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|OC_Member|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|University|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Session|PC_Member|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Tutorial|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Web_Site|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Paper_Author|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Session_Chair|owl_Nothing
+   + 0.2778 intersection|Demo_Chair|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Location|Negative_Review|owl_Nothing
+   + 0.5 intersection|Location|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Event|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Document|owl_Nothing
+   + 0.2778 intersection|Camera_Ready_Paper|Paper|owl_Nothing
+   + 0.2778 intersection|Demo_Paper|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Session|Track|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Poster_Paper|owl_Nothing
+   + 0.33335 intersection|Conference|Conference_Paper|owl_Nothing
+   + 0.361125 intersection|Negative_Review|Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Document|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|Social_Event|owl_Nothing
+   + 0.416675 intersection|Early-Registered_Participant|University|owl_Nothing
+   + 0.5 intersection|Conference|Rejected_Paper|owl_Nothing
+   + 0.361125 intersection|Invited_Talk_Abstract|University|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Track|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Web_Site|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Location|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Research_Institute|owl_Nothing
+   + 0.2778 intersection|Contributed_Talk|Event|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Location|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Conference_Trip|owl_Nothing
+   + 0.416675 intersection|Camera_Ready_Paper|Location|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Proceedings_Publisher|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Scientific_Event|Student|owl_Nothing
+   + 0.361125 intersection|Submitted_Paper|Tutorial|owl_Nothing
+   + 0.361125 intersection|Conference_Banquet|Tutorial|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Review|owl_Nothing
+   + 0.44445 intersection|Location|Possible_Reviewer|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Person|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Late-Registered_Participant|owl_Nothing
+   + 0.361125 intersection|Camera_Ready_Paper|Tutorial|owl_Nothing
+   + 0.44445 intersection|Submitted_Paper|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Organising_Agency|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Document|Possible_Reviewer|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|Presenter|owl_Nothing
+   + 0.33335 intersection|Conference_Session|Conference_Trip|owl_Nothing
+   + 0.416675 intersection|OC_Chair|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Research_Topic|Web_Site|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Student|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Accepted_Paper|Conference_Banquet|owl_Nothing
+   + 0.416675 intersection|Negative_Review|Poster_Session|owl_Nothing
+   + 0.33335 intersection|Positive_Review|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Conference_Session|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|OC_Member|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Tutorial_Chair|Workshop|owl_Nothing
+   + 0.3889 intersection|Assigned_Paper|Negative_Review|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Rejected_Paper|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Contributed_Talk|owl_Nothing
+   + 0.33335 intersection|Individual_Presentation|Presenter|owl_Nothing
+   + 0.5 intersection|Organising_Agency|Positive_Review|owl_Nothing
+   + 0.361125 intersection|Event|Poster_Session|owl_Nothing
+   + 0.2778 intersection|PC_Member|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|Web_Site|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Rejected_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Event|owl_Nothing
+   + 0.361125 intersection|Regular_Session|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|PC_Member|Regular_Session|owl_Nothing
+   + 0.33335 intersection|Conference|Conference_Banquet|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Demo_Session|owl_Nothing
+   + 0.2778 intersection|Demo_Chair|Early-Registered_Participant|owl_Nothing
+   + 0.416675 intersection|Neutral_Review|Person|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Poster_Session|owl_Nothing
+   + 0.416675 intersection|Session_Chair|Social_Event|owl_Nothing
+   + 0.3889 intersection|Conference|PC_Chair|owl_Nothing
+   + 0.2778 intersection|PC_Member|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Conference_Paper|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Regular_Session|owl_Nothing
+   + 0.2778 intersection|Conference_Session|Invited_Talk|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Event|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Negative_Review|owl_Nothing
+   + 0.3889 intersection|Early-Registered_Participant|Workshop_Chair|owl_Nothing
+   + 0.2778 intersection|Agency_Staff_Member|Early-Registered_Participant|owl_Nothing
+   + 0.3889 intersection|Session|Session_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|PC_Member|Poster_Paper|owl_Nothing
+   + 0.3889 intersection|OC_Chair|Tutorial_Abstract|owl_Nothing
+   + 0.361125 intersection|Research_Institute|Session_Chair|owl_Nothing
+   + 0.5 intersection|SC_Member|Track|owl_Nothing
+   + 0.416675 intersection|Organisation|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Poster_Session|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Track|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Review|owl_Nothing
+   + 0.5 intersection|Demo_Session|Workshop_Paper|owl_Nothing
+   + 0.3889 intersection|OC_Member|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Proceedings|owl_Nothing
+   + 0.472225 intersection|Location|Tutorial|owl_Nothing
+   + 0.472225 intersection|Programme_Brochure|Workshop_Chair|owl_Nothing
+   + 0.361125 intersection|Late-Registered_Participant|Tutorial_Abstract|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Flyer|owl_Nothing
+   + 0.305575 intersection|Assigned_Paper|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|OC_Member|owl_Nothing
+   + 0.416675 intersection|PC_Member|Review|owl_Nothing
+   + 0.3889 intersection|Organisation|Workshop_Chair|owl_Nothing
+   + 0.2778 intersection|Abstract|Document|owl_Nothing
+   + 0.5 intersection|Location|Review|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Workshop|owl_Nothing
+   + 0.2778 intersection|Agency_Staff_Member|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Flyer|owl_Nothing
+   + 0.3889 intersection|SC_Member|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Social_Event|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|Session|Web_Site|owl_Nothing
+   + 0.3889 intersection|Flyer|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Individual_Presentation|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Abstract|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Poster_Session|owl_Nothing
+   + 0.33335 intersection|Conference_Session|Review|owl_Nothing
+   + 0.3889 intersection|Conference_Trip|Programme_Brochure|owl_Nothing
+   + 0.3889 intersection|Multi-author_Volume|Rejected_Paper|owl_Nothing
+   + 0.5 intersection|Paper|SC_Member|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Proceedings|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|PC_Member|owl_Nothing
+   + 0.44445 intersection|Industrial_Session|Web_Site|owl_Nothing
+   + 0.416675 intersection|Conference|Regular_Paper|owl_Nothing
+   + 0.416675 intersection|Conference|Early-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|University|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.33335 intersection|Conference_Banquet|Contributed_Talk|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|OC_Chair|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Person|owl_Nothing
+   + 0.5 intersection|OC_Member|Session|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Presenter|owl_Nothing
+   + 0.3889 intersection|Possible_Reviewer|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Contributed_Talk|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Invited_Talk_Abstract|owl_Nothing
+   + 0.3889 intersection|Negative_Review|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Presenter|Research_Topic|owl_Nothing
+   + 0.416675 intersection|Location|Poster_Paper|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Invited_Talk|owl_Nothing
+   + 0.3889 intersection|Session|Submitted_Paper|owl_Nothing
+   + 0.3889 intersection|Flyer|Industrial_Paper|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Scientific_Event|owl_Nothing
+   + 0.5 intersection|Invited_Talk_Abstract|OC_Member|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Research_Topic|owl_Nothing
+   + 0.3889 intersection|Conference_Banquet|Social_Event|owl_Nothing
+   + 0.416675 intersection|Tutorial_Chair|Web_Site|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Location|owl_Nothing
+   + 0.3889 intersection|Workshop_Chair|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Social_Event|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|Session_Chair|owl_Nothing
+   + 0.44445 intersection|OC_Member|Workshop_Session|owl_Nothing
+   + 0.5 intersection|Assigned_Paper|Conference_Trip|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Track|owl_Nothing
+   + 0.5 intersection|Research_Topic|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Presenter|Workshop_Session|owl_Nothing
+   + 0.5 intersection|PC_Member|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Document|Event|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|SC_Member|owl_Nothing
+   + 0.5 intersection|Paper_Author|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Regular_Session|owl_Nothing
+   + 0.416675 intersection|Regular_Session|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|OC_Chair|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Paper|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Document|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Positive_Review|owl_Nothing
+   + 0.5 intersection|Abstract|University|owl_Nothing
+   + 0.44445 intersection|Negative_Review|University|owl_Nothing
+   + 0.472225 intersection|Flyer|OC_Member|owl_Nothing
+   + 0.3889 intersection|Neutral_Review|Regular_Session|owl_Nothing
+   + 0.3889 intersection|Poster_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Student|owl_Nothing
+   + 0.5 intersection|Evaluated_Paper|Flyer|owl_Nothing
+   + 0.472225 intersection|Person|Proceedings|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Organisation|owl_Nothing
+   + 0.44445 intersection|Person|Research_Topic|owl_Nothing
+   + 0.305575 intersection|Proceedings|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Location|Paper|owl_Nothing
+   + 0.44445 intersection|Organisation|Review|owl_Nothing
+   + 0.5 intersection|Paper|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Proceedings|Tutorial|owl_Nothing
+   + 0.3889 intersection|Conference_Participant|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Tutorial|owl_Nothing
+   + 0.472225 intersection|Flyer|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Conference|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Proceedings|owl_Nothing
+   + 0.33335 intersection|Rejected_Paper|Review|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Industrial_Paper|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|Regular_Paper|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Event|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Flyer|Person|owl_Nothing
+   + 0.5 intersection|Contributed_Talk|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|Organisation|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Session|owl_Nothing
+   + 0.2778 intersection|Document|Tutorial|owl_Nothing
+   + 0.33335 intersection|Proceedings|Social_Event|owl_Nothing
+   + 0.472225 intersection|Abstract|Presenter|owl_Nothing
+   + 0.44445 intersection|Document|Industrial_Session|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|University|owl_Nothing
+   + 0.3889 intersection|Invited_Speaker|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Paper_Author|Rejected_Paper|owl_Nothing
+   + 0.5 intersection|Industrial_Session|University|owl_Nothing
+   + 0.2778 intersection|Assigned_Paper|Review|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Track|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Flyer|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Possible_Reviewer|owl_Nothing
+   + 0.416675 intersection|Invited_Talk|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Research_Institute|Tutorial_Abstract|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Conference_Participant|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Industrial_Session|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Research_Institute|owl_Nothing
+   + 0.3889 intersection|Evaluated_Paper|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Location|Student|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Organising_Agency|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Abstract|Organising_Agency|owl_Nothing
+   + 0.5 intersection|Proceedings_Publisher|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Regular_Paper|SC_Member|owl_Nothing
+   + 0.44445 intersection|Location|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Organisation|owl_Nothing
+   + 0.44445 intersection|Event|Proceedings_Publisher|owl_Nothing
+   + 0.33335 intersection|Industrial_Session|Track|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Research_Institute|owl_Nothing
+   + 0.361125 intersection|Contributed_Talk|OC_Member|owl_Nothing
+   + 0.472225 intersection|Location|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Organisation|Workshop|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Conference|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Presenter|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Poster_Paper|owl_Nothing
+   + 0.416675 intersection|Tutorial|University|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Presenter|owl_Nothing
+   + 0.2778 intersection|Agency_Staff_Member|PC_Chair|owl_Nothing
+   + 0.5 intersection|Conference|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Neutral_Review|owl_Nothing
+   + 0.3889 intersection|Review|Session|owl_Nothing
+   + 0.416675 intersection|OC_Chair|Review|owl_Nothing
+   + 0.3889 intersection|Location|Social_Event|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Poster_Session|owl_Nothing
+   + 0.472225 intersection|Paper|Person|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Poster_Session|Social_Event|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Document|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Workshop_Paper|owl_Nothing
+   + 0.33335 intersection|Research_Topic|Social_Event|owl_Nothing
+   + 0.44445 intersection|Research_Topic|SC_Member|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Session|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Paper|owl_Nothing
+   + 0.416675 intersection|Poster_Paper|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|Presenter|owl_Nothing
+   + 0.2778 intersection|Demo_Chair|SC_Member|owl_Nothing
+   + 0.416675 intersection|Proceedings|Submitted_Paper|owl_Nothing
+   + 0.305575 intersection|Industrial_Paper|Neutral_Review|owl_Nothing
+   + 0.361125 intersection|Conference_Trip|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Workshop|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Session_Chair|owl_Nothing
+   + 0.3889 intersection|Location|Organisation|owl_Nothing
+   + 0.472225 intersection|Flyer|Negative_Review|owl_Nothing
+   + 0.5 intersection|Programme_Brochure|Student|owl_Nothing
+   + 0.472225 intersection|Conference|Individual_Presentation|owl_Nothing
+   + 0.5 intersection|Abstract|Conference_Banquet|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Early-Registered_Participant|Web_Site|owl_Nothing
+   + 0.416675 intersection|Possible_Reviewer|Workshop_Paper|owl_Nothing
+   + 0.2778 intersection|PC_Chair|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Event|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Presenter|University|owl_Nothing
+   + 0.3889 intersection|Proceedings_Publisher|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Late-Registered_Participant|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Web_Site|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Positive_Review|owl_Nothing
+   + 0.2778 intersection|Negative_Review|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Student|Track|owl_Nothing
+   + 0.44445 intersection|Conference|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|Demo_Paper|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Session|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Workshop_Session|owl_Nothing
+   + 0.33335 intersection|Industrial_Session|Proceedings|owl_Nothing
+   + 0.33335 intersection|Positive_Review|Poster_Session|owl_Nothing
+   + 0.3889 intersection|Programme_Brochure|Rejected_Paper|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Organisation|owl_Nothing
+   + 0.416675 intersection|Positive_Review|Session|owl_Nothing
+   + 0.5 intersection|Industrial_Session|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Positive_Review|Poster_Paper|owl_Nothing
+   + 0.416675 intersection|PC_Chair|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Positive_Review|Presenter|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Research_Institute|owl_Nothing
+   + 0.33335 intersection|Possible_Reviewer|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|OC_Chair|owl_Nothing
+   + 0.416675 intersection|Neutral_Review|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|Organisation|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Early-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|Abstract|Conference_Session|owl_Nothing
+   + 0.5 intersection|Organisation|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Student|Tutorial|owl_Nothing
+   + 0.3889 intersection|Invited_Talk_Abstract|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Organisation|owl_Nothing
+   + 0.416675 intersection|Poster_Session|Scientific_Event|owl_Nothing
+   + 0.3889 intersection|Regular_Paper|Tutorial|owl_Nothing
+   + 0.5 intersection|Possible_Reviewer|Poster_Session|owl_Nothing
+   + 0.472225 intersection|Location|OC_Chair|owl_Nothing
+   + 0.3889 intersection|Tutorial_Abstract|University|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Demo_Chair|owl_Nothing
+   + 0.416675 intersection|Session|University|owl_Nothing
+   + 0.44445 intersection|Abstract|Regular_Session|owl_Nothing
+   + 0.3889 intersection|Industrial_Session|Neutral_Review|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Track|owl_Nothing
+   + 0.44445 intersection|Presenter|Tutorial|owl_Nothing
+   + 0.33335 intersection|Accepted_Paper|Review|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Social_Event|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Organisation|owl_Nothing
+   + 0.472225 intersection|Document|Session_Chair|owl_Nothing
+   + 0.3889 intersection|Accepted_Paper|Contributed_Talk|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Invited_Talk_Abstract|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|Industrial_Paper|owl_Nothing
+   + 0.472225 intersection|Location|PC_Member|owl_Nothing
+   + 0.44445 intersection|Event|Organisation|owl_Nothing
+   + 0.33335 intersection|Camera_Ready_Paper|Document|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|PC_Member|Research_Topic|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Tutorial|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|SC_Member|owl_Nothing
+   + 0.2778 intersection|Multi-author_Volume|Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Submitted_Paper|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Conference|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Paper_Author|owl_Nothing
+   + 0.305575 intersection|Possible_Reviewer|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Camera_Ready_Paper|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|University|owl_Nothing
+   + 0.416675 intersection|SC_Member|Workshop_Session|owl_Nothing
+   + 0.33335 intersection|Camera_Ready_Paper|Proceedings|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Conference_Trip|owl_Nothing
+   + 0.305575 intersection|Conference_Trip|Workshop_Session|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Track|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Session|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Location|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Workshop|owl_Nothing
+   + 0.44445 intersection|Session_Chair|University|owl_Nothing
+   + 0.3889 intersection|PC_Chair|Presenter|owl_Nothing
+   + 0.361125 intersection|Academic_Institution|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Conference_Banquet|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Poster_Session|Proceedings|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|OC_Chair|owl_Nothing
+   + 0.472225 intersection|University|Web_Site|owl_Nothing
+   + 0.361125 intersection|Multi-author_Volume|Tutorial|owl_Nothing
+   + 0.472225 intersection|Proceedings_Publisher|Social_Event|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Location|SC_Member|owl_Nothing
+   + 0.44445 intersection|Location|PC_Chair|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Workshop|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Web_Site|owl_Nothing
+   + 0.416675 intersection|Poster_Session|University|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Paper|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Evaluated_Paper|Session|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|Industrial_Session|owl_Nothing
+   + 0.5 intersection|Contributed_Talk|Poster_Paper|owl_Nothing
+   + 0.3889 intersection|Location|Track|owl_Nothing
+   + 0.472225 intersection|PC_Member|Tutorial|owl_Nothing
+   + 0.33335 intersection|Demo_Session|Neutral_Review|owl_Nothing
+   + 0.3889 intersection|Conference|Invited_Talk|owl_Nothing
+   + 0.361125 intersection|Contributed_Talk|Negative_Review|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Student|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|Tutorial|owl_Nothing
+   + 0.416675 intersection|Agency_Staff_Member|Tutorial|owl_Nothing
+   + 0.472225 intersection|Conference|Demo_Chair|owl_Nothing
+   + 0.416675 intersection|Poster_Session|Student|owl_Nothing
+   + 0.5 intersection|Paper_Author|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Flyer|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|Multi-author_Volume|owl_Nothing
+   + 0.416675 intersection|Early-Registered_Participant|Review|owl_Nothing
+   + 0.33335 intersection|Industrial_Paper|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Conference_Banquet|owl_Nothing
+   + 0.472225 intersection|Document|Web_Site|owl_Nothing
+   + 0.305575 intersection|Invited_Talk|Invited_Talk_Abstract|owl_Nothing
+   + 0.416675 intersection|Proceedings|University|owl_Nothing
+   + 0.33335 intersection|Review|Tutorial|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Organisation|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|SC_Member|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Positive_Review|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Assigned_Paper|owl_Nothing
+   + 0.44445 intersection|Person|Session|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Assigned_Paper|owl_Nothing
+   + 0.361125 intersection|Positive_Review|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Flyer|Tutorial|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Social_Event|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Session_Chair|Workshop|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Web_Site|owl_Nothing
+   + 0.416675 intersection|Paper|Workshop|owl_Nothing
+   + 0.361125 intersection|Event|Positive_Review|owl_Nothing
+   + 0.5 intersection|Industrial_Session|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Abstract|PC_Member|owl_Nothing
+   + 0.2778 intersection|Early-Registered_Participant|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Possible_Reviewer|owl_Nothing
+   + 0.305575 intersection|Flyer|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Industrial_Session|owl_Nothing
+   + 0.2778 intersection|Industrial_Session|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Industrial_Session|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Tutorial|owl_Nothing
+   + 0.472225 intersection|Abstract|SC_Member|owl_Nothing
+   + 0.44445 intersection|Abstract|OC_Chair|owl_Nothing
+   + 0.416675 intersection|Document|Person|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Contributed_Talk|owl_Nothing
+   + 0.472225 intersection|Location|Research_Topic|owl_Nothing
+   + 0.3889 intersection|Industrial_Session|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Organisation|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Proceedings|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Evaluated_Paper|owl_Nothing
+   + 0.2778 intersection|PC_Member|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Organising_Agency|owl_Nothing
+   + 0.5 intersection|Organising_Agency|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|SC_Member|owl_Nothing
+   + 0.472225 intersection|Submitted_Paper|Workshop|owl_Nothing
+   + 0.33335 intersection|Conference|Demo_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Early-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.5 intersection|Industrial_Paper|Web_Site|owl_Nothing
+   + 0.33335 intersection|Contributed_Talk|Research_Topic|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Location|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|OC_Member|owl_Nothing
+   + 0.416675 intersection|Research_Institute|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Evaluated_Paper|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|Web_Site|owl_Nothing
+   + 0.416675 intersection|Paper_Author|Web_Site|owl_Nothing
+   + 0.3889 intersection|Conference_Paper|Research_Topic|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Person|owl_Nothing
+   + 0.33335 intersection|PC_Chair|Student|owl_Nothing
+   + 0.305575 intersection|Evaluated_Paper|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Person|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Web_Site|owl_Nothing
+   + 0.2778 intersection|Camera_Ready_Paper|Evaluated_Paper|owl_Nothing
+   + 0.44445 intersection|Submitted_Paper|University|owl_Nothing
+   + 0.44445 intersection|Organisation|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Person|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Person|owl_Nothing
+   + 0.44445 intersection|Event|Tutorial_Chair|owl_Nothing
+   + 0.2778 intersection|Student|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Individual_Presentation|owl_Nothing
+   + 0.416675 intersection|Proceedings|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Rejected_Paper|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Tutorial|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Flyer|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Submitted_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Industrial_Paper|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|SC_Member|owl_Nothing
+   + 0.472225 intersection|Conference|Track|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Review|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Positive_Review|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Organisation|owl_Nothing
+   + 0.3889 intersection|Invited_Speaker|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Social_Event|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Document|owl_Nothing
+   + 0.416675 intersection|Paper|Regular_Session|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Organising_Agency|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|OC_Member|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Organisation|owl_Nothing
+   + 0.5 intersection|Person|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Regular_Paper|owl_Nothing
+   + 0.2778 intersection|Conference_Proceedings|Document|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Positive_Review|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Invited_Speaker|owl_Nothing
+   + 0.3889 intersection|Evaluated_Paper|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|PC_Member|owl_Nothing
+   + 0.3889 intersection|Workshop_Paper|Workshop_Session|owl_Nothing
+   + 0.2778 intersection|OC_Chair|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.3889 intersection|Conference_Banquet|Workshop_Session|owl_Nothing
+   + 0.5 intersection|Organising_Agency|Session|owl_Nothing
+   + 0.472225 intersection|Research_Institute|Tutorial|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Individual_Presentation|owl_Nothing
+   + 0.416675 intersection|Paper_Author|Workshop_Paper|owl_Nothing
+   + 0.33335 intersection|Neutral_Review|Scientific_Event|owl_Nothing
+   + 0.33335 intersection|Multi-author_Volume|Paper_Author|owl_Nothing
+   + 0.2778 intersection|Conference|Proceedings|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Paper|owl_Nothing
+   + 0.44445 intersection|Person|Workshop|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Proceedings|owl_Nothing
+   + 0.472225 intersection|Flyer|Proceedings|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Presenter|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Proceedings|owl_Nothing
+   + 0.5 intersection|Paper_Author|Review|owl_Nothing
+   + 0.2778 intersection|Assigned_Paper|Document|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Individual_Presentation|owl_Nothing
+   + 0.44445 intersection|Positive_Review|Tutorial|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Conference_Proceedings|owl_Nothing
+   + 0.33335 intersection|Proceedings_Publisher|Session_Chair|owl_Nothing
+   + 0.3889 intersection|Early-Registered_Participant|PC_Chair|owl_Nothing
+   + 0.3889 intersection|Multi-author_Volume|Tutorial_Abstract|owl_Nothing
+   + 0.3889 intersection|Late-Registered_Participant|OC_Chair|owl_Nothing
+   + 0.472225 intersection|OC_Member|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Workshop|owl_Nothing
+   + 0.472225 intersection|PC_Member|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Proceedings_Publisher|owl_Nothing
+   + 0.5 intersection|SC_Member|Tutorial|owl_Nothing
+   + 0.2778 intersection|Conference_Paper|Industrial_Paper|owl_Nothing
+   + 0.361125 intersection|Tutorial|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|University|owl_Nothing
+   + 0.472225 intersection|PC_Member|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|SC_Member|owl_Nothing
+   + 0.361125 intersection|Research_Topic|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Session_Chair|owl_Nothing
+   + 0.3889 intersection|Conference_Banquet|Conference_Participant|owl_Nothing
+   + 0.2778 intersection|Conference|Conference_Proceedings|owl_Nothing
+   + 0.44445 intersection|Social_Event|Web_Site|owl_Nothing
+   + 0.416675 intersection|Negative_Review|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Negative_Review|owl_Nothing
+   + 0.5 intersection|Abstract|Location|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Industrial_Session|Regular_Paper|owl_Nothing
+   + 0.33335 intersection|Demo_Paper|Negative_Review|owl_Nothing
+   + 0.472225 intersection|OC_Member|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Research_Institute|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Individual_Presentation|owl_Nothing
+   + 0.472225 intersection|Flyer|Industrial_Session|owl_Nothing
+   + 0.33335 intersection|SC_Member|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Programme_Brochure|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Poster_Session|owl_Nothing
+   + 0.361125 intersection|Paper|Tutorial|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Event|owl_Nothing
+   + 0.33335 intersection|Late-Registered_Participant|Presenter|owl_Nothing
+   + 0.44445 intersection|Event|Paper|owl_Nothing
+   + 0.2778 intersection|Conference_Paper|Demo_Paper|owl_Nothing
+   + 0.44445 intersection|Web_Site|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Proceedings_Publisher|Tutorial|owl_Nothing
+   + 0.416675 intersection|Abstract|Programme_Brochure|owl_Nothing
+   + 0.2778 intersection|Session|Workshop|owl_Nothing
+   + 0.5 intersection|Organising_Agency|Student|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Review|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|OC_Member|Track|owl_Nothing
+   + 0.44445 intersection|Proceedings_Publisher|University|owl_Nothing
+   + 0.5 intersection|Tutorial_Chair|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Event|Research_Institute|owl_Nothing
+   + 0.3889 intersection|Multi-author_Volume|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Presenter|owl_Nothing
+   + 0.2778 intersection|OC_Chair|Person|owl_Nothing
+   + 0.5 intersection|Student|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Research_Institute|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|PC_Member|owl_Nothing
+   + 0.472225 intersection|Document|Social_Event|owl_Nothing
+   + 0.2778 intersection|Session_Chair|Student|owl_Nothing
+   + 0.416675 intersection|Scientific_Event|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Research_Topic|Tutorial|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Track|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.33335 intersection|Multi-author_Volume|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Flyer|PC_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Invited_Speaker|owl_Nothing
+   + 0.33335 intersection|Contributed_Talk|Demo_Session|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Presenter|Proceedings|owl_Nothing
+   + 0.5 intersection|Invited_Speaker|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Abstract|Individual_Presentation|owl_Nothing
+   + 0.5 intersection|Invited_Talk_Abstract|PC_Chair|owl_Nothing
+   + 0.33335 intersection|Early-Registered_Participant|OC_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Paper|SC_Member|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|SC_Member|owl_Nothing
+   + 0.361125 intersection|Research_Topic|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Flyer|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Event|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Negative_Review|OC_Member|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Workshop|owl_Nothing
+   + 0.305575 intersection|Demo_Session|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Possible_Reviewer|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|OC_Member|Organisation|owl_Nothing
+   + 0.361125 intersection|Assigned_Paper|Programme_Brochure|owl_Nothing
+   + 0.33335 intersection|Conference_Trip|Event|owl_Nothing
+   + 0.3889 intersection|Regular_Session|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Person|owl_Nothing
+   + 0.416675 intersection|Paper_Author|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Organisation|PC_Member|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Location|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Session|owl_Nothing
+   + 0.305575 intersection|Conference|Session|owl_Nothing
+   + 0.416675 intersection|Abstract|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|Programme_Brochure|owl_Nothing
+   + 0.361125 intersection|Document|Paper_Author|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|PC_Member|Programme_Brochure|owl_Nothing
+   + 0.3889 intersection|Multi-author_Volume|Organisation|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Submitted_Paper|owl_Nothing
+   + 0.361125 intersection|Evaluated_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.33335 intersection|Poster_Session|Regular_Session|owl_Nothing
+   + 0.3889 intersection|Flyer|Track|owl_Nothing
+   + 0.3889 intersection|Industrial_Paper|Track|owl_Nothing
+   + 0.5 intersection|Assigned_Paper|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|Research_Topic|owl_Nothing
+   + 0.5 intersection|Industrial_Session|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Rejected_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Session|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|Invited_Talk|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Poster_Session|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|University|owl_Nothing
+   + 0.33335 intersection|Neutral_Review|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Demo_Chair|owl_Nothing
+   + 0.3889 intersection|Regular_Paper|Session|owl_Nothing
+   + 0.361125 intersection|Conference_Banquet|Invited_Talk|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|Workshop|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Positive_Review|owl_Nothing
+   + 0.472225 intersection|Possible_Reviewer|University|owl_Nothing
+   + 0.416675 intersection|Early-Registered_Participant|Rejected_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Demo_Session|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Student|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|OC_Chair|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Location|owl_Nothing
+   + 0.472225 intersection|OC_Member|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Possible_Reviewer|owl_Nothing
+   + 0.3889 intersection|Invited_Talk_Abstract|Proceedings|owl_Nothing
+   + 0.472225 intersection|Invited_Talk|Poster_Paper|owl_Nothing
+   + 0.361125 intersection|Abstract|Conference_Proceedings|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|PC_Member|owl_Nothing
+   + 0.361125 intersection|Positive_Review|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Event|University|owl_Nothing
+   + 0.3889 intersection|Event|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Workshop_Chair|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Flyer|Poster_Paper|owl_Nothing
+   + 0.416675 intersection|Positive_Review|Student|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Track|owl_Nothing
+   + 0.3889 intersection|Demo_Session|Regular_Session|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Research_Institute|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Industrial_Session|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Flyer|Positive_Review|owl_Nothing
+   + 0.416675 intersection|Presenter|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Review|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Invited_Speaker|owl_Nothing
+   + 0.3889 intersection|Conference_Participant|Tutorial_Chair|owl_Nothing
+   + 0.416675 intersection|Abstract|Poster_Session|owl_Nothing
+   + 0.33335 intersection|Positive_Review|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Proceedings|Rejected_Paper|owl_Nothing
+   + 0.305575 intersection|Document|Individual_Presentation|owl_Nothing
+   + 0.416675 intersection|Possible_Reviewer|Regular_Paper|owl_Nothing
+   + 0.416675 intersection|Document|OC_Member|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Paper_Author|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|PC_Member|Web_Site|owl_Nothing
+   + 0.416675 intersection|Proceedings_Publisher|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Positive_Review|owl_Nothing
+   + 0.2778 intersection|Scientific_Event|Session|owl_Nothing
+   + 0.5 intersection|Regular_Session|Web_Site|owl_Nothing
+   + 0.3889 intersection|Social_Event|Track|owl_Nothing
+   + 0.2778 intersection|Flyer|Paper|owl_Nothing
+   + 0.33335 intersection|Industrial_Session|Tutorial|owl_Nothing
+   + 0.5 intersection|PC_Chair|Social_Event|owl_Nothing
+   + 0.5 intersection|Evaluated_Paper|Location|owl_Nothing
+   + 0.305575 intersection|Conference|Review|owl_Nothing
+   + 0.44445 intersection|Flyer|Scientific_Event|owl_Nothing
+   + 0.3889 intersection|Poster_Session|Review|owl_Nothing
+   + 0.3889 intersection|Neutral_Review|Regular_Paper|owl_Nothing
+   + 0.416675 intersection|Abstract|Student|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Review|owl_Nothing
+   + 0.5 intersection|Document|Early-Registered_Participant|owl_Nothing
+   + 0.2778 intersection|Camera_Ready_Paper|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Track|owl_Nothing
+   + 0.3889 intersection|Student|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Regular_Session|owl_Nothing
+   + 0.5 intersection|Flyer|Session_Chair|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Review|owl_Nothing
+   + 0.416675 intersection|Positive_Review|University|owl_Nothing
+   + 0.416675 intersection|Review|Social_Event|owl_Nothing
+   + 0.472225 intersection|Abstract|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|University|owl_Nothing
+   + 0.44445 intersection|OC_Member|Research_Institute|owl_Nothing
+   + 0.5 intersection|Evaluated_Paper|Person|owl_Nothing
+   + 0.33335 intersection|Demo_Chair|OC_Member|owl_Nothing
+   + 0.3889 intersection|Conference_Session|Industrial_Paper|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Demo_Session|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Location|owl_Nothing
+   + 0.5 intersection|Regular_Paper|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Invited_Talk_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Individual_Presentation|owl_Nothing
+   + 0.472225 intersection|Location|Regular_Session|owl_Nothing
+   + 0.2778 intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + 0.3889 intersection|Assigned_Paper|Tutorial|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Poster_Paper|University|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Contributed_Talk|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Document|owl_Nothing
+   + 0.3889 intersection|Neutral_Review|Paper|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Conference|owl_Nothing
+   + 0.5 intersection|Poster_Paper|Student|owl_Nothing
+   + 0.472225 intersection|Positive_Review|SC_Member|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Paper|owl_Nothing
+   + 0.416675 intersection|OC_Member|Positive_Review|owl_Nothing
+   + 0.3889 intersection|Organisation|Research_Institute|owl_Nothing
+   + 0.5 intersection|OC_Chair|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Track|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|PC_Member|owl_Nothing
+   + 0.3889 intersection|PC_Chair|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Session|Student|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Conference_Proceedings|owl_Nothing
+   + 0.305575 intersection|Conference_Proceedings|Demo_Session|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Proceedings|owl_Nothing
+   + 0.472225 intersection|OC_Member|University|owl_Nothing
+   + 0.3889 intersection|OC_Chair|Proceedings|owl_Nothing
+   + 0.416675 intersection|Social_Event|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Demo_Paper|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Paper|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Workshop|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Session|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Organisation|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Event|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Regular_Session|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Location|owl_Nothing
+   + 0.5 intersection|Poster_Session|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|SC_Member|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|OC_Chair|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|Positive_Review|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Proceedings|owl_Nothing
+   + 0.5 intersection|Demo_Paper|Web_Site|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Flyer|owl_Nothing
+   + 0.5 intersection|Invited_Talk_Abstract|SC_Member|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Person|owl_Nothing
+   + 0.416675 intersection|Conference_Participant|Positive_Review|owl_Nothing
+   + 0.3889 intersection|Conference_Trip|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Negative_Review|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Conference_Trip|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Late-Registered_Participant|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Web_Site|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Demo_Chair|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|PC_Member|owl_Nothing
+   + 0.3889 intersection|Conference|Person|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Invited_Talk|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Proceedings|Web_Site|owl_Nothing
+   + 0.33335 intersection|Conference_Participant|Demo_Chair|owl_Nothing
+   + 0.472225 intersection|Flyer|Web_Site|owl_Nothing
+   + 0.361125 intersection|Document|Presenter|owl_Nothing
+   + 0.305575 intersection|Abstract|Regular_Paper|owl_Nothing
+   + 0.2778 intersection|Conference_Participant|OC_Chair|owl_Nothing
+   + 0.361125 intersection|Organisation|Tutorial_Abstract|owl_Nothing
+   + 0.5 intersection|Evaluated_Paper|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Social_Event|owl_Nothing
+   + 0.2778 intersection|Event|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|Session|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Demo_Paper|owl_Nothing
+   + 0.44445 intersection|Poster_Paper|Session|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Student|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Regular_Session|owl_Nothing
+   + 0.5 intersection|Location|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Abstract|Contributed_Talk|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Invited_Talk|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Person|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Regular_Session|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|Student|owl_Nothing
+   + 0.5 intersection|Person|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Flyer|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Person|owl_Nothing
+   + 0.416675 intersection|Review|Web_Site|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|PC_Chair|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Programme_Brochure|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Paper|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Early-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|Conference|SC_Member|owl_Nothing
+   + 0.3889 intersection|Conference_Participant|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Positive_Review|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Regular_Paper|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Organisation|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Proceedings_Publisher|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Early-Registered_Participant|owl_Nothing
+   + 0.44445 intersection|Location|Multi-author_Volume|owl_Nothing
+   + 0.361125 intersection|Flyer|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Organisation|owl_Nothing
+   + 0.3889 intersection|Negative_Review|Regular_Paper|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Social_Event|owl_Nothing
+   + 0.416675 intersection|Flyer|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Industrial_Session|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Early-Registered_Participant|Flyer|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Tutorial|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Conference_Session|owl_Nothing
+   + 0.416675 intersection|Event|Negative_Review|owl_Nothing
+   + 0.472225 intersection|Location|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Organisation|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Positive_Review|owl_Nothing
+   + 0.3889 intersection|Neutral_Review|Workshop|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|OC_Member|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Poster_Paper|owl_Nothing
+   + 0.305575 intersection|Evaluated_Paper|Positive_Review|owl_Nothing
+   + 0.305575 intersection|Conference|Conference_Session|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Neutral_Review|owl_Nothing
+   + 0.33335 intersection|Conference_Proceedings|Review|owl_Nothing
+   + 0.416675 intersection|Individual_Presentation|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Positive_Review|owl_Nothing
+   + 0.472225 intersection|OC_Member|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Proceedings|Tutorial_Chair|owl_Nothing
+   + 0.33335 intersection|Document|Review|owl_Nothing
+   + 0.416675 intersection|Individual_Presentation|Negative_Review|owl_Nothing
+   + 0.361125 intersection|Event|Track|owl_Nothing
+   + 0.3889 intersection|Conference|Tutorial|owl_Nothing
+   + 0.33335 intersection|Regular_Session|Tutorial|owl_Nothing
+   + 0.361125 intersection|SC_Member|Social_Event|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Invited_Talk|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Demo_Chair|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Conference_Session|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Paper_Author|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Invited_Talk|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Document|Late-Registered_Participant|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Individual_Presentation|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Demo_Session|owl_Nothing
+   + 0.472225 intersection|Flyer|Location|owl_Nothing
+   + 0.416675 intersection|Paper|Social_Event|owl_Nothing
+   + 0.5 intersection|Session_Chair|Web_Site|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Student|owl_Nothing
+   + 0.5 intersection|Conference_Session|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Regular_Paper|owl_Nothing
+   + 0.5 intersection|Positive_Review|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Demo_Paper|owl_Nothing
+   + 0.3889 intersection|Tutorial|Workshop|owl_Nothing
+   + 0.3889 intersection|Conference_Proceedings|Industrial_Session|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Camera_Ready_Paper|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Person|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Workshop_Session|owl_Nothing
+   + 0.3889 intersection|Conference_Session|Submitted_Paper|owl_Nothing
+   + 0.33335 intersection|Demo_Chair|Late-Registered_Participant|owl_Nothing
+   + 0.5 intersection|Presenter|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Review|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Negative_Review|Neutral_Review|owl_Nothing
+   + 0.5 intersection|Contributed_Talk|Organisation|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Individual_Presentation|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|OC_Member|owl_Nothing
+   + 0.5 intersection|Event|PC_Member|owl_Nothing
+   + 0.472225 intersection|Regular_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.5 intersection|OC_Chair|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|PC_Chair|owl_Nothing
+   + 0.416675 intersection|Conference_Session|OC_Member|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Invited_Talk|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|OC_Member|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Web_Site|owl_Nothing
+   + 0.44445 intersection|Research_Institute|Track|owl_Nothing
+   + 0.305575 intersection|Conference_Banquet|Conference_Trip|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Web_Site|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Positive_Review|owl_Nothing
+   + 0.3889 intersection|Poster_Paper|Programme_Brochure|owl_Nothing
+   + 0.5 intersection|Neutral_Review|Organisation|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Negative_Review|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Student|owl_Nothing
+   + 0.361125 intersection|Neutral_Review|Session|owl_Nothing
+   + 0.3889 intersection|Organisation|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Industrial_Session|owl_Nothing
+   + 0.33335 intersection|Conference|Scientific_Event|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Organisation|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Location|owl_Nothing
+   + 0.5 intersection|Industrial_Paper|Location|owl_Nothing
+   + 0.3889 intersection|Document|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Location|OC_Member|owl_Nothing
+   + 0.3889 intersection|Track|Web_Site|owl_Nothing
+   + 0.361125 intersection|Location|University|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Invited_Talk|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Accepted_Paper|Individual_Presentation|owl_Nothing
+   + 0.361125 intersection|Conference_Trip|Workshop|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|SC_Member|owl_Nothing
+   + 0.472225 intersection|Person|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Programme_Brochure|Social_Event|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Early-Registered_Participant|owl_Nothing
+   + 0.5 intersection|Organisation|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|SC_Member|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.5 intersection|Assigned_Paper|PC_Member|owl_Nothing
+   + 0.5 intersection|OC_Member|Proceedings|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Proceedings|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Demo_Session|owl_Nothing
+   + 0.361125 intersection|Neutral_Review|Workshop_Session|owl_Nothing
+   + 0.33335 intersection|Conference_Paper|Review|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Research_Topic|owl_Nothing
+   + 0.416675 intersection|Organisation|SC_Member|owl_Nothing
+   + 0.2778 intersection|Poster_Paper|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Demo_Session|PC_Member|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Poster_Paper|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|PC_Chair|owl_Nothing
+   + 0.305575 intersection|Invited_Talk|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Track|owl_Nothing
+   + 0.3889 intersection|Conference_Session|Paper|owl_Nothing
+   + 0.33335 intersection|Tutorial|Tutorial_Abstract|owl_Nothing
+   + 0.5 intersection|Industrial_Paper|University|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Flyer|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Invited_Speaker|owl_Nothing
+   + 0.5 intersection|Conference_Proceedings|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Neutral_Review|SC_Member|owl_Nothing
+   + 0.44445 intersection|Conference|Invited_Speaker|owl_Nothing
+   + 0.416675 intersection|Document|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Regular_Session|University|owl_Nothing
+   + 0.33335 intersection|PC_Member|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Research_Topic|owl_Nothing
+   + 0.5 intersection|SC_Member|Web_Site|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Workshop|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Scientific_Event|owl_Nothing
+   + 0.5 intersection|Conference_Paper|Early-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Late-Registered_Participant|owl_Nothing
+   + 0.33335 intersection|Positive_Review|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Demo_Session|owl_Nothing
+   + 0.3889 intersection|Paper|Web_Site|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Demo_Session|owl_Nothing
+   + 0.33335 intersection|Contributed_Talk|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Presenter|owl_Nothing
+   + 0.5 intersection|Invited_Talk|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Session|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Scientific_Event|Web_Site|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Flyer|owl_Nothing
+   + 0.361125 intersection|Accepted_Paper|Rejected_Paper|owl_Nothing
+   + 0.472225 intersection|Conference|Flyer|owl_Nothing
+   + 0.3889 intersection|Conference_Trip|Review|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Session_Chair|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Positive_Review|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Neutral_Review|Submitted_Paper|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Submitted_Paper|owl_Nothing
+   + 0.3889 intersection|Proceedings|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Paper_Author|owl_Nothing
+   + 0.5 intersection|Scientific_Event|Tutorial|owl_Nothing
+   + 0.472225 intersection|Flyer|University|owl_Nothing
+   + 0.361125 intersection|Tutorial|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Conference_Banquet|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|PC_Member|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|Paper|owl_Nothing
+   + 0.33335 intersection|Multi-author_Volume|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Regular_Paper|owl_Nothing
+   + 0.416675 intersection|Organising_Agency|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Rejected_Paper|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Poster_Session|SC_Member|owl_Nothing
+   + 0.2778 intersection|Accepted_Paper|Camera_Ready_Paper|owl_Nothing
+   + 0.416675 intersection|Student|University|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Conference_Session|OC_Chair|owl_Nothing
+   + 0.305575 intersection|Abstract|Paper|owl_Nothing
+   + 0.3889 intersection|Neutral_Review|Proceedings|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Proceedings_Publisher|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Poster_Session|owl_Nothing
+   + 0.472225 intersection|Abstract|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Poster_Session|Rejected_Paper|owl_Nothing
+   + 0.305575 intersection|Programme_Brochure|Tutorial|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Student|owl_Nothing
+   + 0.361125 intersection|Conference_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|Organising_Agency|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Poster_Session|Programme_Brochure|owl_Nothing
+   + 0.33335 intersection|Late-Registered_Participant|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Tutorial_Abstract|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|Proceedings|owl_Nothing
+   + 0.416675 intersection|Regular_Paper|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Rejected_Paper|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Possible_Reviewer|owl_Nothing
+   + 0.5 intersection|Abstract|Invited_Speaker|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Demo_Session|Social_Event|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Conference_Session|owl_Nothing
+   + 0.472225 intersection|Track|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Regular_Session|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Early-Registered_Participant|owl_Nothing
+   + 0.33335 intersection|Abstract|Neutral_Review|owl_Nothing
+   + 0.2778 intersection|Assigned_Paper|Positive_Review|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Tutorial_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Proceedings|Workshop_Session|owl_Nothing
+   + 0.305575 intersection|Early-Registered_Participant|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Abstract|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Web_Site|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Flyer|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Negative_Review|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Flyer|Student|owl_Nothing
+   + 0.416675 intersection|OC_Member|Review|owl_Nothing
+   + 0.2778 intersection|Proceedings_Publisher|SC_Member|owl_Nothing
+   + 0.472225 intersection|Location|Submitted_Paper|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|University|owl_Nothing
+   + 0.472225 intersection|PC_Member|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Organisation|Positive_Review|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|Possible_Reviewer|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Multi-author_Volume|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Demo_Chair|owl_Nothing
+   + 0.472225 intersection|Demo_Session|OC_Chair|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|OC_Chair|owl_Nothing
+   + 0.44445 intersection|Conference|Organising_Agency|owl_Nothing
+   + 0.416675 intersection|Invited_Speaker|Multi-author_Volume|owl_Nothing
+   + 0.44445 intersection|Regular_Paper|Web_Site|owl_Nothing
+   + 0.44445 intersection|Proceedings_Publisher|Review|owl_Nothing
+   + 0.416675 intersection|Event|OC_Chair|owl_Nothing
+   + 0.305575 intersection|Person|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Poster_Session|owl_Nothing
+   + 0.472225 intersection|PC_Member|Workshop|owl_Nothing
+   + 0.305575 intersection|Conference_Trip|Social_Event|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Negative_Review|PC_Member|owl_Nothing
+   + 0.5 intersection|Assigned_Paper|Student|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Invited_Talk|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Workshop_Session|owl_Nothing
+   + 0.5 intersection|SC_Member|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Event|owl_Nothing
+   + 0.3889 intersection|Poster_Paper|Tutorial|owl_Nothing
+   + 0.361125 intersection|Organisation|Social_Event|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Individual_Presentation|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|University|owl_Nothing
+   + 0.3889 intersection|OC_Member|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|Workshop|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Evaluated_Paper|owl_Nothing
+   + 0.33335 intersection|Paper|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Regular_Session|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Submitted_Paper|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|University|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|Negative_Review|owl_Nothing
+   + 0.5 intersection|Student|Workshop|owl_Nothing
+   + 0.361125 intersection|Conference_Paper|Tutorial|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Poster_Session|owl_Nothing
+   + 0.416675 intersection|Organising_Agency|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Track|Tutorial|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Workshop_Session|owl_Nothing
+   + 0.2778 intersection|Regular_Paper|Review|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Presenter|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Camera_Ready_Paper|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Organisation|Proceedings|owl_Nothing
+   + 0.44445 intersection|Event|Poster_Paper|owl_Nothing
+   + 0.5 intersection|PC_Chair|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Document|owl_Nothing
+   + 0.44445 intersection|Evaluated_Paper|Research_Institute|owl_Nothing
+   + 0.33335 intersection|Document|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|PC_Chair|owl_Nothing
+   + 0.361125 intersection|Demo_Session|Invited_Speaker|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Flyer|owl_Nothing
+   + 0.5 intersection|Paper_Author|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Demo_Paper|owl_Nothing
+   + 0.305575 intersection|Industrial_Paper|Tutorial|owl_Nothing
+   + 0.5 intersection|PC_Member|Workshop_Session|owl_Nothing
+   + 0.2778 intersection|Demo_Chair|Student|owl_Nothing
+   + 0.416675 intersection|Social_Event|Student|owl_Nothing
+   + 0.2778 intersection|Presenter|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Invited_Talk|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Poster_Paper|owl_Nothing
+   + 0.305575 intersection|Demo_Session|Tutorial|owl_Nothing
+   + 0.361125 intersection|Invited_Talk_Abstract|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Social_Event|University|owl_Nothing
+   + 0.472225 intersection|PC_Member|Poster_Session|owl_Nothing
+   + 0.33335 intersection|Conference_Paper|Rejected_Paper|owl_Nothing
+   + 0.44445 intersection|Abstract|Research_Institute|owl_Nothing
+   + 0.5 intersection|Proceedings|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|Proceedings_Publisher|Web_Site|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Industrial_Session|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Proceedings|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Programme_Brochure|University|owl_Nothing
+   + 0.2778 intersection|Person|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Document|Location|owl_Nothing
+   + 0.2778 intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Research_Topic|Track|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Event|owl_Nothing
+   + 0.472225 intersection|Person|University|owl_Nothing
+   + 0.44445 intersection|SC_Member|Session|owl_Nothing
+   + 0.2778 intersection|Tutorial_Chair|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Negative_Review|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|OC_Member|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Event|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|Research_Topic|owl_Nothing
+   + 0.2778 intersection|Conference_Banquet|Event|owl_Nothing
+   + 0.416675 intersection|Invited_Speaker|Research_Institute|owl_Nothing
+   + 0.3889 intersection|Organising_Agency|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Programme_Brochure|Track|owl_Nothing
+   + 0.5 intersection|Rejected_Paper|Student|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Invited_Talk_Abstract|owl_Nothing
+   + 0.3889 intersection|Paper|Poster_Session|owl_Nothing
+   + 0.5 intersection|Conference|Conference_Participant|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Demo_Chair|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|Tutorial|owl_Nothing
+   + 0.472225 intersection|Event|Possible_Reviewer|owl_Nothing
+   + 0.3889 intersection|Person|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Poster_Paper|Track|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Research_Institute|owl_Nothing
+   + 0.305575 intersection|Evaluated_Paper|Research_Topic|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|Invited_Talk_Abstract|owl_Nothing
+   + 0.44445 intersection|Review|University|owl_Nothing
+   + 0.305575 intersection|Agency_Staff_Member|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Regular_Paper|Social_Event|owl_Nothing
+   + 0.5 intersection|Track|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Demo_Session|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Document|Session|owl_Nothing
+   + 0.33335 intersection|Demo_Paper|Research_Topic|owl_Nothing
+   + 0.44445 intersection|University|Workshop|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Evaluated_Paper|owl_Nothing
+   + 0.3889 intersection|Positive_Review|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Paper|Paper_Author|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Session|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Multi-author_Volume|owl_Nothing
+   + 0.5 intersection|Paper|Presenter|owl_Nothing
+   + 0.3889 intersection|Demo_Session|Presenter|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Organisation|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Late-Registered_Participant|owl_Nothing
+   + 0.416675 intersection|Individual_Presentation|Person|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|OC_Member|owl_Nothing
+   + 0.416675 intersection|Invited_Talk|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Location|owl_Nothing
+   + 0.5 intersection|PC_Chair|Web_Site|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Tutorial_Abstract|owl_Nothing
+   + 0.3889 intersection|Assigned_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Web_Site|owl_Nothing
+   + 0.44445 intersection|Flyer|Invited_Speaker|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Flyer|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Research_Institute|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Conference|Invited_Talk_Abstract|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Workshop|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|Conference_Trip|owl_Nothing
+   + 0.472225 intersection|Invited_Talk|Location|owl_Nothing
+   + 0.3889 intersection|Research_Institute|SC_Member|owl_Nothing
+   + 0.3889 intersection|Demo_Paper|OC_Chair|owl_Nothing
+   + 0.2778 intersection|Individual_Presentation|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Session|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Session_Chair|owl_Nothing
+   + 0.44445 intersection|PC_Chair|Research_Institute|owl_Nothing
+   + 0.305575 intersection|Evaluated_Paper|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Workshop_Chair|owl_Nothing
+   + 0.305575 intersection|Regular_Session|Workshop|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Invited_Talk_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference|Web_Site|owl_Nothing
+   + 0.33335 intersection|Location|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Negative_Review|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Invited_Speaker|owl_Nothing
+   + 0.5 intersection|Demo_Paper|OC_Member|owl_Nothing
+   + 0.44445 intersection|Proceedings|Student|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Research_Institute|owl_Nothing
+   + 0.3889 intersection|Organising_Agency|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Conference|Organisation|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Invited_Talk_Abstract|owl_Nothing
+   + 0.2778 intersection|Poster_Session|Session|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Research_Topic|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Session|owl_Nothing
+   + 0.305575 intersection|Abstract|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Location|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Event|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Workshop|owl_Nothing
+   + 0.3889 intersection|Late-Registered_Participant|Review|owl_Nothing
+   + 0.3889 intersection|PC_Member|Positive_Review|owl_Nothing
+   + 0.416675 intersection|Late-Registered_Participant|Organising_Agency|owl_Nothing
+   + 0.2778 intersection|Invited_Talk|Session|owl_Nothing
+   + 0.416675 intersection|Late-Registered_Participant|Negative_Review|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Person|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|Late-Registered_Participant|owl_Nothing
+   + 0.5 intersection|Conference_Paper|Poster_Session|owl_Nothing
+   + 0.5 intersection|Document|PC_Chair|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Positive_Review|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Social_Event|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Tutorial|owl_Nothing
+   + 0.3889 intersection|Conference_Banquet|Location|owl_Nothing
+   + 0.472225 intersection|Demo_Session|OC_Member|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Person|owl_Nothing
+   + 0.5 intersection|OC_Chair|Poster_Session|owl_Nothing
+   + 0.5 intersection|Document|Proceedings_Publisher|owl_Nothing
+   + 0.2778 intersection|OC_Member|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Organising_Agency|Regular_Session|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Web_Site|owl_Nothing
+   + 0.472225 intersection|Organisation|Presenter|owl_Nothing
+   + 0.361125 intersection|Demo_Session|Positive_Review|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Session|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|University|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Research_Topic|owl_Nothing
+   + 0.2778 intersection|Paper_Author|Session_Chair|owl_Nothing
+   + 0.361125 intersection|Invited_Talk_Abstract|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Paper|Track|owl_Nothing
+   + 0.472225 intersection|Location|Regular_Paper|owl_Nothing
+   + 0.416675 intersection|Regular_Session|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Research_Institute|Web_Site|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Organisation|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Organisation|Student|owl_Nothing
+   + 0.33335 intersection|Conference_Session|Tutorial|owl_Nothing
+   + 0.361125 intersection|Contributed_Talk|Review|owl_Nothing
+   + 0.44445 intersection|Session|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Student|owl_Nothing
+   + 0.44445 intersection|Session_Chair|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Demo_Session|PC_Chair|owl_Nothing
+   + 0.361125 intersection|Social_Event|Workshop|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Paper_Author|owl_Nothing
+   + 0.361125 intersection|Invited_Talk_Abstract|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Track|Workshop|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Person|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Location|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|PC_Chair|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|Demo_Chair|owl_Nothing
+   + 0.3889 intersection|Flyer|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Industrial_Session|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Negative_Review|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|Student|owl_Nothing
+   + 0.361125 intersection|Conference_Session|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Abstract|Agency_Staff_Member|owl_Nothing
+   + 0.33335 intersection|Demo_Session|Individual_Presentation|owl_Nothing
+   + 0.5 intersection|Conference_Session|SC_Member|owl_Nothing
+   + 0.361125 intersection|Conference_Session|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Abstract|Camera_Ready_Paper|owl_Nothing
+   + 0.3889 intersection|Demo_Session|Negative_Review|owl_Nothing
+   + 0.3889 intersection|Conference|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Session|owl_Nothing
+   + 0.361125 intersection|Event|Tutorial|owl_Nothing
+   + 0.5 intersection|Assigned_Paper|PC_Chair|owl_Nothing
+   + 0.5 intersection|Invited_Talk|Organising_Agency|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Invited_Speaker|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|PC_Chair|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|Possible_Reviewer|owl_Nothing
+   + 0.5 intersection|Possible_Reviewer|Web_Site|owl_Nothing
+   + 0.33335 intersection|Review|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Document|Invited_Speaker|owl_Nothing
+   + 0.5 intersection|Abstract|Multi-author_Volume|owl_Nothing
+   + 0.416675 intersection|Conference|OC_Chair|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Workshop_Session|owl_Nothing
+   + 0.3889 intersection|Invited_Talk_Abstract|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Positive_Review|owl_Nothing
+   + 0.2778 intersection|Organising_Agency|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Scientific_Event|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|Paper|Session|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Conference_Participant|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Session_Chair|owl_Nothing
+   + 0.2778 intersection|Conference_Session|Event|owl_Nothing
+   + 0.3889 intersection|Abstract|Poster_Paper|owl_Nothing
+   + 0.3889 intersection|Poster_Session|Tutorial|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Workshop|owl_Nothing
+   + 0.3889 intersection|Industrial_Paper|Session|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Presenter|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Regular_Paper|owl_Nothing
+   + 0.305575 intersection|Industrial_Session|Social_Event|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Conference_Proceedings|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Flyer|Social_Event|owl_Nothing
+   + 0.44445 intersection|Person|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Abstract|Demo_Session|owl_Nothing
+   + 0.416675 intersection|Possible_Reviewer|Track|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Paper|Student|owl_Nothing
+   + 0.44445 intersection|Person|Review|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Poster_Paper|Review|owl_Nothing
+   + 0.2778 intersection|OC_Chair|Workshop_Chair|owl_Nothing
+   + 0.361125 intersection|Poster_Paper|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Invited_Speaker|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|OC_Member|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Contributed_Talk|owl_Nothing
+   + 0.44445 intersection|Conference|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Organisation|Session|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Session_Chair|owl_Nothing
+   + 0.416675 intersection|Presenter|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Flyer|Invited_Talk_Abstract|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Positive_Review|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|PC_Chair|owl_Nothing
+   + 0.472225 intersection|Track|University|owl_Nothing
+   + 0.5 intersection|Neutral_Review|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Regular_Session|owl_Nothing
+   + 0.33335 intersection|Workshop|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Evaluated_Paper|Student|owl_Nothing
+   + 0.2778 intersection|Conference_Proceedings|Session|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Flyer|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Tutorial|owl_Nothing
+   + 0.44445 intersection|Invited_Talk|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Track|owl_Nothing
+   + 0.5 intersection|Invited_Speaker|Poster_Paper|owl_Nothing
+   + 0.44445 intersection|Conference|Multi-author_Volume|owl_Nothing
+   + 0.5 intersection|Regular_Session|Tutorial_Abstract|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Evaluated_Paper|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Tutorial_Abstract|owl_Nothing
+   + 0.3889 intersection|Conference|Contributed_Talk|owl_Nothing
+   + 0.416675 intersection|Flyer|Neutral_Review|owl_Nothing
+   + 0.305575 intersection|Demo_Paper|Flyer|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Multi-author_Volume|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Review|owl_Nothing
+   + 0.472225 intersection|Proceedings|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Conference_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Industrial_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Paper_Author|owl_Nothing
+   + 0.416675 intersection|Poster_Session|Session_Chair|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Paper|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Regular_Paper|Student|owl_Nothing
+   + 0.44445 intersection|Paper_Author|Track|owl_Nothing
+   + 0.44445 intersection|Conference_Session|Location|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Web_Site|owl_Nothing
+   + 0.472225 intersection|Possible_Reviewer|Workshop|owl_Nothing
+   + 0.416675 intersection|Review|Student|owl_Nothing
+   + 0.44445 intersection|OC_Member|Workshop|owl_Nothing
+   + 0.416675 intersection|Positive_Review|Social_Event|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Flyer|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Review|owl_Nothing
+   + 0.3889 intersection|Invited_Talk_Abstract|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Review|owl_Nothing
+   + 0.3889 intersection|Demo_Session|Review|owl_Nothing
+   + 0.416675 intersection|Rejected_Paper|Track|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|Workshop|owl_Nothing
+   + 0.44445 intersection|Abstract|Session|owl_Nothing
+   + 0.472225 intersection|Location|Programme_Brochure|owl_Nothing
+   + 0.44445 intersection|Industrial_Session|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Conference|OC_Member|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Demo_Session|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.33335 intersection|Abstract|Demo_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Trip|Regular_Session|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Presenter|owl_Nothing
+   + 0.2778 intersection|Camera_Ready_Paper|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Paper_Author|owl_Nothing
+   + 0.416675 intersection|Abstract|Invited_Talk|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Track|owl_Nothing
+   + 0.416675 intersection|PC_Chair|Submitted_Paper|owl_Nothing
+   + 0.2778 intersection|Neutral_Review|Positive_Review|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Document|Organising_Agency|owl_Nothing
+   + 0.416675 intersection|Possible_Reviewer|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Document|SC_Member|owl_Nothing
+   + 0.33335 intersection|Individual_Presentation|Industrial_Paper|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Rejected_Paper|owl_Nothing
+   + 0.5 intersection|Industrial_Paper|Scientific_Event|owl_Nothing
+   + 0.33335 intersection|Camera_Ready_Paper|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|Research_Institute|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Workshop_Paper|owl_Nothing
+   + 0.305575 intersection|Regular_Session|Review|owl_Nothing
+   + 0.361125 intersection|Conference_Paper|Conference_Session|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Organising_Agency|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Poster_Session|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Individual_Presentation|owl_Nothing
+   + 0.3889 intersection|Research_Institute|Workshop|owl_Nothing
+   + 0.416675 intersection|Proceedings_Publisher|Track|owl_Nothing
+   + 0.472225 intersection|Organisation|Track|owl_Nothing
+   + 0.33335 intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + 0.472225 intersection|Organisation|Poster_Paper|owl_Nothing
+   + 0.5 intersection|Abstract|Demo_Chair|owl_Nothing
+   + 0.416675 intersection|Event|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Participant|Proceedings|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|PC_Chair|Proceedings|owl_Nothing
+   + 0.44445 intersection|Event|Industrial_Paper|owl_Nothing
+   + 0.44445 intersection|OC_Chair|Session|owl_Nothing
+   + 0.416675 intersection|Flyer|Multi-author_Volume|owl_Nothing
+   + 0.3889 intersection|Assigned_Paper|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Conference|PC_Member|owl_Nothing
+   + 0.472225 intersection|Regular_Session|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|SC_Member|owl_Nothing
+   + 0.2778 intersection|Student|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Flyer|Session|owl_Nothing
+   + 0.5 intersection|PC_Member|Proceedings|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Regular_Paper|owl_Nothing
+   + 0.3889 intersection|Accepted_Paper|Negative_Review|owl_Nothing
+   + 0.5 intersection|Poster_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Research_Topic|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Conference_Participant|owl_Nothing
+   + 0.361125 intersection|Positive_Review|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Event|Web_Site|owl_Nothing
+   + 0.305575 intersection|Invited_Speaker|Invited_Talk|owl_Nothing
+   + 0.472225 intersection|Person|Tutorial|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Workshop|owl_Nothing
+   + 0.472225 intersection|Organisation|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Workshop|owl_Nothing
+   + 0.3889 intersection|Evaluated_Paper|Invited_Talk|owl_Nothing
+   + 0.305575 intersection|Demo_Paper|Tutorial|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Neutral_Review|Social_Event|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Proceedings|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Possible_Reviewer|owl_Nothing
+   + 0.416675 intersection|Paper_Author|Positive_Review|owl_Nothing
+   + 0.305575 intersection|Negative_Review|Session|owl_Nothing
+   + 0.44445 intersection|Event|Submitted_Paper|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Conference_Trip|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Tutorial|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Programme_Brochure|Review|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Industrial_Session|owl_Nothing
+   + 0.3889 intersection|Scientific_Event|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|Invited_Speaker|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Track|owl_Nothing
+   + 0.5 intersection|Poster_Paper|Proceedings|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Accepted_Paper|Invited_Talk|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Accepted_Paper|owl_Nothing
+   + 0.472225 intersection|University|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Demo_Chair|PC_Member|owl_Nothing
+   + 0.3889 intersection|Tutorial|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Abstract|Organisation|owl_Nothing
+   + 0.33335 intersection|Organising_Agency|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Abstract|Early-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Organising_Agency|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Negative_Review|PC_Chair|owl_Nothing
+   + 0.2778 intersection|Late-Registered_Participant|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Presenter|owl_Nothing
+   + 0.2778 intersection|Demo_Session|Poster_Session|owl_Nothing
+   + 0.3889 intersection|Industrial_Session|Negative_Review|owl_Nothing
+   + 0.472225 intersection|Conference|Presenter|owl_Nothing
+   + 0.44445 intersection|Submitted_Paper|Web_Site|owl_Nothing
+   + 0.3889 intersection|Evaluated_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.416675 intersection|Paper|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Neutral_Review|Poster_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|SC_Member|owl_Nothing
+   + 0.33335 intersection|Flyer|Review|owl_Nothing
+   + 0.3889 intersection|OC_Chair|Presenter|owl_Nothing
+   + 0.3889 intersection|Conference_Proceedings|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Paper_Author|University|owl_Nothing
+   + 0.416675 intersection|Research_Institute|Social_Event|owl_Nothing
+   + 0.33335 intersection|Accepted_Paper|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Paper|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Review|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Conference_Participant|owl_Nothing
+   + 0.44445 intersection|PC_Member|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Location|Presenter|owl_Nothing
+   + 0.33335 intersection|Scientific_Event|Workshop|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|Late-Registered_Participant|owl_Nothing
+   + 0.361125 intersection|Invited_Talk_Abstract|Research_Topic|owl_Nothing
+   + 0.33335 intersection|Proceedings|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|PC_Member|owl_Nothing
+   + 0.361125 intersection|Invited_Talk|Review|owl_Nothing
+   + 0.416675 intersection|Programme_Brochure|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Event|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Industrial_Paper|owl_Nothing
+   + 0.5 intersection|OC_Chair|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Positive_Review|owl_Nothing
+   + 0.5 intersection|Scientific_Event|University|owl_Nothing
+   + 0.416675 intersection|Late-Registered_Participant|Poster_Session|owl_Nothing
+   + 0.305575 intersection|Individual_Presentation|Review|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|University|owl_Nothing
+   + 0.5 intersection|Person|Web_Site|owl_Nothing
+   + 0.361125 intersection|Evaluated_Paper|University|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|Invited_Talk|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|University|owl_Nothing
+   + 0.2778 intersection|Proceedings_Publisher|Student|owl_Nothing
+   + 0.416675 intersection|Conference_Banquet|Session|owl_Nothing
+   + 0.44445 intersection|Poster_Session|Presenter|owl_Nothing
+   + 0.44445 intersection|OC_Chair|Proceedings_Publisher|owl_Nothing
+   + 0.416675 intersection|Accepted_Paper|Event|owl_Nothing
+   + 0.472225 intersection|Proceedings_Publisher|Regular_Session|owl_Nothing
+   + 0.305575 intersection|Accepted_Paper|Multi-author_Volume|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|Poster_Paper|owl_Nothing
+   + 0.5 intersection|Conference_Session|Organising_Agency|owl_Nothing
+   + 0.2778 intersection|Possible_Reviewer|SC_Member|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Programme_Brochure|owl_Nothing
+   + 0.3889 intersection|Conference_Session|Negative_Review|owl_Nothing
+   + 0.305575 intersection|Abstract|Industrial_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Neutral_Review|PC_Chair|owl_Nothing
+   + 0.305575 intersection|Review|Tutorial_Abstract|owl_Nothing
+   + 0.416675 intersection|Industrial_Paper|Social_Event|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Research_Institute|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Demo_Chair|owl_Nothing
+   + 0.3889 intersection|Individual_Presentation|Invited_Talk|owl_Nothing
+   + 0.3889 intersection|Rejected_Paper|Workshop|owl_Nothing
+   + 0.33335 intersection|Abstract|Review|owl_Nothing
+   + 0.472225 intersection|Tutorial_Abstract|Tutorial_Chair|owl_Nothing
+   + 0.416675 intersection|Conference|Demo_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Demo_Paper|owl_Nothing
+   + 0.416675 intersection|Conference|Workshop_Paper|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Tutorial_Abstract|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Document|owl_Nothing
+   + 0.3889 intersection|Proceedings|Research_Topic|owl_Nothing
+   + 0.5 intersection|Conference_Paper|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Early-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Conference_Participant|Location|owl_Nothing
+   + 0.416675 intersection|Document|Workshop|owl_Nothing
+   + 0.416675 intersection|Academic_Institution|Agency_Staff_Member|owl_Nothing
+   + 0.416675 intersection|Tutorial_Chair|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Poster_Paper|owl_Nothing
+   + 0.416675 intersection|Event|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Conference|Student|owl_Nothing
+   + 0.44445 intersection|Location|Person|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Conference_Banquet|owl_Nothing
+   + 0.44445 intersection|Presenter|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Conference_Paper|Conference_Proceedings|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|Scientific_Event|owl_Nothing
+   + 0.3889 intersection|Multi-author_Volume|Proceedings|owl_Nothing
+   + 0.33335 intersection|Proceedings_Publisher|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Regular_Session|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Student|owl_Nothing
+   + 0.33335 intersection|Presenter|Proceedings_Publisher|owl_Nothing
+   + 0.361125 intersection|Conference_Participant|Invited_Talk_Abstract|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Review|owl_Nothing
+   + 0.305575 intersection|Conference_Session|Proceedings|owl_Nothing
+   + 0.44445 intersection|Scientific_Event|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Proceedings|Poster_Paper|owl_Nothing
+   + 0.361125 intersection|Conference_Proceedings|Negative_Review|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Demo_Session|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Poster_Session|owl_Nothing
+   + 0.416675 intersection|Proceedings_Publisher|Rejected_Paper|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|PC_Member|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Organisation|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Neutral_Review|owl_Nothing
+   + 0.361125 intersection|Paper|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Individual_Presentation|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|PC_Member|owl_Nothing
+   + 0.416675 intersection|Late-Registered_Participant|Session_Chair|owl_Nothing
+   + 0.3889 intersection|Regular_Paper|Regular_Session|owl_Nothing
+   + 0.2778 intersection|Paper_Author|Proceedings_Publisher|owl_Nothing
+   + 0.472225 intersection|Multi-author_Volume|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Invited_Talk|Paper_Author|owl_Nothing
+   + 0.416675 intersection|Flyer|PC_Member|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Invited_Talk|owl_Nothing
+   + 0.44445 intersection|Organisation|Rejected_Paper|owl_Nothing
+   + 0.3889 intersection|Research_Topic|Review|owl_Nothing
+   + 0.472225 intersection|PC_Member|University|owl_Nothing
+   + 0.361125 intersection|Paper|Proceedings|owl_Nothing
+   + 0.2778 intersection|Conference_Session|Industrial_Session|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Programme_Brochure|owl_Nothing
+   + 0.5 intersection|Conference_Paper|Tutorial_Chair|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Tutorial_Abstract|Workshop_Chair|owl_Nothing
+   + 0.3889 intersection|Research_Topic|Session|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Document|owl_Nothing
+   + 0.472225 intersection|Contributed_Talk|SC_Member|owl_Nothing
+   + 0.416675 intersection|Invited_Talk_Abstract|Organisation|owl_Nothing
+   + 0.472225 intersection|University|Workshop_Session|owl_Nothing
+   + 0.33335 intersection|Invited_Talk|Submitted_Paper|owl_Nothing
+   + 0.472225 intersection|Location|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Invited_Speaker|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Abstract|Conference_Trip|owl_Nothing
+   + 0.472225 intersection|Demo_Session|Organisation|owl_Nothing
+   + 0.2778 intersection|Academic_Institution|Organising_Agency|owl_Nothing
+   + 0.361125 intersection|Individual_Presentation|Research_Topic|owl_Nothing
+   + 0.5 intersection|Industrial_Session|Rejected_Paper|owl_Nothing
+   + 0.3889 intersection|Presenter|Programme_Brochure|owl_Nothing
+   + 0.361125 intersection|Neutral_Review|Poster_Paper|owl_Nothing
+   + 0.416675 intersection|Session_Chair|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Presenter|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Web_Site|owl_Nothing
+   + 0.5 intersection|Conference|Neutral_Review|owl_Nothing
+   + 0.416675 intersection|Abstract|Event|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Conference|Late-Registered_Participant|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Evaluated_Paper|owl_Nothing
+   + 0.44445 intersection|Flyer|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Event|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Abstract|Conference_Paper|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Contributed_Talk|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Workshop_Session|owl_Nothing
+   + 0.2778 intersection|Industrial_Session|Workshop|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|PC_Member|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Workshop|owl_Nothing
+   + 0.5 intersection|Conference_Session|Programme_Brochure|owl_Nothing
+   + 0.472225 intersection|Location|Rejected_Paper|owl_Nothing
+   + 0.361125 intersection|Neutral_Review|Session_Chair|owl_Nothing
+   + 0.361125 intersection|Organising_Agency|Poster_Session|owl_Nothing
+   + 0.5 intersection|Poster_Paper|Regular_Session|owl_Nothing
+   + 0.5 intersection|Demo_Session|University|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Event|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Invited_Speaker|owl_Nothing
+   + 0.3889 intersection|Paper|Review|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|Regular_Session|owl_Nothing
+   + 0.361125 intersection|OC_Member|Tutorial_Chair|owl_Nothing
+   + 0.33335 intersection|Demo_Session|Workshop|owl_Nothing
+   + 0.3889 intersection|Negative_Review|Organising_Agency|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Research_Topic|owl_Nothing
+   + 0.33335 intersection|Conference_Banquet|Conference_Proceedings|owl_Nothing
+   + 0.44445 intersection|Event|Tutorial_Abstract|owl_Nothing
+   + 0.5 intersection|Organisation|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Possible_Reviewer|owl_Nothing
+   + 0.5 intersection|Submitted_Paper|Track|owl_Nothing
+   + 0.472225 intersection|Abstract|OC_Member|owl_Nothing
+   + 0.3889 intersection|Abstract|Accepted_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Student|owl_Nothing
+   + 0.416675 intersection|Flyer|Tutorial_Abstract|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Late-Registered_Participant|owl_Nothing
+   + 0.3889 intersection|Conference|Poster_Session|owl_Nothing
+   + 0.5 intersection|Invited_Talk|Web_Site|owl_Nothing
+   + 0.361125 intersection|Document|Poster_Session|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Industrial_Paper|owl_Nothing
+   + 0.44445 intersection|Abstract|Conference|owl_Nothing
+   + 0.472225 intersection|Programme_Brochure|Regular_Session|owl_Nothing
+   + 0.361125 intersection|Paper_Author|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Agency_Staff_Member|Negative_Review|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Workshop|owl_Nothing
+   + 0.472225 intersection|PC_Member|Session|owl_Nothing
+   + 0.44445 intersection|Session|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Evaluated_Paper|Web_Site|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Social_Event|owl_Nothing
+   + 0.44445 intersection|Document|Invited_Talk|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Invited_Speaker|owl_Nothing
+   + 0.3889 intersection|Academic_Institution|Invited_Speaker|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Research_Institute|owl_Nothing
+   + 0.33335 intersection|Late-Registered_Participant|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Abstract|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Poster_Session|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Organisation|Paper|owl_Nothing
+   + 0.3889 intersection|Organisation|Scientific_Event|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Industrial_Paper|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Poster_Session|owl_Nothing
+   + 0.33335 intersection|Industrial_Session|Research_Institute|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Web_Site|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Person|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Demo_Chair|owl_Nothing
+   + 0.3889 intersection|Industrial_Session|Organisation|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.3889 intersection|Abstract|Possible_Reviewer|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Industrial_Session|owl_Nothing
+   + 0.416675 intersection|Flyer|Research_Topic|owl_Nothing
+   + 0.2778 intersection|Invited_Talk|Presenter|owl_Nothing
+   + 0.3889 intersection|Paper|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Camera_Ready_Paper|Invited_Talk|owl_Nothing
+   + 0.5 intersection|Individual_Presentation|Organising_Agency|owl_Nothing
+   + 0.5 intersection|Assigned_Paper|Track|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|SC_Member|owl_Nothing
+   + 0.3889 intersection|Conference|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Document|Organisation|owl_Nothing
+   + 0.472225 intersection|Paper|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Conference|Paper|owl_Nothing
+   + 0.44445 intersection|Demo_Session|Student|owl_Nothing
+   + 0.33335 intersection|Conference_Proceedings|Contributed_Talk|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Conference_Trip|owl_Nothing
+   + 0.44445 intersection|Rejected_Paper|SC_Member|owl_Nothing
+   + 0.3889 intersection|Research_Topic|Submitted_Paper|owl_Nothing
+   + 0.3889 intersection|Invited_Talk_Abstract|Negative_Review|owl_Nothing
+   + 0.361125 intersection|Possible_Reviewer|Submitted_Paper|owl_Nothing
+   + 0.305575 intersection|Assigned_Paper|Invited_Talk_Abstract|owl_Nothing
+   + 0.33335 intersection|Event|Workshop|owl_Nothing
+   + 0.416675 intersection|Flyer|Invited_Talk|owl_Nothing
+   + 0.3889 intersection|Regular_Paper|Research_Topic|owl_Nothing
+   + 0.472225 intersection|Document|Workshop_Session|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Paper|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Regular_Paper|owl_Nothing
+   + 0.33335 intersection|Regular_Session|Track|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Industrial_Paper|owl_Nothing
+   + 0.5 intersection|Academic_Institution|Rejected_Paper|owl_Nothing
+   + 0.416675 intersection|Invited_Speaker|Organising_Agency|owl_Nothing
+   + 0.3889 intersection|Conference_Session|Invited_Speaker|owl_Nothing
+   + 0.3889 intersection|Conference_Participant|Conference_Trip|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Tutorial_Chair|owl_Nothing
+   + 0.3889 intersection|Conference_Proceedings|Evaluated_Paper|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Rejected_Paper|owl_Nothing
+   + 0.305575 intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Tutorial|owl_Nothing
+   + 0.3889 intersection|Camera_Ready_Paper|Demo_Paper|owl_Nothing
+   + 0.472225 intersection|Event|Person|owl_Nothing
+   + 0.5 intersection|Regular_Paper|Track|owl_Nothing
+   + 0.416675 intersection|PC_Member|Social_Event|owl_Nothing
+   + 0.33335 intersection|Invited_Speaker|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Invited_Speaker|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Event|owl_Nothing
+   + 0.361125 intersection|Industrial_Paper|Programme_Brochure|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Track|owl_Nothing
+   + 0.361125 intersection|Positive_Review|Workshop|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Session|owl_Nothing
+   + 0.472225 intersection|Flyer|Poster_Session|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|OC_Member|owl_Nothing
+   + 0.3889 intersection|Rejected_Paper|Research_Topic|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Industrial_Paper|owl_Nothing
+   + 0.472225 intersection|Research_Institute|Review|owl_Nothing
+   + 0.416675 intersection|OC_Member|Research_Topic|owl_Nothing
+   + 0.3889 intersection|Negative_Review|Tutorial|owl_Nothing
+   + 0.416675 intersection|Location|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Web_Site|Workshop|owl_Nothing
+   + 0.33335 intersection|Conference_Participant|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Demo_Session|SC_Member|owl_Nothing
+   + 0.416675 intersection|Flyer|Organisation|owl_Nothing
+   + 0.472225 intersection|Person|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Invited_Talk_Abstract|Workshop|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Paper|owl_Nothing
+   + 0.44445 intersection|Camera_Ready_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Accepted_Paper|Web_Site|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Session|owl_Nothing
+   + 0.3889 intersection|Conference_Proceedings|Web_Site|owl_Nothing
+   + 0.472225 intersection|Event|Rejected_Paper|owl_Nothing
+   + 0.33335 intersection|Conference_Proceedings|Scientific_Event|owl_Nothing
+   + 0.5 intersection|Camera_Ready_Paper|Conference_Participant|owl_Nothing
+   + 0.416675 intersection|Social_Event|Workshop_Chair|owl_Nothing
+   + 0.361125 intersection|Session|Tutorial_Abstract|owl_Nothing
+   + 0.33335 intersection|Demo_Chair|Possible_Reviewer|owl_Nothing
+   + 0.5 intersection|Paper|Research_Institute|owl_Nothing
+   + 0.3889 intersection|Multi-author_Volume|Web_Site|owl_Nothing
+   + 0.472225 intersection|Industrial_Session|Invited_Speaker|owl_Nothing
+   + 0.5 intersection|Demo_Chair|Web_Site|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|Tutorial|owl_Nothing
+   + 0.2778 intersection|OC_Chair|SC_Member|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Proceedings|owl_Nothing
+   + 0.472225 intersection|Invited_Talk_Abstract|Location|owl_Nothing
+   + 0.416675 intersection|Social_Event|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Student|owl_Nothing
+   + 0.5 intersection|Invited_Speaker|Workshop|owl_Nothing
+   + 0.416675 intersection|Negative_Review|Proceedings|owl_Nothing
+   + 0.5 intersection|Agency_Staff_Member|Workshop|owl_Nothing
+   + 0.2778 intersection|Conference_Session|Demo_Session|owl_Nothing
+   + 0.416675 intersection|Tutorial_Abstract|Workshop|owl_Nothing
+   + 0.44445 intersection|Possible_Reviewer|Social_Event|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|PC_Chair|owl_Nothing
+   + 0.3889 intersection|Proceedings_Publisher|Session|owl_Nothing
+   + 0.416675 intersection|Organising_Agency|Workshop|owl_Nothing
+   + 0.5 intersection|Accepted_Paper|SC_Member|owl_Nothing
+   + 0.361125 intersection|Flyer|Presenter|owl_Nothing
+   + 0.472225 intersection|Conference_Trip|Tutorial|owl_Nothing
+   + 0.44445 intersection|Presenter|Session|owl_Nothing
+   + 0.3889 intersection|Organising_Agency|Person|owl_Nothing
+   + 0.361125 intersection|Conference|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Paper_Author|Social_Event|owl_Nothing
+   + 0.5 intersection|Document|Workshop_Chair|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Social_Event|owl_Nothing
+   + 0.472225 intersection|Proceedings_Publisher|Workshop|owl_Nothing
+   + 0.2778 intersection|Agency_Staff_Member|Tutorial_Chair|owl_Nothing
+   + 0.472225 intersection|Document|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Flyer|Workshop|owl_Nothing
+   + 0.416675 intersection|Multi-author_Volume|Neutral_Review|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Evaluated_Paper|owl_Nothing
+   + 0.3889 intersection|Conference_Participant|PC_Chair|owl_Nothing
+   + 0.472225 intersection|Poster_Paper|Scientific_Event|owl_Nothing
+   + 0.416675 intersection|Invited_Talk|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Workshop_Paper|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Track|owl_Nothing
+   + 0.361125 intersection|Demo_Paper|Proceedings_Publisher|owl_Nothing
+   + 0.33335 intersection|Agency_Staff_Member|Late-Registered_Participant|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Evaluated_Paper|Industrial_Session|owl_Nothing
+   + 0.5 intersection|Conference|Location|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Research_Institute|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Track|owl_Nothing
+   + 0.472225 intersection|PC_Member|Track|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Proceedings|owl_Nothing
+   + 0.44445 intersection|Paper|Research_Topic|owl_Nothing
+   + 0.33335 intersection|Tutorial|Web_Site|owl_Nothing
+   + 0.472225 intersection|Event|SC_Member|owl_Nothing
+   + 0.5 intersection|Person|Poster_Session|owl_Nothing
+   + 0.361125 intersection|Track|Workshop_Session|owl_Nothing
+   + 0.472225 intersection|Conference_Banquet|OC_Member|owl_Nothing
+   + 0.472225 intersection|Scientific_Event|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|Programme_Brochure|owl_Nothing
+   + 0.416675 intersection|Regular_Paper|Session_Chair|owl_Nothing
+   + 0.5 intersection|Conference_Trip|OC_Member|owl_Nothing
+   + 0.472225 intersection|Industrial_Paper|Student|owl_Nothing
+   + 0.416675 intersection|Organising_Agency|Tutorial|owl_Nothing
+   + 0.44445 intersection|Review|Track|owl_Nothing
+   + 0.44445 intersection|Academic_Institution|Conference_Session|owl_Nothing
+   + 0.5 intersection|Flyer|OC_Chair|owl_Nothing
+   + 0.5 intersection|Conference|Document|owl_Nothing
+   + 0.416675 intersection|PC_Chair|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Conference|Regular_Session|owl_Nothing
+   + 0.44445 intersection|Industrial_Paper|Industrial_Session|owl_Nothing
+   + 0.305575 intersection|Invited_Talk_Abstract|Presenter|owl_Nothing
+   + 0.472225 intersection|Conference_Session|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Abstract|Proceedings|owl_Nothing
+   + 0.3889 intersection|Accepted_Paper|Proceedings|owl_Nothing
+   + 0.33335 intersection|Invited_Talk|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|PC_Member|owl_Nothing
+   + 0.472225 intersection|Conference_Session|Demo_Paper|owl_Nothing
+   + 0.416675 intersection|Abstract|Positive_Review|owl_Nothing
+   + 0.2778 intersection|Camera_Ready_Paper|Regular_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|PC_Chair|owl_Nothing
+   + 0.416675 intersection|Individual_Presentation|Social_Event|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Session|owl_Nothing
+   + 0.3889 intersection|Agency_Staff_Member|Flyer|owl_Nothing
+   + 0.472225 intersection|Person|Research_Institute|owl_Nothing
+   + 0.361125 intersection|Negative_Review|Poster_Paper|owl_Nothing
+   + 0.5 intersection|Late-Registered_Participant|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Location|Workshop|owl_Nothing
+   + 0.472225 intersection|Review|Workshop_Chair|owl_Nothing
+   + 0.416675 intersection|Agency_Staff_Member|Location|owl_Nothing
+   + 0.2778 intersection|Early-Registered_Participant|PC_Member|owl_Nothing
+   + 0.361125 intersection|Proceedings|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Industrial_Session|Paper|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Review|owl_Nothing
+   + 0.3889 intersection|Assigned_Paper|Workshop|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Web_Site|owl_Nothing
+   + 0.472225 intersection|Invited_Speaker|Web_Site|owl_Nothing
+   + 0.2778 intersection|Possible_Reviewer|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Assigned_Paper|Web_Site|owl_Nothing
+   + 0.416675 intersection|Neutral_Review|Track|owl_Nothing
+   + 0.5 intersection|Poster_Session|Workshop_Chair|owl_Nothing
+   + 0.361125 intersection|OC_Chair|Student|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Track|owl_Nothing
+   + 0.3889 intersection|Presenter|Social_Event|owl_Nothing
+   + 0.2778 intersection|Conference|Industrial_Session|owl_Nothing
+   + 0.5 intersection|Late-Registered_Participant|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.416675 intersection|Conference_Proceedings|OC_Member|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|OC_Chair|owl_Nothing
+   + 0.472225 intersection|Conference|Industrial_Paper|owl_Nothing
+   + 0.44445 intersection|Individual_Presentation|Possible_Reviewer|owl_Nothing
+   + 0.472225 intersection|Event|Presenter|owl_Nothing
+   + 0.5 intersection|Abstract|Person|owl_Nothing
+   + 0.416675 intersection|Individual_Presentation|Proceedings_Publisher|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Location|owl_Nothing
+   + 0.416675 intersection|Assigned_Paper|Neutral_Review|owl_Nothing
+   + 0.3889 intersection|Abstract|Tutorial|owl_Nothing
+   + 0.472225 intersection|Negative_Review|SC_Member|owl_Nothing
+   + 0.3889 intersection|Individual_Presentation|Industrial_Session|owl_Nothing
+   + 0.3889 intersection|Abstract|Scientific_Event|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|OC_Chair|owl_Nothing
+   + 0.44445 intersection|Document|Track|owl_Nothing
+   + 0.472225 intersection|Negative_Review|Tutorial_Chair|owl_Nothing
+   + 0.44445 intersection|Presenter|Workshop_Paper|owl_Nothing
+   + 0.3889 intersection|Industrial_Session|Review|owl_Nothing
+   + 0.416675 intersection|Proceedings|Track|owl_Nothing
+   + 0.416675 intersection|Evaluated_Paper|Event|owl_Nothing
+   + 0.44445 intersection|OC_Member|Workshop_Paper|owl_Nothing
+   + 0.5 intersection|Neutral_Review|Research_Institute|owl_Nothing
+   + 0.44445 intersection|Conference_Banquet|Industrial_Session|owl_Nothing
+   + 0.5 intersection|Document|University|owl_Nothing
+   + 0.5 intersection|Multi-author_Volume|Tutorial_Chair|owl_Nothing
+   + 0.361125 intersection|Contributed_Talk|Tutorial|owl_Nothing
+   + 0.2778 intersection|Document|Proceedings|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Positive_Review|owl_Nothing
+   + 0.416675 intersection|Demo_Paper|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Demo_Paper|Poster_Session|owl_Nothing
+   + 0.44445 intersection|Document|Positive_Review|owl_Nothing
+   + 0.361125 intersection|Tutorial_Abstract|Web_Site|owl_Nothing
+   + 0.472225 intersection|Late-Registered_Participant|Social_Event|owl_Nothing
+   + 0.44445 intersection|Agency_Staff_Member|Neutral_Review|owl_Nothing
+   + 0.472225 intersection|Camera_Ready_Paper|Social_Event|owl_Nothing
+   + 0.44445 intersection|Demo_Chair|Neutral_Review|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Regular_Session|owl_Nothing
+   + 0.3889 intersection|Agency_Staff_Member|Conference|owl_Nothing
+   + 0.3889 intersection|Individual_Presentation|OC_Member|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Invited_Talk_Abstract|owl_Nothing
+   + 0.44445 intersection|Proceedings_Publisher|Workshop_Chair|owl_Nothing
+   + 0.472225 intersection|Academic_Institution|Neutral_Review|owl_Nothing
+   + 0.3889 intersection|Organisation|Web_Site|owl_Nothing
+   + 0.44445 intersection|Paper|University|owl_Nothing
+   + 0.5 intersection|Industrial_Paper|OC_Member|owl_Nothing
+   + 0.361125 intersection|Flyer|Possible_Reviewer|owl_Nothing
+   + 0.33335 intersection|Rejected_Paper|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Person|Submitted_Paper|owl_Nothing
+   + 0.44445 intersection|Conference_Trip|Demo_Chair|owl_Nothing
+   + 0.472225 intersection|Demo_Chair|Track|owl_Nothing
+   + 0.416675 intersection|Demo_Session|Flyer|owl_Nothing
+   + 0.3889 intersection|Research_Topic|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Research_Topic|Tutorial_Abstract|owl_Nothing
+   + 0.361125 intersection|Accepted_Paper|Research_Topic|owl_Nothing
+   + 0.2778 intersection|SC_Member|Session_Chair|owl_Nothing
+   + 0.44445 intersection|Early-Registered_Participant|Tutorial|owl_Nothing
+   + 0.472225 intersection|Demo_Paper|Neutral_Review|owl_Nothing
+   + 0.2778 intersection|Individual_Presentation|Positive_Review|owl_Nothing
+   + 0.44445 intersection|Conference_Paper|Invited_Speaker|owl_Nothing
+   + 0.472225 intersection|Possible_Reviewer|Tutorial|owl_Nothing
+   + 0.416675 intersection|Conference_Trip|Paper_Author|owl_Nothing
+   + 0.305575 intersection|Paper|Positive_Review|owl_Nothing
+   + 0.3889 intersection|Proceedings|Workshop|owl_Nothing
+   + 0.44445 intersection|Evaluated_Paper|Social_Event|owl_Nothing
+   + 0.3889 intersection|OC_Chair|Regular_Session|owl_Nothing
+   + 0.472225 intersection|Early-Registered_Participant|Research_Topic|owl_Nothing
+   + 0.44445 intersection|Proceedings_Publisher|Scientific_Event|owl_Nothing
+   + 0.361125 intersection|Abstract|Assigned_Paper|owl_Nothing
+   + 0.472225 intersection|Conference_Paper|Organisation|owl_Nothing
+   + 0.305575 intersection|Conference_Participant|Workshop_Chair|owl_Nothing
+   + 0.5 intersection|Track|Tutorial_Abstract|owl_Nothing
+   + 0.472225 intersection|Conference_Proceedings|PC_Member|owl_Nothing
+   + 0.416675 intersection|Demo_Chair|Regular_Session|owl_Nothing
+   + 0.416675 intersection|Agency_Staff_Member|Positive_Review|owl_Nothing
+   + 0.361125 intersection|Early-Registered_Participant|Late-Registered_Participant|owl_Nothing
+   + 0.3889 intersection|Abstract|Social_Event|owl_Nothing
+   + 0.416675 intersection|Positive_Review|Proceedings|owl_Nothing
+   + 0.416675 intersection|Contributed_Talk|Industrial_Paper|owl_Nothing
+   + 0.33335 intersection|Accepted_Paper|Programme_Brochure|owl_Nothing
+   + 0.3889 intersection|Conference_Banquet|Conference_Session|owl_Nothing
+   + 0.5 intersection|Document|Student|owl_Nothing
+   + 0.5 intersection|Conference_Participant|Evaluated_Paper|owl_Nothing
+   + 0.44445 intersection|Paper|Proceedings_Publisher|owl_Nothing
+   + 0.361125 intersection|Research_Institute|Workshop_Session|owl_Nothing
+   + 0.3889 intersection|Event|Neutral_Review|owl_Nothing
+   + 0.361125 intersection|Multi-author_Volume|Submitted_Paper|owl_Nothing
+   + 0.33335 intersection|PC_Member|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Presenter|Track|owl_Nothing
+   + 0.3889 intersection|Contributed_Talk|Submitted_Paper|owl_Nothing
+   + 0.361125 intersection|Possible_Reviewer|Rejected_Paper|owl_Nothing
+   + 0.44445 intersection|Paper_Author|Regular_Paper|owl_Nothing
+   + 0.472225 intersection|Accepted_Paper|Agency_Staff_Member|owl_Nothing
+   + 0.2778 intersection|Document|Invited_Talk_Abstract|owl_Nothing
+   + 0.5 intersection|PC_Chair|Track|owl_Nothing
+   + 0.5 intersection|Flyer|Organising_Agency|owl_Nothing
+   + 0.472225 intersection|Assigned_Paper|University|owl_Nothing
+   + 0.5 intersection|Tutorial_Chair|University|owl_Nothing
+   + 0.416675 intersection|Late-Registered_Participant|Workshop_Paper|owl_Nothing
+   + 0.416675 intersection|Research_Topic|Session_Chair|owl_Nothing
+   + 0.472225 intersection|Research_Topic|Student|owl_Nothing
+   + 0.5 intersection|Conference_Banquet|Conference_Paper|owl_Nothing
+   + 0.361125 intersection|Conference_Paper|Negative_Review|owl_Nothing
+   + 0.44445 intersection|Research_Institute|Submitted_Paper|owl_Nothing
+   + 0.416675 intersection|Conference_Session|Track|owl_Nothing
+   + 0.5 intersection|PC_Chair|Tutorial_Abstract|owl_Nothing
+   + 0.33335 intersection|Person|Tutorial_Chair|owl_Nothing
+   + 0.416675 intersection|Document|Scientific_Event|owl_Nothing
+   + 0.44445 intersection|Late-Registered_Participant|Multi-author_Volume|owl_Nothing
+   + 0.5 intersection|Proceedings|Workshop_Chair|owl_Nothing
+   + 0.2778 intersection|Invited_Speaker|PC_Chair|owl_Nothing
+   + 0.44445 intersection|Presenter|Workshop|owl_Nothing
+   + 0.3889 intersection|Invited_Talk|SC_Member|owl_Nothing
+   + 0.416675 intersection|Programme_Brochure|Workshop_Session|owl_Nothing
+   + 0.44445 intersection|Contributed_Talk|Neutral_Review|owl_Nothing
+   + 0.44445 intersection|Multi-author_Volume|Workshop_Session|owl_Nothing
+   + 0.33335 intersection|Conference_Proceedings|Multi-author_Volume|owl_Nothing
+   + 0.416675 intersection|Agency_Staff_Member|Contributed_Talk|owl_Nothing
+   + 0.472225 intersection|Conference|Paper_Author|owl_Nothing
+   + 0.44445 intersection|Organising_Agency|Poster_Paper|owl_Nothing
+   + 0.472225 intersection|OC_Chair|Programme_Brochure|owl_Nothing
+   + 0.33335 intersection|PC_Member|Research_Institute|owl_Nothing
+   + 0.2778 intersection|Conference_Proceedings|Event|owl_Nothing
 Subject To
- R0: subsumes|Criminal|Person >= 1
- R1: subsumes|Senator|Politician >= 1
- R2: subsumes|Pope|Cleric >= 1
- R3: subsumes|Aircraft|MeanOfTransportation >= 1
- R4: subsumes|OlympicResult|owl_Thing >= 1
- R5: subsumes|PopulatedPlace|Place >= 1
- R6: subsumes|Monarch|Person >= 1
- R7: subsumes|Reptile|Animal >= 1
- R8: subsumes|VolleyballLeague|SportsLeague >= 1
- R9: subsumes|MotorcycleRacingLeague|SportsLeague >= 1
- R10: subsumes|Moss|Plant >= 1
- R11: subsumes|YearInSpaceflight|Event >= 1
- R12: subsumes|Automobile|MeanOfTransportation >= 1
- R13: subsumes|Species|owl_Thing >= 1
- R14: subsumes|Village|Settlement >= 1
- R15: subsumes|Arachnid|Animal >= 1
- R16: subsumes|ClubMoss|Plant >= 1
- R17: subsumes|SoccerPlayer|Athlete >= 1
- R18: subsumes|Website|owl_Thing >= 1
- R19: subsumes|HandballLeague|SportsLeague >= 1
- R20: subsumes|Athlete|Person >= 1
- R21: subsumes|WineRegion|Place >= 1
- R22: subsumes|Musical|Work >= 1
- R23: subsumes|School|EducationalInstitution >= 1
- R24: subsumes|Film|Work >= 1
- R25: subsumes|SportsTeam|Organisation >= 1
- R26: subsumes|Eukaryote|Species >= 1
- R27: subsumes|Software|Work >= 1
- R28: subsumes|AmericanFootballLeague|SportsLeague >= 1
- R29: subsumes|Bacteria|Species >= 1
- R30: subsumes|FigureSkater|Athlete >= 1
- R31: subsumes|Race|SportsEvent >= 1
- R32: subsumes|Ginkgo|Plant >= 1
- R33: subsumes|AmericanFootballTeam|SportsTeam >= 1
- R34: subsumes|Cycad|Plant >= 1
- R35: subsumes|AmericanFootballPlayer|GridironFootballPlayer >= 1
- R36: subsumes|TelevisionShow|Work >= 1
- R37: subsumes|MusicGenre|owl_Thing >= 1
- R38: subsumes|MilitaryConflict|Event >= 1
- R39: subsumes|RecordLabel|Company >= 1
- R40: subsumes|Chancellor|Politician >= 1
- R41: subsumes|Insect|Animal >= 1
- R42: subsumes|BaseballLeague|SportsLeague >= 1
- R43: subsumes|Protein|owl_Thing >= 1
- R44: subsumes|LacrosseLeague|SportsLeague >= 1
- R45: subsumes|Ambassador|Person >= 1
- R46: subsumes|MusicalArtist|Artist >= 1
- R47: subsumes|Settlement|PopulatedPlace >= 1
- R48: subsumes|College|EducationalInstitution >= 1
- R49: subsumes|MusicalWork|Work >= 1
- R50: subsumes|RugbyPlayer|Athlete >= 1
- R51: subsumes|Animal|Eukaryote >= 1
- R52: subsumes|Valley|Place >= 1
- R53: subsumes|Country|PopulatedPlace >= 1
- R54: subsumes|Conifer|Plant >= 1
- R55: subsumes|Canal|Stream >= 1
- R56: subsumes|TelevisionEpisode|Work >= 1
- R57: subsumes|Newspaper|Work >= 1
- R58: subsumes|Sport|Activity >= 1
- R59: subsumes|Journalist|Person >= 1
- R60: subsumes|Airline|Company >= 1
- R61: subsumes|Artery|AnatomicalStructure >= 1
- R62: subsumes|NationalCollegiateAthleticAssociationAthlete|Athlete >= 1
- R63: subsumes|GolfLeague|SportsLeague >= 1
- R64: subsumes|CurlingLeague|SportsLeague >= 1
- R65: subsumes|FloweringPlant|Plant >= 1
- R66: subsumes|Bird|Animal >= 1
- R67: subsumes|MixedMartialArtsLeague|SportsLeague >= 1
- R68: subsumes|BaseballPlayer|Athlete >= 1
- R69: subsumes|Stream|BodyOfWater >= 1
- R70: subsumes|Place|owl_Thing >= 1
- R71: subsumes|Writer|Artist >= 1
- R72: subsumes|Drug|owl_Thing >= 1
- R73: subsumes|Architect|Person >= 1
- R74: subsumes|Legislature|Organisation >= 1
- R75: subsumes|Band|Organisation >= 1
- R76: subsumes|BadmintonPlayer|Athlete >= 1
- R77: subsumes|PoloLeague|SportsLeague >= 1
- R78: subsumes|CanadianFootballPlayer|GridironFootballPlayer >= 1
- R79: subsumes|AutoRacingLeague|SportsLeague >= 1
- R80: subsumes|ShoppingMall|Building >= 1
- R81: subsumes|AustralianFootballLeague|SportsLeague >= 1
- R82: subsumes|Cyclist|Athlete >= 1
- R83: subsumes|Crustacean|Animal >= 1
- R84: subsumes|President|Politician >= 1
- R85: subsumes|CyclingLeague|SportsLeague >= 1
- R86: subsumes|BoxingLeague|SportsLeague >= 1
- R87: subsumes|Mollusca|Animal >= 1
- R88: subsumes|Bone|AnatomicalStructure >= 1
- R89: subsumes|Wrestler|Athlete >= 1
- R90: subsumes|Spacecraft|MeanOfTransportation >= 1
- R91: subsumes|Currency|owl_Thing >= 1
- R92: subsumes|Bridge|Building >= 1
- R93: subsumes|Organisation|owl_Thing >= 1
- R94: subsumes|VideoGame|Software >= 1
- R95: subsumes|Fish|Animal >= 1
- R96: subsumes|Painting|owl_Thing >= 1
- R97: subsumes|Park|Place >= 1
- R98: subsumes|CanadianFootballLeague|SportsLeague >= 1
- R99: subsumes|IceHockeyPlayer|Athlete >= 1
- R100: subsumes|PokerPlayer|Person >= 1
- R101: subsumes|VoiceActor|Actor >= 1
- R102: subsumes|Broadcast|Organisation >= 1
- R103: subsumes|GridironFootballPlayer|Athlete >= 1
- R104: subsumes|Model|Person >= 1
- R105: subsumes|Mammal|Animal >= 1
- R106: subsumes|SpeedwayLeague|SportsLeague >= 1
- R107: subsumes|Building|Place >= 1
- R108: subsumes|FilmFestival|Event >= 1
- R109: subsumes|PersonFunction|owl_Thing >= 1
- R110: subsumes|BritishRoyalty|Person >= 1
- R111: subsumes|HockeyTeam|SportsTeam >= 1
- R112: subsumes|TradeUnion|Organisation >= 1
- R113: subsumes|SoccerLeague|SportsLeague >= 1
- R114: subsumes|Plant|Eukaryote >= 1
- R115: subsumes|Lieutenant|Politician >= 1
- R116: subsumes|Amphibian|Animal >= 1
- R117: subsumes|SpaceMission|Event >= 1
- R118: subsumes|MusicFestival|Event >= 1
- R119: subsumes|CollegeCoach|Person >= 1
- R120: subsumes|BasketballLeague|SportsLeague >= 1
- R121: subsumes|CanadianFootballTeam|SportsTeam >= 1
- R122: subsumes|LaunchPad|Building >= 1
- R123: subsumes|SupremeCourtOfTheUnitedStatesCase|owl_Thing >= 1
- R124: subsumes|TennisPlayer|Athlete >= 1
- R125: subsumes|SoftballLeague|SportsLeague >= 1
- R126: subsumes|Ship|MeanOfTransportation >= 1
- R127: subsumes|PrimeMinister|Politician >= 1
- R128: subsumes|River|Stream >= 1
- R129: subsumes|Actor|Artist >= 1
- R130: subsumes|Book|Work >= 1
- R131: subsumes|Brain|AnatomicalStructure >= 1
- R132: subsumes|SpaceStation|MeanOfTransportation >= 1
- R133: subsumes|RadioStation|Organisation >= 1
- R134: subsumes|Fern|Plant >= 1
- R135: subsumes|Airport|Building >= 1
- R136: subsumes|MilitaryUnit|Organisation >= 1
- R137: subsumes|Road|Infrastructure >= 1
- R138: subsumes|Event|owl_Thing >= 1
- R139: subsumes|Non-ProfitOrganisation|Organisation >= 1
- R140: subsumes|FormulaOneRacer|Athlete >= 1
- R141: subsumes|Scientist|Person >= 1
- R142: subsumes|Infrastructure|owl_Thing >= 1
- R143: subsumes|EthnicGroup|owl_Thing >= 1
- R144: subsumes|Cave|Place >= 1
- R145: subsumes|University|EducationalInstitution >= 1
- R146: subsumes|BasketballPlayer|Athlete >= 1
- R147: subsumes|RadioControlledRacingLeague|SportsLeague >= 1
- R148: subsumes|MeanOfTransportation|owl_Thing >= 1
- R149: subsumes|Muscle|AnatomicalStructure >= 1
- R150: subsumes|Mayor|Politician >= 1
- R151: subsumes|MilitaryPerson|Person >= 1
- R152: subsumes|LunarCrater|Place >= 1
- R153: subsumes|WomensTennisAssociationTournament|SportsEvent >= 1
- R154: subsumes|Island|PopulatedPlace >= 1
- R155: subsumes|ProtectedArea|Place >= 1
- R156: subsumes|WorldHeritageSite|Place >= 1
- R157: subsumes|Judge|Person >= 1
- R158: subsumes|InlineHockeyLeague|SportsLeague >= 1
- R159: subsumes|Grape|FloweringPlant >= 1
- R160: subsumes|Station|Building >= 1
- R161: subsumes|Lighthouse|Building >= 1
- R162: subsumes|Activity|owl_Thing >= 1
- R163: subsumes|Artist|Person >= 1
- R164: subsumes|Language|owl_Thing >= 1
- R165: subsumes|BowlingLeague|SportsLeague >= 1
- R166: subsumes|Person|owl_Thing >= 1
- R167: subsumes|Disease|owl_Thing >= 1
- R168: subsumes|SoccerManager|Person >= 1
- R169: subsumes|Governor|Politician >= 1
- R170: subsumes|Lake|BodyOfWater >= 1
- R171: subsumes|Nerve|AnatomicalStructure >= 1
- R172: subsumes|FieldHockeyLeague|SportsLeague >= 1
- R173: subsumes|SoccerClub|SportsTeam >= 1
- R174: subsumes|Celebrity|Person >= 1
- R175: subsumes|PaintballLeague|SportsLeague >= 1
- R176: subsumes|Lymph|AnatomicalStructure >= 1
- R177: subsumes|Work|owl_Thing >= 1
- R178: subsumes|Town|Settlement >= 1
- R179: subsumes|SportsEvent|Event >= 1
- R180: subsumes|Saint|Cleric >= 1
- R181: subsumes|GaelicGamesPlayer|Athlete >= 1
- R182: subsumes|Mountain|Place >= 1
- R183: subsumes|TennisLeague|SportsLeague >= 1
- R184: subsumes|Magazine|Work >= 1
- R185: subsumes|AutomobileEngine|Device >= 1
- R186: subsumes|Continent|PopulatedPlace >= 1
- R187: subsumes|Beverage|owl_Thing >= 1
- R188: subsumes|Convention|Event >= 1
- R189: subsumes|Congressman|Politician >= 1
- R190: subsumes|AnatomicalStructure|owl_Thing >= 1
- R191: subsumes|EurovisionSongContestEntry|Song >= 1
- R192: subsumes|Weapon|Device >= 1
- R193: subsumes|VicePrimeMinister|Politician >= 1
- R194: subsumes|HistoricPlace|Place >= 1
- R195: subsumes|GeopoliticalOrganisation|Organisation >= 1
- R196: subsumes|MixedMartialArtsEvent|SportsEvent >= 1
- R197: subsumes|Album|MusicalWork >= 1
- R198: subsumes|Rocket|MeanOfTransportation >= 1
- R199: subsumes|HistoricBuilding|Building >= 1
- R200: subsumes|Deputy|Politician >= 1
- R201: subsumes|BodyOfWater|Place >= 1
- R202: subsumes|City|Settlement >= 1
- R203: subsumes|Vein|AnatomicalStructure >= 1
- R204: subsumes|MemberOfParliament|Politician >= 1
- R205: subsumes|Fungus|Eukaryote >= 1
- R206: subsumes|ChemicalCompound|owl_Thing >= 1
- R207: subsumes|EducationalInstitution|Organisation >= 1
- R208: subsumes|VicePresident|Politician >= 1
- R209: subsumes|Embryology|AnatomicalStructure >= 1
- R210: subsumes|WrestlingEvent|SportsEvent >= 1
- R211: subsumes|NascarDriver|Athlete >= 1
- R212: subsumes|Cricketer|Athlete >= 1
- R213: subsumes|Stadium|Building >= 1
- R214: subsumes|ComicsCharacter|FictionalCharacter >= 1
- R215: subsumes|CricketLeague|SportsLeague >= 1
- R216: subsumes|ChristianBishop|Cleric >= 1
- R217: subsumes|SiteOfSpecialScientificInterest|Place >= 1
- R218: subsumes|Colour|owl_Thing >= 1
- R219: subsumes|Cardinal|Cleric >= 1
- R220: subsumes|FictionalCharacter|Person >= 1
- R221: subsumes|GrandPrix|SportsEvent >= 1
- R222: subsumes|Planet|owl_Thing >= 1
- R223: subsumes|Boxer|Athlete >= 1
- R224: subsumes|Monument|Place >= 1
- R225: subsumes|SpaceShuttle|MeanOfTransportation >= 1
- R226: subsumes|ComicsCreator|Artist >= 1
- R227: subsumes|Single|MusicalWork >= 1
- R228: subsumes|MountainPass|Place >= 1
- R229: subsumes|Song|MusicalWork >= 1
- R230: subsumes|OfficeHolder|Person >= 1
- R231: subsumes|Sales|owl_Thing >= 1
- R232: subsumes|Philosopher|Person >= 1
- R233: subsumes|GreenAlga|Plant >= 1
- R234: subsumes|IceHockeyLeague|SportsLeague >= 1
- R235: subsumes|RugbyLeague|SportsLeague >= 1
- R236: subsumes|Cleric|Person >= 1
- R237: subsumes|SportsLeague|Organisation >= 1
- R238: subsumes|Award|owl_Thing >= 1
- R239: subsumes|PlayboyPlaymate|Person >= 1
- R240: subsumes|AdultActor|Actor >= 1
- R241: subsumes|Archaea|Species >= 1
- R242: subsumes|AdministrativeRegion|PopulatedPlace >= 1
- R243: subsumes|Politician|Person >= 1
- R244: subsumes|Skyscraper|Building >= 1
- R245: subsumes|Company|Organisation >= 1
- R246: subsumes|SkiArea|Place >= 1
- R247: subsumes|Comedian|Artist >= 1
- R248: subsumes|Game|Activity >= 1
- R249: subsumes|Device|owl_Thing >= 1
- R250: subsumes|Astronaut|Person >= 1
- R251: subsumes|MountainRange|Place >= 1
- R252: subsumes|VideogamesLeague|SportsLeague >= 1
- R253: subsumes|GovernmentType|owl_Thing >= 1
- R254: subsumes|Hospital|Building >= 1
- R255: subsumes|Olympics|SportsEvent >= 1
- R256: subsumes|Gnetophytes|Plant >= 1
- R257: subsumes|Cleric|owl_Thing >= 1
- R258: subsumes|Governor|owl_Thing >= 1
- R259: subsumes|squareMetre|owl_Thing >= 1
- R260: subsumes|Olympics|owl_Thing >= 1
- R261: subsumes|wgs84_pos#SpatialThing|owl_Thing >= 1
- R262: subsumes|Rocket|owl_Thing >= 1
- R263: subsumes|AutoRacingLeague|owl_Thing >= 1
- R264: subsumes|cubicCentimetre|owl_Thing >= 1
- R265: subsumes|Senator|owl_Thing >= 1
- R266: subsumes|SoccerLeague|owl_Thing >= 1
- R267: subsumes|Architect|owl_Thing >= 1
- R268: subsumes|WrestlingEvent|owl_Thing >= 1
- R269: subsumes|Model|owl_Thing >= 1
- R270: subsumes|NationalCollegiateAthleticAssociationAthlete|owl_Thing
+ R0: - subsumes|Scientific_Event|Event
+   - subsumes|Scientific_Event|Proceedings
+   - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing >= -2
+ R1: - subsumes|Demo_Session|Conference_Session
+   - subsumes|Demo_Session|Event
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing >= -2
+ R2: - subsumes|Conference_Proceedings|Proceedings
+   - subsumes|Conference_Proceedings|Conference_Session
+   - intersection|Conference_Session|Proceedings|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing >= -2
+ R3: - subsumes|Workshop_Session|Workshop
+   - subsumes|Workshop_Session|Session
+   - intersection|Session|Workshop|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing >= -2
+ R4: opsup|partOfEvent|Thing|Demo_Session >= 1
+ R5: opsup|hasReview|Thing|Accepted_Paper >= 1
+ R6: opsup|hasPart|Thing|Workshop_Session >= 1
+ R7: opsup|hasPart|Thing|Demo_Session >= 1
+ R8: opsup|partOf|Thing|Session >= 1
+ R9: opsup|partOfEvent|Thing|Session >= 1
+ R10: opsup|updatedVersionOf|Thing|Camera_Ready_Paper >= 1
+ R11: opsup|hasPart|Thing|Regular_Session >= 1
+ R12: opsup|hasPart|Thing|Poster_Session >= 1
+ R13: opsup|partOfEvent|Thing|Conference_Session >= 1
+ R14: opsup|partOfEvent|Thing|Industrial_Session >= 1
+ R15: opsup|hasEvent|Thing|Workshop_Session >= 1
+ R16: opsup|hasPart|Thing|Industrial_Session >= 1
+ R17: opsup|partOf|Thing|Conference_Session >= 1
+ R18: opsup|hasEvent|Thing|Industrial_Session >= 1
+ R19: opsup|partOfEvent|Thing|Poster_Session >= 1
+ R20: opsup|hasReviewer|Thing|Rejected_Paper >= 1
+ R21: opsup|hasEvent|Thing|Poster_Session >= 1
+ R22: opsup|partOfEvent|Thing|Workshop_Session >= 1
+ R23: opsup|partOf|Thing|Workshop_Session >= 1
+ R24: opsup|partOf|Thing|Demo_Session >= 1
+ R25: opsup|presentationOfPaper|Thing|Contributed_Talk >= 1
+ R26: opsup|hasReviewer|Thing|Assigned_Paper >= 1
+ R27: opsup|volumeContainsPaper|Thing|Proceedings >= 1
+ R28: opsup|hasReview|Thing|Evaluated_Paper >= 1
+ R29: opsup|hasReview|Thing|Rejected_Paper >= 1
+ R30: opsup|partOf|Thing|Regular_Session >= 1
+ R31: opsup|hasReviewer|Thing|Evaluated_Paper >= 1
+ R32: opsup|partOf|Thing|Poster_Session >= 1
+ R33: opsup|hasPart|Thing|Conference_Session >= 1
+ R34: opsup|hasPart|Thing|Session >= 1
+ R35: opsup|hasEvent|Thing|Demo_Session >= 1
+ R36: opsup|volumeContainsPaper|Thing|Conference_Proceedings >= 1
+ R37: opsup|hasReviewer|Thing|Accepted_Paper >= 1
+ R38: opsup|partOf|Thing|Industrial_Session >= 1
+ R39: opsup|writtenBy|Thing|Camera_Ready_Paper >= 1
+ R40: opsup|partOfEvent|Thing|Regular_Session >= 1
+ R41: opsup|hasEvent|Thing|Conference_Session >= 1
+ R42: opsup|hasEvent|Thing|Session >= 1
+ R43: opsup|hasEvent|Thing|Regular_Session >= 1
+ R44: subsumes|Workshop_Paper|owl_Thing >= 1
+ R45: subsumes|Location|owl_Thing >= 1
+ R46: subsumes|Conference_Banquet|owl_Thing >= 1
+ R47: subsumes|Regular_Session|owl_Thing >= 1
+ R48: subsumes|Thing|owl_Thing >= 1
+ R49: subsumes|Poster_Session|owl_Thing >= 1
+ R50: subsumes|Abstract|owl_Thing >= 1
+ R51: subsumes|Paper_Author|owl_Thing >= 1
+ R52: subsumes|Scientific_Event|owl_Thing >= 1
+ R53: subsumes|Workshop_Session|owl_Thing >= 1
+ R54: subsumes|Session|owl_Thing >= 1
+ R55: subsumes|Multi-author_Volume|owl_Thing >= 1
+ R56: subsumes|Academic_Institution|owl_Thing >= 1
+ R57: subsumes|Event|owl_Thing >= 1
+ R58: subsumes|Workshop_Chair|owl_Thing >= 1
+ R59: subsumes|Track|owl_Thing >= 1
+ R60: subsumes|Programme_Brochure|owl_Thing >= 1
+ R61: subsumes|Demo_Paper|owl_Thing >= 1
+ R62: subsumes|Tutorial|owl_Thing >= 1
+ R63: subsumes|Organisation|owl_Thing >= 1
+ R64: subsumes|Individual_Presentation|owl_Thing >= 1
+ R65: subsumes|Flyer|owl_Thing >= 1
+ R66: subsumes|Social_Event|owl_Thing >= 1
+ R67: subsumes|Regular_Paper|owl_Thing >= 1
+ R68: subsumes|Person|owl_Thing >= 1
+ R69: subsumes|Student|owl_Thing >= 1
+ R70: subsumes|Organising_Agency|owl_Thing >= 1
+ R71: subsumes|Poster_Paper|owl_Thing >= 1
+ R72: subsumes|Document|owl_Thing >= 1
+ R73: subsumes|PC_Member|owl_Thing >= 1
+ R74: subsumes|Web_Site|owl_Thing >= 1
+ R75: subsumes|OC_Chair|owl_Thing >= 1
+ R76: subsumes|SC_Member|owl_Thing >= 1
+ R77: subsumes|Conference_Participant|owl_Thing >= 1
+ R78: subsumes|Conference_Session|owl_Thing >= 1
+ R79: subsumes|Session_Chair|owl_Thing >= 1
+ R80: subsumes|Early-Registered_Participant|owl_Thing >= 1
+ R81: subsumes|Demo_Chair|owl_Thing >= 1
+ R82: subsumes|Camera_Ready_Paper|owl_Thing >= 1
+ R83: subsumes|Review|owl_Thing >= 1
+ R84: subsumes|Conference_Proceedings|owl_Thing >= 1
+ R85: subsumes|Proceedings_Publisher|owl_Thing >= 1
+ R86: subsumes|Contributed_Talk|owl_Thing >= 1
+ R87: subsumes|Industrial_Session|owl_Thing >= 1
+ R88: subsumes|Tutorial_Chair|owl_Thing >= 1
+ R89: subsumes|Assigned_Paper|owl_Thing >= 1
+ R90: subsumes|Submitted_Paper|owl_Thing >= 1
+ R91: subsumes|Demo_Session|owl_Thing >= 1
+ R92: subsumes|Negative_Review|owl_Thing >= 1
+ R93: subsumes|Research_Institute|owl_Thing >= 1
+ R94: subsumes|Evaluated_Paper|owl_Thing >= 1
+ R95: subsumes|Conference_Paper|owl_Thing >= 1
+ R96: subsumes|Agency_Staff_Member|owl_Thing >= 1
+ R97: subsumes|Late-Registered_Participant|owl_Thing >= 1
+ R98: subsumes|Conference|owl_Thing >= 1
+ R99: subsumes|Workshop|owl_Thing >= 1
+ R100: subsumes|Positive_Review|owl_Thing >= 1
+ R101: subsumes|Industrial_Paper|owl_Thing >= 1
+ R102: subsumes|Research_Topic|owl_Thing >= 1
+ R103: subsumes|Neutral_Review|owl_Thing >= 1
+ R104: subsumes|Conference_Trip|owl_Thing >= 1
+ R105: subsumes|Invited_Speaker|owl_Thing >= 1
+ R106: subsumes|Invited_Talk_Abstract|owl_Thing >= 1
+ R107: subsumes|Possible_Reviewer|owl_Thing >= 1
+ R108: subsumes|University|owl_Thing >= 1
+ R109: subsumes|Presenter|owl_Thing >= 1
+ R110: subsumes|Proceedings|owl_Thing >= 1
+ R111: subsumes|OC_Member|owl_Thing >= 1
+ R112: subsumes|Paper|owl_Thing >= 1
+ R113: subsumes|Accepted_Paper|owl_Thing >= 1
+ R114: subsumes|Rejected_Paper|owl_Thing >= 1
+ R115: subsumes|Invited_Talk|owl_Thing >= 1
+ R116: subsumes|PC_Chair|owl_Thing >= 1
+ R117: subsumes|Tutorial_Abstract|owl_Thing >= 1
+ R118: subsumes|owl_Thing|owl_Thing >= 1
+ R119: subsumes|owl_Nothing|owl_Thing >= 1
+ R120: subsumes|Workshop_Paper|Workshop_Paper >= 1
+ R121: subsumes|Location|Location >= 1
+ R122: subsumes|Conference_Banquet|Conference_Banquet >= 1
+ R123: subsumes|Regular_Session|Regular_Session >= 1
+ R124: subsumes|Thing|Thing >= 1
+ R125: subsumes|Poster_Session|Poster_Session >= 1
+ R126: subsumes|Abstract|Abstract >= 1
+ R127: subsumes|Paper_Author|Paper_Author >= 1
+ R128: subsumes|Scientific_Event|Scientific_Event >= 1
+ R129: subsumes|Workshop_Session|Workshop_Session >= 1
+ R130: subsumes|Session|Session >= 1
+ R131: subsumes|Multi-author_Volume|Multi-author_Volume >= 1
+ R132: subsumes|Academic_Institution|Academic_Institution >= 1
+ R133: subsumes|Event|Event >= 1
+ R134: subsumes|Workshop_Chair|Workshop_Chair >= 1
+ R135: subsumes|Track|Track >= 1
+ R136: subsumes|Programme_Brochure|Programme_Brochure >= 1
+ R137: subsumes|Demo_Paper|Demo_Paper >= 1
+ R138: subsumes|Tutorial|Tutorial >= 1
+ R139: subsumes|Organisation|Organisation >= 1
+ R140: subsumes|Individual_Presentation|Individual_Presentation >= 1
+ R141: subsumes|Flyer|Flyer >= 1
+ R142: subsumes|Social_Event|Social_Event >= 1
+ R143: subsumes|Regular_Paper|Regular_Paper >= 1
+ R144: subsumes|Person|Person >= 1
+ R145: subsumes|Student|Student >= 1
+ R146: subsumes|Organising_Agency|Organising_Agency >= 1
+ R147: subsumes|Poster_Paper|Poster_Paper >= 1
+ R148: subsumes|Document|Document >= 1
+ R149: subsumes|PC_Member|PC_Member >= 1
+ R150: subsumes|Web_Site|Web_Site >= 1
+ R151: subsumes|OC_Chair|OC_Chair >= 1
+ R152: subsumes|SC_Member|SC_Member >= 1
+ R153: subsumes|Conference_Participant|Conference_Participant >= 1
+ R154: subsumes|Conference_Session|Conference_Session >= 1
+ R155: subsumes|Session_Chair|Session_Chair >= 1
+ R156: subsumes|Early-Registered_Participant|Early-Registered_Participant
    >= 1
- R271: subsumes|Fern|owl_Thing >= 1
- R272: subsumes|ClubMoss|owl_Thing >= 1
- R273: subsumes|AustralianFootballLeague|owl_Thing >= 1
- R274: subsumes|SpaceStation|owl_Thing >= 1
- R275: subsumes|Crustacean|owl_Thing >= 1
- R276: subsumes|RadioControlledRacingLeague|owl_Thing >= 1
- R277: subsumes|BaseballLeague|owl_Thing >= 1
- R278: subsumes|NascarDriver|owl_Thing >= 1
- R279: subsumes|EducationalInstitution|owl_Thing >= 1
- R280: subsumes|Stream|owl_Thing >= 1
- R281: subsumes|Nerve|owl_Thing >= 1
- R282: subsumes|Musical|owl_Thing >= 1
- R283: subsumes|day|owl_Thing >= 1
- R284: subsumes|WomensTennisAssociationTournament|owl_Thing >= 1
- R285: subsumes|Cricketer|owl_Thing >= 1
- R286: subsumes|ShoppingMall|owl_Thing >= 1
- R287: subsumes|Criminal|owl_Thing >= 1
- R288: subsumes|Weapon|owl_Thing >= 1
- R289: subsumes|owl_Thing|owl_Thing >= 1
- R290: subsumes|FloweringPlant|owl_Thing >= 1
- R291: subsumes|Celebrity|owl_Thing >= 1
- R292: subsumes|second|owl_Thing >= 1
- R293: subsumes|Continent|owl_Thing >= 1
- R294: subsumes|BritishRoyalty|owl_Thing >= 1
- R295: subsumes|Device|owl_Thing >= 1
- R296: subsumes|kilometrePerSecond|owl_Thing >= 1
- R297: subsumes|megabyte|owl_Thing >= 1
- R298: subsumes|MilitaryUnit|owl_Thing >= 1
- R299: subsumes|Saint|owl_Thing >= 1
- R300: subsumes|Newspaper|owl_Thing >= 1
- R301: subsumes|fuelType|owl_Thing >= 1
- R302: subsumes|Amphibian|owl_Thing >= 1
- R303: subsumes|MusicFestival|owl_Thing >= 1
- R304: subsumes|Non-ProfitOrganisation|owl_Thing >= 1
- R305: subsumes|Congressman|owl_Thing >= 1
- R306: subsumes|Fish|owl_Thing >= 1
- R307: subsumes|Species|owl_Thing >= 1
- R308: subsumes|Album|owl_Thing >= 1
- R309: subsumes|Drug|owl_Thing >= 1
- R310: subsumes|Skyscraper|owl_Thing >= 1
- R311: subsumes|squareKilometre|owl_Thing >= 1
- R312: subsumes|Station|owl_Thing >= 1
- R313: subsumes|VicePresident|owl_Thing >= 1
- R314: subsumes|RecordLabel|owl_Thing >= 1
- R315: subsumes|MixedMartialArtsLeague|owl_Thing >= 1
- R316: subsumes|kilogram|owl_Thing >= 1
- R317: subsumes|Scientist|owl_Thing >= 1
- R318: subsumes|HistoricBuilding|owl_Thing >= 1
- R319: subsumes|cubicMetrePerSecond|owl_Thing >= 1
- R320: subsumes|PoloLeague|owl_Thing >= 1
- R321: subsumes|Organisation|owl_Thing >= 1
- R322: subsumes|FormulaOneRacer|owl_Thing >= 1
- R323: subsumes|City|owl_Thing >= 1
- R324: subsumes|LunarCrater|owl_Thing >= 1
- R325: subsumes|RadioStation|owl_Thing >= 1
- R326: subsumes|MountainRange|owl_Thing >= 1
- R327: subsumes|Event|owl_Thing >= 1
- R328: subsumes|PaintballLeague|owl_Thing >= 1
- R329: subsumes|Chancellor|owl_Thing >= 1
- R330: subsumes|centimetre|owl_Thing >= 1
- R331: subsumes|Lymph|owl_Thing >= 1
- R332: subsumes|LacrosseLeague|owl_Thing >= 1
- R333: subsumes|valvetrain|owl_Thing >= 1
- R334: subsumes|Activity|owl_Thing >= 1
- R335: subsumes|TennisPlayer|owl_Thing >= 1
- R336: subsumes|engineConfiguration|owl_Thing >= 1
- R337: subsumes|ChristianBishop|owl_Thing >= 1
- R338: subsumes|Company|owl_Thing >= 1
- R339: subsumes|Colour|owl_Thing >= 1
- R340: subsumes|RugbyLeague|owl_Thing >= 1
- R341: subsumes|BodyOfWater|owl_Thing >= 1
- R342: subsumes|Road|owl_Thing >= 1
- R343: subsumes|BasketballLeague|owl_Thing >= 1
- R344: subsumes|Bone|owl_Thing >= 1
- R345: subsumes|MusicalArtist|owl_Thing >= 1
- R346: subsumes|Judge|owl_Thing >= 1
- R347: subsumes|Magazine|owl_Thing >= 1
- R348: subsumes|CurlingLeague|owl_Thing >= 1
- R349: subsumes|Mammal|owl_Thing >= 1
- R350: subsumes|SpaceMission|owl_Thing >= 1
- R351: subsumes|VoiceActor|owl_Thing >= 1
- R352: subsumes|Single|owl_Thing >= 1
- R353: subsumes|newtonMetre|owl_Thing >= 1
- R354: subsumes|President|owl_Thing >= 1
- R355: subsumes|Book|owl_Thing >= 1
- R356: subsumes|inhabitantsPerSquareKilometre|owl_Thing >= 1
- R357: subsumes|GreenAlga|owl_Thing >= 1
- R358: subsumes|minute|owl_Thing >= 1
- R359: subsumes|Politician|owl_Thing >= 1
- R360: subsumes|EthnicGroup|owl_Thing >= 1
- R361: subsumes|Settlement|owl_Thing >= 1
- R362: subsumes|Lake|owl_Thing >= 1
- R363: subsumes|MeanOfTransportation|owl_Thing >= 1
- R364: subsumes|InlineHockeyLeague|owl_Thing >= 1
- R365: subsumes|Plant|owl_Thing >= 1
- R366: subsumes|TennisLeague|owl_Thing >= 1
- R367: subsumes|RugbyPlayer|owl_Thing >= 1
- R368: subsumes|Airline|owl_Thing >= 1
- R369: subsumes|GridironFootballPlayer|owl_Thing >= 1
- R370: subsumes|Legislature|owl_Thing >= 1
- R371: subsumes|PlayboyPlaymate|owl_Thing >= 1
- R372: subsumes|CollegeCoach|owl_Thing >= 1
- R373: subsumes|Mayor|owl_Thing >= 1
- R374: subsumes|MusicGenre|owl_Thing >= 1
- R375: subsumes|Wrestler|owl_Thing >= 1
- R376: subsumes|Spacecraft|owl_Thing >= 1
- R377: subsumes|ChemicalCompound|owl_Thing >= 1
- R378: subsumes|TradeUnion|owl_Thing >= 1
- R379: subsumes|metre|owl_Thing >= 1
- R380: subsumes|MusicalWork|owl_Thing >= 1
- R381: subsumes|ComicsCreator|owl_Thing >= 1
- R382: subsumes|AnatomicalStructure|owl_Thing >= 1
- R383: subsumes|VideoGame|owl_Thing >= 1
- R384: subsumes|Brain|owl_Thing >= 1
- R385: subsumes|Archaea|owl_Thing >= 1
- R386: subsumes|AmericanFootballTeam|owl_Thing >= 1
- R387: subsumes|LaunchPad|owl_Thing >= 1
- R388: subsumes|YearInSpaceflight|owl_Thing >= 1
- R389: subsumes|Convention|owl_Thing >= 1
- R390: subsumes|VolleyballLeague|owl_Thing >= 1
- R391: subsumes|BaseballPlayer|owl_Thing >= 1
- R392: subsumes|Cave|owl_Thing >= 1
- R393: subsumes|Stadium|owl_Thing >= 1
- R394: subsumes|gramPerKilometre|owl_Thing >= 1
- R395: subsumes|Game|owl_Thing >= 1
- R396: subsumes|School|owl_Thing >= 1
- R397: subsumes|SiteOfSpecialScientificInterest|owl_Thing >= 1
- R398: subsumes|millimetre|owl_Thing >= 1
- R399: subsumes|Monument|owl_Thing >= 1
- R400: subsumes|Language|owl_Thing >= 1
- R401: subsumes|SupremeCourtOfTheUnitedStatesCase|owl_Thing >= 1
- R402: subsumes|Valley|owl_Thing >= 1
- R403: subsumes|Broadcast|owl_Thing >= 1
- R404: subsumes|MilitaryConflict|owl_Thing >= 1
- R405: subsumes|Beverage|owl_Thing >= 1
- R406: subsumes|ComicsCharacter|owl_Thing >= 1
- R407: subsumes|AdministrativeRegion|owl_Thing >= 1
- R408: subsumes|Vein|owl_Thing >= 1
- R409: subsumes|GrandPrix|owl_Thing >= 1
- R410: subsumes|Infrastructure|owl_Thing >= 1
- R411: subsumes|SoftballLeague|owl_Thing >= 1
- R412: subsumes|GolfLeague|owl_Thing >= 1
- R413: subsumes|Village|owl_Thing >= 1
- R414: subsumes|WineRegion|owl_Thing >= 1
- R415: subsumes|Reptile|owl_Thing >= 1
- R416: subsumes|Sport|owl_Thing >= 1
- R417: subsumes|Town|owl_Thing >= 1
- R418: subsumes|Artery|owl_Thing >= 1
- R419: subsumes|Currency|owl_Thing >= 1
- R420: subsumes|MemberOfParliament|owl_Thing >= 1
- R421: subsumes|Cardinal|owl_Thing >= 1
- R422: subsumes|VideogamesLeague|owl_Thing >= 1
- R423: subsumes|Sales|owl_Thing >= 1
- R424: subsumes|EurovisionSongContestEntry|owl_Thing >= 1
- R425: subsumes|MilitaryPerson|owl_Thing >= 1
- R426: subsumes|SportsTeam|owl_Thing >= 1
- R427: subsumes|Comedian|owl_Thing >= 1
- R428: subsumes|Painting|owl_Thing >= 1
- R429: subsumes|GaelicGamesPlayer|owl_Thing >= 1
- R430: subsumes|Airport|owl_Thing >= 1
- R431: subsumes|Moss|owl_Thing >= 1
- R432: subsumes|AmericanFootballPlayer|owl_Thing >= 1
- R433: subsumes|Software|owl_Thing >= 1
- R434: subsumes|Hospital|owl_Thing >= 1
- R435: subsumes|hour|owl_Thing >= 1
- R436: subsumes|SpeedwayLeague|owl_Thing >= 1
- R437: subsumes|Artist|owl_Thing >= 1
- R438: subsumes|Film|owl_Thing >= 1
- R439: subsumes|PokerPlayer|owl_Thing >= 1
- R440: subsumes|Boxer|owl_Thing >= 1
- R441: subsumes|IceHockeyPlayer|owl_Thing >= 1
- R442: subsumes|FieldHockeyLeague|owl_Thing >= 1
- R443: subsumes|AdultActor|owl_Thing >= 1
- R444: subsumes|SpaceShuttle|owl_Thing >= 1
- R445: subsumes|Protein|owl_Thing >= 1
- R446: subsumes|Monarch|owl_Thing >= 1
- R447: subsumes|Insect|owl_Thing >= 1
- R448: subsumes|Bird|owl_Thing >= 1
- R449: subsumes|PersonFunction|owl_Thing >= 1
- R450: subsumes|CricketLeague|owl_Thing >= 1
- R451: subsumes|HandballLeague|owl_Thing >= 1
- R452: subsumes|AutomobileEngine|owl_Thing >= 1
- R453: subsumes|Gnetophytes|owl_Thing >= 1
- R454: subsumes|PrimeMinister|owl_Thing >= 1
- R455: subsumes|Journalist|owl_Thing >= 1
- R456: subsumes|kelvin|owl_Thing >= 1
- R457: subsumes|Ambassador|owl_Thing >= 1
- R458: subsumes|Song|owl_Thing >= 1
- R459: subsumes|University|owl_Thing >= 1
- R460: subsumes|Award|owl_Thing >= 1
- R461: subsumes|Automobile|owl_Thing >= 1
- R462: subsumes|SkiArea|owl_Thing >= 1
- R463: subsumes|College|owl_Thing >= 1
- R464: subsumes|ProtectedArea|owl_Thing >= 1
- R465: subsumes|Cyclist|owl_Thing >= 1
- R466: subsumes|kilometre|owl_Thing >= 1
- R467: subsumes|Ship|owl_Thing >= 1
- R468: subsumes|BowlingLeague|owl_Thing >= 1
- R469: subsumes|Building|owl_Thing >= 1
- R470: subsumes|Arachnid|owl_Thing >= 1
- R471: subsumes|Disease|owl_Thing >= 1
- R472: subsumes|Band|owl_Thing >= 1
- R473: subsumes|Country|owl_Thing >= 1
- R474: subsumes|CanadianFootballLeague|owl_Thing >= 1
- R475: subsumes|TelevisionEpisode|owl_Thing >= 1
- R476: subsumes|Website|owl_Thing >= 1
- R477: subsumes|River|owl_Thing >= 1
- R478: subsumes|Work|owl_Thing >= 1
- R479: subsumes|FictionalCharacter|owl_Thing >= 1
- R480: subsumes|AmericanFootballLeague|owl_Thing >= 1
- R481: subsumes|Park|owl_Thing >= 1
- R482: subsumes|Canal|owl_Thing >= 1
- R483: subsumes|MixedMartialArtsEvent|owl_Thing >= 1
- R484: subsumes|Deputy|owl_Thing >= 1
- R485: subsumes|Conifer|owl_Thing >= 1
- R486: subsumes|SportsLeague|owl_Thing >= 1
- R487: subsumes|BadmintonPlayer|owl_Thing >= 1
- R488: subsumes|SportsEvent|owl_Thing >= 1
- R489: subsumes|Athlete|owl_Thing >= 1
- R490: subsumes|CanadianFootballTeam|owl_Thing >= 1
- R491: subsumes|Grape|owl_Thing >= 1
- R492: subsumes|cubicMetre|owl_Thing >= 1
- R493: subsumes|PopulatedPlace|owl_Thing >= 1
- R494: subsumes|CyclingLeague|owl_Thing >= 1
- R495: subsumes|kilometrePerHour|owl_Thing >= 1
- R496: subsumes|Muscle|owl_Thing >= 1
- R497: subsumes|kilogramPerCubicMetre|owl_Thing >= 1
- R498: subsumes|FigureSkater|owl_Thing >= 1
- R499: subsumes|Planet|owl_Thing >= 1
- R500: subsumes|SoccerClub|owl_Thing >= 1
- R501: subsumes|MotorcycleRacingLeague|owl_Thing >= 1
- R502: subsumes|CanadianFootballPlayer|owl_Thing >= 1
- R503: subsumes|Eukaryote|owl_Thing >= 1
- R504: subsumes|Lighthouse|owl_Thing >= 1
- R505: subsumes|WorldHeritageSite|owl_Thing >= 1
- R506: subsumes|SoccerManager|owl_Thing >= 1
- R507: subsumes|GeopoliticalOrganisation|owl_Thing >= 1
- R508: subsumes|litre|owl_Thing >= 1
- R509: subsumes|FilmFestival|owl_Thing >= 1
- R510: subsumes|SoccerPlayer|owl_Thing >= 1
- R511: subsumes|VicePrimeMinister|owl_Thing >= 1
- R512: subsumes|HistoricPlace|owl_Thing >= 1
- R513: subsumes|IceHockeyLeague|owl_Thing >= 1
- R514: subsumes|Pope|owl_Thing >= 1
- R515: subsumes|Bacteria|owl_Thing >= 1
- R516: subsumes|Cycad|owl_Thing >= 1
- R517: subsumes|Philosopher|owl_Thing >= 1
- R518: subsumes|cubicKilometre|owl_Thing >= 1
- R519: subsumes|TelevisionShow|owl_Thing >= 1
- R520: subsumes|OfficeHolder|owl_Thing >= 1
- R521: subsumes|Animal|owl_Thing >= 1
- R522: subsumes|HockeyTeam|owl_Thing >= 1
- R523: subsumes|OlympicResult|owl_Thing >= 1
- R524: subsumes|Ginkgo|owl_Thing >= 1
- R525: subsumes|Lieutenant|owl_Thing >= 1
- R526: subsumes|Island|owl_Thing >= 1
- R527: subsumes|kilowatt|owl_Thing >= 1
- R528: subsumes|Astronaut|owl_Thing >= 1
- R529: subsumes|Place|owl_Thing >= 1
- R530: subsumes|Person|owl_Thing >= 1
- R531: subsumes|Embryology|owl_Thing >= 1
- R532: subsumes|Writer|owl_Thing >= 1
- R533: subsumes|Actor|owl_Thing >= 1
- R534: subsumes|Fungus|owl_Thing >= 1
- R535: subsumes|Mollusca|owl_Thing >= 1
- R536: subsumes|BoxingLeague|owl_Thing >= 1
- R537: subsumes|BasketballPlayer|owl_Thing >= 1
- R538: subsumes|Bridge|owl_Thing >= 1
- R539: subsumes|GovernmentType|owl_Thing >= 1
- R540: subsumes|MountainPass|owl_Thing >= 1
- R541: subsumes|Race|owl_Thing >= 1
- R542: subsumes|Mountain|owl_Thing >= 1
- R543: subsumes|Aircraft|owl_Thing >= 1
- R544: subsumes|owl_Nothing|owl_Thing >= 1
- R545: subsumes|Cleric|Cleric >= 1
- R546: subsumes|Governor|Governor >= 1
- R547: subsumes|squareMetre|squareMetre >= 1
- R548: subsumes|Olympics|Olympics >= 1
- R549: subsumes|wgs84_pos#SpatialThing|wgs84_pos#SpatialThing >= 1
- R550: subsumes|Rocket|Rocket >= 1
- R551: subsumes|AutoRacingLeague|AutoRacingLeague >= 1
- R552: subsumes|cubicCentimetre|cubicCentimetre >= 1
- R553: subsumes|Senator|Senator >= 1
- R554: subsumes|SoccerLeague|SoccerLeague >= 1
- R555: subsumes|Architect|Architect >= 1
- R556: subsumes|WrestlingEvent|WrestlingEvent >= 1
- R557: subsumes|Model|Model >= 1
- R558:
-   subsumes|NationalCollegiateAthleticAssociationAthlete|NationalCollegiateAthleticAssociationAthlete
+ R157: subsumes|Demo_Chair|Demo_Chair >= 1
+ R158: subsumes|Camera_Ready_Paper|Camera_Ready_Paper >= 1
+ R159: subsumes|Review|Review >= 1
+ R160: subsumes|Conference_Proceedings|Conference_Proceedings >= 1
+ R161: subsumes|Proceedings_Publisher|Proceedings_Publisher >= 1
+ R162: subsumes|Contributed_Talk|Contributed_Talk >= 1
+ R163: subsumes|Industrial_Session|Industrial_Session >= 1
+ R164: subsumes|Tutorial_Chair|Tutorial_Chair >= 1
+ R165: subsumes|Assigned_Paper|Assigned_Paper >= 1
+ R166: subsumes|Submitted_Paper|Submitted_Paper >= 1
+ R167: subsumes|Demo_Session|Demo_Session >= 1
+ R168: subsumes|Negative_Review|Negative_Review >= 1
+ R169: subsumes|Research_Institute|Research_Institute >= 1
+ R170: subsumes|Evaluated_Paper|Evaluated_Paper >= 1
+ R171: subsumes|Conference_Paper|Conference_Paper >= 1
+ R172: subsumes|Agency_Staff_Member|Agency_Staff_Member >= 1
+ R173: subsumes|Late-Registered_Participant|Late-Registered_Participant
    >= 1
- R559: subsumes|Fern|Fern >= 1
- R560: subsumes|ClubMoss|ClubMoss >= 1
- R561: subsumes|AustralianFootballLeague|AustralianFootballLeague >= 1
- R562: subsumes|SpaceStation|SpaceStation >= 1
- R563: subsumes|Crustacean|Crustacean >= 1
- R564: subsumes|RadioControlledRacingLeague|RadioControlledRacingLeague
-   >= 1
- R565: subsumes|BaseballLeague|BaseballLeague >= 1
- R566: subsumes|NascarDriver|NascarDriver >= 1
- R567: subsumes|EducationalInstitution|EducationalInstitution >= 1
- R568: subsumes|Stream|Stream >= 1
- R569: subsumes|Nerve|Nerve >= 1
- R570: subsumes|Musical|Musical >= 1
- R571: subsumes|day|day >= 1
- R572:
-   subsumes|WomensTennisAssociationTournament|WomensTennisAssociationTournament
-   >= 1
- R573: subsumes|Cricketer|Cricketer >= 1
- R574: subsumes|ShoppingMall|ShoppingMall >= 1
- R575: subsumes|Criminal|Criminal >= 1
- R576: subsumes|Weapon|Weapon >= 1
- R577: subsumes|owl_Thing|owl_Thing >= 1
- R578: subsumes|FloweringPlant|FloweringPlant >= 1
- R579: subsumes|Celebrity|Celebrity >= 1
- R580: subsumes|second|second >= 1
- R581: subsumes|Continent|Continent >= 1
- R582: subsumes|BritishRoyalty|BritishRoyalty >= 1
- R583: subsumes|Device|Device >= 1
- R584: subsumes|kilometrePerSecond|kilometrePerSecond >= 1
- R585: subsumes|megabyte|megabyte >= 1
- R586: subsumes|MilitaryUnit|MilitaryUnit >= 1
- R587: subsumes|Saint|Saint >= 1
- R588: subsumes|Newspaper|Newspaper >= 1
- R589: subsumes|fuelType|fuelType >= 1
- R590: subsumes|Amphibian|Amphibian >= 1
- R591: subsumes|MusicFestival|MusicFestival >= 1
- R592: subsumes|Non-ProfitOrganisation|Non-ProfitOrganisation >= 1
- R593: subsumes|Congressman|Congressman >= 1
- R594: subsumes|Fish|Fish >= 1
- R595: subsumes|Species|Species >= 1
- R596: subsumes|Album|Album >= 1
- R597: subsumes|Drug|Drug >= 1
- R598: subsumes|Skyscraper|Skyscraper >= 1
- R599: subsumes|squareKilometre|squareKilometre >= 1
- R600: subsumes|Station|Station >= 1
- R601: subsumes|VicePresident|VicePresident >= 1
- R602: subsumes|RecordLabel|RecordLabel >= 1
- R603: subsumes|MixedMartialArtsLeague|MixedMartialArtsLeague >= 1
- R604: subsumes|kilogram|kilogram >= 1
- R605: subsumes|Scientist|Scientist >= 1
- R606: subsumes|HistoricBuilding|HistoricBuilding >= 1
- R607: subsumes|cubicMetrePerSecond|cubicMetrePerSecond >= 1
- R608: subsumes|PoloLeague|PoloLeague >= 1
- R609: subsumes|Organisation|Organisation >= 1
- R610: subsumes|FormulaOneRacer|FormulaOneRacer >= 1
- R611: subsumes|City|City >= 1
- R612: subsumes|LunarCrater|LunarCrater >= 1
- R613: subsumes|RadioStation|RadioStation >= 1
- R614: subsumes|MountainRange|MountainRange >= 1
- R615: subsumes|Event|Event >= 1
- R616: subsumes|PaintballLeague|PaintballLeague >= 1
- R617: subsumes|Chancellor|Chancellor >= 1
- R618: subsumes|centimetre|centimetre >= 1
- R619: subsumes|Lymph|Lymph >= 1
- R620: subsumes|LacrosseLeague|LacrosseLeague >= 1
- R621: subsumes|valvetrain|valvetrain >= 1
- R622: subsumes|Activity|Activity >= 1
- R623: subsumes|TennisPlayer|TennisPlayer >= 1
- R624: subsumes|engineConfiguration|engineConfiguration >= 1
- R625: subsumes|ChristianBishop|ChristianBishop >= 1
- R626: subsumes|Company|Company >= 1
- R627: subsumes|Colour|Colour >= 1
- R628: subsumes|RugbyLeague|RugbyLeague >= 1
- R629: subsumes|BodyOfWater|BodyOfWater >= 1
- R630: subsumes|Road|Road >= 1
- R631: subsumes|BasketballLeague|BasketballLeague >= 1
- R632: subsumes|Bone|Bone >= 1
- R633: subsumes|MusicalArtist|MusicalArtist >= 1
- R634: subsumes|Judge|Judge >= 1
- R635: subsumes|Magazine|Magazine >= 1
- R636: subsumes|CurlingLeague|CurlingLeague >= 1
- R637: subsumes|Mammal|Mammal >= 1
- R638: subsumes|SpaceMission|SpaceMission >= 1
- R639: subsumes|VoiceActor|VoiceActor >= 1
- R640: subsumes|Single|Single >= 1
- R641: subsumes|newtonMetre|newtonMetre >= 1
- R642: subsumes|President|President >= 1
- R643: subsumes|Book|Book >= 1
- R644: subsumes|inhabitantsPerSquareKilometre|inhabitantsPerSquareKilometre
-   >= 1
- R645: subsumes|GreenAlga|GreenAlga >= 1
- R646: subsumes|minute|minute >= 1
- R647: subsumes|Politician|Politician >= 1
- R648: subsumes|EthnicGroup|EthnicGroup >= 1
- R649: subsumes|Settlement|Settlement >= 1
- R650: subsumes|Lake|Lake >= 1
- R651: subsumes|MeanOfTransportation|MeanOfTransportation >= 1
- R652: subsumes|InlineHockeyLeague|InlineHockeyLeague >= 1
- R653: subsumes|Plant|Plant >= 1
- R654: subsumes|TennisLeague|TennisLeague >= 1
- R655: subsumes|RugbyPlayer|RugbyPlayer >= 1
- R656: subsumes|Airline|Airline >= 1
- R657: subsumes|GridironFootballPlayer|GridironFootballPlayer >= 1
- R658: subsumes|Legislature|Legislature >= 1
- R659: subsumes|PlayboyPlaymate|PlayboyPlaymate >= 1
- R660: subsumes|CollegeCoach|CollegeCoach >= 1
- R661: subsumes|Mayor|Mayor >= 1
- R662: subsumes|MusicGenre|MusicGenre >= 1
- R663: subsumes|Wrestler|Wrestler >= 1
- R664: subsumes|Spacecraft|Spacecraft >= 1
- R665: subsumes|ChemicalCompound|ChemicalCompound >= 1
- R666: subsumes|TradeUnion|TradeUnion >= 1
- R667: subsumes|metre|metre >= 1
- R668: subsumes|MusicalWork|MusicalWork >= 1
- R669: subsumes|ComicsCreator|ComicsCreator >= 1
- R670: subsumes|AnatomicalStructure|AnatomicalStructure >= 1
- R671: subsumes|VideoGame|VideoGame >= 1
- R672: subsumes|Brain|Brain >= 1
- R673: subsumes|Archaea|Archaea >= 1
- R674: subsumes|AmericanFootballTeam|AmericanFootballTeam >= 1
- R675: subsumes|LaunchPad|LaunchPad >= 1
- R676: subsumes|YearInSpaceflight|YearInSpaceflight >= 1
- R677: subsumes|Convention|Convention >= 1
- R678: subsumes|VolleyballLeague|VolleyballLeague >= 1
- R679: subsumes|BaseballPlayer|BaseballPlayer >= 1
- R680: subsumes|Cave|Cave >= 1
- R681: subsumes|Stadium|Stadium >= 1
- R682: subsumes|gramPerKilometre|gramPerKilometre >= 1
- R683: subsumes|Game|Game >= 1
- R684: subsumes|School|School >= 1
- R685:
-   subsumes|SiteOfSpecialScientificInterest|SiteOfSpecialScientificInterest
-   >= 1
- R686: subsumes|millimetre|millimetre >= 1
- R687: subsumes|Monument|Monument >= 1
- R688: subsumes|Language|Language >= 1
- R689:
-   subsumes|SupremeCourtOfTheUnitedStatesCase|SupremeCourtOfTheUnitedStatesCase
-   >= 1
- R690: subsumes|Valley|Valley >= 1
- R691: subsumes|Broadcast|Broadcast >= 1
- R692: subsumes|MilitaryConflict|MilitaryConflict >= 1
- R693: subsumes|Beverage|Beverage >= 1
- R694: subsumes|ComicsCharacter|ComicsCharacter >= 1
- R695: subsumes|AdministrativeRegion|AdministrativeRegion >= 1
- R696: subsumes|Vein|Vein >= 1
- R697: subsumes|GrandPrix|GrandPrix >= 1
- R698: subsumes|Infrastructure|Infrastructure >= 1
- R699: subsumes|SoftballLeague|SoftballLeague >= 1
- R700: subsumes|GolfLeague|GolfLeague >= 1
- R701: subsumes|Village|Village >= 1
- R702: subsumes|WineRegion|WineRegion >= 1
- R703: subsumes|Reptile|Reptile >= 1
- R704: subsumes|Sport|Sport >= 1
- R705: subsumes|Town|Town >= 1
- R706: subsumes|Artery|Artery >= 1
- R707: subsumes|Currency|Currency >= 1
- R708: subsumes|MemberOfParliament|MemberOfParliament >= 1
- R709: subsumes|Cardinal|Cardinal >= 1
- R710: subsumes|VideogamesLeague|VideogamesLeague >= 1
- R711: subsumes|Sales|Sales >= 1
- R712: subsumes|EurovisionSongContestEntry|EurovisionSongContestEntry >= 1
- R713: subsumes|MilitaryPerson|MilitaryPerson >= 1
- R714: subsumes|SportsTeam|SportsTeam >= 1
- R715: subsumes|Comedian|Comedian >= 1
- R716: subsumes|Painting|Painting >= 1
- R717: subsumes|GaelicGamesPlayer|GaelicGamesPlayer >= 1
- R718: subsumes|Airport|Airport >= 1
- R719: subsumes|Moss|Moss >= 1
- R720: subsumes|AmericanFootballPlayer|AmericanFootballPlayer >= 1
- R721: subsumes|Software|Software >= 1
- R722: subsumes|Hospital|Hospital >= 1
- R723: subsumes|hour|hour >= 1
- R724: subsumes|SpeedwayLeague|SpeedwayLeague >= 1
- R725: subsumes|Artist|Artist >= 1
- R726: subsumes|Film|Film >= 1
- R727: subsumes|PokerPlayer|PokerPlayer >= 1
- R728: subsumes|Boxer|Boxer >= 1
- R729: subsumes|IceHockeyPlayer|IceHockeyPlayer >= 1
- R730: subsumes|FieldHockeyLeague|FieldHockeyLeague >= 1
- R731: subsumes|AdultActor|AdultActor >= 1
- R732: subsumes|SpaceShuttle|SpaceShuttle >= 1
- R733: subsumes|Protein|Protein >= 1
- R734: subsumes|Monarch|Monarch >= 1
- R735: subsumes|Insect|Insect >= 1
- R736: subsumes|Bird|Bird >= 1
- R737: subsumes|PersonFunction|PersonFunction >= 1
- R738: subsumes|CricketLeague|CricketLeague >= 1
- R739: subsumes|HandballLeague|HandballLeague >= 1
- R740: subsumes|AutomobileEngine|AutomobileEngine >= 1
- R741: subsumes|Gnetophytes|Gnetophytes >= 1
- R742: subsumes|PrimeMinister|PrimeMinister >= 1
- R743: subsumes|Journalist|Journalist >= 1
- R744: subsumes|kelvin|kelvin >= 1
- R745: subsumes|Ambassador|Ambassador >= 1
- R746: subsumes|Song|Song >= 1
- R747: subsumes|University|University >= 1
- R748: subsumes|Award|Award >= 1
- R749: subsumes|Automobile|Automobile >= 1
- R750: subsumes|SkiArea|SkiArea >= 1
- R751: subsumes|College|College >= 1
- R752: subsumes|ProtectedArea|ProtectedArea >= 1
- R753: subsumes|Cyclist|Cyclist >= 1
- R754: subsumes|kilometre|kilometre >= 1
- R755: subsumes|Ship|Ship >= 1
- R756: subsumes|BowlingLeague|BowlingLeague >= 1
- R757: subsumes|Building|Building >= 1
- R758: subsumes|Arachnid|Arachnid >= 1
- R759: subsumes|Disease|Disease >= 1
- R760: subsumes|Band|Band >= 1
- R761: subsumes|Country|Country >= 1
- R762: subsumes|CanadianFootballLeague|CanadianFootballLeague >= 1
- R763: subsumes|TelevisionEpisode|TelevisionEpisode >= 1
- R764: subsumes|Website|Website >= 1
- R765: subsumes|River|River >= 1
- R766: subsumes|Work|Work >= 1
- R767: subsumes|FictionalCharacter|FictionalCharacter >= 1
- R768: subsumes|AmericanFootballLeague|AmericanFootballLeague >= 1
- R769: subsumes|Park|Park >= 1
- R770: subsumes|Canal|Canal >= 1
- R771: subsumes|MixedMartialArtsEvent|MixedMartialArtsEvent >= 1
- R772: subsumes|Deputy|Deputy >= 1
- R773: subsumes|Conifer|Conifer >= 1
- R774: subsumes|SportsLeague|SportsLeague >= 1
- R775: subsumes|BadmintonPlayer|BadmintonPlayer >= 1
- R776: subsumes|SportsEvent|SportsEvent >= 1
- R777: subsumes|Athlete|Athlete >= 1
- R778: subsumes|CanadianFootballTeam|CanadianFootballTeam >= 1
- R779: subsumes|Grape|Grape >= 1
- R780: subsumes|cubicMetre|cubicMetre >= 1
- R781: subsumes|PopulatedPlace|PopulatedPlace >= 1
- R782: subsumes|CyclingLeague|CyclingLeague >= 1
- R783: subsumes|kilometrePerHour|kilometrePerHour >= 1
- R784: subsumes|Muscle|Muscle >= 1
- R785: subsumes|kilogramPerCubicMetre|kilogramPerCubicMetre >= 1
- R786: subsumes|FigureSkater|FigureSkater >= 1
- R787: subsumes|Planet|Planet >= 1
- R788: subsumes|SoccerClub|SoccerClub >= 1
- R789: subsumes|MotorcycleRacingLeague|MotorcycleRacingLeague >= 1
- R790: subsumes|CanadianFootballPlayer|CanadianFootballPlayer >= 1
- R791: subsumes|Eukaryote|Eukaryote >= 1
- R792: subsumes|Lighthouse|Lighthouse >= 1
- R793: subsumes|WorldHeritageSite|WorldHeritageSite >= 1
- R794: subsumes|SoccerManager|SoccerManager >= 1
- R795: subsumes|GeopoliticalOrganisation|GeopoliticalOrganisation >= 1
- R796: subsumes|litre|litre >= 1
- R797: subsumes|FilmFestival|FilmFestival >= 1
- R798: subsumes|SoccerPlayer|SoccerPlayer >= 1
- R799: subsumes|VicePrimeMinister|VicePrimeMinister >= 1
- R800: subsumes|HistoricPlace|HistoricPlace >= 1
- R801: subsumes|IceHockeyLeague|IceHockeyLeague >= 1
- R802: subsumes|Pope|Pope >= 1
- R803: subsumes|Bacteria|Bacteria >= 1
- R804: subsumes|Cycad|Cycad >= 1
- R805: subsumes|Philosopher|Philosopher >= 1
- R806: subsumes|cubicKilometre|cubicKilometre >= 1
- R807: subsumes|TelevisionShow|TelevisionShow >= 1
- R808: subsumes|OfficeHolder|OfficeHolder >= 1
- R809: subsumes|Animal|Animal >= 1
- R810: subsumes|HockeyTeam|HockeyTeam >= 1
- R811: subsumes|OlympicResult|OlympicResult >= 1
- R812: subsumes|Ginkgo|Ginkgo >= 1
- R813: subsumes|Lieutenant|Lieutenant >= 1
- R814: subsumes|Island|Island >= 1
- R815: subsumes|kilowatt|kilowatt >= 1
- R816: subsumes|Astronaut|Astronaut >= 1
- R817: subsumes|Place|Place >= 1
- R818: subsumes|Person|Person >= 1
- R819: subsumes|Embryology|Embryology >= 1
- R820: subsumes|Writer|Writer >= 1
- R821: subsumes|Actor|Actor >= 1
- R822: subsumes|Fungus|Fungus >= 1
- R823: subsumes|Mollusca|Mollusca >= 1
- R824: subsumes|BoxingLeague|BoxingLeague >= 1
- R825: subsumes|BasketballPlayer|BasketballPlayer >= 1
- R826: subsumes|Bridge|Bridge >= 1
- R827: subsumes|GovernmentType|GovernmentType >= 1
- R828: subsumes|MountainPass|MountainPass >= 1
- R829: subsumes|Race|Race >= 1
- R830: subsumes|Mountain|Mountain >= 1
- R831: subsumes|Aircraft|Aircraft >= 1
- R832: subsumes|owl_Nothing|owl_Nothing >= 1
- R833: opsub|firstDriver|owl_Thing|GrandPrix >= 1
- R834: opsub|honours|owl_Thing|SoccerClub >= 1
- R835: opsub|designer|owl_Thing|MeanOfTransportation >= 1
- R836: opsub|gameEngine|owl_Thing|VideoGame >= 1
- R837: opsub|previousEvent|owl_Thing|Event >= 1
- R838: opsub|contractor|owl_Thing|Skyscraper >= 1
- R839: opsub|leaderFunction|owl_Thing|Organisation >= 1
- R840: opsub|opponent|owl_Thing|Person >= 1
- R841: opsub|leaderParty|owl_Thing|PopulatedPlace >= 1
- R842: opsub|spurType|owl_Thing|Road >= 1
- R843: opsub|photographer|owl_Thing|TelevisionEpisode >= 1
- R844: opsub|party|owl_Thing|Person >= 1
- R845: opsub|sheading|owl_Thing|PopulatedPlace >= 1
- R846: opsub|rector|owl_Thing|EducationalInstitution >= 1
- R847: opsub|creator|owl_Thing|TelevisionShow >= 1
- R848: opsub|bodyDiscovered|owl_Thing|Person >= 1
- R849: opsub|network|owl_Thing|Broadcast >= 1
- R850: opsub|majorShrine|owl_Thing|Saint >= 1
- R851: opsub|vein|owl_Thing|AnatomicalStructure >= 1
- R852: opsub|goyaAward|owl_Thing|Artist >= 1
- R853: opsub|manager|owl_Thing|SoccerClub >= 1
- R854: opsub|relatedMeanOfTransportation|owl_Thing|MeanOfTransportation
-   >= 1
- R855: opsub|storyEditor|owl_Thing|TelevisionShow >= 1
- R856: opsub|arrondissement|owl_Thing|PopulatedPlace >= 1
- R857: opsub|firstFlight|owl_Thing|SpaceShuttle >= 1
- R858: opsub|secondDriver|owl_Thing|GrandPrix >= 1
- R859: opsub|notableWine|owl_Thing|Grape >= 1
- R860: opsub|militaryUnit|owl_Thing|MilitaryPerson >= 1
- R861: opsub|branchTo|owl_Thing|AnatomicalStructure >= 1
- R862: opsub|chairperson|owl_Thing|School >= 1
- R863: opsub|patron|owl_Thing|MilitaryUnit >= 1
- R864: opsub|brand|owl_Thing|WrestlingEvent >= 1
- R865: opsub|capitalPlace|owl_Thing|Island >= 1
- R866: opsub|ruralMunicipality|owl_Thing|Road >= 1
- R867: opsub|musicalBand|owl_Thing|Single >= 1
- R868: opsub|ceo|owl_Thing|SoccerClub >= 1
- R869: opsub|spouse|owl_Thing|Person >= 1
- R870: opsub|rival|owl_Thing|School >= 1
- R871: opsub|targetAirport|owl_Thing|Airline >= 1
- R872: opsub|fastestDriverTeam|owl_Thing|GrandPrix >= 1
- R873: opsub|naacpImageAward|owl_Thing|Actor >= 1
- R874: opsub|shuttle|owl_Thing|SpaceMission >= 1
- R875: opsub|campus|owl_Thing|University >= 1
- R876: opsub|launchvehicle|owl_Thing|SpaceMission >= 1
- R877: opsub|principal|owl_Thing|EducationalInstitution >= 1
- R878: opsub|managementRegion|owl_Thing|Island >= 1
- R879: opsub|employer|owl_Thing|Person >= 1
- R880: opsub|stateOfOrigin|owl_Thing|Person >= 1
- R881: opsub|fourthCommander|owl_Thing|MilitaryUnit >= 1
- R882: opsub|inflow|owl_Thing|Lake >= 1
- R883: opsub|sourceConfluenceState|owl_Thing|Island >= 1
- R884: opsub|olympicOathSwornByAthlete|owl_Thing|Olympics >= 1
- R885: opsub|highwaySystem|owl_Thing|Road >= 1
- R886: opsub|vicePrincipal|owl_Thing|School >= 1
- R887: opsub|wineProduced|owl_Thing|WineRegion >= 1
- R888: opsub|board|owl_Thing|Person >= 1
- R889: opsub|parish|owl_Thing|PopulatedPlace >= 1
- R890: opsub|kingdom|owl_Thing|Species >= 1
- R891: opsub|goldenRaspberryAward|owl_Thing|Actor >= 1
- R892: opsub|thirdTeam|owl_Thing|GrandPrix >= 1
- R893: opsub|goldenCalfAward|owl_Thing|Actor >= 1
- R894: opsub|highestState|owl_Thing|Island >= 1
- R895: opsub|influencedBy|owl_Thing|Person >= 1
- R896: opsub|endingTheme|owl_Thing|TelevisionShow >= 1
- R897: opsub|resides|owl_Thing|Wrestler >= 1
- R898: opsub|academicAdvisor|owl_Thing|Scientist >= 1
- R899: opsub|plant|owl_Thing|Place >= 1
- R900: opsub|coProducer|owl_Thing|TelevisionShow >= 1
- R901: opsub|principalEngineer|owl_Thing|Canal >= 1
- R902: opsub|blockAlloy|owl_Thing|AutomobileEngine >= 1
- R903: opsub|computingMedia|owl_Thing|Software >= 1
- R904: opsub|frazioni|owl_Thing|Settlement >= 1
- R905: opsub|startPoint|owl_Thing|Canal >= 1
- R906: opsub|alliance|owl_Thing|Airline >= 1
- R907: opsub|tenant|owl_Thing|Building >= 1
- R908: opsub|broadcastArea|owl_Thing|Broadcast >= 1
- R909: opsub|recentWinner|owl_Thing|Race >= 1
- R910: opsub|followingEvent|owl_Thing|Event >= 1
- R911: opsub|illustrator|owl_Thing|Book >= 1
- R912: opsub|firstDriverCountry|owl_Thing|GrandPrix >= 1
- R913: opsub|significantProject|owl_Thing|Architect >= 1
- R914: opsub|associateEditor|owl_Thing|Newspaper >= 1
- R915: opsub|operator|owl_Thing|LaunchPad >= 1
- R916: opsub|daylightSavingTimeZone|owl_Thing|Place >= 1
- R917: opsub|designCompany|owl_Thing|MeanOfTransportation >= 1
- R918: opsub|lastRace|owl_Thing|FormulaOneRacer >= 1
- R919: opsub|riverBranchOf|owl_Thing|River >= 1
- R920: opsub|tonyAward|owl_Thing|Artist >= 1
- R921: opsub|governmentPosition|owl_Thing|Island >= 1
- R922: opsub|binomial|owl_Thing|Species >= 1
- R923: opsub|structuralSystem|owl_Thing|Building >= 1
- R924: opsub|geminiAward|owl_Thing|Actor >= 1
- R925: opsub|youthClub|owl_Thing|SoccerPlayer >= 1
- R926: opsub|foundationPlace|owl_Thing|Organisation >= 1
- R927: opsub|lyrics|owl_Thing|Musical >= 1
- R928: opsub|hasJunctionWith|owl_Thing|Canal >= 1
- R929: opsub|nationality|owl_Thing|Person >= 1
- R930: opsub|americanComedyAward|owl_Thing|Comedian >= 1
- R931: opsub|family|owl_Thing|Species >= 1
- R932: opsub|administrativeCollectivity|owl_Thing|Settlement >= 1
- R933: opsub|spacecraft|owl_Thing|SpaceMission >= 1
- R934: opsub|archipelago|owl_Thing|Island >= 1
- R935: opsub|landingvehicle|owl_Thing|SpaceMission >= 1
- R936: opsub|neighboringMunicipality|owl_Thing|PopulatedPlace >= 1
- R937: opsub|partOf|owl_Thing|MilitaryConflict >= 1
- R938: opsub|formerTeam|owl_Thing|Athlete >= 1
- R939: opsub|previousWork|owl_Thing|Work >= 1
- R940: opsub|screenActorsGuildAward|owl_Thing|Actor >= 1
- R941: opsub|coachedTeam|owl_Thing|CollegeCoach >= 1
- R942: opsub|fuelSystem|owl_Thing|AutomobileEngine >= 1
- R943: opsub|associatedRocket|owl_Thing|LaunchPad >= 1
- R944: opsub|lowestState|owl_Thing|Island >= 1
- R945: opsub|skatingClub|owl_Thing|FigureSkater >= 1
- R946: opsub|sisterNewspaper|owl_Thing|Newspaper >= 1
- R947: opsub|place|owl_Thing|MilitaryConflict >= 1
- R948: opsub|crew|owl_Thing|Spacecraft >= 1
- R949: opsub|crewMember|owl_Thing|SpaceMission >= 1
- R950: opsub|layout|owl_Thing|Automobile >= 1
- R951: opsub|militaryRank|owl_Thing|MilitaryPerson >= 1
- R952: opsub|aircraftRecon|owl_Thing|MilitaryUnit >= 1
- R953: opsub|vehicle|owl_Thing|Automobile >= 1
- R954: opsub|beatifiedPlace|owl_Thing|Saint >= 1
- R955: opsub|parentOrganisation|owl_Thing|Organisation >= 1
- R956: opsub|cesarAward|owl_Thing|Artist >= 1
- R957: opsub|department|owl_Thing|PopulatedPlace >= 1
- R958: opsub|organSystem|owl_Thing|AnatomicalStructure >= 1
- R959: opsub|commune|owl_Thing|Settlement >= 1
- R960: opsub|openingFilm|owl_Thing|FilmFestival >= 1
- R961: opsub|officialOpenedBy|owl_Thing|Olympics >= 1
- R962: opsub|mission|owl_Thing|Astronaut >= 1
- R963: opsub|chaplain|owl_Thing|School >= 1
- R964: opsub|debutTeam|owl_Thing|Athlete >= 1
- R965: opsub|beltwayCity|owl_Thing|Road >= 1
- R966: opsub|previousMission|owl_Thing|SpaceMission >= 1
- R967: opsub|bodyStyle|owl_Thing|Automobile >= 1
- R968: opsub|firstWinner|owl_Thing|Race >= 1
- R969: opsub|aircraftTrainer|owl_Thing|MilitaryUnit >= 1
- R970: opsub|guest|owl_Thing|TelevisionEpisode >= 1
- R971: opsub|heir|owl_Thing|Monarch >= 1
- R972: opsub|capitalRegion|owl_Thing|Island >= 1
- R973: opsub|deathPlace|owl_Thing|Person >= 1
- R974: opsub|recordPlace|owl_Thing|MusicalWork >= 1
- R975: opsub|product|owl_Thing|Organisation >= 1
- R976: opsub|sisterCollege|owl_Thing|College >= 1
- R977: opsub|aircraftAttack|owl_Thing|MilitaryUnit >= 1
- R978: opsub|mother|owl_Thing|Person >= 1
- R979: opsub|maidenFlightRocket|owl_Thing|YearInSpaceflight >= 1
- R980: opsub|lastWin|owl_Thing|FormulaOneRacer >= 1
- R981: opsub|arielAward|owl_Thing|Actor >= 1
- R982: opsub|field|owl_Thing|Artist >= 1
- R983: opsub|movement|owl_Thing|Artist >= 1
- R984: opsub|mostWinner|owl_Thing|Race >= 1
- R985: opsub|denomination|owl_Thing|School >= 1
- R986: opsub|mainOrgan|owl_Thing|Organisation >= 1
- R987: opsub|creativeDirector|owl_Thing|TelevisionShow >= 1
- R988: opsub|almaMater|owl_Thing|Person >= 1
- R989: opsub|mayor|owl_Thing|PopulatedPlace >= 1
- R990: opsub|capitalDistrict|owl_Thing|Island >= 1
- R991: opsub|domain|owl_Thing|Species >= 1
- R992: opsub|subsequentWork|owl_Thing|Work >= 1
- R993: opsub|chiefEditor|owl_Thing|Newspaper >= 1
- R994: opsub|notableCommander|owl_Thing|MilitaryUnit >= 1
- R995: opsub|torchBearer|owl_Thing|Olympics >= 1
- R996: opsub|borough|owl_Thing|PopulatedPlace >= 1
- R997: opsub|lunarRover|owl_Thing|SpaceMission >= 1
- R998: opsub|firstDriverTeam|owl_Thing|GrandPrix >= 1
- R999:
-   opsub|formerHighschool|owl_Thing|NationalCollegiateAthleticAssociationAthlete
-   >= 1
- R1000: opsub|nerve|owl_Thing|AnatomicalStructure >= 1
- R1001: opsub|style|owl_Thing|Island >= 1
- R1002: opsub|discoverer|owl_Thing|Planet >= 1
- R1003: opsub|statisticLabel|owl_Thing|BaseballPlayer >= 1
- R1004: opsub|countryWithFirstSatellite|owl_Thing|YearInSpaceflight >= 1
- R1005: opsub|timeZone|owl_Thing|Place >= 1
- R1006: opsub|architectualBureau|owl_Thing|Building >= 1
- R1007: opsub|person|owl_Thing|PersonFunction >= 1
- R1008: opsub|lymph|owl_Thing|AnatomicalStructure >= 1
- R1009: opsub|winterAppearances|owl_Thing|OlympicResult >= 1
- R1010: opsub|isPartOf|owl_Thing|Brain >= 1
- R1011: opsub|leftChild|owl_Thing|Island >= 1
- R1012: opsub|rightChild|owl_Thing|Island >= 1
- R1013: opsub|governmentMountain|owl_Thing|Island >= 1
- R1014: opsub|author|owl_Thing|Work >= 1
- R1015: opsub|capitalCountry|owl_Thing|Island >= 1
- R1016: opsub|derivative|owl_Thing|MusicGenre >= 1
- R1017: opsub|club|owl_Thing|SoccerPlayer >= 1
- R1018: opsub|branchFrom|owl_Thing|AnatomicalStructure >= 1
- R1019: opsub|hubAirport|owl_Thing|Airline >= 1
- R1020: opsub|majorIsland|owl_Thing|Island >= 1
- R1021: opsub|profession|owl_Thing|Person >= 1
- R1022: opsub|occupation|owl_Thing|Person >= 1
- R1023: opsub|subsidiary|owl_Thing|Company >= 1
- R1024: opsub|knownFor|owl_Thing|Person >= 1
- R1025: opsub|aircraftBomber|owl_Thing|MilitaryUnit >= 1
- R1026: opsub|custodian|owl_Thing|School >= 1
- R1027: opsub|school|owl_Thing|RugbyPlayer >= 1
- R1028: opsub|restingPlacePosition|owl_Thing|Person >= 1
- R1029: opsub|billed|owl_Thing|Wrestler >= 1
- R1030: opsub|foundingPerson|owl_Thing|PopulatedPlace >= 1
- R1031: opsub|whaDraftTeam|owl_Thing|IceHockeyPlayer >= 1
- R1032: opsub|precursor|owl_Thing|AnatomicalStructure >= 1
- R1033: opsub|child|owl_Thing|Person >= 1
- R1034: opsub|cpu|owl_Thing|Software >= 1
- R1035: opsub|border|owl_Thing|Island >= 1
- R1036: opsub|rocket|owl_Thing|Spacecraft >= 1
- R1037: opsub|station|owl_Thing|Spacecraft >= 1
- R1038: opsub|aircraftPatrol|owl_Thing|MilitaryUnit >= 1
- R1039: opsub|riverBranch|owl_Thing|River >= 1
- R1040: opsub|award|owl_Thing|Person >= 1
- R1041: opsub|originalStartPoint|owl_Thing|Canal >= 1
- R1042: opsub|canonizedBy|owl_Thing|Saint >= 1
- R1043: opsub|island|owl_Thing|Lake >= 1
- R1044: opsub|endPoint|owl_Thing|Canal >= 1
- R1045: opsub|resolution|owl_Thing|Software >= 1
- R1046: opsub|rightTributary|owl_Thing|River >= 1
- R1047: opsub|residence|owl_Thing|Person >= 1
- R1048: opsub|deathCause|owl_Thing|Person >= 1
- R1049: opsub|commandStructure|owl_Thing|MilitaryUnit >= 1
- R1050: opsub|secondCommander|owl_Thing|MilitaryUnit >= 1
- R1051: opsub|regionServed|owl_Thing|Organisation >= 1
- R1052: opsub|choreographer|owl_Thing|FigureSkater >= 1
- R1053: opsub|sisterStation|owl_Thing|Broadcast >= 1
- R1054: opsub|musicBy|owl_Thing|Musical >= 1
- R1055: opsub|capitalPosition|owl_Thing|Island >= 1
- R1056: opsub|formerCoach|owl_Thing|FigureSkater >= 1
- R1057: opsub|originalEndPoint|owl_Thing|Canal >= 1
- R1058: opsub|trainer|owl_Thing|Wrestler >= 1
- R1059: opsub|nationalTeam|owl_Thing|SoccerPlayer >= 1
- R1060: opsub|comparable|owl_Thing|Rocket >= 1
- R1061: opsub|aspectRatio|owl_Thing|Software >= 1
- R1062: opsub|restingPlace|owl_Thing|Person >= 1
- R1063: opsub|locatedInArea|owl_Thing|Bridge >= 1
- R1064: opsub|aircraftHelicopterUtility|owl_Thing|MilitaryUnit >= 1
- R1065: opsub|aircraftFighter|owl_Thing|MilitaryUnit >= 1
- R1066: opsub|riverMouth|owl_Thing|River >= 1
- R1067: opsub|namedAfter|owl_Thing|SpaceShuttle >= 1
- R1068: opsub|meetingBuilding|owl_Thing|Legislature >= 1
- R1069: opsub|previousInfrastructure|owl_Thing|Infrastructure >= 1
- R1070: opsub|nationalOrigin|owl_Thing|Aircraft >= 1
- R1071: opsub|teamOwner|owl_Thing|SportsTeam >= 1
- R1072: opsub|translator|owl_Thing|Book >= 1
- R1073: opsub|aircraftHelicopterAttack|owl_Thing|MilitaryUnit >= 1
- R1074: opsub|goldenGlobeAward|owl_Thing|Artist >= 1
- R1075: opsub|government|owl_Thing|Island >= 1
- R1076: opsub|populationPlace|owl_Thing|EthnicGroup >= 1
- R1077: opsub|organisation|owl_Thing|Spacecraft >= 1
- R1078: opsub|territory|owl_Thing|MilitaryConflict >= 1
- R1079: opsub|usingCountry|owl_Thing|Currency >= 1
- R1080: opsub|foundationPerson|owl_Thing|Organisation >= 1
- R1081: opsub|currentPartner|owl_Thing|FigureSkater >= 1
- R1082: opsub|education|owl_Thing|Person >= 1
- R1083: opsub|createdBy|owl_Thing|Painting >= 1
- R1084: opsub|unitaryAuthority|owl_Thing|PopulatedPlace >= 1
- R1085: opsub|placeOfOrigin|owl_Thing|Weapon >= 1
- R1086: opsub|awards|owl_Thing|Building >= 1
- R1087: opsub|lounge|owl_Thing|Airline >= 1
- R1088: opsub|poleDriver|owl_Thing|GrandPrix >= 1
- R1089: opsub|actingHeadteacher|owl_Thing|School >= 1
- R1090: opsub|headAlloy|owl_Thing|AutomobileEngine >= 1
- R1091: opsub|similar|owl_Thing|WineRegion >= 1
- R1092: opsub|superintendent|owl_Thing|EducationalInstitution >= 1
- R1093: opsub|automobilePlatform|owl_Thing|Automobile >= 1
- R1094: opsub|headquarters|owl_Thing|Newspaper >= 1
- R1095: opsub|officerInCharge|owl_Thing|University >= 1
- R1096: opsub|head|owl_Thing|EducationalInstitution >= 1
- R1097: opsub|fastestDriverCountry|owl_Thing|GrandPrix >= 1
- R1098: opsub|managingEditor|owl_Thing|Newspaper >= 1
- R1099: opsub|drainsFrom|owl_Thing|AnatomicalStructure >= 1
- R1100: opsub|lieutenancyArea|owl_Thing|PopulatedPlace >= 1
- R1101: opsub|voice|owl_Thing|TelevisionShow >= 1
- R1102: opsub|aircraftElectronic|owl_Thing|MilitaryUnit >= 1
- R1103: opsub|lowestRegion|owl_Thing|Island >= 1
- R1104: opsub|aircraftTransport|owl_Thing|MilitaryUnit >= 1
- R1105: opsub|relation|owl_Thing|Person >= 1
- R1106: opsub|coverArtist|owl_Thing|Book >= 1
- R1107: opsub|innervates|owl_Thing|Nerve >= 1
- R1108: opsub|booster|owl_Thing|SpaceMission >= 1
- R1109: opsub|governmentRegion|owl_Thing|Island >= 1
- R1110: opsub|musicalArtist|owl_Thing|Single >= 1
- R1111: opsub|firstWin|owl_Thing|FormulaOneRacer >= 1
- R1112: opsub|promotion|owl_Thing|WrestlingEvent >= 1
- R1113: opsub|countryWithFirstAstronaut|owl_Thing|YearInSpaceflight >= 1
- R1114: opsub|distributingCompany|owl_Thing|RecordLabel >= 1
- R1115: opsub|relative|owl_Thing|Person >= 1
- R1116: opsub|subject|owl_Thing|Book >= 1
- R1117: opsub|fastestDriver|owl_Thing|GrandPrix >= 1
- R1118: opsub|basedOn|owl_Thing|Work >= 1
- R1119: opsub|firstRace|owl_Thing|FormulaOneRacer >= 1
- R1120: opsub|aircraftHelicopterObservation|owl_Thing|MilitaryUnit >= 1
- R1121: opsub|federalState|owl_Thing|Settlement >= 1
- R1122: opsub|capital|owl_Thing|PopulatedPlace >= 1
- R1123: opsub|service|owl_Thing|Company >= 1
- R1124: opsub|canonizedPlace|owl_Thing|Saint >= 1
- R1125: opsub|subregion|owl_Thing|WineRegion >= 1
- R1126: opsub|countryWithFirstSatelliteLaunched|owl_Thing|YearInSpaceflight
-   >= 1
- R1127: opsub|councilArea|owl_Thing|PopulatedPlace >= 1
- R1128: opsub|largestMetro|owl_Thing|Settlement >= 1
- R1129: opsub|engine|owl_Thing|Automobile >= 1
- R1130: opsub|dean|owl_Thing|EducationalInstitution >= 1
- R1131: opsub|doctoralStudent|owl_Thing|Scientist >= 1
- R1132: opsub|thirdDriver|owl_Thing|GrandPrix >= 1
- R1133: opsub|musicComposer|owl_Thing|Work >= 1
- R1134: opsub|university|owl_Thing|RugbyPlayer >= 1
- R1135: opsub|compiler|owl_Thing|Album >= 1
- R1136: opsub|channel|owl_Thing|TelevisionShow >= 1
- R1137: opsub|metropolitanBorough|owl_Thing|PopulatedPlace >= 1
- R1138: opsub|citizenship|owl_Thing|Person >= 1
- R1139: opsub|managerClub|owl_Thing|SoccerPlayer >= 1
- R1140: opsub|canton|owl_Thing|Settlement >= 1
- R1141: opsub|aircraftHelicopter|owl_Thing|MilitaryUnit >= 1
- R1142: opsub|cinematography|owl_Thing|Film >= 1
- R1143: opsub|prospectTeam|owl_Thing|IceHockeyPlayer >= 1
- R1144: opsub|significantBuilding|owl_Thing|Architect >= 1
- R1145: opsub|distributingLabel|owl_Thing|RecordLabel >= 1
- R1146: opsub|foundationOrganisation|owl_Thing|Organisation >= 1
- R1147: opsub|mediaType|owl_Thing|Book >= 1
- R1148: opsub|influenced|owl_Thing|Person >= 1
- R1149: opsub|generalManager|owl_Thing|SportsTeam >= 1
- R1150: opsub|countryOrigin|owl_Thing|Rocket >= 1
- R1151: opsub|managementCountry|owl_Thing|Island >= 1
- R1152: opsub|coolingSystem|owl_Thing|AutomobileEngine >= 1
- R1153: opsub|programmingLanguage|owl_Thing|Software >= 1
- R1154: opsub|port2|owl_Thing|Spacecraft >= 1
- R1155: opsub|formerPartner|owl_Thing|FigureSkater >= 1
- R1156: opsub|computingInput|owl_Thing|Software >= 1
- R1157: opsub|secondTeam|owl_Thing|GrandPrix >= 1
- R1158: opsub|governmentCountry|owl_Thing|Island >= 1
- R1159: opsub|musicFusionGenre|owl_Thing|MusicGenre >= 1
- R1160: opsub|veneratedIn|owl_Thing|Saint >= 1
- R1161: opsub|drainsTo|owl_Thing|AnatomicalStructure >= 1
- R1162: opsub|previousEditor|owl_Thing|Magazine >= 1
- R1163: opsub|principalArea|owl_Thing|PopulatedPlace >= 1
- R1164: opsub|designerCompany|owl_Thing|MeanOfTransportation >= 1
- R1165: opsub|poleDriverTeam|owl_Thing|GrandPrix >= 1
- R1166: opsub|ceremonialCounty|owl_Thing|PopulatedPlace >= 1
- R1167: opsub|operatingSystem|owl_Thing|Software >= 1
- R1168: opsub|britishComedyAwards|owl_Thing|Comedian >= 1
- R1169: opsub|retiredRocket|owl_Thing|YearInSpaceflight >= 1
- R1170: opsub|event|owl_Thing|BadmintonPlayer >= 1
- R1171: opsub|aircraftHelicopterTransport|owl_Thing|MilitaryUnit >= 1
- R1172: opsub|company|owl_Thing|Canal >= 1
- R1173: opsub|olympicOathSwornByJudge|owl_Thing|Olympics >= 1
- R1174: opsub|assembly|owl_Thing|MeanOfTransportation >= 1
- R1175: opsub|placeOfBurial|owl_Thing|Monarch >= 1
- R1176: opsub|iftaAward|owl_Thing|Actor >= 1
- R1177: opsub|areaOfSearch|owl_Thing|SiteOfSpecialScientificInterest >= 1
- R1178: opsub|otherParty|owl_Thing|OfficeHolder >= 1
- R1179: opsub|headteacher|owl_Thing|School >= 1
- R1180: opsub|training|owl_Thing|Artist >= 1
- R1181: opsub|highestRegion|owl_Thing|Island >= 1
- R1182: opsub|trustee|owl_Thing|School >= 1
- R1183: opsub|partOfWineRegion|owl_Thing|WineRegion >= 1
- R1184: opsub|administrativeDistrict|owl_Thing|Settlement >= 1
- R1185: opsub|publisher|owl_Thing|Work >= 1
- R1186: opsub|otherAppearances|owl_Thing|OlympicResult >= 1
- R1187: opsub|stylisticOrigin|owl_Thing|MusicGenre >= 1
- R1188: opsub|birthPlace|owl_Thing|Person >= 1
- R1189: opsub|currentDomicile|owl_Thing|Person >= 1
- R1190: opsub|openingTheme|owl_Thing|TelevisionShow >= 1
- R1191: opsub|narrator|owl_Thing|Film >= 1
- R1192: opsub|alumni|owl_Thing|School >= 1
- R1193: opsub|aircraftHelicopterMultirole|owl_Thing|MilitaryUnit >= 1
- R1194: opsub|leftTributary|owl_Thing|River >= 1
- R1195: opsub|port1|owl_Thing|Spacecraft >= 1
- R1196: opsub|nationalFilmAward|owl_Thing|Actor >= 1
- R1197: opsub|ground|owl_Thing|SoccerClub >= 1
- R1198: opsub|aircraftInterceptor|owl_Thing|MilitaryUnit >= 1
- R1199: opsub|summerAppearances|owl_Thing|OlympicResult >= 1
- R1200: opsub|laurenceOlivierAward|owl_Thing|Actor >= 1
- R1201: opsub|aircraftHelicopterCargo|owl_Thing|MilitaryUnit >= 1
- R1202: opsub|thirdCommander|owl_Thing|MilitaryUnit >= 1
- R1203: opsub|executiveHeadteacher|owl_Thing|School >= 1
- R1204: opsub|peabodyAward|owl_Thing|Comedian >= 1
- R1205: opsub|afiAward|owl_Thing|Artist >= 1
- R1206: opsub|flagBearer|owl_Thing|OlympicResult >= 1
- R1207: opsub|component|owl_Thing|Brain >= 1
- R1208: opsub|march|owl_Thing|MilitaryUnit >= 1
- R1209: opsub|nearestCity|owl_Thing|Place >= 1
- R1210: opsub|architecturalStyle|owl_Thing|Building >= 1
- R1211: opsub|father|owl_Thing|Person >= 1
- R1212: opsub|growingGrape|owl_Thing|WineRegion >= 1
- R1213: opsub|thirdDriverCountry|owl_Thing|GrandPrix >= 1
- R1214: opsub|license|owl_Thing|Software >= 1
- R1215: opsub|species|owl_Thing|Species >= 1
- R1216: opsub|capitalMountain|owl_Thing|Island >= 1
- R1217: opsub|provost|owl_Thing|University >= 1
- R1218: opsub|building|owl_Thing|Island >= 1
- R1219: opsub|governmentPlace|owl_Thing|Island >= 1
- R1220: opsub|affiliation|owl_Thing|Organisation >= 1
- R1221: opsub|meetingCity|owl_Thing|Legislature >= 1
- R1222: opsub|lastLaunchRocket|owl_Thing|LaunchPad >= 1
- R1223: opsub|viceChancellor|owl_Thing|University >= 1
- R1224: opsub|countryWithFirstSpaceflight|owl_Thing|YearInSpaceflight >= 1
- R1225: opsub|firstLaunchRocket|owl_Thing|LaunchPad >= 1
- R1226: opsub|selection|owl_Thing|Astronaut >= 1
- R1227: opsub|poleDriverCountry|owl_Thing|GrandPrix >= 1
- R1228: opsub|grammyAward|owl_Thing|Artist >= 1
- R1229: opsub|beatifiedBy|owl_Thing|Saint >= 1
- R1230: opsub|varietals|owl_Thing|WineRegion >= 1
- R1231: opsub|emmyAward|owl_Thing|Artist >= 1
- R1232: opsub|administrator|owl_Thing|School >= 1
- R1233: opsub|clubsRecordGoalscorer|owl_Thing|SoccerClub >= 1
- R1234: opsub|associationOfLocalGovernment|owl_Thing|Settlement >= 1
- R1235: opsub|athletics|owl_Thing|University >= 1
- R1236: opsub|musicSubgenre|owl_Thing|MusicGenre >= 1
- R1237: opsub|nationalOlympicCommittee|owl_Thing|OlympicResult >= 1
- R1238: opsub|leaderName|owl_Thing|PopulatedPlace >= 1
- R1239: opsub|states|owl_Thing|Language >= 1
- R1240: opsub|ethnicity|owl_Thing|Person >= 1
- R1241: opsub|locationCity|owl_Thing|Organisation >= 1
- R1242: opsub|rocketFunction|owl_Thing|Rocket >= 1
- R1243: opsub|notableWork|owl_Thing|Writer >= 1
- R1244: opsub|formerChoreographer|owl_Thing|FigureSkater >= 1
- R1245: opsub|notableStudent|owl_Thing|Scientist >= 1
- R1246: opsub|industry|owl_Thing|Company >= 1
- R1247: opsub|nextMission|owl_Thing|SpaceMission >= 1
- R1248: opsub|coExecutiveProducer|owl_Thing|TelevisionShow >= 1
- R1249: opsub|closingFilm|owl_Thing|FilmFestival >= 1
- R1250: opsub|mouthState|owl_Thing|River >= 1
- R1251: opsub|wars|owl_Thing|Weapon >= 1
- R1252: opsub|locationCountry|owl_Thing|Organisation >= 1
- R1253: opsub|lastFlight|owl_Thing|SpaceShuttle >= 1
- R1254: opsub|phylum|owl_Thing|Species >= 1
- R1255: opsub|river|owl_Thing|Island >= 1
- R1256: opsub|house|owl_Thing|Legislature >= 1
- R1257: opsub|computingPlatform|owl_Thing|Software >= 1
- R1258: opsub|associatedAct|owl_Thing|Artist >= 1
- R1259: opsub|architect|owl_Thing|Building >= 1
- R1260: opsub|binomialAuthority|owl_Thing|Species >= 1
- R1261: opsub|teamPresident|owl_Thing|SportsTeam >= 1
- R1262: opsub|crosses|owl_Thing|Bridge >= 1
- R1263: opsub|writer|owl_Thing|Work >= 1
- R1264: opsub|doctoralAdvisor|owl_Thing|Scientist >= 1
- R1265: opsub|order|owl_Thing|Species >= 1
- R1266: opsub|show|owl_Thing|TelevisionEpisode >= 1
- R1267: opsub|destination|owl_Thing|Airline >= 1
- R1268: opsub|presenter|owl_Thing|TelevisionShow >= 1
- R1269: opsub|editing|owl_Thing|Film >= 1
- R1270: opsub|subsequentInfrastructure|owl_Thing|Infrastructure >= 1
- R1271: opsub|filmFareAward|owl_Thing|Artist >= 1
- R1272: opsub|launchPad|owl_Thing|SpaceMission >= 1
- R1273: opsub|outflow|owl_Thing|Lake >= 1
- R1274: opsub|jointCommunity|owl_Thing|Settlement >= 1
- R1275: opsub|supplies|owl_Thing|Artery >= 1
- R1276: opsub|partner|owl_Thing|Person >= 1
- R1277: opsub|oilSystem|owl_Thing|AutomobileEngine >= 1
- R1278: opsub|saint|owl_Thing|Settlement >= 1
- R1279: opsub|nobelLaureates|owl_Thing|School >= 1
- R1280: opsub|academyAward|owl_Thing|Artist >= 1
- R1281: opsub|showJudge|owl_Thing|TelevisionShow >= 1
- R1282: opsub|secondDriverCountry|owl_Thing|GrandPrix >= 1
- R1283: opsub|wineRegion|owl_Thing|Grape >= 1
- R1284: opsub|inseeCode|owl_Thing|PopulatedPlace >= 1
- R1285: opsub|significantDesign|owl_Thing|Architect >= 1
- R1286: opsub|olivierAward|owl_Thing|Comedian >= 1
- R1287: opsub|genus|owl_Thing|Species >= 1
- R1288: opsub|baftaAward|owl_Thing|Artist >= 1
- R1289: opsub|artery|owl_Thing|AnatomicalStructure >= 1
- R1290: opsub|film|owl_Thing|FilmFestival >= 1
- R1291: opsub|garrison|owl_Thing|MilitaryUnit >= 1
- R1292: - subsumes|Cardinal|Cleric - subsumes|Cleric|Person
-   + subsumes|Cardinal|Person >= -1
- R1293: - subsumes|ChristianBishop|Cleric - subsumes|Cleric|Person
-   + subsumes|ChristianBishop|Person >= -1
- R1294: - subsumes|Saint|Cleric - subsumes|Cleric|Person
-   + subsumes|Saint|Person >= -1
- R1295: - subsumes|Pope|Cleric - subsumes|Cleric|Person
-   + subsumes|Pope|Person >= -1
- R1296: - subsumes|University|EducationalInstitution
-   - subsumes|EducationalInstitution|Organisation
-   + subsumes|University|Organisation >= -1
- R1297: - subsumes|College|EducationalInstitution
-   - subsumes|EducationalInstitution|Organisation
-   + subsumes|College|Organisation >= -1
- R1298: - subsumes|School|EducationalInstitution
-   - subsumes|EducationalInstitution|Organisation
-   + subsumes|School|Organisation >= -1
- R1299: - subsumes|Stream|BodyOfWater - subsumes|River|Stream
-   + subsumes|River|BodyOfWater >= -1
- R1300: - subsumes|Canal|Stream - subsumes|Stream|BodyOfWater
-   + subsumes|Canal|BodyOfWater >= -1
- R1301: - subsumes|FloweringPlant|Plant - subsumes|Grape|FloweringPlant
-   + subsumes|Grape|Plant >= -1
- R1302: - subsumes|Airline|Company - subsumes|Company|Organisation
-   + subsumes|Airline|Organisation >= -1
- R1303: - subsumes|RecordLabel|Company - subsumes|Company|Organisation
-   + subsumes|RecordLabel|Organisation >= -1
- R1304: - subsumes|Lake|BodyOfWater - subsumes|BodyOfWater|Place
-   + subsumes|Lake|Place >= -1
- R1305: - subsumes|Stream|BodyOfWater - subsumes|BodyOfWater|Place
-   + subsumes|Stream|Place >= -1
- R1306: - subsumes|VicePresident|Politician - subsumes|Politician|Person
-   + subsumes|VicePresident|Person >= -1
- R1307: - subsumes|MemberOfParliament|Politician
-   - subsumes|Politician|Person + subsumes|MemberOfParliament|Person >= -1
- R1308: - subsumes|Deputy|Politician - subsumes|Politician|Person
-   + subsumes|Deputy|Person >= -1
- R1309: - subsumes|VicePrimeMinister|Politician
-   - subsumes|Politician|Person + subsumes|VicePrimeMinister|Person >= -1
- R1310: - subsumes|Congressman|Politician - subsumes|Politician|Person
-   + subsumes|Congressman|Person >= -1
- R1311: - subsumes|Governor|Politician - subsumes|Politician|Person
-   + subsumes|Governor|Person >= -1
- R1312: - subsumes|Mayor|Politician - subsumes|Politician|Person
-   + subsumes|Mayor|Person >= -1
- R1313: - subsumes|PrimeMinister|Politician - subsumes|Politician|Person
-   + subsumes|PrimeMinister|Person >= -1
- R1314: - subsumes|Lieutenant|Politician - subsumes|Politician|Person
-   + subsumes|Lieutenant|Person >= -1
- R1315: - subsumes|President|Politician - subsumes|Politician|Person
-   + subsumes|President|Person >= -1
- R1316: - subsumes|Chancellor|Politician - subsumes|Politician|Person
-   + subsumes|Chancellor|Person >= -1
- R1317: - subsumes|Senator|Politician - subsumes|Politician|Person
-   + subsumes|Senator|Person >= -1
- R1318: - subsumes|Settlement|PopulatedPlace - subsumes|City|Settlement
-   + subsumes|City|PopulatedPlace >= -1
- R1319: - subsumes|Settlement|PopulatedPlace - subsumes|Town|Settlement
-   + subsumes|Town|PopulatedPlace >= -1
- R1320: - subsumes|Village|Settlement - subsumes|Settlement|PopulatedPlace
-   + subsumes|Village|PopulatedPlace >= -1
- R1321: - subsumes|Plant|Eukaryote - subsumes|Gnetophytes|Plant
-   + subsumes|Gnetophytes|Eukaryote >= -1
- R1322: - subsumes|Plant|Eukaryote - subsumes|GreenAlga|Plant
-   + subsumes|GreenAlga|Eukaryote >= -1
- R1323: - subsumes|Plant|Eukaryote - subsumes|Fern|Plant
-   + subsumes|Fern|Eukaryote >= -1
- R1324: - subsumes|FloweringPlant|Plant - subsumes|Plant|Eukaryote
-   + subsumes|FloweringPlant|Eukaryote >= -1
- R1325: - subsumes|Conifer|Plant - subsumes|Plant|Eukaryote
-   + subsumes|Conifer|Eukaryote >= -1
- R1326: - subsumes|Cycad|Plant - subsumes|Plant|Eukaryote
-   + subsumes|Cycad|Eukaryote >= -1
- R1327: - subsumes|Ginkgo|Plant - subsumes|Plant|Eukaryote
-   + subsumes|Ginkgo|Eukaryote >= -1
- R1328: - subsumes|ClubMoss|Plant - subsumes|Plant|Eukaryote
-   + subsumes|ClubMoss|Eukaryote >= -1
- R1329: - subsumes|Moss|Plant - subsumes|Plant|Eukaryote
-   + subsumes|Moss|Eukaryote >= -1
- R1330: - subsumes|CanadianFootballPlayer|GridironFootballPlayer
-   - subsumes|GridironFootballPlayer|Athlete
-   + subsumes|CanadianFootballPlayer|Athlete >= -1
- R1331: - subsumes|AmericanFootballPlayer|GridironFootballPlayer
-   - subsumes|GridironFootballPlayer|Athlete
-   + subsumes|AmericanFootballPlayer|Athlete >= -1
- R1332: - subsumes|MusicalWork|Work - subsumes|Song|MusicalWork
-   + subsumes|Song|Work >= -1
- R1333: - subsumes|MusicalWork|Work - subsumes|Single|MusicalWork
-   + subsumes|Single|Work >= -1
- R1334: - subsumes|MusicalWork|Work - subsumes|Album|MusicalWork
-   + subsumes|Album|Work >= -1
- R1335: - subsumes|SportsTeam|Organisation - subsumes|SoccerClub|SportsTeam
-   + subsumes|SoccerClub|Organisation >= -1
- R1336: - subsumes|SportsTeam|Organisation
-   - subsumes|CanadianFootballTeam|SportsTeam
-   + subsumes|CanadianFootballTeam|Organisation >= -1
- R1337: - subsumes|SportsTeam|Organisation - subsumes|HockeyTeam|SportsTeam
-   + subsumes|HockeyTeam|Organisation >= -1
- R1338: - subsumes|SportsTeam|Organisation
-   - subsumes|AmericanFootballTeam|SportsTeam
-   + subsumes|AmericanFootballTeam|Organisation >= -1
- R1339: - subsumes|Software|Work - subsumes|VideoGame|Software
-   + subsumes|VideoGame|Work >= -1
- R1340: - subsumes|Artist|Person - subsumes|Comedian|Artist
-   + subsumes|Comedian|Person >= -1
- R1341: - subsumes|Artist|Person - subsumes|ComicsCreator|Artist
-   + subsumes|ComicsCreator|Person >= -1
- R1342: - subsumes|Actor|Artist - subsumes|Artist|Person
-   + subsumes|Actor|Person >= -1
- R1343: - subsumes|Writer|Artist - subsumes|Artist|Person
-   + subsumes|Writer|Person >= -1
- R1344: - subsumes|MusicalArtist|Artist - subsumes|Artist|Person
-   + subsumes|MusicalArtist|Person >= -1
- R1345: - subsumes|EurovisionSongContestEntry|Song
-   - subsumes|Song|MusicalWork
-   + subsumes|EurovisionSongContestEntry|MusicalWork >= -1
- R1346: - subsumes|Building|Place - subsumes|Hospital|Building
-   + subsumes|Hospital|Place >= -1
- R1347: - subsumes|Building|Place - subsumes|Skyscraper|Building
-   + subsumes|Skyscraper|Place >= -1
- R1348: - subsumes|Building|Place - subsumes|Stadium|Building
-   + subsumes|Stadium|Place >= -1
- R1349: - subsumes|Building|Place - subsumes|HistoricBuilding|Building
-   + subsumes|HistoricBuilding|Place >= -1
- R1350: - subsumes|Building|Place - subsumes|Lighthouse|Building
-   + subsumes|Lighthouse|Place >= -1
- R1351: - subsumes|Building|Place - subsumes|Station|Building
-   + subsumes|Station|Place >= -1
- R1352: - subsumes|Building|Place - subsumes|Airport|Building
-   + subsumes|Airport|Place >= -1
- R1353: - subsumes|Building|Place - subsumes|LaunchPad|Building
-   + subsumes|LaunchPad|Place >= -1
- R1354: - subsumes|Bridge|Building - subsumes|Building|Place
-   + subsumes|Bridge|Place >= -1
- R1355: - subsumes|ShoppingMall|Building - subsumes|Building|Place
-   + subsumes|ShoppingMall|Place >= -1
- R1356: - subsumes|ComicsCharacter|FictionalCharacter
-   - subsumes|FictionalCharacter|Person + subsumes|ComicsCharacter|Person
+ R174: subsumes|Conference|Conference >= 1
+ R175: subsumes|Workshop|Workshop >= 1
+ R176: subsumes|Positive_Review|Positive_Review >= 1
+ R177: subsumes|Industrial_Paper|Industrial_Paper >= 1
+ R178: subsumes|Research_Topic|Research_Topic >= 1
+ R179: subsumes|Neutral_Review|Neutral_Review >= 1
+ R180: subsumes|Conference_Trip|Conference_Trip >= 1
+ R181: subsumes|Invited_Speaker|Invited_Speaker >= 1
+ R182: subsumes|Invited_Talk_Abstract|Invited_Talk_Abstract >= 1
+ R183: subsumes|Possible_Reviewer|Possible_Reviewer >= 1
+ R184: subsumes|University|University >= 1
+ R185: subsumes|Presenter|Presenter >= 1
+ R186: subsumes|Proceedings|Proceedings >= 1
+ R187: subsumes|OC_Member|OC_Member >= 1
+ R188: subsumes|Paper|Paper >= 1
+ R189: subsumes|Accepted_Paper|Accepted_Paper >= 1
+ R190: subsumes|Rejected_Paper|Rejected_Paper >= 1
+ R191: subsumes|Invited_Talk|Invited_Talk >= 1
+ R192: subsumes|PC_Chair|PC_Chair >= 1
+ R193: subsumes|Tutorial_Abstract|Tutorial_Abstract >= 1
+ R194: subsumes|owl_Thing|owl_Thing >= 1
+ R195: subsumes|owl_Nothing|owl_Nothing >= 1
+ R196: opsub|presentationOfPaper|Thing|Individual_Presentation >= 1
+ R197: opsub|scientificallyOrganises|Thing|Academic_Institution >= 1
+ R198: opsub|organisedBy|Thing|Event >= 1
+ R199: opsub|scientificallyOrganisedBy|Thing|Event >= 1
+ R200: opsub|reviewerOfPaper|Thing|Possible_Reviewer >= 1
+ R201: opsub|eventOnList|Thing|Event >= 1
+ R202: opsub|reviewWrittenBy|Thing|Document >= 1
+ R203: opsub|technicallyOrganisedBy|Thing|Event >= 1
+ R204: opsub|presentationOfPaper|Thing|Event >= 1
+ R205: opsub|partOfEvent|Thing|Event >= 1
+ R206: opsub|listsEvent|Thing|Document >= 1
+ R207: opsub|writtenBy|Thing|Document >= 1
+ R208: opsub|technicallyOrganises|Thing|Organisation >= 1
+ R209: opsub|authorOf|Thing|Person >= 1
+ R210: opsub|hasReview|Thing|Document >= 1
+ R211: opsub|heldIn|Thing|Event >= 1
+ R212: opsub|updatedVersionOf|Thing|Document >= 1
+ R213: opsub|presentationOfPaper|Thing|Scientific_Event >= 1
+ R214: opsub|reviewOfPaper|Thing|Review >= 1
+ R215: opsub|publisherOf|Thing|Organisation >= 1
+ R216: opsub|scientificallyOrganises|Thing|Organisation >= 1
+ R217: opsub|hasReview|Thing|Paper >= 1
+ R218: opsub|hasReviewer|Thing|Paper >= 1
+ R219: opsub|reviewOfPaper|Thing|Document >= 1
+ R220: opsub|reviewerOfPaper|Thing|Person >= 1
+ R221: opsub|hasReviewer|Thing|Document >= 1
+ R222: opsub|locationOf|Thing|Location >= 1
+ R223: opsub|paperPresentedAs|Thing|Document >= 1
+ R224: opsub|hasUpdatedVersion|Thing|Document >= 1
+ R225: opsub|reviewWrittenBy|Thing|Review >= 1
+ R226: opsub|topicCoveredBy|Thing|Research_Topic >= 1
+ R227: opsub|hasEvent|Thing|Event >= 1
+ R228: - subsumes|Conference_Trip|Event - subsumes|Event|Contributed_Talk
+   + subsumes|Conference_Trip|Contributed_Talk >= -1
+ R229: - subsumes|Poster_Session|Event - subsumes|Event|Contributed_Talk
+   + subsumes|Poster_Session|Contributed_Talk >= -1
+ R230: - subsumes|Rejected_Paper|Evaluated_Paper
+   - subsumes|Evaluated_Paper|Paper + subsumes|Rejected_Paper|Paper >= -1
+ R231: - subsumes|Rejected_Paper|Evaluated_Paper
+   - subsumes|Evaluated_Paper|Submitted_Paper
+   + subsumes|Rejected_Paper|Submitted_Paper >= -1
+ R232: - subsumes|Rejected_Paper|Evaluated_Paper
+   - subsumes|Evaluated_Paper|Regular_Paper
+   + subsumes|Rejected_Paper|Regular_Paper >= -1
+ R233: - subsumes|Conference_Proceedings|Proceedings
+   - subsumes|Proceedings|Document
+   + subsumes|Conference_Proceedings|Document >= -1
+ R234: - subsumes|Session_Chair|Conference_Participant
+   - subsumes|Conference_Participant|Possible_Reviewer
+   + subsumes|Session_Chair|Possible_Reviewer >= -1
+ R235: - subsumes|Student|Person - subsumes|Person|Possible_Reviewer
+   + subsumes|Student|Possible_Reviewer >= -1
+ R236: - subsumes|Person|Possible_Reviewer
+   - subsumes|Possible_Reviewer|Person + subsumes|Person|Person >= -1
+ R237: - subsumes|Presenter|Conference_Participant
+   - subsumes|Conference_Participant|Possible_Reviewer
+   + subsumes|Presenter|Possible_Reviewer >= -1
+ R238: - subsumes|Scientific_Event|Event - subsumes|Event|Contributed_Talk
+   + subsumes|Scientific_Event|Contributed_Talk >= -1
+ R239: - subsumes|Person|Possible_Reviewer - subsumes|OC_Chair|Person
+   + subsumes|OC_Chair|Possible_Reviewer >= -1
+ R240: - subsumes|Invited_Talk_Abstract|Abstract
+   - subsumes|Abstract|Document + subsumes|Invited_Talk_Abstract|Document
    >= -1
- R1357: - subsumes|SportsLeague|Organisation
-   - subsumes|VideogamesLeague|SportsLeague
-   + subsumes|VideogamesLeague|Organisation >= -1
- R1358: - subsumes|RugbyLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation + subsumes|RugbyLeague|Organisation
+ R241: - subsumes|Person|Possible_Reviewer - subsumes|Presenter|Person
+   + subsumes|Presenter|Possible_Reviewer >= -1
+ R242: - subsumes|Person|Possible_Reviewer - subsumes|SC_Member|Person
+   + subsumes|SC_Member|Possible_Reviewer >= -1
+ R243: - subsumes|Demo_Paper|Paper - subsumes|Paper|Document
+   + subsumes|Demo_Paper|Document >= -1
+ R244: - subsumes|Conference_Session|Session
+   - subsumes|Contributed_Talk|Conference_Session
+   + subsumes|Contributed_Talk|Session >= -1
+ R245: - subsumes|Conference_Banquet|Event
+   - subsumes|Event|Contributed_Talk
+   + subsumes|Conference_Banquet|Contributed_Talk >= -1
+ R246: - subsumes|Person|Possible_Reviewer - subsumes|PC_Member|Person
+   + subsumes|PC_Member|Possible_Reviewer >= -1
+ R247: - subsumes|Person|Possible_Reviewer
+   - subsumes|Late-Registered_Participant|Person
+   + subsumes|Late-Registered_Participant|Possible_Reviewer >= -1
+ R248: - subsumes|Person|Possible_Reviewer - subsumes|Session_Chair|Person
+   + subsumes|Session_Chair|Possible_Reviewer >= -1
+ R249: - subsumes|Demo_Session|Event - subsumes|Event|Contributed_Talk
+   + subsumes|Demo_Session|Contributed_Talk >= -1
+ R250: - subsumes|Conference|Event - subsumes|Event|Contributed_Talk
+   + subsumes|Conference|Contributed_Talk >= -1
+ R251: - subsumes|Person|Possible_Reviewer
+   - subsumes|Agency_Staff_Member|Person
+   + subsumes|Agency_Staff_Member|Possible_Reviewer >= -1
+ R252: - subsumes|Submitted_Paper|Paper
+   - subsumes|Conference_Paper|Submitted_Paper
+   + subsumes|Conference_Paper|Paper >= -1
+ R253: - subsumes|Social_Event|Event - subsumes|Event|Contributed_Talk
+   + subsumes|Social_Event|Contributed_Talk >= -1
+ R254: - subsumes|Submitted_Paper|Paper
+   - subsumes|Poster_Paper|Submitted_Paper + subsumes|Poster_Paper|Paper
    >= -1
- R1359: - subsumes|IceHockeyLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|IceHockeyLeague|Organisation >= -1
- R1360: - subsumes|CricketLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|CricketLeague|Organisation >= -1
- R1361: - subsumes|TennisLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|TennisLeague|Organisation >= -1
- R1362: - subsumes|PaintballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|PaintballLeague|Organisation >= -1
- R1363: - subsumes|FieldHockeyLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|FieldHockeyLeague|Organisation >= -1
- R1364: - subsumes|BowlingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|BowlingLeague|Organisation >= -1
- R1365: - subsumes|InlineHockeyLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|InlineHockeyLeague|Organisation >= -1
- R1366: - subsumes|RadioControlledRacingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|RadioControlledRacingLeague|Organisation >= -1
- R1367: - subsumes|SoftballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|SoftballLeague|Organisation >= -1
- R1368: - subsumes|BasketballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|BasketballLeague|Organisation >= -1
- R1369: - subsumes|SoccerLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|SoccerLeague|Organisation >= -1
- R1370: - subsumes|SpeedwayLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|SpeedwayLeague|Organisation >= -1
- R1371: - subsumes|CanadianFootballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|CanadianFootballLeague|Organisation >= -1
- R1372: - subsumes|BoxingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|BoxingLeague|Organisation >= -1
- R1373: - subsumes|CyclingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|CyclingLeague|Organisation >= -1
- R1374: - subsumes|AustralianFootballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|AustralianFootballLeague|Organisation >= -1
- R1375: - subsumes|AutoRacingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|AutoRacingLeague|Organisation >= -1
- R1376: - subsumes|PoloLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation + subsumes|PoloLeague|Organisation
+ R255: - subsumes|Tutorial_Abstract|Abstract - subsumes|Abstract|Document
+   + subsumes|Tutorial_Abstract|Document >= -1
+ R256: - subsumes|Person|Possible_Reviewer
+   - subsumes|Early-Registered_Participant|Person
+   + subsumes|Early-Registered_Participant|Possible_Reviewer >= -1
+ R257: - subsumes|Conference_Session|Session
+   - subsumes|Conference_Proceedings|Conference_Session
+   + subsumes|Conference_Proceedings|Session >= -1
+ R258: - subsumes|Workshop_Paper|Paper - subsumes|Paper|Document
+   + subsumes|Workshop_Paper|Document >= -1
+ R259: - subsumes|Person|Possible_Reviewer
+   - subsumes|Possible_Reviewer|Person
+   + subsumes|Possible_Reviewer|Possible_Reviewer >= -1
+ R260: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Event|Contributed_Talk + subsumes|Event|Conference_Session
    >= -1
- R1377: - subsumes|MixedMartialArtsLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|MixedMartialArtsLeague|Organisation >= -1
- R1378: - subsumes|CurlingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|CurlingLeague|Organisation >= -1
- R1379: - subsumes|GolfLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation + subsumes|GolfLeague|Organisation
+ R261: - subsumes|Regular_Paper|Paper - subsumes|Paper|Document
+   + subsumes|Regular_Paper|Document >= -1
+ R262: - subsumes|Proceedings|Document
+   - subsumes|Scientific_Event|Proceedings
+   + subsumes|Scientific_Event|Document >= -1
+ R263: - subsumes|Conference_Participant|Possible_Reviewer
+   - subsumes|Early-Registered_Participant|Conference_Participant
+   + subsumes|Early-Registered_Participant|Possible_Reviewer >= -1
+ R264: - subsumes|Person|Possible_Reviewer - subsumes|Paper_Author|Person
+   + subsumes|Paper_Author|Possible_Reviewer >= -1
+ R265: - subsumes|Conference_Participant|Possible_Reviewer
+   - subsumes|PC_Chair|Conference_Participant
+   + subsumes|PC_Chair|Possible_Reviewer >= -1
+ R266: - subsumes|Conference_Participant|Person
+   - subsumes|PC_Chair|Conference_Participant + subsumes|PC_Chair|Person
    >= -1
- R1380: - subsumes|LacrosseLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|LacrosseLeague|Organisation >= -1
- R1381: - subsumes|BaseballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|BaseballLeague|Organisation >= -1
- R1382: - subsumes|AmericanFootballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|AmericanFootballLeague|Organisation >= -1
- R1383: - subsumes|HandballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|HandballLeague|Organisation >= -1
- R1384: - subsumes|MotorcycleRacingLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|MotorcycleRacingLeague|Organisation >= -1
- R1385: - subsumes|VolleyballLeague|SportsLeague
-   - subsumes|SportsLeague|Organisation
-   + subsumes|VolleyballLeague|Organisation >= -1
- R1386: - subsumes|SportsEvent|Event - subsumes|Olympics|SportsEvent
-   + subsumes|Olympics|Event >= -1
- R1387: - subsumes|SportsEvent|Event - subsumes|GrandPrix|SportsEvent
-   + subsumes|GrandPrix|Event >= -1
- R1388: - subsumes|SportsEvent|Event - subsumes|WrestlingEvent|SportsEvent
-   + subsumes|WrestlingEvent|Event >= -1
- R1389: - subsumes|SportsEvent|Event
-   - subsumes|MixedMartialArtsEvent|SportsEvent
-   + subsumes|MixedMartialArtsEvent|Event >= -1
- R1390: - subsumes|WomensTennisAssociationTournament|SportsEvent
-   - subsumes|SportsEvent|Event
-   + subsumes|WomensTennisAssociationTournament|Event >= -1
- R1391: - subsumes|Race|SportsEvent - subsumes|SportsEvent|Event
-   + subsumes|Race|Event >= -1
- R1392: - subsumes|Athlete|Person - subsumes|Boxer|Athlete
-   + subsumes|Boxer|Person >= -1
- R1393: - subsumes|Athlete|Person - subsumes|Cricketer|Athlete
-   + subsumes|Cricketer|Person >= -1
- R1394: - subsumes|Athlete|Person - subsumes|NascarDriver|Athlete
-   + subsumes|NascarDriver|Person >= -1
- R1395: - subsumes|Athlete|Person - subsumes|GaelicGamesPlayer|Athlete
-   + subsumes|GaelicGamesPlayer|Person >= -1
- R1396: - subsumes|Athlete|Person - subsumes|BasketballPlayer|Athlete
-   + subsumes|BasketballPlayer|Person >= -1
- R1397: - subsumes|Athlete|Person - subsumes|FormulaOneRacer|Athlete
-   + subsumes|FormulaOneRacer|Person >= -1
- R1398: - subsumes|Athlete|Person - subsumes|TennisPlayer|Athlete
-   + subsumes|TennisPlayer|Person >= -1
- R1399: - subsumes|Athlete|Person - subsumes|GridironFootballPlayer|Athlete
-   + subsumes|GridironFootballPlayer|Person >= -1
- R1400: - subsumes|Athlete|Person - subsumes|IceHockeyPlayer|Athlete
-   + subsumes|IceHockeyPlayer|Person >= -1
- R1401: - subsumes|Athlete|Person - subsumes|Wrestler|Athlete
-   + subsumes|Wrestler|Person >= -1
- R1402: - subsumes|Athlete|Person - subsumes|Cyclist|Athlete
-   + subsumes|Cyclist|Person >= -1
- R1403: - subsumes|Athlete|Person - subsumes|BadmintonPlayer|Athlete
-   + subsumes|BadmintonPlayer|Person >= -1
- R1404: - subsumes|Athlete|Person - subsumes|BaseballPlayer|Athlete
-   + subsumes|BaseballPlayer|Person >= -1
- R1405: - subsumes|Athlete|Person
-   - subsumes|NationalCollegiateAthleticAssociationAthlete|Athlete
-   + subsumes|NationalCollegiateAthleticAssociationAthlete|Person >= -1
- R1406: - subsumes|Athlete|Person - subsumes|RugbyPlayer|Athlete
-   + subsumes|RugbyPlayer|Person >= -1
- R1407: - subsumes|Athlete|Person - subsumes|FigureSkater|Athlete
-   + subsumes|FigureSkater|Person >= -1
- R1408: - subsumes|SoccerPlayer|Athlete - subsumes|Athlete|Person
-   + subsumes|SoccerPlayer|Person >= -1
- R1409: - subsumes|PopulatedPlace|Place
-   - subsumes|AdministrativeRegion|PopulatedPlace
-   + subsumes|AdministrativeRegion|Place >= -1
- R1410: - subsumes|PopulatedPlace|Place - subsumes|Continent|PopulatedPlace
-   + subsumes|Continent|Place >= -1
- R1411: - subsumes|PopulatedPlace|Place - subsumes|Island|PopulatedPlace
-   + subsumes|Island|Place >= -1
- R1412: - subsumes|PopulatedPlace|Place - subsumes|Country|PopulatedPlace
-   + subsumes|Country|Place >= -1
- R1413: - subsumes|PopulatedPlace|Place
-   - subsumes|Settlement|PopulatedPlace + subsumes|Settlement|Place >= -1
- R1414: - subsumes|Eukaryote|Species - subsumes|Fungus|Eukaryote
-   + subsumes|Fungus|Species >= -1
- R1415: - subsumes|Eukaryote|Species - subsumes|Plant|Eukaryote
-   + subsumes|Plant|Species >= -1
- R1416: - subsumes|Eukaryote|Species - subsumes|Animal|Eukaryote
-   + subsumes|Animal|Species >= -1
- R1417: - subsumes|Animal|Eukaryote - subsumes|Amphibian|Animal
-   + subsumes|Amphibian|Eukaryote >= -1
- R1418: - subsumes|Animal|Eukaryote - subsumes|Mammal|Animal
-   + subsumes|Mammal|Eukaryote >= -1
- R1419: - subsumes|Animal|Eukaryote - subsumes|Fish|Animal
-   + subsumes|Fish|Eukaryote >= -1
- R1420: - subsumes|Animal|Eukaryote - subsumes|Mollusca|Animal
-   + subsumes|Mollusca|Eukaryote >= -1
- R1421: - subsumes|Animal|Eukaryote - subsumes|Crustacean|Animal
-   + subsumes|Crustacean|Eukaryote >= -1
- R1422: - subsumes|Animal|Eukaryote - subsumes|Bird|Animal
-   + subsumes|Bird|Eukaryote >= -1
- R1423: - subsumes|Insect|Animal - subsumes|Animal|Eukaryote
-   + subsumes|Insect|Eukaryote >= -1
- R1424: - subsumes|Arachnid|Animal - subsumes|Animal|Eukaryote
-   + subsumes|Arachnid|Eukaryote >= -1
- R1425: - subsumes|Reptile|Animal - subsumes|Animal|Eukaryote
-   + subsumes|Reptile|Eukaryote >= -1
- R1426: - subsumes|Actor|Artist - subsumes|AdultActor|Actor
-   + subsumes|AdultActor|Artist >= -1
- R1427: - subsumes|VoiceActor|Actor - subsumes|Actor|Artist
-   + subsumes|VoiceActor|Artist >= -1
- R1428: - subsumes|River|Stream - subsumes|Stream|Place
-   + subsumes|River|Place >= -1
- R1429: - subsumes|Canal|Stream - subsumes|Stream|Place
-   + subsumes|Canal|Place >= -1
- R1430: - subsumes|Grape|FloweringPlant - subsumes|FloweringPlant|Eukaryote
-   + subsumes|Grape|Eukaryote >= -1
- R1431: - subsumes|BodyOfWater|Place - subsumes|Canal|BodyOfWater
-   + subsumes|Canal|Place >= -1
- R1432: - subsumes|BodyOfWater|Place - subsumes|River|BodyOfWater
-   + subsumes|River|Place >= -1
- R1433: - subsumes|City|Settlement - subsumes|Settlement|Place
-   + subsumes|City|Place >= -1
- R1434: - subsumes|Town|Settlement - subsumes|Settlement|Place
-   + subsumes|Town|Place >= -1
- R1435: - subsumes|Village|Settlement - subsumes|Settlement|Place
-   + subsumes|Village|Place >= -1
- R1436: - subsumes|Grape|Plant - subsumes|Plant|Species
-   + subsumes|Grape|Species >= -1
- R1437: - subsumes|Plant|Eukaryote - subsumes|Grape|Plant
-   + subsumes|Grape|Eukaryote >= -1
- R1438: - subsumes|Gnetophytes|Plant - subsumes|Plant|Species
-   + subsumes|Gnetophytes|Species >= -1
- R1439: - subsumes|GreenAlga|Plant - subsumes|Plant|Species
-   + subsumes|GreenAlga|Species >= -1
- R1440: - subsumes|Fern|Plant - subsumes|Plant|Species
-   + subsumes|Fern|Species >= -1
- R1441: - subsumes|FloweringPlant|Plant - subsumes|Plant|Species
-   + subsumes|FloweringPlant|Species >= -1
- R1442: - subsumes|Conifer|Plant - subsumes|Plant|Species
-   + subsumes|Conifer|Species >= -1
- R1443: - subsumes|Cycad|Plant - subsumes|Plant|Species
-   + subsumes|Cycad|Species >= -1
- R1444: - subsumes|Ginkgo|Plant - subsumes|Plant|Species
-   + subsumes|Ginkgo|Species >= -1
- R1445: - subsumes|ClubMoss|Plant - subsumes|Plant|Species
-   + subsumes|ClubMoss|Species >= -1
- R1446: - subsumes|Moss|Plant - subsumes|Plant|Species
-   + subsumes|Moss|Species >= -1
- R1447: - subsumes|CanadianFootballPlayer|GridironFootballPlayer
-   - subsumes|GridironFootballPlayer|Person
-   + subsumes|CanadianFootballPlayer|Person >= -1
- R1448: - subsumes|AmericanFootballPlayer|GridironFootballPlayer
-   - subsumes|GridironFootballPlayer|Person
-   + subsumes|AmericanFootballPlayer|Person >= -1
- R1449: - subsumes|MusicalWork|Work
-   - subsumes|EurovisionSongContestEntry|MusicalWork
-   + subsumes|EurovisionSongContestEntry|Work >= -1
- R1450: - subsumes|Artist|Person - subsumes|VoiceActor|Artist
-   + subsumes|VoiceActor|Person >= -1
- R1451: - subsumes|Artist|Person - subsumes|AdultActor|Artist
-   + subsumes|AdultActor|Person >= -1
- R1452: - subsumes|EurovisionSongContestEntry|Song - subsumes|Song|Work
-   + subsumes|EurovisionSongContestEntry|Work >= -1
- R1453: - subsumes|Athlete|Person - subsumes|AmericanFootballPlayer|Athlete
-   + subsumes|AmericanFootballPlayer|Person >= -1
- R1454: - subsumes|Athlete|Person - subsumes|CanadianFootballPlayer|Athlete
-   + subsumes|CanadianFootballPlayer|Person >= -1
- R1455: - subsumes|PopulatedPlace|Place - subsumes|Village|PopulatedPlace
-   + subsumes|Village|Place >= -1
- R1456: - subsumes|PopulatedPlace|Place - subsumes|Town|PopulatedPlace
-   + subsumes|Town|Place >= -1
- R1457: - subsumes|PopulatedPlace|Place - subsumes|City|PopulatedPlace
-   + subsumes|City|Place >= -1
- R1458: - subsumes|Eukaryote|Species - subsumes|Reptile|Eukaryote
-   + subsumes|Reptile|Species >= -1
- R1459: - subsumes|Eukaryote|Species - subsumes|Arachnid|Eukaryote
-   + subsumes|Arachnid|Species >= -1
- R1460: - subsumes|Eukaryote|Species - subsumes|Insect|Eukaryote
-   + subsumes|Insect|Species >= -1
- R1461: - subsumes|Eukaryote|Species - subsumes|Bird|Eukaryote
-   + subsumes|Bird|Species >= -1
- R1462: - subsumes|Eukaryote|Species - subsumes|Crustacean|Eukaryote
-   + subsumes|Crustacean|Species >= -1
- R1463: - subsumes|Eukaryote|Species - subsumes|Mollusca|Eukaryote
-   + subsumes|Mollusca|Species >= -1
- R1464: - subsumes|Eukaryote|Species - subsumes|Fish|Eukaryote
-   + subsumes|Fish|Species >= -1
- R1465: - subsumes|Eukaryote|Species - subsumes|Mammal|Eukaryote
-   + subsumes|Mammal|Species >= -1
- R1466: - subsumes|Eukaryote|Species - subsumes|Amphibian|Eukaryote
-   + subsumes|Amphibian|Species >= -1
- R1467: - subsumes|Eukaryote|Species - subsumes|Moss|Eukaryote
-   + subsumes|Moss|Species >= -1
- R1468: - subsumes|Eukaryote|Species - subsumes|ClubMoss|Eukaryote
-   + subsumes|ClubMoss|Species >= -1
- R1469: - subsumes|Eukaryote|Species - subsumes|Ginkgo|Eukaryote
-   + subsumes|Ginkgo|Species >= -1
- R1470: - subsumes|Eukaryote|Species - subsumes|Cycad|Eukaryote
-   + subsumes|Cycad|Species >= -1
- R1471: - subsumes|Eukaryote|Species - subsumes|Conifer|Eukaryote
-   + subsumes|Conifer|Species >= -1
- R1472: - subsumes|Eukaryote|Species - subsumes|FloweringPlant|Eukaryote
-   + subsumes|FloweringPlant|Species >= -1
- R1473: - subsumes|Eukaryote|Species - subsumes|Fern|Eukaryote
-   + subsumes|Fern|Species >= -1
- R1474: - subsumes|Eukaryote|Species - subsumes|GreenAlga|Eukaryote
-   + subsumes|GreenAlga|Species >= -1
- R1475: - subsumes|Eukaryote|Species - subsumes|Gnetophytes|Eukaryote
-   + subsumes|Gnetophytes|Species >= -1
- R1476: - subsumes|Amphibian|Animal - subsumes|Animal|Species
-   + subsumes|Amphibian|Species >= -1
- R1477: - subsumes|Mammal|Animal - subsumes|Animal|Species
-   + subsumes|Mammal|Species >= -1
- R1478: - subsumes|Fish|Animal - subsumes|Animal|Species
-   + subsumes|Fish|Species >= -1
- R1479: - subsumes|Mollusca|Animal - subsumes|Animal|Species
-   + subsumes|Mollusca|Species >= -1
- R1480: - subsumes|Crustacean|Animal - subsumes|Animal|Species
-   + subsumes|Crustacean|Species >= -1
- R1481: - subsumes|Bird|Animal - subsumes|Animal|Species
-   + subsumes|Bird|Species >= -1
- R1482: - subsumes|Insect|Animal - subsumes|Animal|Species
-   + subsumes|Insect|Species >= -1
- R1483: - subsumes|Arachnid|Animal - subsumes|Animal|Species
-   + subsumes|Arachnid|Species >= -1
- R1484: - subsumes|Reptile|Animal - subsumes|Animal|Species
-   + subsumes|Reptile|Species >= -1
- R1485: - subsumes|AdultActor|Actor - subsumes|Actor|Person
-   + subsumes|AdultActor|Person >= -1
- R1486: - subsumes|VoiceActor|Actor - subsumes|Actor|Person
-   + subsumes|VoiceActor|Person >= -1
+ R267: psubsumes|partOfEvent|partOf >= 1
+ R268: psubsumes|scientificallyOrganisedBy|organisedBy >= 1
+ R269: psubsumes|hasEvent|hasPart >= 1
+ R270: psubsumes|scientificallyOrganises|organises >= 1
+ R271: psubsumes|technicallyOrganisedBy|organisedBy >= 1
+ R272: psubsumes|reviewWrittenBy|writtenBy >= 1
+ R273: psubsumes|technicallyOrganises|organises >= 1
+ R274: - subsumes|Conference_Banquet|Event
+   - intersection|Conference_Banquet|Event|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Banquet
+   + subsumes|Conference_Banquet|owl_Nothing >= -2
+ R275: - intersection|Conference_Banquet|Contributed_Talk|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Banquet
+   - subsumes|Conference_Banquet|Contributed_Talk
+   + subsumes|Conference_Banquet|owl_Nothing >= -2
+ R276: - subsumes|Poster_Session|Session
+   - intersection|Poster_Session|Session|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing >= -2
+ R277: - subsumes|Abstract|Document
+   - intersection|Abstract|Document|owl_Nothing
+   - subsumes|Abstract|Abstract + subsumes|Abstract|owl_Nothing >= -2
+ R278: - subsumes|Tutorial_Abstract|Abstract
+   - intersection|Abstract|Document|owl_Nothing
+   - subsumes|Tutorial_Abstract|Document
+   + subsumes|Tutorial_Abstract|owl_Nothing >= -2
+ R279: - subsumes|Invited_Talk_Abstract|Abstract
+   - intersection|Abstract|Document|owl_Nothing
+   - subsumes|Invited_Talk_Abstract|Document
+   + subsumes|Invited_Talk_Abstract|owl_Nothing >= -2
+ R280: - intersection|Paper_Author|Possible_Reviewer|owl_Nothing
+   - subsumes|Paper_Author|Paper_Author
+   - subsumes|Paper_Author|Possible_Reviewer
+   + subsumes|Paper_Author|owl_Nothing >= -2
+ R281: - subsumes|Tutorial|Session
+   - intersection|Session|Tutorial|owl_Nothing - subsumes|Tutorial|Tutorial
+   + subsumes|Tutorial|owl_Nothing >= -2
+ R282: - subsumes|Poster_Session|Event
+   - intersection|Event|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing >= -2
+ R283: - subsumes|Research_Institute|Organisation
+   - intersection|Organisation|Research_Institute|owl_Nothing
+   - subsumes|Research_Institute|Research_Institute
+   + subsumes|Research_Institute|owl_Nothing >= -2
+ R284: - subsumes|Session_Chair|Person
+   - intersection|Person|Session_Chair|owl_Nothing
+   - subsumes|Session_Chair|Session_Chair
+   + subsumes|Session_Chair|owl_Nothing >= -2
+ R285: - intersection|Document|Invited_Talk_Abstract|owl_Nothing
+   - subsumes|Invited_Talk_Abstract|Invited_Talk_Abstract
+   - subsumes|Invited_Talk_Abstract|Document
+   + subsumes|Invited_Talk_Abstract|owl_Nothing >= -2
+ R286: - subsumes|Proceedings|Document
+   - intersection|Document|Proceedings|owl_Nothing
+   - subsumes|Proceedings|Proceedings + subsumes|Proceedings|owl_Nothing
+   >= -2
+ R287: - intersection|PC_Member|Possible_Reviewer|owl_Nothing
+   - subsumes|PC_Member|PC_Member - subsumes|PC_Member|Possible_Reviewer
+   + subsumes|PC_Member|owl_Nothing >= -2
+ R288: - subsumes|OC_Chair|Person
+   - intersection|OC_Chair|Person|owl_Nothing - subsumes|OC_Chair|OC_Chair
+   + subsumes|OC_Chair|owl_Nothing >= -2
+ R289: - intersection|OC_Chair|Possible_Reviewer|owl_Nothing
+   - subsumes|OC_Chair|OC_Chair - subsumes|OC_Chair|Possible_Reviewer
+   + subsumes|OC_Chair|owl_Nothing >= -2
+ R290: - subsumes|PC_Chair|Conference_Participant
+   - intersection|Conference_Participant|PC_Chair|owl_Nothing
+   - subsumes|PC_Chair|PC_Chair + subsumes|PC_Chair|owl_Nothing >= -2
+ R291: - subsumes|Session_Chair|Conference_Participant
+   - intersection|Conference_Participant|Session_Chair|owl_Nothing
+   - subsumes|Session_Chair|Session_Chair
+   + subsumes|Session_Chair|owl_Nothing >= -2
+ R292: - intersection|Conference_Session|Event|owl_Nothing
+   - subsumes|Event|Event - subsumes|Event|Conference_Session
+   + subsumes|Event|owl_Nothing >= -2
+ R293: - subsumes|Event|Contributed_Talk
+   - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   - subsumes|Event|Conference_Session + subsumes|Event|owl_Nothing >= -2
+ R294: - subsumes|Industrial_Session|Conference_Session
+   - intersection|Conference_Session|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Industrial_Session
+   + subsumes|Industrial_Session|owl_Nothing >= -2
+ R295: - subsumes|Contributed_Talk|Conference_Session
+   - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   + subsumes|Contributed_Talk|owl_Nothing >= -2
+ R296:
+   - intersection|Early-Registered_Participant|Possible_Reviewer|owl_Nothing
+   - subsumes|Early-Registered_Participant|Early-Registered_Participant
+   - subsumes|Early-Registered_Participant|Possible_Reviewer
+   + subsumes|Early-Registered_Participant|owl_Nothing >= -2
+ R297: - subsumes|Demo_Chair|Tutorial_Chair
+   - intersection|Demo_Chair|Tutorial_Chair|owl_Nothing
+   - subsumes|Demo_Chair|Demo_Chair + subsumes|Demo_Chair|owl_Nothing
+   >= -2
+ R298: - subsumes|Camera_Ready_Paper|Document
+   - intersection|Camera_Ready_Paper|Document|owl_Nothing
+   - subsumes|Camera_Ready_Paper|Camera_Ready_Paper
+   + subsumes|Camera_Ready_Paper|owl_Nothing >= -2
+ R299: - subsumes|Camera_Ready_Paper|Paper
+   - intersection|Camera_Ready_Paper|Paper|owl_Nothing
+   - subsumes|Camera_Ready_Paper|Camera_Ready_Paper
+   + subsumes|Camera_Ready_Paper|owl_Nothing >= -2
+ R300: - intersection|Contributed_Talk|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Social_Event
+   - subsumes|Social_Event|Contributed_Talk
+   + subsumes|Social_Event|owl_Nothing >= -2
+ R301: - subsumes|Social_Event|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   - subsumes|Social_Event|Contributed_Talk
+   + subsumes|Social_Event|owl_Nothing >= -2
+ R302: - subsumes|Conference|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   - subsumes|Conference|Contributed_Talk + subsumes|Conference|owl_Nothing
+   >= -2
+ R303: - subsumes|Conference|Session
+   - intersection|Contributed_Talk|Session|owl_Nothing
+   - subsumes|Conference|Contributed_Talk + subsumes|Conference|owl_Nothing
+   >= -2
+ R304: - subsumes|Conference_Banquet|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   - subsumes|Conference_Banquet|Contributed_Talk
+   + subsumes|Conference_Banquet|owl_Nothing >= -2
+ R305: - intersection|Contributed_Talk|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   - subsumes|Poster_Session|Contributed_Talk
+   + subsumes|Poster_Session|owl_Nothing >= -2
+ R306: - subsumes|Poster_Session|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   - subsumes|Poster_Session|Contributed_Talk
+   + subsumes|Poster_Session|owl_Nothing >= -2
+ R307: - subsumes|Poster_Session|Session
+   - intersection|Contributed_Talk|Session|owl_Nothing
+   - subsumes|Poster_Session|Contributed_Talk
+   + subsumes|Poster_Session|owl_Nothing >= -2
+ R308: - subsumes|Conference_Trip|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   - subsumes|Conference_Trip|Contributed_Talk
+   + subsumes|Conference_Trip|owl_Nothing >= -2
+ R309: - intersection|Contributed_Talk|Session|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   - subsumes|Contributed_Talk|Session
+   + subsumes|Contributed_Talk|owl_Nothing >= -2
+ R310: - subsumes|Event|Contributed_Talk
+   - intersection|Contributed_Talk|Event|owl_Nothing - subsumes|Event|Event
+   + subsumes|Event|owl_Nothing >= -2
+ R311: - subsumes|Assigned_Paper|Document
+   - intersection|Assigned_Paper|Document|owl_Nothing
+   - subsumes|Assigned_Paper|Assigned_Paper
+   + subsumes|Assigned_Paper|owl_Nothing >= -2
+ R312: - intersection|Conference|Contributed_Talk|owl_Nothing
+   - subsumes|Conference|Conference - subsumes|Conference|Contributed_Talk
+   + subsumes|Conference|owl_Nothing >= -2
+ R313: - subsumes|Conference|Session
+   - intersection|Conference|Session|owl_Nothing
+   - subsumes|Conference|Conference + subsumes|Conference|owl_Nothing
+   >= -2
+ R314: - intersection|Conference_Trip|Contributed_Talk|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Trip
+   - subsumes|Conference_Trip|Contributed_Talk
+   + subsumes|Conference_Trip|owl_Nothing >= -2
+ R315: - subsumes|Conference_Trip|Event
+   - intersection|Conference_Trip|Event|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Trip
+   + subsumes|Conference_Trip|owl_Nothing >= -2
+ R316: - subsumes|Invited_Speaker|Possible_Reviewer
+   - intersection|Invited_Speaker|Possible_Reviewer|owl_Nothing
+   - subsumes|Invited_Speaker|Invited_Speaker
+   + subsumes|Invited_Speaker|owl_Nothing >= -2
+ R317: - intersection|Possible_Reviewer|SC_Member|owl_Nothing
+   - subsumes|SC_Member|SC_Member - subsumes|SC_Member|Possible_Reviewer
+   + subsumes|SC_Member|owl_Nothing >= -2
+ R318: - intersection|Possible_Reviewer|Session_Chair|owl_Nothing
+   - subsumes|Session_Chair|Session_Chair
+   - subsumes|Session_Chair|Possible_Reviewer
+   + subsumes|Session_Chair|owl_Nothing >= -2
+ R319: - intersection|PC_Chair|Possible_Reviewer|owl_Nothing
+   - subsumes|PC_Chair|PC_Chair - subsumes|PC_Chair|Possible_Reviewer
+   + subsumes|PC_Chair|owl_Nothing >= -2
+ R320: - subsumes|Workshop_Session|owl_Nothing >= -0
+ R321: - subsumes|Conference_Proceedings|owl_Nothing >= -0
+ R322: - subsumes|Demo_Session|owl_Nothing >= -0
+ R323: - subsumes|Scientific_Event|owl_Nothing >= -0
+ R324: - subsumes|Social_Event|Event - subsumes|Event|Conference_Session
+   + subsumes|Social_Event|Conference_Session >= -1
+ R325: - subsumes|Conference|Event - subsumes|Event|Conference_Session
+   + subsumes|Conference|Conference_Session >= -1
+ R326: - subsumes|Conference_Banquet|Event
+   - subsumes|Event|Conference_Session
+   + subsumes|Conference_Banquet|Conference_Session >= -1
+ R327: - subsumes|Scientific_Event|Event
+   - subsumes|Event|Conference_Session
+   + subsumes|Scientific_Event|Conference_Session >= -1
+ R328: - subsumes|Poster_Session|Event - subsumes|Event|Conference_Session
+   + subsumes|Poster_Session|Conference_Session >= -1
+ R329: - subsumes|Conference_Trip|Event - subsumes|Event|Conference_Session
+   + subsumes|Conference_Trip|Conference_Session >= -1
+ R330: - subsumes|Conference_Session|Session
+   - subsumes|Event|Conference_Session + subsumes|Event|Session >= -1
+ R331: - subsumes|Contributed_Talk|Session
+   - subsumes|Social_Event|Contributed_Talk + subsumes|Social_Event|Session
+   >= -1
+ R332: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Social_Event|Contributed_Talk
+   + subsumes|Social_Event|Conference_Session >= -1
+ R333: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Conference|Contributed_Talk
+   + subsumes|Conference|Conference_Session >= -1
+ R334: - subsumes|Contributed_Talk|Session
+   - subsumes|Conference_Banquet|Contributed_Talk
+   + subsumes|Conference_Banquet|Session >= -1
+ R335: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Conference_Banquet|Contributed_Talk
+   + subsumes|Conference_Banquet|Conference_Session >= -1
+ R336: - subsumes|Scientific_Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Session + subsumes|Scientific_Event|Session
+   >= -1
+ R337: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Scientific_Event|Contributed_Talk
+   + subsumes|Scientific_Event|Conference_Session >= -1
+ R338: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Poster_Session|Contributed_Talk
+   + subsumes|Poster_Session|Conference_Session >= -1
+ R339: - subsumes|Conference_Trip|Contributed_Talk
+   - subsumes|Contributed_Talk|Session + subsumes|Conference_Trip|Session
+   >= -1
+ R340: - subsumes|Contributed_Talk|Conference_Session
+   - subsumes|Conference_Trip|Contributed_Talk
+   + subsumes|Conference_Trip|Conference_Session >= -1
+ R341: - subsumes|Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Session + subsumes|Event|Session >= -1
+ R342: - opsup|partOf|Thing|Session
+   - subsumes|Conference_Proceedings|Session
+   + opsup|partOf|Thing|Conference_Proceedings >= -1
+ R343: - opsup|partOf|Thing|Session - subsumes|Contributed_Talk|Session
+   + opsup|partOf|Thing|Contributed_Talk >= -1
+ R344: - subsumes|Tutorial|Session - opsup|partOf|Thing|Session
+   + opsup|partOf|Thing|Tutorial >= -1
+ R345: - subsumes|Conference|Session - opsup|partOf|Thing|Session
+   + opsup|partOf|Thing|Conference >= -1
+ R346: - opsup|partOfEvent|Thing|Session
+   - subsumes|Conference_Proceedings|Session
+   + opsup|partOfEvent|Thing|Conference_Proceedings >= -1
+ R347: - opsup|partOfEvent|Thing|Session
+   - subsumes|Contributed_Talk|Session
+   + opsup|partOfEvent|Thing|Contributed_Talk >= -1
+ R348: - subsumes|Tutorial|Session - opsup|partOfEvent|Thing|Session
+   + opsup|partOfEvent|Thing|Tutorial >= -1
+ R349: - subsumes|Conference|Session - opsup|partOfEvent|Thing|Session
+   + opsup|partOfEvent|Thing|Conference >= -1
+ R350: - opsup|partOfEvent|Thing|Conference_Session
+   - subsumes|Event|Conference_Session + opsup|partOfEvent|Thing|Event
+   >= -1
+ R351: - subsumes|Conference_Proceedings|Conference_Session
+   - opsup|partOfEvent|Thing|Conference_Session
+   + opsup|partOfEvent|Thing|Conference_Proceedings >= -1
+ R352: - subsumes|Contributed_Talk|Conference_Session
+   - opsup|partOfEvent|Thing|Conference_Session
+   + opsup|partOfEvent|Thing|Contributed_Talk >= -1
+ R353: - opsup|partOf|Thing|Conference_Session
+   - subsumes|Event|Conference_Session + opsup|partOf|Thing|Event >= -1
+ R354: - subsumes|Conference_Proceedings|Conference_Session
+   - opsup|partOf|Thing|Conference_Session
+   + opsup|partOf|Thing|Conference_Proceedings >= -1
+ R355: - subsumes|Contributed_Talk|Conference_Session
+   - opsup|partOf|Thing|Conference_Session
+   + opsup|partOf|Thing|Contributed_Talk >= -1
+ R356: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Social_Event|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Social_Event >= -1
+ R357: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Conference|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Conference >= -1
+ R358: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Demo_Session|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Demo_Session >= -1
+ R359: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Conference_Banquet|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Conference_Banquet >= -1
+ R360: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Scientific_Event|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Scientific_Event >= -1
+ R361: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Poster_Session|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Poster_Session >= -1
+ R362: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Conference_Trip|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Conference_Trip >= -1
+ R363: - subsumes|Event|Contributed_Talk
+   - opsup|presentationOfPaper|Thing|Contributed_Talk
+   + opsup|presentationOfPaper|Thing|Event >= -1
+ R364: - subsumes|Scientific_Event|Proceedings
+   - opsup|volumeContainsPaper|Thing|Proceedings
+   + opsup|volumeContainsPaper|Thing|Scientific_Event >= -1
+ R365: - opsup|hasPart|Thing|Conference_Session
+   - subsumes|Event|Conference_Session + opsup|hasPart|Thing|Event >= -1
+ R366: - subsumes|Conference_Proceedings|Conference_Session
+   - opsup|hasPart|Thing|Conference_Session
+   + opsup|hasPart|Thing|Conference_Proceedings >= -1
+ R367: - subsumes|Contributed_Talk|Conference_Session
+   - opsup|hasPart|Thing|Conference_Session
+   + opsup|hasPart|Thing|Contributed_Talk >= -1
+ R368: - opsup|hasPart|Thing|Session
+   - subsumes|Conference_Proceedings|Session
+   + opsup|hasPart|Thing|Conference_Proceedings >= -1
+ R369: - opsup|hasPart|Thing|Session - subsumes|Contributed_Talk|Session
+   + opsup|hasPart|Thing|Contributed_Talk >= -1
+ R370: - subsumes|Tutorial|Session - opsup|hasPart|Thing|Session
+   + opsup|hasPart|Thing|Tutorial >= -1
+ R371: - subsumes|Conference|Session - opsup|hasPart|Thing|Session
+   + opsup|hasPart|Thing|Conference >= -1
+ R372: - opsup|hasEvent|Thing|Conference_Session
+   - subsumes|Event|Conference_Session + opsup|hasEvent|Thing|Event >= -1
+ R373: - subsumes|Conference_Proceedings|Conference_Session
+   - opsup|hasEvent|Thing|Conference_Session
+   + opsup|hasEvent|Thing|Conference_Proceedings >= -1
+ R374: - subsumes|Contributed_Talk|Conference_Session
+   - opsup|hasEvent|Thing|Conference_Session
+   + opsup|hasEvent|Thing|Contributed_Talk >= -1
+ R375: - opsup|hasEvent|Thing|Session
+   - subsumes|Conference_Proceedings|Session
+   + opsup|hasEvent|Thing|Conference_Proceedings >= -1
+ R376: - opsup|hasEvent|Thing|Session - subsumes|Contributed_Talk|Session
+   + opsup|hasEvent|Thing|Contributed_Talk >= -1
+ R377: - subsumes|Tutorial|Session - opsup|hasEvent|Thing|Session
+   + opsup|hasEvent|Thing|Tutorial >= -1
+ R378: - subsumes|Conference|Session - opsup|hasEvent|Thing|Session
+   + opsup|hasEvent|Thing|Conference >= -1
+ R379: - opsup|partOfEvent|Thing|Session - subsumes|Thing|Thing
+   - opsub|partOfEvent|Thing|Event + subsumes|Session|Event >= -2
+ R380: - opsup|partOfEvent|Thing|Conference_Session - subsumes|Thing|Thing
+   - opsub|partOfEvent|Thing|Event + subsumes|Conference_Session|Event
+   >= -2
+ R381: - opsup|partOfEvent|Thing|Industrial_Session - subsumes|Thing|Thing
+   - opsub|partOfEvent|Thing|Event + subsumes|Industrial_Session|Event
+   >= -2
+ R382: - opsup|hasEvent|Thing|Workshop_Session - subsumes|Thing|Thing
+   - opsub|hasEvent|Thing|Event + subsumes|Workshop_Session|Event >= -2
+ R383: - opsup|hasEvent|Thing|Industrial_Session - subsumes|Thing|Thing
+   - opsub|hasEvent|Thing|Event + subsumes|Industrial_Session|Event >= -2
+ R384: - opsup|partOfEvent|Thing|Workshop_Session - subsumes|Thing|Thing
+   - opsub|partOfEvent|Thing|Event + subsumes|Workshop_Session|Event >= -2
+ R385: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   + subsumes|Contributed_Talk|Scientific_Event >= -2
+ R386: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Thing|Thing - opsub|presentationOfPaper|Thing|Event
+   + subsumes|Contributed_Talk|Event >= -2
+ R387: - opsup|presentationOfPaper|Thing|Contributed_Talk
+   - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   + subsumes|Contributed_Talk|Individual_Presentation >= -2
+ R388: - opsup|partOfEvent|Thing|Regular_Session - subsumes|Thing|Thing
+   - opsub|partOfEvent|Thing|Event + subsumes|Regular_Session|Event >= -2
+ R389: - opsup|hasEvent|Thing|Conference_Session - subsumes|Thing|Thing
+   - opsub|hasEvent|Thing|Event + subsumes|Conference_Session|Event >= -2
+ R390: - opsup|hasEvent|Thing|Session - subsumes|Thing|Thing
+   - opsub|hasEvent|Thing|Event + subsumes|Session|Event >= -2
+ R391: - opsup|hasEvent|Thing|Regular_Session - subsumes|Thing|Thing
+   - opsub|hasEvent|Thing|Event + subsumes|Regular_Session|Event >= -2
+ R392: - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Scientific_Event
+   - subsumes|Scientific_Event|Session >= -2
+ R393: - intersection|Event|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Regular_Session
+   - subsumes|Regular_Session|Event + subsumes|Regular_Session|owl_Nothing
+   >= -2
+ R394: - subsumes|Workshop_Session|Workshop
+   - intersection|Event|Workshop|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Event >= -2
+ R395: - intersection|Event|Workshop_Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Workshop_Session
+   - subsumes|Workshop_Session|Event >= -2
+ R396: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Scientific_Event
+   - subsumes|Scientific_Event|Document >= -2
+ R397: - subsumes|Scientific_Event|Proceedings
+   - intersection|Document|Proceedings|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Document >= -2
+ R398: - intersection|Document|Session|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Document - subsumes|Scientific_Event|Session
+   >= -2
+ R399: - subsumes|Scientific_Event|Event
+   - intersection|Document|Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Document >= -2
+ R400: - subsumes|Conference_Proceedings|Proceedings
+   - intersection|Document|Proceedings|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Document >= -2
+ R401: - intersection|Document|Session|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Document
+   - subsumes|Conference_Proceedings|Session >= -2
+ R402: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Scientific_Event
+   - subsumes|Scientific_Event|Conference_Session >= -2
+ R403: - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Contributed_Talk
+   - subsumes|Scientific_Event|Conference_Session >= -2
+ R404: - intersection|Conference_Session|Document|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Document
+   - subsumes|Scientific_Event|Conference_Session >= -2
+ R405: - subsumes|Conference_Proceedings|Conference_Session
+   - intersection|Conference_Session|Document|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Document >= -2
+ R406: - subsumes|Demo_Session|Conference_Session
+   - intersection|Conference_Session|Demo_Session|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   >= -2
+ R407: - subsumes|Demo_Session|Conference_Session
+   - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Demo_Session|Contributed_Talk >= -2
+ R408: - intersection|Conference_Proceedings|Session|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Conference_Proceedings
+   - subsumes|Conference_Proceedings|Session >= -2
+ R409: - intersection|Conference_Proceedings|Document|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Conference_Proceedings
+   - subsumes|Conference_Proceedings|Document >= -2
+ R410: - intersection|Contributed_Talk|Demo_Session|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   - subsumes|Demo_Session|Contributed_Talk >= -2
+ R411: - subsumes|Demo_Session|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Demo_Session|Contributed_Talk >= -2
+ R412: - subsumes|Demo_Session|Session
+   - intersection|Contributed_Talk|Session|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Demo_Session|Contributed_Talk >= -2
+ R413: - intersection|Contributed_Talk|Scientific_Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Scientific_Event
+   - subsumes|Scientific_Event|Contributed_Talk >= -2
+ R414: - subsumes|Scientific_Event|Proceedings
+   - intersection|Contributed_Talk|Proceedings|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Contributed_Talk >= -2
+ R415: - subsumes|Scientific_Event|Event
+   - intersection|Contributed_Talk|Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Contributed_Talk >= -2
+ R416: - intersection|Contributed_Talk|Document|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Contributed_Talk
+   - subsumes|Scientific_Event|Document >= -2
+ R417: - intersection|Contributed_Talk|Session|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Contributed_Talk
+   - subsumes|Scientific_Event|Session >= -2
+ R418: - subsumes|Demo_Session|Event
+   - intersection|Demo_Session|Event|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   >= -2
+ R419: - subsumes|Scientific_Event|Proceedings
+   - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Scientific_Event >= -2
+ R420: - subsumes|Scientific_Event|Proceedings
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Session >= -2
+ R421: - subsumes|Conference_Proceedings|Proceedings
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Session >= -2
+ R422: - subsumes|SC_Member|owl_Nothing >= -0
+ R423: - subsumes|Invited_Speaker|owl_Nothing >= -0
+ R424: - subsumes|Assigned_Paper|owl_Nothing >= -0
+ R425: - subsumes|Conference_Trip|owl_Nothing >= -0
+ R426: - subsumes|Conference|owl_Nothing >= -0
+ R427: - subsumes|Social_Event|owl_Nothing >= -0
+ R428: - subsumes|Camera_Ready_Paper|owl_Nothing >= -0
+ R429: - subsumes|Demo_Chair|owl_Nothing >= -0
+ R430: - subsumes|Early-Registered_Participant|owl_Nothing >= -0
+ R431: - subsumes|Contributed_Talk|owl_Nothing >= -0
+ R432: - subsumes|Industrial_Session|owl_Nothing >= -0
+ R433: - subsumes|Event|owl_Nothing >= -0
+ R434: - subsumes|PC_Chair|owl_Nothing >= -0
+ R435: - subsumes|OC_Chair|owl_Nothing >= -0
+ R436: - subsumes|PC_Member|owl_Nothing >= -0
+ R437: - subsumes|Proceedings|owl_Nothing >= -0
+ R438: - subsumes|Session_Chair|owl_Nothing >= -0
+ R439: - subsumes|Research_Institute|owl_Nothing >= -0
+ R440: - subsumes|Tutorial|owl_Nothing >= -0
+ R441: - subsumes|Paper_Author|owl_Nothing >= -0
+ R442: - subsumes|Invited_Talk_Abstract|owl_Nothing >= -0
+ R443: - subsumes|Tutorial_Abstract|owl_Nothing >= -0
+ R444: - subsumes|Abstract|owl_Nothing >= -0
+ R445: - subsumes|Poster_Session|owl_Nothing >= -0
+ R446: - subsumes|Conference_Banquet|owl_Nothing >= -0
+ R447: - subsumes|Scientific_Event|Document
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Contributed_Talk|Document >= -1
+ R448: - subsumes|Scientific_Event|Proceedings
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Contributed_Talk|Proceedings >= -1
+ R449: - subsumes|Conference_Proceedings|Session - subsumes|Session|Event
+   + subsumes|Conference_Proceedings|Event >= -1
+ R450: - subsumes|Tutorial|Session - subsumes|Session|Event
+   + subsumes|Tutorial|Event >= -1
+ R451: - subsumes|Event|owl_Nothing - subsumes|Regular_Session|Event
+   + subsumes|Regular_Session|owl_Nothing >= -1
+ R452: - subsumes|Event|Contributed_Talk - subsumes|Regular_Session|Event
+   + subsumes|Regular_Session|Contributed_Talk >= -1
+ R453: subsumes|Workshop_Session|owl_Nothing - subsumes|Event|owl_Nothing
+   - subsumes|Workshop_Session|Event >= -1
+ R454: - subsumes|Event|Conference_Session
+   - subsumes|Workshop_Session|Event
+   + subsumes|Workshop_Session|Conference_Session >= -1
+ R455: - subsumes|Event|Contributed_Talk - subsumes|Workshop_Session|Event
+   + subsumes|Workshop_Session|Contributed_Talk >= -1
+ R456: - subsumes|Event|Contributed_Talk
+   - subsumes|Industrial_Session|Event
+   + subsumes|Industrial_Session|Contributed_Talk >= -1
+ R457: - subsumes|Event|owl_Nothing - subsumes|Conference_Session|Event
+   + subsumes|Conference_Session|owl_Nothing >= -1
+ R458: - subsumes|Event|Contributed_Talk
+   - subsumes|Conference_Session|Event
+   + subsumes|Conference_Session|Contributed_Talk >= -1
+ R459: - subsumes|Event|owl_Nothing - subsumes|Session|Event
+   + subsumes|Session|owl_Nothing >= -1
+ R460: - subsumes|Event|Conference_Session - subsumes|Session|Event
+   + subsumes|Session|Conference_Session >= -1
+ R461: - subsumes|Event|Contributed_Talk - subsumes|Session|Event
+   + subsumes|Session|Contributed_Talk >= -1
+ R462: - subsumes|Demo_Session|Event + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Event|owl_Nothing >= -1
+ R463: - subsumes|Scientific_Event|Event
+   + subsumes|Scientific_Event|owl_Nothing - subsumes|Event|owl_Nothing
+   >= -1
+ R464: - subsumes|Conference_Proceedings|Conference_Session
+   - subsumes|Conference_Session|Event
+   + subsumes|Conference_Proceedings|Event >= -1
+ R465: - subsumes|Social_Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Social_Event|Individual_Presentation >= -1
+ R466: - subsumes|Social_Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Social_Event|Scientific_Event >= -1
+ R467: - subsumes|Conference|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Conference|Individual_Presentation >= -1
+ R468: - subsumes|Conference|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Conference|Scientific_Event >= -1
+ R469: - subsumes|Demo_Session|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Demo_Session|Individual_Presentation >= -1
+ R470: - subsumes|Demo_Session|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Demo_Session|Scientific_Event >= -1
+ R471: subsumes|Demo_Session|owl_Nothing
+   - subsumes|Demo_Session|Contributed_Talk
+   - subsumes|Contributed_Talk|owl_Nothing >= -1
+ R472: - subsumes|Conference_Banquet|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Conference_Banquet|Individual_Presentation >= -1
+ R473: - subsumes|Conference_Banquet|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Conference_Banquet|Scientific_Event >= -1
+ R474: - subsumes|Scientific_Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Scientific_Event|Individual_Presentation >= -1
+ R475: subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Contributed_Talk
+   - subsumes|Contributed_Talk|owl_Nothing >= -1
+ R476: - subsumes|Poster_Session|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Poster_Session|Individual_Presentation >= -1
+ R477: - subsumes|Poster_Session|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Poster_Session|Scientific_Event >= -1
+ R478: - subsumes|Conference_Trip|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Conference_Trip|Individual_Presentation >= -1
+ R479: - subsumes|Conference_Trip|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Conference_Trip|Scientific_Event >= -1
+ R480: - subsumes|Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Individual_Presentation
+   + subsumes|Event|Individual_Presentation >= -1
+ R481: - subsumes|Event|Contributed_Talk
+   - subsumes|Contributed_Talk|Scientific_Event
+   + subsumes|Event|Scientific_Event >= -1
+ R482: - subsumes|Scientific_Event|Proceedings
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Proceedings|owl_Nothing >= -1
+ R483: - subsumes|Conference_Proceedings|Proceedings
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Proceedings|owl_Nothing >= -1
+ R484: - opsup|partOf|Thing|Session - subsumes|Conference_Trip|Session
+   + opsup|partOf|Thing|Conference_Trip >= -1
+ R485: - opsup|partOf|Thing|Session - subsumes|Scientific_Event|Session
+   + opsup|partOf|Thing|Scientific_Event >= -1
+ R486: - opsup|partOf|Thing|Session - subsumes|Conference_Banquet|Session
+   + opsup|partOf|Thing|Conference_Banquet >= -1
+ R487: - opsup|partOf|Thing|Session - subsumes|Social_Event|Session
+   + opsup|partOf|Thing|Social_Event >= -1
+ R488: - opsup|partOfEvent|Thing|Session - subsumes|Conference_Trip|Session
+   + opsup|partOfEvent|Thing|Conference_Trip >= -1
+ R489: - opsup|partOfEvent|Thing|Session
+   - subsumes|Scientific_Event|Session
+   + opsup|partOfEvent|Thing|Scientific_Event >= -1
+ R490: - opsup|partOfEvent|Thing|Session
+   - subsumes|Conference_Banquet|Session
+   + opsup|partOfEvent|Thing|Conference_Banquet >= -1
+ R491: - opsup|partOfEvent|Thing|Session - subsumes|Social_Event|Session
+   + opsup|partOfEvent|Thing|Social_Event >= -1
+ R492: - opsup|partOfEvent|Thing|Conference_Session
+   - subsumes|Conference_Trip|Conference_Session
+   + opsup|partOfEvent|Thing|Conference_Trip >= -1
+ R493: - opsup|partOfEvent|Thing|Conference_Session
+   - subsumes|Scientific_Event|Conference_Session
+   + opsup|partOfEvent|Thing|Scientific_Event >= -1
+ R494: - opsup|partOfEvent|Thing|Conference_Session
+   - subsumes|Conference_Banquet|Conference_Session
+   + opsup|partOfEvent|Thing|Conference_Banquet >= -1
+ R495: - opsup|partOfEvent|Thing|Conference_Session
+   - subsumes|Social_Event|Conference_Session
+   + opsup|partOfEvent|Thing|Social_Event >= -1
+ R496: - opsup|partOf|Thing|Conference_Session
+   - subsumes|Conference_Trip|Conference_Session
+   + opsup|partOf|Thing|Conference_Trip >= -1
+ R497: - opsup|partOf|Thing|Conference_Session
+   - subsumes|Scientific_Event|Conference_Session
+   + opsup|partOf|Thing|Scientific_Event >= -1
+ R498: - opsup|partOf|Thing|Conference_Session
+   - subsumes|Conference_Banquet|Conference_Session
+   + opsup|partOf|Thing|Conference_Banquet >= -1
+ R499: - opsup|partOf|Thing|Conference_Session
+   - subsumes|Social_Event|Conference_Session
+   + opsup|partOf|Thing|Social_Event >= -1
+ R500: - opsup|hasPart|Thing|Conference_Session
+   - subsumes|Conference_Trip|Conference_Session
+   + opsup|hasPart|Thing|Conference_Trip >= -1
+ R501: - opsup|hasPart|Thing|Conference_Session
+   - subsumes|Scientific_Event|Conference_Session
+   + opsup|hasPart|Thing|Scientific_Event >= -1
+ R502: - opsup|hasPart|Thing|Conference_Session
+   - subsumes|Conference_Banquet|Conference_Session
+   + opsup|hasPart|Thing|Conference_Banquet >= -1
+ R503: - opsup|hasPart|Thing|Conference_Session
+   - subsumes|Social_Event|Conference_Session
+   + opsup|hasPart|Thing|Social_Event >= -1
+ R504: - opsup|hasPart|Thing|Session - subsumes|Conference_Trip|Session
+   + opsup|hasPart|Thing|Conference_Trip >= -1
+ R505: - opsup|hasPart|Thing|Session - subsumes|Scientific_Event|Session
+   + opsup|hasPart|Thing|Scientific_Event >= -1
+ R506: - opsup|hasPart|Thing|Session - subsumes|Conference_Banquet|Session
+   + opsup|hasPart|Thing|Conference_Banquet >= -1
+ R507: - opsup|hasPart|Thing|Session - subsumes|Social_Event|Session
+   + opsup|hasPart|Thing|Social_Event >= -1
+ R508: - opsup|hasEvent|Thing|Conference_Session
+   - subsumes|Conference_Trip|Conference_Session
+   + opsup|hasEvent|Thing|Conference_Trip >= -1
+ R509: - opsup|hasEvent|Thing|Conference_Session
+   - subsumes|Scientific_Event|Conference_Session
+   + opsup|hasEvent|Thing|Scientific_Event >= -1
+ R510: - opsup|hasEvent|Thing|Conference_Session
+   - subsumes|Conference_Banquet|Conference_Session
+   + opsup|hasEvent|Thing|Conference_Banquet >= -1
+ R511: - opsup|hasEvent|Thing|Conference_Session
+   - subsumes|Social_Event|Conference_Session
+   + opsup|hasEvent|Thing|Social_Event >= -1
+ R512: - opsup|hasEvent|Thing|Session - subsumes|Conference_Trip|Session
+   + opsup|hasEvent|Thing|Conference_Trip >= -1
+ R513: - opsup|hasEvent|Thing|Session - subsumes|Scientific_Event|Session
+   + opsup|hasEvent|Thing|Scientific_Event >= -1
+ R514: - opsup|hasEvent|Thing|Session - subsumes|Conference_Banquet|Session
+   + opsup|hasEvent|Thing|Conference_Banquet >= -1
+ R515: - opsup|hasEvent|Thing|Session - subsumes|Social_Event|Session
+   + opsup|hasEvent|Thing|Social_Event >= -1
+ R516: - subsumes|Social_Event|Contributed_Talk
+   - opsup|partOf|Thing|Contributed_Talk + opsup|partOf|Thing|Social_Event
+   >= -1
+ R517: - subsumes|Conference_Banquet|Contributed_Talk
+   - opsup|partOf|Thing|Contributed_Talk
+   + opsup|partOf|Thing|Conference_Banquet >= -1
+ R518: - subsumes|Scientific_Event|Contributed_Talk
+   - opsup|partOf|Thing|Contributed_Talk
+   + opsup|partOf|Thing|Scientific_Event >= -1
+ R519: - subsumes|Conference_Trip|Contributed_Talk
+   - opsup|partOf|Thing|Contributed_Talk
+   + opsup|partOf|Thing|Conference_Trip >= -1
+ R520: - subsumes|Social_Event|Contributed_Talk
+   - opsup|partOfEvent|Thing|Contributed_Talk
+   + opsup|partOfEvent|Thing|Social_Event >= -1
+ R521: - subsumes|Conference_Banquet|Contributed_Talk
+   - opsup|partOfEvent|Thing|Contributed_Talk
+   + opsup|partOfEvent|Thing|Conference_Banquet >= -1
+ R522: - subsumes|Scientific_Event|Contributed_Talk
+   - opsup|partOfEvent|Thing|Contributed_Talk
+   + opsup|partOfEvent|Thing|Scientific_Event >= -1
+ R523: - subsumes|Conference_Trip|Contributed_Talk
+   - opsup|partOfEvent|Thing|Contributed_Talk
+   + opsup|partOfEvent|Thing|Conference_Trip >= -1
+ R524: - subsumes|Social_Event|Event - opsup|partOfEvent|Thing|Event
+   + opsup|partOfEvent|Thing|Social_Event >= -1
+ R525: - subsumes|Conference_Banquet|Event - opsup|partOfEvent|Thing|Event
+   + opsup|partOfEvent|Thing|Conference_Banquet >= -1
+ R526: - subsumes|Scientific_Event|Event - opsup|partOfEvent|Thing|Event
+   + opsup|partOfEvent|Thing|Scientific_Event >= -1
+ R527: - subsumes|Conference_Trip|Event - opsup|partOfEvent|Thing|Event
+   + opsup|partOfEvent|Thing|Conference_Trip >= -1
+ R528: - subsumes|Social_Event|Event - opsup|partOf|Thing|Event
+   + opsup|partOf|Thing|Social_Event >= -1
+ R529: - subsumes|Conference_Banquet|Event - opsup|partOf|Thing|Event
+   + opsup|partOf|Thing|Conference_Banquet >= -1
+ R530: - subsumes|Scientific_Event|Event - opsup|partOf|Thing|Event
+   + opsup|partOf|Thing|Scientific_Event >= -1
+ R531: - subsumes|Conference_Trip|Event - opsup|partOf|Thing|Event
+   + opsup|partOf|Thing|Conference_Trip >= -1
+ R532: - opsup|presentationOfPaper|Thing|Event
+   - subsumes|Regular_Session|Event
+   + opsup|presentationOfPaper|Thing|Regular_Session >= -1
+ R533: - opsup|presentationOfPaper|Thing|Event
+   - subsumes|Workshop_Session|Event
+   + opsup|presentationOfPaper|Thing|Workshop_Session >= -1
+ R534: - opsup|presentationOfPaper|Thing|Event
+   - subsumes|Industrial_Session|Event
+   + opsup|presentationOfPaper|Thing|Industrial_Session >= -1
+ R535: - opsup|presentationOfPaper|Thing|Event
+   - subsumes|Conference_Session|Event
+   + opsup|presentationOfPaper|Thing|Conference_Session >= -1
+ R536: - opsup|presentationOfPaper|Thing|Event - subsumes|Session|Event
+   + opsup|presentationOfPaper|Thing|Session >= -1
+ R537: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Contributed_Talk|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Contributed_Talk >= -1
+ R538: - subsumes|Social_Event|Event - opsup|hasPart|Thing|Event
+   + opsup|hasPart|Thing|Social_Event >= -1
+ R539: - subsumes|Conference_Banquet|Event - opsup|hasPart|Thing|Event
+   + opsup|hasPart|Thing|Conference_Banquet >= -1
+ R540: - subsumes|Scientific_Event|Event - opsup|hasPart|Thing|Event
+   + opsup|hasPart|Thing|Scientific_Event >= -1
+ R541: - subsumes|Conference_Trip|Event - opsup|hasPart|Thing|Event
+   + opsup|hasPart|Thing|Conference_Trip >= -1
+ R542: - subsumes|Social_Event|Contributed_Talk
+   - opsup|hasPart|Thing|Contributed_Talk
+   + opsup|hasPart|Thing|Social_Event >= -1
+ R543: - subsumes|Conference_Banquet|Contributed_Talk
+   - opsup|hasPart|Thing|Contributed_Talk
+   + opsup|hasPart|Thing|Conference_Banquet >= -1
+ R544: - subsumes|Scientific_Event|Contributed_Talk
+   - opsup|hasPart|Thing|Contributed_Talk
+   + opsup|hasPart|Thing|Scientific_Event >= -1
+ R545: - subsumes|Conference_Trip|Contributed_Talk
+   - opsup|hasPart|Thing|Contributed_Talk
+   + opsup|hasPart|Thing|Conference_Trip >= -1
+ R546: - subsumes|Social_Event|Event - opsup|hasEvent|Thing|Event
+   + opsup|hasEvent|Thing|Social_Event >= -1
+ R547: - subsumes|Conference_Banquet|Event - opsup|hasEvent|Thing|Event
+   + opsup|hasEvent|Thing|Conference_Banquet >= -1
+ R548: - subsumes|Scientific_Event|Event - opsup|hasEvent|Thing|Event
+   + opsup|hasEvent|Thing|Scientific_Event >= -1
+ R549: - subsumes|Conference_Trip|Event - opsup|hasEvent|Thing|Event
+   + opsup|hasEvent|Thing|Conference_Trip >= -1
+ R550: - subsumes|Social_Event|Contributed_Talk
+   - opsup|hasEvent|Thing|Contributed_Talk
+   + opsup|hasEvent|Thing|Social_Event >= -1
+ R551: - subsumes|Conference_Banquet|Contributed_Talk
+   - opsup|hasEvent|Thing|Contributed_Talk
+   + opsup|hasEvent|Thing|Conference_Banquet >= -1
+ R552: - subsumes|Scientific_Event|Contributed_Talk
+   - opsup|hasEvent|Thing|Contributed_Talk
+   + opsup|hasEvent|Thing|Scientific_Event >= -1
+ R553: - subsumes|Conference_Trip|Contributed_Talk
+   - opsup|hasEvent|Thing|Contributed_Talk
+   + opsup|hasEvent|Thing|Conference_Trip >= -1
+ R554: - subsumes|Thing|Thing - opsub|partOfEvent|Thing|Event
+   - opsup|partOfEvent|Thing|Conference_Proceedings
+   + subsumes|Conference_Proceedings|Event >= -2
+ R555: - subsumes|Thing|Thing - opsub|partOfEvent|Thing|Event
+   - opsup|partOfEvent|Thing|Tutorial + subsumes|Tutorial|Event >= -2
+ R556: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Social_Event
+   + subsumes|Social_Event|Scientific_Event >= -2
+ R557: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Social_Event
+   + subsumes|Social_Event|Individual_Presentation >= -2
+ R558: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Conference
+   + subsumes|Conference|Scientific_Event >= -2
+ R559: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Conference
+   + subsumes|Conference|Individual_Presentation >= -2
+ R560: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Demo_Session
+   + subsumes|Demo_Session|Scientific_Event >= -2
+ R561: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Demo_Session
+   + subsumes|Demo_Session|Individual_Presentation >= -2
+ R562: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Conference_Banquet
+   + subsumes|Conference_Banquet|Scientific_Event >= -2
+ R563: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Conference_Banquet
+   + subsumes|Conference_Banquet|Individual_Presentation >= -2
+ R564: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Scientific_Event
+   + subsumes|Scientific_Event|Individual_Presentation >= -2
+ R565: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Poster_Session
+   + subsumes|Poster_Session|Scientific_Event >= -2
+ R566: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Poster_Session
+   + subsumes|Poster_Session|Individual_Presentation >= -2
+ R567: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Conference_Trip
+   + subsumes|Conference_Trip|Scientific_Event >= -2
+ R568: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Conference_Trip
+   + subsumes|Conference_Trip|Individual_Presentation >= -2
+ R569: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Event
+   + subsumes|Event|Scientific_Event >= -2
+ R570: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Event
+   + subsumes|Event|Individual_Presentation >= -2
+ R571: - subsumes|Thing|Thing - opsub|hasEvent|Thing|Event
+   - opsup|hasEvent|Thing|Conference_Proceedings
+   + subsumes|Conference_Proceedings|Event >= -2
+ R572: - subsumes|Thing|Thing - opsub|hasEvent|Thing|Event
+   - opsup|hasEvent|Thing|Tutorial + subsumes|Tutorial|Event >= -2
+ R573: - intersection|Conference_Banquet|Conference_Session|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Banquet
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Session >= -2
+ R574: - intersection|Conference_Banquet|Session|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Banquet
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Session >= -2
+ R575:
+   - intersection|Conference_Banquet|Individual_Presentation|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Banquet
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Individual_Presentation >= -2
+ R576: - intersection|Conference_Banquet|Scientific_Event|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Banquet
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Scientific_Event >= -2
+ R577: - intersection|Poster_Session|Scientific_Event|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Scientific_Event >= -2
+ R578: - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Event|owl_Nothing - subsumes|Event|Session
+   - subsumes|Event|Scientific_Event >= -2
+ R579: - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Session
+   - subsumes|Conference_Trip|Scientific_Event >= -2
+ R580: - subsumes|Poster_Session|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Scientific_Event >= -2
+ R581: - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Session
+   - subsumes|Conference_Banquet|Scientific_Event >= -2
+ R582: - subsumes|Demo_Session|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Demo_Session|Scientific_Event >= -2
+ R583: - subsumes|Conference|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Conference|owl_Nothing - subsumes|Conference|Scientific_Event
+   >= -2
+ R584: - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Social_Event|owl_Nothing - subsumes|Social_Event|Session
+   - subsumes|Social_Event|Scientific_Event >= -2
+ R585: - intersection|Event|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Tutorial + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Event >= -2
+ R586: - subsumes|Conference_Proceedings|Proceedings
+   - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Event >= -2
+ R587: - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Event
+   - subsumes|Contributed_Talk|Proceedings >= -2
+ R588: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Event|owl_Nothing - subsumes|Event|Individual_Presentation
+   - subsumes|Event|Scientific_Event >= -2
+ R589: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Individual_Presentation
+   - subsumes|Conference_Trip|Scientific_Event >= -2
+ R590: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Individual_Presentation
+   - subsumes|Poster_Session|Scientific_Event >= -2
+ R591: - intersection|Individual_Presentation|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Individual_Presentation >= -2
+ R592: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Scientific_Event|owl_Nothing
+   - subsumes|Scientific_Event|Scientific_Event
+   - subsumes|Scientific_Event|Individual_Presentation >= -2
+ R593: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Individual_Presentation
+   - subsumes|Conference_Banquet|Scientific_Event >= -2
+ R594: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Demo_Session|Individual_Presentation
+   - subsumes|Demo_Session|Scientific_Event >= -2
+ R595: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Individual_Presentation
+   - subsumes|Conference|Scientific_Event >= -2
+ R596: - intersection|Individual_Presentation|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Social_Event + subsumes|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Individual_Presentation >= -2
+ R597: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Individual_Presentation
+   - subsumes|Social_Event|Scientific_Event >= -2
+ R598: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Contributed_Talk|Proceedings >= -2
+ R599: - intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Contributed_Talk|Individual_Presentation >= -2
+ R600: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Contributed_Talk|Document >= -2
+ R601: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Contributed_Talk|Document >= -2
+ R602: - intersection|Document|Event|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Event - subsumes|Contributed_Talk|Document
+   >= -2
+ R603: - intersection|Document|Event|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Document
+   - subsumes|Conference_Proceedings|Event >= -2
+ R604: - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Event
+   - subsumes|Workshop_Session|Conference_Session >= -2
+ R605: - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Conference_Session
+   - subsumes|Workshop_Session|Contributed_Talk >= -2
+ R606: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Session
+   - subsumes|Conference_Trip|Scientific_Event >= -2
+ R607: - subsumes|Conference_Trip|Event
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Session >= -2
+ R608: - intersection|Conference_Session|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Trip
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Session >= -2
+ R609: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Conference_Session
+   - subsumes|Poster_Session|Scientific_Event >= -2
+ R610: - subsumes|Poster_Session|Event
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Conference_Session >= -2
+ R611: - intersection|Conference_Session|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Conference_Session >= -2
+ R612: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Session
+   - subsumes|Conference_Banquet|Scientific_Event >= -2
+ R613: - subsumes|Conference_Banquet|Event
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Session >= -2
+ R614: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Conference_Session
+   - subsumes|Conference|Scientific_Event >= -2
+ R615: - subsumes|Conference|Event
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Conference_Session >= -2
+ R616: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Conference_Session
+   - subsumes|Social_Event|Scientific_Event >= -2
+ R617: - subsumes|Social_Event|Event
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Conference_Session >= -2
+ R618: - subsumes|Industrial_Session|Conference_Session
+   - intersection|Conference_Session|Event|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Event >= -2
+ R619: - subsumes|Industrial_Session|Conference_Session
+   - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Contributed_Talk >= -2
+ R620: - intersection|Conference_Proceedings|Event|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Conference_Proceedings
+   - subsumes|Conference_Proceedings|Event >= -2
+ R621: - intersection|Contributed_Talk|Event|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Event
+   - subsumes|Industrial_Session|Contributed_Talk >= -2
+ R622: - subsumes|Industrial_Session|Session
+   - intersection|Contributed_Talk|Session|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Contributed_Talk >= -2
+ R623: - intersection|Contributed_Talk|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Industrial_Session
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Contributed_Talk >= -2
+ R624: - intersection|Contributed_Talk|Event|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Event
+   - subsumes|Workshop_Session|Contributed_Talk >= -2
+ R625: - subsumes|Workshop_Session|Session
+   - intersection|Contributed_Talk|Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Contributed_Talk >= -2
+ R626: - intersection|Contributed_Talk|Workshop_Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Workshop_Session
+   - subsumes|Workshop_Session|Contributed_Talk >= -2
+ R627: - intersection|Contributed_Talk|Scientific_Event|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Scientific_Event >= -2
+ R628: - intersection|Contributed_Talk|Individual_Presentation|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Individual_Presentation >= -2
+ R629: - intersection|Contributed_Talk|Proceedings|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Proceedings >= -2
+ R630: - intersection|Contributed_Talk|Event|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Event >= -2
+ R631: - intersection|Contributed_Talk|Document|owl_Nothing
+   - subsumes|Contributed_Talk|Contributed_Talk
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Document >= -2
+ R632: - intersection|Demo_Session|Individual_Presentation|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   - subsumes|Demo_Session|Individual_Presentation >= -2
+ R633: - intersection|Demo_Session|Scientific_Event|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   - subsumes|Demo_Session|Scientific_Event >= -2
+ R634: - intersection|Conference|Scientific_Event|owl_Nothing
+   - subsumes|Conference|Conference + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Scientific_Event >= -2
+ R635: - intersection|Conference|Conference_Session|owl_Nothing
+   - subsumes|Conference|Conference + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Conference_Session >= -2
+ R636: - intersection|Conference|Individual_Presentation|owl_Nothing
+   - subsumes|Conference|Conference + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Individual_Presentation >= -2
+ R637: - intersection|Conference_Trip|Individual_Presentation|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Trip
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Individual_Presentation >= -2
+ R638: - intersection|Conference_Trip|Session|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Trip
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Session >= -2
+ R639: - intersection|Conference_Trip|Scientific_Event|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Trip
+   + subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Scientific_Event >= -2
+ R640: - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Contributed_Talk|owl_Nothing
+   - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Contributed_Talk|Proceedings >= -2
+ R641: - subsumes|Session|owl_Nothing >= -0
+ R642: - subsumes|Conference_Session|owl_Nothing >= -0
+ R643: - subsumes|Regular_Session|owl_Nothing >= -0
+ R644: subsumes|Conference_Trip|Contributed_Talk
+   - subsumes|Conference_Trip|Session - subsumes|Session|Contributed_Talk
+   >= -1
+ R645: subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Session - subsumes|Session|owl_Nothing >= -1
+ R646: subsumes|Conference_Banquet|Contributed_Talk
+   - subsumes|Conference_Banquet|Session
+   - subsumes|Session|Contributed_Talk >= -1
+ R647: subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Session - subsumes|Session|owl_Nothing
+   >= -1
+ R648: subsumes|Social_Event|Contributed_Talk
+   - subsumes|Social_Event|Session - subsumes|Session|Contributed_Talk
+   >= -1
+ R649: subsumes|Social_Event|owl_Nothing - subsumes|Social_Event|Session
+   - subsumes|Session|owl_Nothing >= -1
+ R650: subsumes|Event|Contributed_Talk - subsumes|Event|Session
+   - subsumes|Session|Contributed_Talk >= -1
+ R651: subsumes|Event|Conference_Session - subsumes|Event|Session
+   - subsumes|Session|Conference_Session >= -1
+ R652: subsumes|Event|owl_Nothing - subsumes|Event|Session
+   - subsumes|Session|owl_Nothing >= -1
+ R653: - subsumes|Workshop_Session|Session
+   + subsumes|Workshop_Session|owl_Nothing - subsumes|Session|owl_Nothing
+   >= -1
+ R654: - subsumes|Industrial_Session|Session
+   + subsumes|Industrial_Session|owl_Nothing - subsumes|Session|owl_Nothing
+   >= -1
+ R655: - subsumes|Demo_Session|Session
+   + subsumes|Demo_Session|Contributed_Talk
+   - subsumes|Session|Contributed_Talk >= -1
+ R656: subsumes|Demo_Session|Conference_Session
+   - subsumes|Demo_Session|Session - subsumes|Session|Conference_Session
+   >= -1
+ R657: - subsumes|Demo_Session|Session + subsumes|Demo_Session|owl_Nothing
+   - subsumes|Session|owl_Nothing >= -1
+ R658: - subsumes|Tutorial|Session - subsumes|Session|Contributed_Talk
+   + subsumes|Tutorial|Contributed_Talk >= -1
+ R659: - subsumes|Tutorial|Session - subsumes|Session|Conference_Session
+   + subsumes|Tutorial|Conference_Session >= -1
+ R660: - subsumes|Tutorial|Session + subsumes|Tutorial|owl_Nothing
+   - subsumes|Session|owl_Nothing >= -1
+ R661: - subsumes|Conference|Session + subsumes|Conference|Contributed_Talk
+   - subsumes|Session|Contributed_Talk >= -1
+ R662: - subsumes|Conference|Session + subsumes|Conference|owl_Nothing
+   - subsumes|Session|owl_Nothing >= -1
+ R663: - subsumes|Poster_Session|Session
+   + subsumes|Poster_Session|Contributed_Talk
+   - subsumes|Session|Contributed_Talk >= -1
+ R664: - subsumes|Poster_Session|Session
+   + subsumes|Poster_Session|owl_Nothing - subsumes|Session|owl_Nothing
+   >= -1
+ R665: - subsumes|Tutorial|Event - subsumes|Event|Scientific_Event
+   + subsumes|Tutorial|Scientific_Event >= -1
+ R666: - subsumes|Tutorial|Event - subsumes|Event|Individual_Presentation
+   + subsumes|Tutorial|Individual_Presentation >= -1
+ R667: - subsumes|Conference_Proceedings|Event
+   - subsumes|Event|Scientific_Event
+   + subsumes|Conference_Proceedings|Scientific_Event >= -1
+ R668: - subsumes|Conference_Proceedings|Event
+   - subsumes|Event|Individual_Presentation
+   + subsumes|Conference_Proceedings|Individual_Presentation >= -1
+ R669: subsumes|Conference_Proceedings|Session - subsumes|Event|Session
+   - subsumes|Conference_Proceedings|Event >= -1
+ R670: - subsumes|Regular_Session|Event - subsumes|Event|Scientific_Event
+   + subsumes|Regular_Session|Scientific_Event >= -1
+ R671: - subsumes|Regular_Session|Event
+   - subsumes|Event|Individual_Presentation
+   + subsumes|Regular_Session|Individual_Presentation >= -1
+ R672: subsumes|Contributed_Talk|Session - subsumes|Event|Session
+   - subsumes|Contributed_Talk|Event >= -1
+ R673: - subsumes|Workshop_Session|Event - subsumes|Event|Scientific_Event
+   + subsumes|Workshop_Session|Scientific_Event >= -1
+ R674: - subsumes|Workshop_Session|Event
+   - subsumes|Event|Individual_Presentation
+   + subsumes|Workshop_Session|Individual_Presentation >= -1
+ R675: - subsumes|Industrial_Session|Event
+   - subsumes|Event|Scientific_Event
+   + subsumes|Industrial_Session|Scientific_Event >= -1
+ R676: - subsumes|Industrial_Session|Event
+   - subsumes|Event|Individual_Presentation
+   + subsumes|Industrial_Session|Individual_Presentation >= -1
+ R677: - subsumes|Conference_Session|Event
+   - subsumes|Event|Scientific_Event
+   + subsumes|Conference_Session|Scientific_Event >= -1
+ R678: - subsumes|Conference_Session|Event
+   - subsumes|Event|Individual_Presentation
+   + subsumes|Conference_Session|Individual_Presentation >= -1
+ R679: - subsumes|Session|Event - subsumes|Event|Scientific_Event
+   + subsumes|Session|Scientific_Event >= -1
+ R680: - subsumes|Session|Event - subsumes|Event|Individual_Presentation
+   + subsumes|Session|Individual_Presentation >= -1
+ R681: - subsumes|Scientific_Event|Event - subsumes|Event|Session
+   + subsumes|Scientific_Event|Session >= -1
+ R682: subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Conference_Session
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R683: subsumes|Conference_Trip|Contributed_Talk
+   - subsumes|Conference_Trip|Conference_Session
+   - subsumes|Conference_Session|Contributed_Talk >= -1
+ R684: subsumes|Conference_Trip|owl_Nothing
+   - subsumes|Conference_Trip|Conference_Session
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R685: subsumes|Poster_Session|Contributed_Talk
+   - subsumes|Poster_Session|Conference_Session
+   - subsumes|Conference_Session|Contributed_Talk >= -1
+ R686: subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Conference_Session
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R687: subsumes|Conference_Banquet|Contributed_Talk
+   - subsumes|Conference_Banquet|Conference_Session
+   - subsumes|Conference_Session|Contributed_Talk >= -1
+ R688: subsumes|Conference_Banquet|owl_Nothing
+   - subsumes|Conference_Banquet|Conference_Session
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R689: subsumes|Conference|Contributed_Talk
+   - subsumes|Conference|Conference_Session
+   - subsumes|Conference_Session|Contributed_Talk >= -1
+ R690: subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Conference_Session
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R691: subsumes|Social_Event|Contributed_Talk
+   - subsumes|Social_Event|Conference_Session
+   - subsumes|Conference_Session|Contributed_Talk >= -1
+ R692: subsumes|Social_Event|owl_Nothing
+   - subsumes|Social_Event|Conference_Session
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R693: - subsumes|Industrial_Session|Conference_Session
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Conference_Session|owl_Nothing >= -1
+ R694: - subsumes|Contributed_Talk|Proceedings
+   - subsumes|Session|Contributed_Talk + subsumes|Session|Proceedings
+   >= -1
+ R695: - subsumes|Contributed_Talk|Document
+   - subsumes|Session|Contributed_Talk + subsumes|Session|Document >= -1
+ R696: - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Session|Contributed_Talk
+   + subsumes|Session|Individual_Presentation >= -1
+ R697: - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Session|Contributed_Talk + subsumes|Session|Scientific_Event
+   >= -1
+ R698: - subsumes|Contributed_Talk|Proceedings
+   - subsumes|Conference_Session|Contributed_Talk
+   + subsumes|Conference_Session|Proceedings >= -1
+ R699: - subsumes|Contributed_Talk|Document
+   - subsumes|Conference_Session|Contributed_Talk
+   + subsumes|Conference_Session|Document >= -1
+ R700: - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Conference_Session|Contributed_Talk
+   + subsumes|Conference_Session|Individual_Presentation >= -1
+ R701: - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Conference_Session|Contributed_Talk
+   + subsumes|Conference_Session|Scientific_Event >= -1
+ R702: - subsumes|Contributed_Talk|Proceedings
+   - subsumes|Industrial_Session|Contributed_Talk
+   + subsumes|Industrial_Session|Proceedings >= -1
+ R703: - subsumes|Contributed_Talk|Document
+   - subsumes|Industrial_Session|Contributed_Talk
+   + subsumes|Industrial_Session|Document >= -1
+ R704: - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Industrial_Session|Contributed_Talk
+   + subsumes|Industrial_Session|Individual_Presentation >= -1
+ R705: - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Industrial_Session|Contributed_Talk
+   + subsumes|Industrial_Session|Scientific_Event >= -1
+ R706: - subsumes|Contributed_Talk|Proceedings
+   - subsumes|Workshop_Session|Contributed_Talk
+   + subsumes|Workshop_Session|Proceedings >= -1
+ R707: - subsumes|Contributed_Talk|Document
+   - subsumes|Workshop_Session|Contributed_Talk
+   + subsumes|Workshop_Session|Document >= -1
+ R708: - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Workshop_Session|Contributed_Talk
+   + subsumes|Workshop_Session|Individual_Presentation >= -1
+ R709: - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Workshop_Session|Contributed_Talk
+   + subsumes|Workshop_Session|Scientific_Event >= -1
+ R710: - subsumes|Contributed_Talk|Proceedings
+   - subsumes|Regular_Session|Contributed_Talk
+   + subsumes|Regular_Session|Proceedings >= -1
+ R711: - subsumes|Contributed_Talk|Document
+   - subsumes|Regular_Session|Contributed_Talk
+   + subsumes|Regular_Session|Document >= -1
+ R712: - subsumes|Contributed_Talk|Individual_Presentation
+   - subsumes|Regular_Session|Contributed_Talk
+   + subsumes|Regular_Session|Individual_Presentation >= -1
+ R713: - subsumes|Contributed_Talk|Scientific_Event
+   - subsumes|Regular_Session|Contributed_Talk
+   + subsumes|Regular_Session|Scientific_Event >= -1
+ R714: - subsumes|SC_Member|Agency_Staff_Member
+   + subsumes|SC_Member|Possible_Reviewer
+   - subsumes|Agency_Staff_Member|Possible_Reviewer >= -1
+ R715: - opsup|presentationOfPaper|Thing|Event - subsumes|Tutorial|Event
+   + opsup|presentationOfPaper|Thing|Tutorial >= -1
+ R716: - opsup|presentationOfPaper|Thing|Event
+   - subsumes|Conference_Proceedings|Event
+   + opsup|presentationOfPaper|Thing|Conference_Proceedings >= -1
+ R717: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Event|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Event >= -1
+ R718: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Conference_Trip|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Conference_Trip >= -1
+ R719: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Poster_Session|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Poster_Session >= -1
+ R720: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Conference_Banquet|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Conference_Banquet >= -1
+ R721: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Demo_Session|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Demo_Session >= -1
+ R722: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Conference|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Conference >= -1
+ R723: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Social_Event|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Social_Event >= -1
+ R724: - subsumes|Tutorial|Session
+   - opsup|presentationOfPaper|Thing|Session
+   + opsup|presentationOfPaper|Thing|Tutorial >= -1
+ R725: - subsumes|Session|Contributed_Talk
+   - opsup|volumeContainsPaper|Thing|Contributed_Talk
+   + opsup|volumeContainsPaper|Thing|Session >= -1
+ R726: - subsumes|Conference_Session|Contributed_Talk
+   - opsup|volumeContainsPaper|Thing|Contributed_Talk
+   + opsup|volumeContainsPaper|Thing|Conference_Session >= -1
+ R727: - subsumes|Industrial_Session|Contributed_Talk
+   - opsup|volumeContainsPaper|Thing|Contributed_Talk
+   + opsup|volumeContainsPaper|Thing|Industrial_Session >= -1
+ R728: - subsumes|Workshop_Session|Contributed_Talk
+   - opsup|volumeContainsPaper|Thing|Contributed_Talk
+   + opsup|volumeContainsPaper|Thing|Workshop_Session >= -1
+ R729: - subsumes|Regular_Session|Contributed_Talk
+   - opsup|volumeContainsPaper|Thing|Contributed_Talk
+   + opsup|volumeContainsPaper|Thing|Regular_Session >= -1
+ R730: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Regular_Session
+   + subsumes|Regular_Session|Scientific_Event >= -2
+ R731: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Regular_Session
+   + subsumes|Regular_Session|Individual_Presentation >= -2
+ R732: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Workshop_Session
+   + subsumes|Workshop_Session|Scientific_Event >= -2
+ R733: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Workshop_Session
+   + subsumes|Workshop_Session|Individual_Presentation >= -2
+ R734: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Industrial_Session
+   + subsumes|Industrial_Session|Scientific_Event >= -2
+ R735: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Industrial_Session
+   + subsumes|Industrial_Session|Individual_Presentation >= -2
+ R736: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Conference_Session
+   + subsumes|Conference_Session|Scientific_Event >= -2
+ R737: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Conference_Session
+   + subsumes|Conference_Session|Individual_Presentation >= -2
+ R738: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Scientific_Event
+   - opsup|presentationOfPaper|Thing|Session
+   + subsumes|Session|Scientific_Event >= -2
+ R739: - subsumes|Thing|Thing
+   - opsub|presentationOfPaper|Thing|Individual_Presentation
+   - opsup|presentationOfPaper|Thing|Session
+   + subsumes|Session|Individual_Presentation >= -2
+ R740: - intersection|Regular_Session|Scientific_Event|owl_Nothing
+   - subsumes|Regular_Session|Regular_Session
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Scientific_Event >= -2
+ R741: - intersection|Scientific_Event|Session|owl_Nothing
+   - subsumes|Session|Session + subsumes|Session|owl_Nothing
+   - subsumes|Session|Scientific_Event >= -2
+ R742: - subsumes|Conference_Session|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Scientific_Event >= -2
+ R743: - subsumes|Industrial_Session|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Scientific_Event >= -2
+ R744: - subsumes|Workshop_Session|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Scientific_Event >= -2
+ R745: - intersection|Scientific_Event|Workshop_Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Workshop_Session
+   - subsumes|Workshop_Session|Scientific_Event >= -2
+ R746: - subsumes|Regular_Session|Session
+   - intersection|Scientific_Event|Session|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Scientific_Event >= -2
+ R747: - intersection|Scientific_Event|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Tutorial + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Scientific_Event >= -2
+ R748: - intersection|Event|Proceedings|owl_Nothing
+   - subsumes|Regular_Session|Event + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Proceedings >= -2
+ R749: - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Event
+   - subsumes|Workshop_Session|Proceedings >= -2
+ R750: - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Event
+   - subsumes|Industrial_Session|Proceedings >= -2
+ R751: - intersection|Event|Proceedings|owl_Nothing
+   - subsumes|Conference_Session|Event
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Proceedings >= -2
+ R752: - intersection|Event|Proceedings|owl_Nothing
+   - subsumes|Session|Event + subsumes|Session|owl_Nothing
+   - subsumes|Session|Proceedings >= -2
+ R753: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Session|owl_Nothing
+   - subsumes|Session|Individual_Presentation
+   - subsumes|Session|Proceedings >= -2
+ R754: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Individual_Presentation
+   - subsumes|Conference_Session|Proceedings >= -2
+ R755:
+   - intersection|Individual_Presentation|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Industrial_Session
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Individual_Presentation >= -2
+ R756: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Individual_Presentation
+   - subsumes|Industrial_Session|Proceedings >= -2
+ R757: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Individual_Presentation
+   - subsumes|Workshop_Session|Proceedings >= -2
+ R758: - intersection|Individual_Presentation|Workshop_Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Workshop_Session
+   - subsumes|Workshop_Session|Individual_Presentation >= -2
+ R759: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Individual_Presentation
+   - subsumes|Regular_Session|Proceedings >= -2
+ R760: - intersection|Individual_Presentation|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Regular_Session
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Individual_Presentation >= -2
+ R761: - subsumes|Conference_Proceedings|Proceedings
+   - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Individual_Presentation >= -2
+ R762: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Scientific_Event
+   - subsumes|Regular_Session|Document >= -2
+ R763: - subsumes|Regular_Session|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Document >= -2
+ R764: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Individual_Presentation
+   - subsumes|Regular_Session|Document >= -2
+ R765: - intersection|Document|Event|owl_Nothing
+   - subsumes|Regular_Session|Event + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Document >= -2
+ R766: - intersection|Document|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Regular_Session
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Document >= -2
+ R767: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Scientific_Event
+   - subsumes|Workshop_Session|Document >= -2
+ R768: - intersection|Document|Workshop_Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Workshop_Session
+   - subsumes|Workshop_Session|Document >= -2
+ R769: - subsumes|Workshop_Session|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Document >= -2
+ R770: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Individual_Presentation
+   - subsumes|Workshop_Session|Document >= -2
+ R771: - intersection|Document|Event|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Event - subsumes|Workshop_Session|Document
+   >= -2
+ R772: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Scientific_Event
+   - subsumes|Industrial_Session|Document >= -2
+ R773: - subsumes|Industrial_Session|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Document >= -2
+ R774: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Individual_Presentation
+   - subsumes|Industrial_Session|Document >= -2
+ R775: - intersection|Document|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Industrial_Session
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Document >= -2
+ R776: - intersection|Document|Event|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Event
+   - subsumes|Industrial_Session|Document >= -2
+ R777: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Scientific_Event
+   - subsumes|Conference_Session|Document >= -2
+ R778: - subsumes|Conference_Session|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Document >= -2
+ R779: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Individual_Presentation
+   - subsumes|Conference_Session|Document >= -2
+ R780: - intersection|Document|Event|owl_Nothing
+   - subsumes|Conference_Session|Event
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Document >= -2
+ R781: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Session|owl_Nothing - subsumes|Session|Scientific_Event
+   - subsumes|Session|Document >= -2
+ R782: - intersection|Document|Session|owl_Nothing
+   - subsumes|Session|Session + subsumes|Session|owl_Nothing
+   - subsumes|Session|Document >= -2
+ R783: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Session|owl_Nothing
+   - subsumes|Session|Individual_Presentation - subsumes|Session|Document
+   >= -2
+ R784: - intersection|Document|Event|owl_Nothing - subsumes|Session|Event
+   + subsumes|Session|owl_Nothing - subsumes|Session|Document >= -2
+ R785: - intersection|Document|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Document
+   - subsumes|Conference_Proceedings|Scientific_Event >= -2
+ R786: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Document
+   - subsumes|Conference_Proceedings|Individual_Presentation >= -2
+ R787: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Tutorial|owl_Nothing - subsumes|Tutorial|Conference_Session
+   - subsumes|Tutorial|Scientific_Event >= -2
+ R788: - intersection|Conference_Session|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Tutorial + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Conference_Session >= -2
+ R789: - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + subsumes|Tutorial|owl_Nothing - subsumes|Tutorial|Contributed_Talk
+   - subsumes|Tutorial|Conference_Session >= -2
+ R790: - intersection|Conference_Session|Proceedings|owl_Nothing
+   - subsumes|Conference_Session|Conference_Session
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Proceedings >= -2
+ R791: - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   - subsumes|Conference_Session|Conference_Session
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Scientific_Event >= -2
+ R792: - intersection|Conference_Session|Document|owl_Nothing
+   - subsumes|Conference_Session|Conference_Session
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Document >= -2
+ R793: - subsumes|Industrial_Session|Conference_Session
+   - intersection|Conference_Session|Proceedings|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Proceedings >= -2
+ R794: - subsumes|Industrial_Session|Conference_Session
+   - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Scientific_Event >= -2
+ R795: - subsumes|Industrial_Session|Conference_Session
+   - intersection|Conference_Session|Document|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Document >= -2
+ R796: - subsumes|Regular_Session|Conference_Session
+   - intersection|Conference_Session|Proceedings|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Proceedings >= -2
+ R797: - subsumes|Regular_Session|Conference_Session
+   - intersection|Conference_Session|Scientific_Event|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Scientific_Event >= -2
+ R798: - subsumes|Regular_Session|Conference_Session
+   - intersection|Conference_Session|Contributed_Talk|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Contributed_Talk >= -2
+ R799: - subsumes|Regular_Session|Conference_Session
+   - intersection|Conference_Session|Document|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Document >= -2
+ R800: - intersection|Conference_Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Conference_Proceedings
+   - subsumes|Conference_Proceedings|Scientific_Event >= -2
+ R801:
+   - intersection|Conference_Proceedings|Individual_Presentation|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Conference_Proceedings
+   - subsumes|Conference_Proceedings|Individual_Presentation >= -2
+ R802: - intersection|Contributed_Talk|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Tutorial + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Contributed_Talk >= -2
+ R803: - intersection|Contributed_Talk|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Regular_Session
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Contributed_Talk >= -2
+ R804: - intersection|Contributed_Talk|Proceedings|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Contributed_Talk
+   - subsumes|Regular_Session|Proceedings >= -2
+ R805: - intersection|Contributed_Talk|Document|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Contributed_Talk
+   - subsumes|Regular_Session|Document >= -2
+ R806: - subsumes|Regular_Session|Session
+   - intersection|Contributed_Talk|Session|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Contributed_Talk >= -2
+ R807: - intersection|Industrial_Session|Proceedings|owl_Nothing
+   - subsumes|Industrial_Session|Industrial_Session
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Proceedings >= -2
+ R808: - intersection|Industrial_Session|Scientific_Event|owl_Nothing
+   - subsumes|Industrial_Session|Industrial_Session
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Scientific_Event >= -2
+ R809: - intersection|Proceedings|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Regular_Session
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Proceedings >= -2
+ R810: - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Scientific_Event
+   - subsumes|Regular_Session|Proceedings >= -2
+ R811: - subsumes|Regular_Session|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Regular_Session|owl_Nothing
+   - subsumes|Regular_Session|Proceedings >= -2
+ R812: - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Scientific_Event
+   - subsumes|Workshop_Session|Proceedings >= -2
+ R813: - subsumes|Workshop_Session|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Proceedings >= -2
+ R814: - intersection|Proceedings|Workshop_Session|owl_Nothing
+   + subsumes|Workshop_Session|owl_Nothing
+   - subsumes|Workshop_Session|Workshop_Session
+   - subsumes|Workshop_Session|Proceedings >= -2
+ R815: - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Scientific_Event
+   - subsumes|Industrial_Session|Proceedings >= -2
+ R816: - subsumes|Industrial_Session|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Industrial_Session|owl_Nothing
+   - subsumes|Industrial_Session|Proceedings >= -2
+ R817: - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Scientific_Event
+   - subsumes|Conference_Session|Proceedings >= -2
+ R818: - subsumes|Conference_Session|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Conference_Session|owl_Nothing
+   - subsumes|Conference_Session|Proceedings >= -2
+ R819: - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Session|owl_Nothing - subsumes|Session|Scientific_Event
+   - subsumes|Session|Proceedings >= -2
+ R820: - intersection|Proceedings|Session|owl_Nothing
+   - subsumes|Session|Session + subsumes|Session|owl_Nothing
+   - subsumes|Session|Proceedings >= -2
+ R821: - subsumes|Conference_Proceedings|Proceedings
+   - intersection|Proceedings|Scientific_Event|owl_Nothing
+   + subsumes|Conference_Proceedings|owl_Nothing
+   - subsumes|Conference_Proceedings|Scientific_Event >= -2
+ R822: - subsumes|Scientific_Event|Event
+   + subsumes|Conference_Proceedings|Event
+   - subsumes|Conference_Proceedings|Scientific_Event >= -1
+ R823: - subsumes|Scientific_Event|Event + subsumes|Tutorial|Event
+   - subsumes|Tutorial|Scientific_Event >= -1
+ R824: - subsumes|Demo_Session|Session - subsumes|Session|Document
+   + subsumes|Demo_Session|Document >= -1
+ R825: - subsumes|Demo_Session|Session - subsumes|Session|Proceedings
+   + subsumes|Demo_Session|Proceedings >= -1
+ R826: - subsumes|Demo_Session|Session
+   + subsumes|Demo_Session|Individual_Presentation
+   - subsumes|Session|Individual_Presentation >= -1
+ R827: - subsumes|Demo_Session|Session
+   + subsumes|Demo_Session|Scientific_Event
+   - subsumes|Session|Scientific_Event >= -1
+ R828: - subsumes|Conference|Session - subsumes|Session|Document
+   + subsumes|Conference|Document >= -1
+ R829: - subsumes|Conference|Session - subsumes|Session|Proceedings
+   + subsumes|Conference|Proceedings >= -1
+ R830: - subsumes|Conference|Session
+   + subsumes|Conference|Individual_Presentation
+   - subsumes|Session|Individual_Presentation >= -1
+ R831: - subsumes|Conference|Session + subsumes|Conference|Scientific_Event
+   - subsumes|Session|Scientific_Event >= -1
+ R832: - subsumes|Poster_Session|Session - subsumes|Session|Document
+   + subsumes|Poster_Session|Document >= -1
+ R833: - subsumes|Poster_Session|Session - subsumes|Session|Proceedings
+   + subsumes|Poster_Session|Proceedings >= -1
+ R834: - subsumes|Poster_Session|Session
+   + subsumes|Poster_Session|Individual_Presentation
+   - subsumes|Session|Individual_Presentation >= -1
+ R835: - subsumes|Poster_Session|Session
+   + subsumes|Poster_Session|Scientific_Event
+   - subsumes|Session|Scientific_Event >= -1
+ R836: - subsumes|Social_Event|Event
+   + subsumes|Social_Event|Individual_Presentation
+   - subsumes|Event|Individual_Presentation >= -1
+ R837: - subsumes|Conference|Event
+   + subsumes|Conference|Individual_Presentation
+   - subsumes|Event|Individual_Presentation >= -1
+ R838: - subsumes|Demo_Session|Event
+   + subsumes|Demo_Session|Individual_Presentation
+   - subsumes|Event|Individual_Presentation >= -1
+ R839: - subsumes|Conference_Banquet|Event
+   + subsumes|Conference_Banquet|Individual_Presentation
+   - subsumes|Event|Individual_Presentation >= -1
+ R840: - subsumes|Poster_Session|Event
+   + subsumes|Poster_Session|Individual_Presentation
+   - subsumes|Event|Individual_Presentation >= -1
+ R841: - subsumes|Conference_Trip|Event
+   + subsumes|Conference_Trip|Individual_Presentation
+   - subsumes|Event|Individual_Presentation >= -1
+ R842: - subsumes|Tutorial|Conference_Session
+   - subsumes|Conference_Session|Document + subsumes|Tutorial|Document
+   >= -1
+ R843: - subsumes|Tutorial|Conference_Session
+   - subsumes|Conference_Session|Proceedings
+   + subsumes|Tutorial|Proceedings >= -1
+ R844: - subsumes|Conference_Session|Event + subsumes|Tutorial|Event
+   - subsumes|Tutorial|Conference_Session >= -1
+ R845: - subsumes|Conference_Session|Session + subsumes|Tutorial|Session
+   - subsumes|Tutorial|Conference_Session >= -1
+ R846: - subsumes|Demo_Session|Conference_Session
+   - subsumes|Conference_Session|Document + subsumes|Demo_Session|Document
+   >= -1
+ R847: - subsumes|Demo_Session|Conference_Session
+   - subsumes|Conference_Session|Proceedings
+   + subsumes|Demo_Session|Proceedings >= -1
+ R848: - subsumes|Demo_Session|Conference_Session
+   + subsumes|Demo_Session|Individual_Presentation
+   - subsumes|Conference_Session|Individual_Presentation >= -1
+ R849: - subsumes|Demo_Session|Conference_Session
+   + subsumes|Demo_Session|Scientific_Event
+   - subsumes|Conference_Session|Scientific_Event >= -1
+ R850: - subsumes|Contributed_Talk|Event + subsumes|Tutorial|Event
+   - subsumes|Tutorial|Contributed_Talk >= -1
+ R851: - opsup|partOfEvent|Thing|Conference_Session
+   + opsup|partOfEvent|Thing|Tutorial
+   - subsumes|Tutorial|Conference_Session >= -1
+ R852: - opsup|hasEvent|Thing|Conference_Session
+   + opsup|hasEvent|Thing|Tutorial - subsumes|Tutorial|Conference_Session
+   >= -1
+ R853: - opsup|partOfEvent|Thing|Contributed_Talk
+   + opsup|partOfEvent|Thing|Tutorial - subsumes|Tutorial|Contributed_Talk
+   >= -1
+ R854: - opsup|volumeContainsPaper|Thing|Scientific_Event
+   - subsumes|Tutorial|Scientific_Event
+   + opsup|volumeContainsPaper|Thing|Tutorial >= -1
+ R855: - opsup|hasEvent|Thing|Contributed_Talk
+   + opsup|hasEvent|Thing|Tutorial - subsumes|Tutorial|Contributed_Talk
+   >= -1
+ R856: opsup|partOfEvent|Thing|Conference_Proceedings
+   - opsup|partOfEvent|Thing|Scientific_Event
+   - subsumes|Conference_Proceedings|Scientific_Event >= -1
+ R857: opsup|partOfEvent|Thing|Tutorial
+   - opsup|partOfEvent|Thing|Scientific_Event
+   - subsumes|Tutorial|Scientific_Event >= -1
+ R858: opsup|hasEvent|Thing|Conference_Proceedings
+   - opsup|hasEvent|Thing|Scientific_Event
+   - subsumes|Conference_Proceedings|Scientific_Event >= -1
+ R859: opsup|hasEvent|Thing|Tutorial
+   - opsup|hasEvent|Thing|Scientific_Event
+   - subsumes|Tutorial|Scientific_Event >= -1
+ R860: - subsumes|Demo_Session|Conference_Session
+   + opsup|presentationOfPaper|Thing|Demo_Session
+   - opsup|presentationOfPaper|Thing|Conference_Session >= -1
+ R861: - subsumes|Demo_Session|Session
+   + opsup|presentationOfPaper|Thing|Demo_Session
+   - opsup|presentationOfPaper|Thing|Session >= -1
+ R862: - subsumes|Conference|Session
+   + opsup|presentationOfPaper|Thing|Conference
+   - opsup|presentationOfPaper|Thing|Session >= -1
+ R863: - subsumes|Poster_Session|Session
+   + opsup|presentationOfPaper|Thing|Poster_Session
+   - opsup|presentationOfPaper|Thing|Session >= -1
+ R864: - opsup|volumeContainsPaper|Thing|Contributed_Talk
+   - subsumes|Tutorial|Contributed_Talk
+   + opsup|volumeContainsPaper|Thing|Tutorial >= -1
+ R865: - subsumes|Tutorial|Conference_Session
+   - opsup|volumeContainsPaper|Thing|Conference_Session
+   + opsup|volumeContainsPaper|Thing|Tutorial >= -1
+ R866: - subsumes|Thing|Thing - opsub|presentationOfPaper|Thing|Event
+   + subsumes|Tutorial|Event - opsup|presentationOfPaper|Thing|Tutorial
+   >= -2
+ R867: - subsumes|Thing|Thing - opsub|presentationOfPaper|Thing|Event
+   + subsumes|Conference_Proceedings|Event
+   - opsup|presentationOfPaper|Thing|Conference_Proceedings >= -2
+ R868: - intersection|Poster_Session|Proceedings|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Proceedings >= -2
+ R869: - subsumes|Conference|Event
+   - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Conference|owl_Nothing - subsumes|Conference|Proceedings
+   >= -2
+ R870: - subsumes|Demo_Session|Event
+   - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Proceedings
+   >= -2
+ R871: - subsumes|Poster_Session|Event
+   - intersection|Event|Proceedings|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Proceedings >= -2
+ R872: - intersection|Individual_Presentation|Proceedings|owl_Nothing
+   + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Individual_Presentation
+   - subsumes|Tutorial|Proceedings >= -2
+ R873: - intersection|Document|Individual_Presentation|owl_Nothing
+   + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Individual_Presentation - subsumes|Tutorial|Document
+   >= -2
+ R874: - intersection|Document|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Tutorial + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Document >= -2
+ R875: - intersection|Document|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Poster_Session
+   + subsumes|Poster_Session|owl_Nothing - subsumes|Poster_Session|Document
+   >= -2
+ R876: - subsumes|Poster_Session|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing - subsumes|Poster_Session|Document
+   >= -2
+ R877: - subsumes|Poster_Session|Event
+   - intersection|Document|Event|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing - subsumes|Poster_Session|Document
+   >= -2
+ R878: - subsumes|Conference|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Conference|owl_Nothing - subsumes|Conference|Document >= -2
+ R879: - subsumes|Conference|Event
+   - intersection|Document|Event|owl_Nothing
+   + subsumes|Conference|owl_Nothing - subsumes|Conference|Document >= -2
+ R880: - subsumes|Demo_Session|Session
+   - intersection|Document|Session|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Document
+   >= -2
+ R881: - subsumes|Demo_Session|Event
+   - intersection|Document|Event|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Document
+   >= -2
+ R882: - subsumes|Demo_Session|Conference_Session
+   - intersection|Conference_Session|Proceedings|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Proceedings
+   >= -2
+ R883: - subsumes|Demo_Session|Conference_Session
+   - intersection|Conference_Session|Document|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Document
+   >= -2
+ R884: - intersection|Demo_Session|Document|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   - subsumes|Demo_Session|Document >= -2
+ R885: - intersection|Demo_Session|Proceedings|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Demo_Session
+   - subsumes|Demo_Session|Proceedings >= -2
+ R886: - intersection|Conference|Document|owl_Nothing
+   - subsumes|Conference|Conference + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Document >= -2
+ R887: - intersection|Conference|Proceedings|owl_Nothing
+   - subsumes|Conference|Conference + subsumes|Conference|owl_Nothing
+   - subsumes|Conference|Proceedings >= -2
+ R888: - intersection|Proceedings|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Tutorial + subsumes|Tutorial|owl_Nothing
+   - subsumes|Tutorial|Proceedings >= -2
+ R889: - subsumes|Poster_Session|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Poster_Session|owl_Nothing
+   - subsumes|Poster_Session|Proceedings >= -2
+ R890: - subsumes|Conference|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Conference|owl_Nothing - subsumes|Conference|Proceedings
+   >= -2
+ R891: - subsumes|Demo_Session|Session
+   - intersection|Proceedings|Session|owl_Nothing
+   + subsumes|Demo_Session|owl_Nothing - subsumes|Demo_Session|Proceedings
+   >= -2
 Bounds
 Binaries
- intersection|Species|Village|owl_Nothing
- intersection|AutomobileEngine|Person|owl_Nothing
- intersection|Animal|Village|owl_Nothing
- intersection|AdministrativeRegion|MusicalWork|owl_Nothing
- intersection|MeanOfTransportation|Settlement|owl_Nothing
- intersection|Insect|Work|owl_Nothing
- intersection|Athlete|Eukaryote|owl_Nothing
- intersection|EducationalInstitution|Work|owl_Nothing
- intersection|Animal|Athlete|owl_Nothing
- intersection|School|Work|owl_Nothing
- intersection|Album|SoccerPlayer|owl_Nothing
- intersection|Film|Species|owl_Nothing
- intersection|MusicalWork|TelevisionEpisode|owl_Nothing
- intersection|MusicalWork|Plant|owl_Nothing
- intersection|HistoricPlace|Work|owl_Nothing
- intersection|Species|TelevisionEpisode|owl_Nothing
- intersection|Athlete|Village|owl_Nothing
- intersection|AdministrativeRegion|Eukaryote|owl_Nothing
- intersection|Athlete|MusicalWork|owl_Nothing
- intersection|AdministrativeRegion|Animal|owl_Nothing
- intersection|SoccerPlayer|Species|owl_Nothing
- intersection|Animal|TelevisionEpisode|owl_Nothing
- intersection|Settlement|Single|owl_Nothing
- intersection|Actor|Eukaryote|owl_Nothing
- intersection|Album|TelevisionEpisode|owl_Nothing
- intersection|Animal|SoccerPlayer|owl_Nothing
- intersection|Athlete|Settlement|owl_Nothing
- intersection|Device|Place|owl_Nothing
- intersection|Settlement|TelevisionEpisode|owl_Nothing
- intersection|Eukaryote|TelevisionEpisode|owl_Nothing
- intersection|Single|Species|owl_Nothing
- intersection|Settlement|SoccerPlayer|owl_Nothing
- intersection|SoccerPlayer|Work|owl_Nothing
- intersection|Athlete|Film|owl_Nothing
- intersection|Album|Athlete|owl_Nothing intersection|Town|Work|owl_Nothing
- intersection|Fish|Place|owl_Nothing
- intersection|Eukaryote|Village|owl_Nothing
- intersection|Actor|Species|owl_Nothing
- intersection|AdministrativeRegion|Album|owl_Nothing
- intersection|Album|Village|owl_Nothing
- intersection|MusicalWork|Village|owl_Nothing
- intersection|Plant|Work|owl_Nothing intersection|Device|Work|owl_Nothing
- intersection|Actor|Settlement|owl_Nothing
- intersection|GridironFootballPlayer|Work|owl_Nothing
- intersection|AutomobileEngine|Place|owl_Nothing
- intersection|Athlete|TelevisionEpisode|owl_Nothing
- intersection|Album|Settlement|owl_Nothing
- intersection|AdministrativeRegion|Athlete|owl_Nothing
- intersection|MusicalWork|Settlement|owl_Nothing
- intersection|RadioStation|Work|owl_Nothing
- intersection|Eukaryote|SoccerPlayer|owl_Nothing
- intersection|MusicalWork|SoccerPlayer|owl_Nothing
- intersection|Actor|MusicalWork|owl_Nothing
- intersection|Eukaryote|Film|owl_Nothing
- intersection|Settlement|Ship|owl_Nothing
- intersection|AdministrativeRegion|Species|owl_Nothing
- intersection|Settlement|Software|owl_Nothing
- intersection|Village|Work|owl_Nothing
- intersection|AutomobileEngine|Work|owl_Nothing
- intersection|Athlete|Species|owl_Nothing
- intersection|AdministrativeRegion|TelevisionEpisode|owl_Nothing
- intersection|Device|Settlement|owl_Nothing
- intersection|Insect|Settlement|owl_Nothing subsumes|Criminal|Person
- subsumes|Senator|Politician subsumes|Pope|Cleric
- subsumes|Aircraft|MeanOfTransportation subsumes|OlympicResult|owl_Thing
- subsumes|PopulatedPlace|Place subsumes|Monarch|Person
- subsumes|Reptile|Animal subsumes|VolleyballLeague|SportsLeague
- subsumes|MotorcycleRacingLeague|SportsLeague subsumes|Moss|Plant
- subsumes|YearInSpaceflight|Event subsumes|Automobile|MeanOfTransportation
- subsumes|Species|owl_Thing subsumes|Village|Settlement
- subsumes|Arachnid|Animal subsumes|ClubMoss|Plant
- subsumes|SoccerPlayer|Athlete subsumes|Website|owl_Thing
- subsumes|HandballLeague|SportsLeague subsumes|Athlete|Person
- subsumes|WineRegion|Place subsumes|Musical|Work
- subsumes|School|EducationalInstitution subsumes|Film|Work
- subsumes|SportsTeam|Organisation subsumes|Eukaryote|Species
- subsumes|Software|Work subsumes|AmericanFootballLeague|SportsLeague
- subsumes|Bacteria|Species subsumes|FigureSkater|Athlete
- subsumes|Race|SportsEvent subsumes|Ginkgo|Plant
- subsumes|AmericanFootballTeam|SportsTeam subsumes|Cycad|Plant
- subsumes|AmericanFootballPlayer|GridironFootballPlayer
- subsumes|TelevisionShow|Work subsumes|MusicGenre|owl_Thing
- subsumes|MilitaryConflict|Event subsumes|RecordLabel|Company
- subsumes|Chancellor|Politician subsumes|Insect|Animal
- subsumes|BaseballLeague|SportsLeague subsumes|Protein|owl_Thing
- subsumes|LacrosseLeague|SportsLeague subsumes|Ambassador|Person
- subsumes|MusicalArtist|Artist subsumes|Settlement|PopulatedPlace
- subsumes|College|EducationalInstitution subsumes|MusicalWork|Work
- subsumes|RugbyPlayer|Athlete subsumes|Animal|Eukaryote
- subsumes|Valley|Place subsumes|Country|PopulatedPlace
- subsumes|Conifer|Plant subsumes|Canal|Stream
- subsumes|TelevisionEpisode|Work subsumes|Newspaper|Work
- subsumes|Sport|Activity subsumes|Journalist|Person
- subsumes|Airline|Company subsumes|Artery|AnatomicalStructure
- subsumes|NationalCollegiateAthleticAssociationAthlete|Athlete
- subsumes|GolfLeague|SportsLeague subsumes|CurlingLeague|SportsLeague
- subsumes|FloweringPlant|Plant subsumes|Bird|Animal
- subsumes|MixedMartialArtsLeague|SportsLeague
- subsumes|BaseballPlayer|Athlete subsumes|Stream|BodyOfWater
- subsumes|Place|owl_Thing subsumes|Writer|Artist subsumes|Drug|owl_Thing
- subsumes|Architect|Person subsumes|Legislature|Organisation
- subsumes|Band|Organisation subsumes|BadmintonPlayer|Athlete
- subsumes|PoloLeague|SportsLeague
- subsumes|CanadianFootballPlayer|GridironFootballPlayer
- subsumes|AutoRacingLeague|SportsLeague subsumes|ShoppingMall|Building
- subsumes|AustralianFootballLeague|SportsLeague subsumes|Cyclist|Athlete
- subsumes|Crustacean|Animal subsumes|President|Politician
- subsumes|CyclingLeague|SportsLeague subsumes|BoxingLeague|SportsLeague
- subsumes|Mollusca|Animal subsumes|Bone|AnatomicalStructure
- subsumes|Wrestler|Athlete subsumes|Spacecraft|MeanOfTransportation
- subsumes|Currency|owl_Thing subsumes|Bridge|Building
- subsumes|Organisation|owl_Thing subsumes|VideoGame|Software
- subsumes|Fish|Animal subsumes|Painting|owl_Thing subsumes|Park|Place
- subsumes|CanadianFootballLeague|SportsLeague
- subsumes|IceHockeyPlayer|Athlete subsumes|PokerPlayer|Person
- subsumes|VoiceActor|Actor subsumes|Broadcast|Organisation
- subsumes|GridironFootballPlayer|Athlete subsumes|Model|Person
- subsumes|Mammal|Animal subsumes|SpeedwayLeague|SportsLeague
- subsumes|Building|Place subsumes|FilmFestival|Event
- subsumes|PersonFunction|owl_Thing subsumes|BritishRoyalty|Person
- subsumes|HockeyTeam|SportsTeam subsumes|TradeUnion|Organisation
- subsumes|SoccerLeague|SportsLeague subsumes|Plant|Eukaryote
- subsumes|Lieutenant|Politician subsumes|Amphibian|Animal
- subsumes|SpaceMission|Event subsumes|MusicFestival|Event
- subsumes|CollegeCoach|Person subsumes|BasketballLeague|SportsLeague
- subsumes|CanadianFootballTeam|SportsTeam subsumes|LaunchPad|Building
- subsumes|SupremeCourtOfTheUnitedStatesCase|owl_Thing
- subsumes|TennisPlayer|Athlete subsumes|SoftballLeague|SportsLeague
- subsumes|Ship|MeanOfTransportation subsumes|PrimeMinister|Politician
- subsumes|River|Stream subsumes|Actor|Artist subsumes|Book|Work
- subsumes|Brain|AnatomicalStructure
- subsumes|SpaceStation|MeanOfTransportation
- subsumes|RadioStation|Organisation subsumes|Fern|Plant
- subsumes|Airport|Building subsumes|MilitaryUnit|Organisation
- subsumes|Road|Infrastructure subsumes|Event|owl_Thing
- subsumes|Non-ProfitOrganisation|Organisation
- subsumes|FormulaOneRacer|Athlete subsumes|Scientist|Person
- subsumes|Infrastructure|owl_Thing subsumes|EthnicGroup|owl_Thing
- subsumes|Cave|Place subsumes|University|EducationalInstitution
- subsumes|BasketballPlayer|Athlete
- subsumes|RadioControlledRacingLeague|SportsLeague
- subsumes|MeanOfTransportation|owl_Thing
- subsumes|Muscle|AnatomicalStructure subsumes|Mayor|Politician
- subsumes|MilitaryPerson|Person subsumes|LunarCrater|Place
- subsumes|WomensTennisAssociationTournament|SportsEvent
- subsumes|Island|PopulatedPlace subsumes|ProtectedArea|Place
- subsumes|WorldHeritageSite|Place subsumes|Judge|Person
- subsumes|InlineHockeyLeague|SportsLeague subsumes|Grape|FloweringPlant
- subsumes|Station|Building subsumes|Lighthouse|Building
- subsumes|Activity|owl_Thing subsumes|Artist|Person
- subsumes|Language|owl_Thing subsumes|BowlingLeague|SportsLeague
- subsumes|Person|owl_Thing subsumes|Disease|owl_Thing
- subsumes|SoccerManager|Person subsumes|Governor|Politician
- subsumes|Lake|BodyOfWater subsumes|Nerve|AnatomicalStructure
- subsumes|FieldHockeyLeague|SportsLeague subsumes|SoccerClub|SportsTeam
- subsumes|Celebrity|Person subsumes|PaintballLeague|SportsLeague
- subsumes|Lymph|AnatomicalStructure subsumes|Work|owl_Thing
- subsumes|Town|Settlement subsumes|SportsEvent|Event subsumes|Saint|Cleric
- subsumes|GaelicGamesPlayer|Athlete subsumes|Mountain|Place
- subsumes|TennisLeague|SportsLeague subsumes|Magazine|Work
- subsumes|AutomobileEngine|Device subsumes|Continent|PopulatedPlace
- subsumes|Beverage|owl_Thing subsumes|Convention|Event
- subsumes|Congressman|Politician subsumes|AnatomicalStructure|owl_Thing
- subsumes|EurovisionSongContestEntry|Song subsumes|Weapon|Device
- subsumes|VicePrimeMinister|Politician subsumes|HistoricPlace|Place
- subsumes|GeopoliticalOrganisation|Organisation
- subsumes|MixedMartialArtsEvent|SportsEvent subsumes|Album|MusicalWork
- subsumes|Rocket|MeanOfTransportation subsumes|HistoricBuilding|Building
- subsumes|Deputy|Politician subsumes|BodyOfWater|Place
- subsumes|City|Settlement subsumes|Vein|AnatomicalStructure
- subsumes|MemberOfParliament|Politician subsumes|Fungus|Eukaryote
- subsumes|ChemicalCompound|owl_Thing
- subsumes|EducationalInstitution|Organisation
- subsumes|VicePresident|Politician subsumes|Embryology|AnatomicalStructure
- subsumes|WrestlingEvent|SportsEvent subsumes|NascarDriver|Athlete
- subsumes|Cricketer|Athlete subsumes|Stadium|Building
- subsumes|ComicsCharacter|FictionalCharacter
- subsumes|CricketLeague|SportsLeague subsumes|ChristianBishop|Cleric
- subsumes|SiteOfSpecialScientificInterest|Place subsumes|Colour|owl_Thing
- subsumes|Cardinal|Cleric subsumes|FictionalCharacter|Person
- subsumes|GrandPrix|SportsEvent subsumes|Planet|owl_Thing
- subsumes|Boxer|Athlete subsumes|Monument|Place
- subsumes|SpaceShuttle|MeanOfTransportation subsumes|ComicsCreator|Artist
- subsumes|Single|MusicalWork subsumes|MountainPass|Place
- subsumes|Song|MusicalWork subsumes|OfficeHolder|Person
- subsumes|Sales|owl_Thing subsumes|Philosopher|Person
- subsumes|GreenAlga|Plant subsumes|IceHockeyLeague|SportsLeague
- subsumes|RugbyLeague|SportsLeague subsumes|Cleric|Person
- subsumes|SportsLeague|Organisation subsumes|Award|owl_Thing
- subsumes|PlayboyPlaymate|Person subsumes|AdultActor|Actor
- subsumes|Archaea|Species subsumes|AdministrativeRegion|PopulatedPlace
- subsumes|Politician|Person subsumes|Skyscraper|Building
- subsumes|Company|Organisation subsumes|SkiArea|Place
- subsumes|Comedian|Artist subsumes|Game|Activity subsumes|Device|owl_Thing
- subsumes|Astronaut|Person subsumes|MountainRange|Place
- subsumes|VideogamesLeague|SportsLeague subsumes|GovernmentType|owl_Thing
- subsumes|Hospital|Building subsumes|Olympics|SportsEvent
- subsumes|Gnetophytes|Plant subsumes|Cleric|owl_Thing
- subsumes|Governor|owl_Thing subsumes|squareMetre|owl_Thing
- subsumes|Olympics|owl_Thing subsumes|wgs84_pos#SpatialThing|owl_Thing
- subsumes|Rocket|owl_Thing subsumes|AutoRacingLeague|owl_Thing
- subsumes|cubicCentimetre|owl_Thing subsumes|Senator|owl_Thing
- subsumes|SoccerLeague|owl_Thing subsumes|Architect|owl_Thing
- subsumes|WrestlingEvent|owl_Thing subsumes|Model|owl_Thing
- subsumes|NationalCollegiateAthleticAssociationAthlete|owl_Thing
- subsumes|Fern|owl_Thing subsumes|ClubMoss|owl_Thing
- subsumes|AustralianFootballLeague|owl_Thing
- subsumes|SpaceStation|owl_Thing subsumes|Crustacean|owl_Thing
- subsumes|RadioControlledRacingLeague|owl_Thing
- subsumes|BaseballLeague|owl_Thing subsumes|NascarDriver|owl_Thing
- subsumes|EducationalInstitution|owl_Thing subsumes|Stream|owl_Thing
- subsumes|Nerve|owl_Thing subsumes|Musical|owl_Thing subsumes|day|owl_Thing
- subsumes|WomensTennisAssociationTournament|owl_Thing
- subsumes|Cricketer|owl_Thing subsumes|ShoppingMall|owl_Thing
- subsumes|Criminal|owl_Thing subsumes|Weapon|owl_Thing
- subsumes|owl_Thing|owl_Thing subsumes|FloweringPlant|owl_Thing
- subsumes|Celebrity|owl_Thing subsumes|second|owl_Thing
- subsumes|Continent|owl_Thing subsumes|BritishRoyalty|owl_Thing
- subsumes|kilometrePerSecond|owl_Thing subsumes|megabyte|owl_Thing
- subsumes|MilitaryUnit|owl_Thing subsumes|Saint|owl_Thing
- subsumes|Newspaper|owl_Thing subsumes|fuelType|owl_Thing
- subsumes|Amphibian|owl_Thing subsumes|MusicFestival|owl_Thing
- subsumes|Non-ProfitOrganisation|owl_Thing subsumes|Congressman|owl_Thing
- subsumes|Fish|owl_Thing subsumes|Album|owl_Thing
- subsumes|Skyscraper|owl_Thing subsumes|squareKilometre|owl_Thing
- subsumes|Station|owl_Thing subsumes|VicePresident|owl_Thing
- subsumes|RecordLabel|owl_Thing subsumes|MixedMartialArtsLeague|owl_Thing
- subsumes|kilogram|owl_Thing subsumes|Scientist|owl_Thing
- subsumes|HistoricBuilding|owl_Thing subsumes|cubicMetrePerSecond|owl_Thing
- subsumes|PoloLeague|owl_Thing subsumes|FormulaOneRacer|owl_Thing
- subsumes|City|owl_Thing subsumes|LunarCrater|owl_Thing
- subsumes|RadioStation|owl_Thing subsumes|MountainRange|owl_Thing
- subsumes|PaintballLeague|owl_Thing subsumes|Chancellor|owl_Thing
- subsumes|centimetre|owl_Thing subsumes|Lymph|owl_Thing
- subsumes|LacrosseLeague|owl_Thing subsumes|valvetrain|owl_Thing
- subsumes|TennisPlayer|owl_Thing subsumes|engineConfiguration|owl_Thing
- subsumes|ChristianBishop|owl_Thing subsumes|Company|owl_Thing
- subsumes|RugbyLeague|owl_Thing subsumes|BodyOfWater|owl_Thing
- subsumes|Road|owl_Thing subsumes|BasketballLeague|owl_Thing
- subsumes|Bone|owl_Thing subsumes|MusicalArtist|owl_Thing
- subsumes|Judge|owl_Thing subsumes|Magazine|owl_Thing
- subsumes|CurlingLeague|owl_Thing subsumes|Mammal|owl_Thing
- subsumes|SpaceMission|owl_Thing subsumes|VoiceActor|owl_Thing
- subsumes|Single|owl_Thing subsumes|newtonMetre|owl_Thing
- subsumes|President|owl_Thing subsumes|Book|owl_Thing
- subsumes|inhabitantsPerSquareKilometre|owl_Thing
- subsumes|GreenAlga|owl_Thing subsumes|minute|owl_Thing
- subsumes|Politician|owl_Thing subsumes|Settlement|owl_Thing
- subsumes|Lake|owl_Thing subsumes|InlineHockeyLeague|owl_Thing
- subsumes|Plant|owl_Thing subsumes|TennisLeague|owl_Thing
- subsumes|RugbyPlayer|owl_Thing subsumes|Airline|owl_Thing
- subsumes|GridironFootballPlayer|owl_Thing subsumes|Legislature|owl_Thing
- subsumes|PlayboyPlaymate|owl_Thing subsumes|CollegeCoach|owl_Thing
- subsumes|Mayor|owl_Thing subsumes|Wrestler|owl_Thing
- subsumes|Spacecraft|owl_Thing subsumes|TradeUnion|owl_Thing
- subsumes|metre|owl_Thing subsumes|MusicalWork|owl_Thing
- subsumes|ComicsCreator|owl_Thing subsumes|VideoGame|owl_Thing
- subsumes|Brain|owl_Thing subsumes|Archaea|owl_Thing
- subsumes|AmericanFootballTeam|owl_Thing subsumes|LaunchPad|owl_Thing
- subsumes|YearInSpaceflight|owl_Thing subsumes|Convention|owl_Thing
- subsumes|VolleyballLeague|owl_Thing subsumes|BaseballPlayer|owl_Thing
- subsumes|Cave|owl_Thing subsumes|Stadium|owl_Thing
- subsumes|gramPerKilometre|owl_Thing subsumes|Game|owl_Thing
- subsumes|School|owl_Thing
- subsumes|SiteOfSpecialScientificInterest|owl_Thing
- subsumes|millimetre|owl_Thing subsumes|Monument|owl_Thing
- subsumes|Valley|owl_Thing subsumes|Broadcast|owl_Thing
- subsumes|MilitaryConflict|owl_Thing subsumes|ComicsCharacter|owl_Thing
- subsumes|AdministrativeRegion|owl_Thing subsumes|Vein|owl_Thing
- subsumes|GrandPrix|owl_Thing subsumes|SoftballLeague|owl_Thing
- subsumes|GolfLeague|owl_Thing subsumes|Village|owl_Thing
- subsumes|WineRegion|owl_Thing subsumes|Reptile|owl_Thing
- subsumes|Sport|owl_Thing subsumes|Town|owl_Thing subsumes|Artery|owl_Thing
- subsumes|MemberOfParliament|owl_Thing subsumes|Cardinal|owl_Thing
- subsumes|VideogamesLeague|owl_Thing
- subsumes|EurovisionSongContestEntry|owl_Thing
- subsumes|MilitaryPerson|owl_Thing subsumes|SportsTeam|owl_Thing
- subsumes|Comedian|owl_Thing subsumes|GaelicGamesPlayer|owl_Thing
- subsumes|Airport|owl_Thing subsumes|Moss|owl_Thing
- subsumes|AmericanFootballPlayer|owl_Thing subsumes|Software|owl_Thing
- subsumes|Hospital|owl_Thing subsumes|hour|owl_Thing
- subsumes|SpeedwayLeague|owl_Thing subsumes|Artist|owl_Thing
- subsumes|Film|owl_Thing subsumes|PokerPlayer|owl_Thing
- subsumes|Boxer|owl_Thing subsumes|IceHockeyPlayer|owl_Thing
- subsumes|FieldHockeyLeague|owl_Thing subsumes|AdultActor|owl_Thing
- subsumes|SpaceShuttle|owl_Thing subsumes|Monarch|owl_Thing
- subsumes|Insect|owl_Thing subsumes|Bird|owl_Thing
- subsumes|CricketLeague|owl_Thing subsumes|HandballLeague|owl_Thing
- subsumes|AutomobileEngine|owl_Thing subsumes|Gnetophytes|owl_Thing
- subsumes|PrimeMinister|owl_Thing subsumes|Journalist|owl_Thing
- subsumes|kelvin|owl_Thing subsumes|Ambassador|owl_Thing
- subsumes|Song|owl_Thing subsumes|University|owl_Thing
- subsumes|Automobile|owl_Thing subsumes|SkiArea|owl_Thing
- subsumes|College|owl_Thing subsumes|ProtectedArea|owl_Thing
- subsumes|Cyclist|owl_Thing subsumes|kilometre|owl_Thing
- subsumes|Ship|owl_Thing subsumes|BowlingLeague|owl_Thing
- subsumes|Building|owl_Thing subsumes|Arachnid|owl_Thing
- subsumes|Band|owl_Thing subsumes|Country|owl_Thing
- subsumes|CanadianFootballLeague|owl_Thing
- subsumes|TelevisionEpisode|owl_Thing subsumes|River|owl_Thing
- subsumes|FictionalCharacter|owl_Thing
- subsumes|AmericanFootballLeague|owl_Thing subsumes|Park|owl_Thing
- subsumes|Canal|owl_Thing subsumes|MixedMartialArtsEvent|owl_Thing
- subsumes|Deputy|owl_Thing subsumes|Conifer|owl_Thing
- subsumes|SportsLeague|owl_Thing subsumes|BadmintonPlayer|owl_Thing
- subsumes|SportsEvent|owl_Thing subsumes|Athlete|owl_Thing
- subsumes|CanadianFootballTeam|owl_Thing subsumes|Grape|owl_Thing
- subsumes|cubicMetre|owl_Thing subsumes|PopulatedPlace|owl_Thing
- subsumes|CyclingLeague|owl_Thing subsumes|kilometrePerHour|owl_Thing
- subsumes|Muscle|owl_Thing subsumes|kilogramPerCubicMetre|owl_Thing
- subsumes|FigureSkater|owl_Thing subsumes|SoccerClub|owl_Thing
- subsumes|MotorcycleRacingLeague|owl_Thing
- subsumes|CanadianFootballPlayer|owl_Thing subsumes|Eukaryote|owl_Thing
- subsumes|Lighthouse|owl_Thing subsumes|WorldHeritageSite|owl_Thing
- subsumes|SoccerManager|owl_Thing
- subsumes|GeopoliticalOrganisation|owl_Thing subsumes|litre|owl_Thing
- subsumes|FilmFestival|owl_Thing subsumes|SoccerPlayer|owl_Thing
- subsumes|VicePrimeMinister|owl_Thing subsumes|HistoricPlace|owl_Thing
- subsumes|IceHockeyLeague|owl_Thing subsumes|Pope|owl_Thing
- subsumes|Bacteria|owl_Thing subsumes|Cycad|owl_Thing
- subsumes|Philosopher|owl_Thing subsumes|cubicKilometre|owl_Thing
- subsumes|TelevisionShow|owl_Thing subsumes|OfficeHolder|owl_Thing
- subsumes|Animal|owl_Thing subsumes|HockeyTeam|owl_Thing
- subsumes|Ginkgo|owl_Thing subsumes|Lieutenant|owl_Thing
- subsumes|Island|owl_Thing subsumes|kilowatt|owl_Thing
- subsumes|Astronaut|owl_Thing subsumes|Embryology|owl_Thing
- subsumes|Writer|owl_Thing subsumes|Actor|owl_Thing
- subsumes|Fungus|owl_Thing subsumes|Mollusca|owl_Thing
- subsumes|BoxingLeague|owl_Thing subsumes|BasketballPlayer|owl_Thing
- subsumes|Bridge|owl_Thing subsumes|MountainPass|owl_Thing
- subsumes|Race|owl_Thing subsumes|Mountain|owl_Thing
- subsumes|Aircraft|owl_Thing subsumes|owl_Nothing|owl_Thing
- subsumes|Cleric|Cleric subsumes|Governor|Governor
- subsumes|squareMetre|squareMetre subsumes|Olympics|Olympics
- subsumes|wgs84_pos#SpatialThing|wgs84_pos#SpatialThing
- subsumes|Rocket|Rocket subsumes|AutoRacingLeague|AutoRacingLeague
- subsumes|cubicCentimetre|cubicCentimetre subsumes|Senator|Senator
- subsumes|SoccerLeague|SoccerLeague subsumes|Architect|Architect
- subsumes|WrestlingEvent|WrestlingEvent subsumes|Model|Model
- subsumes|NationalCollegiateAthleticAssociationAthlete|NationalCollegiateAthleticAssociationAthlete
- subsumes|Fern|Fern subsumes|ClubMoss|ClubMoss
- subsumes|AustralianFootballLeague|AustralianFootballLeague
- subsumes|SpaceStation|SpaceStation subsumes|Crustacean|Crustacean
- subsumes|RadioControlledRacingLeague|RadioControlledRacingLeague
- subsumes|BaseballLeague|BaseballLeague subsumes|NascarDriver|NascarDriver
- subsumes|EducationalInstitution|EducationalInstitution
- subsumes|Stream|Stream subsumes|Nerve|Nerve subsumes|Musical|Musical
- subsumes|day|day
- subsumes|WomensTennisAssociationTournament|WomensTennisAssociationTournament
- subsumes|Cricketer|Cricketer subsumes|ShoppingMall|ShoppingMall
- subsumes|Criminal|Criminal subsumes|Weapon|Weapon
- subsumes|FloweringPlant|FloweringPlant subsumes|Celebrity|Celebrity
- subsumes|second|second subsumes|Continent|Continent
- subsumes|BritishRoyalty|BritishRoyalty subsumes|Device|Device
- subsumes|kilometrePerSecond|kilometrePerSecond subsumes|megabyte|megabyte
- subsumes|MilitaryUnit|MilitaryUnit subsumes|Saint|Saint
- subsumes|Newspaper|Newspaper subsumes|fuelType|fuelType
- subsumes|Amphibian|Amphibian subsumes|MusicFestival|MusicFestival
- subsumes|Non-ProfitOrganisation|Non-ProfitOrganisation
- subsumes|Congressman|Congressman subsumes|Fish|Fish
- subsumes|Species|Species subsumes|Album|Album subsumes|Drug|Drug
- subsumes|Skyscraper|Skyscraper subsumes|squareKilometre|squareKilometre
- subsumes|Station|Station subsumes|VicePresident|VicePresident
- subsumes|RecordLabel|RecordLabel
- subsumes|MixedMartialArtsLeague|MixedMartialArtsLeague
- subsumes|kilogram|kilogram subsumes|Scientist|Scientist
- subsumes|HistoricBuilding|HistoricBuilding
- subsumes|cubicMetrePerSecond|cubicMetrePerSecond
- subsumes|PoloLeague|PoloLeague subsumes|Organisation|Organisation
- subsumes|FormulaOneRacer|FormulaOneRacer subsumes|City|City
- subsumes|LunarCrater|LunarCrater subsumes|RadioStation|RadioStation
- subsumes|MountainRange|MountainRange subsumes|Event|Event
- subsumes|PaintballLeague|PaintballLeague subsumes|Chancellor|Chancellor
- subsumes|centimetre|centimetre subsumes|Lymph|Lymph
- subsumes|LacrosseLeague|LacrosseLeague subsumes|valvetrain|valvetrain
- subsumes|Activity|Activity subsumes|TennisPlayer|TennisPlayer
- subsumes|engineConfiguration|engineConfiguration
- subsumes|ChristianBishop|ChristianBishop subsumes|Company|Company
- subsumes|Colour|Colour subsumes|RugbyLeague|RugbyLeague
- subsumes|BodyOfWater|BodyOfWater subsumes|Road|Road
- subsumes|BasketballLeague|BasketballLeague subsumes|Bone|Bone
- subsumes|MusicalArtist|MusicalArtist subsumes|Judge|Judge
- subsumes|Magazine|Magazine subsumes|CurlingLeague|CurlingLeague
- subsumes|Mammal|Mammal subsumes|SpaceMission|SpaceMission
- subsumes|VoiceActor|VoiceActor subsumes|Single|Single
- subsumes|newtonMetre|newtonMetre subsumes|President|President
- subsumes|Book|Book
- subsumes|inhabitantsPerSquareKilometre|inhabitantsPerSquareKilometre
- subsumes|GreenAlga|GreenAlga subsumes|minute|minute
- subsumes|Politician|Politician subsumes|EthnicGroup|EthnicGroup
- subsumes|Settlement|Settlement subsumes|Lake|Lake
- subsumes|MeanOfTransportation|MeanOfTransportation
- subsumes|InlineHockeyLeague|InlineHockeyLeague subsumes|Plant|Plant
- subsumes|TennisLeague|TennisLeague subsumes|RugbyPlayer|RugbyPlayer
- subsumes|Airline|Airline
- subsumes|GridironFootballPlayer|GridironFootballPlayer
- subsumes|Legislature|Legislature subsumes|PlayboyPlaymate|PlayboyPlaymate
- subsumes|CollegeCoach|CollegeCoach subsumes|Mayor|Mayor
- subsumes|MusicGenre|MusicGenre subsumes|Wrestler|Wrestler
- subsumes|Spacecraft|Spacecraft subsumes|ChemicalCompound|ChemicalCompound
- subsumes|TradeUnion|TradeUnion subsumes|metre|metre
- subsumes|MusicalWork|MusicalWork subsumes|ComicsCreator|ComicsCreator
- subsumes|AnatomicalStructure|AnatomicalStructure
- subsumes|VideoGame|VideoGame subsumes|Brain|Brain subsumes|Archaea|Archaea
- subsumes|AmericanFootballTeam|AmericanFootballTeam
- subsumes|LaunchPad|LaunchPad subsumes|YearInSpaceflight|YearInSpaceflight
- subsumes|Convention|Convention subsumes|VolleyballLeague|VolleyballLeague
- subsumes|BaseballPlayer|BaseballPlayer subsumes|Cave|Cave
- subsumes|Stadium|Stadium subsumes|gramPerKilometre|gramPerKilometre
- subsumes|Game|Game subsumes|School|School
- subsumes|SiteOfSpecialScientificInterest|SiteOfSpecialScientificInterest
- subsumes|millimetre|millimetre subsumes|Monument|Monument
- subsumes|Language|Language
- subsumes|SupremeCourtOfTheUnitedStatesCase|SupremeCourtOfTheUnitedStatesCase
- subsumes|Valley|Valley subsumes|Broadcast|Broadcast
- subsumes|MilitaryConflict|MilitaryConflict subsumes|Beverage|Beverage
- subsumes|ComicsCharacter|ComicsCharacter
- subsumes|AdministrativeRegion|AdministrativeRegion subsumes|Vein|Vein
- subsumes|GrandPrix|GrandPrix subsumes|Infrastructure|Infrastructure
- subsumes|SoftballLeague|SoftballLeague subsumes|GolfLeague|GolfLeague
- subsumes|Village|Village subsumes|WineRegion|WineRegion
- subsumes|Reptile|Reptile subsumes|Sport|Sport subsumes|Town|Town
- subsumes|Artery|Artery subsumes|Currency|Currency
- subsumes|MemberOfParliament|MemberOfParliament subsumes|Cardinal|Cardinal
- subsumes|VideogamesLeague|VideogamesLeague subsumes|Sales|Sales
- subsumes|EurovisionSongContestEntry|EurovisionSongContestEntry
- subsumes|MilitaryPerson|MilitaryPerson subsumes|SportsTeam|SportsTeam
- subsumes|Comedian|Comedian subsumes|Painting|Painting
- subsumes|GaelicGamesPlayer|GaelicGamesPlayer subsumes|Airport|Airport
- subsumes|Moss|Moss subsumes|AmericanFootballPlayer|AmericanFootballPlayer
- subsumes|Software|Software subsumes|Hospital|Hospital subsumes|hour|hour
- subsumes|SpeedwayLeague|SpeedwayLeague subsumes|Artist|Artist
- subsumes|Film|Film subsumes|PokerPlayer|PokerPlayer subsumes|Boxer|Boxer
- subsumes|IceHockeyPlayer|IceHockeyPlayer
- subsumes|FieldHockeyLeague|FieldHockeyLeague
- subsumes|AdultActor|AdultActor subsumes|SpaceShuttle|SpaceShuttle
- subsumes|Protein|Protein subsumes|Monarch|Monarch subsumes|Insect|Insect
- subsumes|Bird|Bird subsumes|PersonFunction|PersonFunction
- subsumes|CricketLeague|CricketLeague
- subsumes|HandballLeague|HandballLeague
- subsumes|AutomobileEngine|AutomobileEngine
- subsumes|Gnetophytes|Gnetophytes subsumes|PrimeMinister|PrimeMinister
- subsumes|Journalist|Journalist subsumes|kelvin|kelvin
- subsumes|Ambassador|Ambassador subsumes|Song|Song
- subsumes|University|University subsumes|Award|Award
- subsumes|Automobile|Automobile subsumes|SkiArea|SkiArea
- subsumes|College|College subsumes|ProtectedArea|ProtectedArea
- subsumes|Cyclist|Cyclist subsumes|kilometre|kilometre subsumes|Ship|Ship
- subsumes|BowlingLeague|BowlingLeague subsumes|Building|Building
- subsumes|Arachnid|Arachnid subsumes|Disease|Disease subsumes|Band|Band
- subsumes|Country|Country
- subsumes|CanadianFootballLeague|CanadianFootballLeague
- subsumes|TelevisionEpisode|TelevisionEpisode subsumes|Website|Website
- subsumes|River|River subsumes|Work|Work
- subsumes|FictionalCharacter|FictionalCharacter
- subsumes|AmericanFootballLeague|AmericanFootballLeague subsumes|Park|Park
- subsumes|Canal|Canal subsumes|MixedMartialArtsEvent|MixedMartialArtsEvent
- subsumes|Deputy|Deputy subsumes|Conifer|Conifer
- subsumes|SportsLeague|SportsLeague
- subsumes|BadmintonPlayer|BadmintonPlayer subsumes|SportsEvent|SportsEvent
- subsumes|Athlete|Athlete
- subsumes|CanadianFootballTeam|CanadianFootballTeam subsumes|Grape|Grape
- subsumes|cubicMetre|cubicMetre subsumes|PopulatedPlace|PopulatedPlace
- subsumes|CyclingLeague|CyclingLeague
- subsumes|kilometrePerHour|kilometrePerHour subsumes|Muscle|Muscle
- subsumes|kilogramPerCubicMetre|kilogramPerCubicMetre
- subsumes|FigureSkater|FigureSkater subsumes|Planet|Planet
- subsumes|SoccerClub|SoccerClub
- subsumes|MotorcycleRacingLeague|MotorcycleRacingLeague
- subsumes|CanadianFootballPlayer|CanadianFootballPlayer
- subsumes|Eukaryote|Eukaryote subsumes|Lighthouse|Lighthouse
- subsumes|WorldHeritageSite|WorldHeritageSite
- subsumes|SoccerManager|SoccerManager
- subsumes|GeopoliticalOrganisation|GeopoliticalOrganisation
- subsumes|litre|litre subsumes|FilmFestival|FilmFestival
- subsumes|SoccerPlayer|SoccerPlayer
- subsumes|VicePrimeMinister|VicePrimeMinister
- subsumes|HistoricPlace|HistoricPlace
- subsumes|IceHockeyLeague|IceHockeyLeague subsumes|Pope|Pope
- subsumes|Bacteria|Bacteria subsumes|Cycad|Cycad
- subsumes|Philosopher|Philosopher subsumes|cubicKilometre|cubicKilometre
- subsumes|TelevisionShow|TelevisionShow subsumes|OfficeHolder|OfficeHolder
- subsumes|Animal|Animal subsumes|HockeyTeam|HockeyTeam
- subsumes|OlympicResult|OlympicResult subsumes|Ginkgo|Ginkgo
- subsumes|Lieutenant|Lieutenant subsumes|Island|Island
- subsumes|kilowatt|kilowatt subsumes|Astronaut|Astronaut
- subsumes|Place|Place subsumes|Person|Person subsumes|Embryology|Embryology
- subsumes|Writer|Writer subsumes|Actor|Actor subsumes|Fungus|Fungus
- subsumes|Mollusca|Mollusca subsumes|BoxingLeague|BoxingLeague
- subsumes|BasketballPlayer|BasketballPlayer subsumes|Bridge|Bridge
- subsumes|GovernmentType|GovernmentType subsumes|MountainPass|MountainPass
- subsumes|Race|Race subsumes|Mountain|Mountain subsumes|Aircraft|Aircraft
- subsumes|owl_Nothing|owl_Nothing opsub|firstDriver|owl_Thing|GrandPrix
- opsub|honours|owl_Thing|SoccerClub
- opsub|designer|owl_Thing|MeanOfTransportation
- opsub|gameEngine|owl_Thing|VideoGame opsub|previousEvent|owl_Thing|Event
- opsub|contractor|owl_Thing|Skyscraper
- opsub|leaderFunction|owl_Thing|Organisation
- opsub|opponent|owl_Thing|Person opsub|leaderParty|owl_Thing|PopulatedPlace
- opsub|spurType|owl_Thing|Road
- opsub|photographer|owl_Thing|TelevisionEpisode
- opsub|party|owl_Thing|Person opsub|sheading|owl_Thing|PopulatedPlace
- opsub|rector|owl_Thing|EducationalInstitution
- opsub|creator|owl_Thing|TelevisionShow
- opsub|bodyDiscovered|owl_Thing|Person opsub|network|owl_Thing|Broadcast
- opsub|majorShrine|owl_Thing|Saint opsub|vein|owl_Thing|AnatomicalStructure
- opsub|goyaAward|owl_Thing|Artist opsub|manager|owl_Thing|SoccerClub
- opsub|relatedMeanOfTransportation|owl_Thing|MeanOfTransportation
- opsub|storyEditor|owl_Thing|TelevisionShow
- opsub|arrondissement|owl_Thing|PopulatedPlace
- opsub|firstFlight|owl_Thing|SpaceShuttle
- opsub|secondDriver|owl_Thing|GrandPrix opsub|notableWine|owl_Thing|Grape
- opsub|militaryUnit|owl_Thing|MilitaryPerson
- opsub|branchTo|owl_Thing|AnatomicalStructure
- opsub|chairperson|owl_Thing|School opsub|patron|owl_Thing|MilitaryUnit
- opsub|brand|owl_Thing|WrestlingEvent opsub|capitalPlace|owl_Thing|Island
- opsub|ruralMunicipality|owl_Thing|Road opsub|musicalBand|owl_Thing|Single
- opsub|ceo|owl_Thing|SoccerClub opsub|spouse|owl_Thing|Person
- opsub|rival|owl_Thing|School opsub|targetAirport|owl_Thing|Airline
- opsub|fastestDriverTeam|owl_Thing|GrandPrix
- opsub|naacpImageAward|owl_Thing|Actor opsub|shuttle|owl_Thing|SpaceMission
- opsub|campus|owl_Thing|University
- opsub|launchvehicle|owl_Thing|SpaceMission
- opsub|principal|owl_Thing|EducationalInstitution
- opsub|managementRegion|owl_Thing|Island opsub|employer|owl_Thing|Person
- opsub|stateOfOrigin|owl_Thing|Person
- opsub|fourthCommander|owl_Thing|MilitaryUnit opsub|inflow|owl_Thing|Lake
- opsub|sourceConfluenceState|owl_Thing|Island
- opsub|olympicOathSwornByAthlete|owl_Thing|Olympics
- opsub|highwaySystem|owl_Thing|Road opsub|vicePrincipal|owl_Thing|School
- opsub|wineProduced|owl_Thing|WineRegion opsub|board|owl_Thing|Person
- opsub|parish|owl_Thing|PopulatedPlace opsub|kingdom|owl_Thing|Species
- opsub|goldenRaspberryAward|owl_Thing|Actor
- opsub|thirdTeam|owl_Thing|GrandPrix opsub|goldenCalfAward|owl_Thing|Actor
- opsub|highestState|owl_Thing|Island opsub|influencedBy|owl_Thing|Person
- opsub|endingTheme|owl_Thing|TelevisionShow
- opsub|resides|owl_Thing|Wrestler opsub|academicAdvisor|owl_Thing|Scientist
- opsub|plant|owl_Thing|Place opsub|coProducer|owl_Thing|TelevisionShow
- opsub|principalEngineer|owl_Thing|Canal
- opsub|blockAlloy|owl_Thing|AutomobileEngine
- opsub|computingMedia|owl_Thing|Software
- opsub|frazioni|owl_Thing|Settlement opsub|startPoint|owl_Thing|Canal
- opsub|alliance|owl_Thing|Airline opsub|tenant|owl_Thing|Building
- opsub|broadcastArea|owl_Thing|Broadcast opsub|recentWinner|owl_Thing|Race
- opsub|followingEvent|owl_Thing|Event opsub|illustrator|owl_Thing|Book
- opsub|firstDriverCountry|owl_Thing|GrandPrix
- opsub|significantProject|owl_Thing|Architect
- opsub|associateEditor|owl_Thing|Newspaper
- opsub|operator|owl_Thing|LaunchPad
- opsub|daylightSavingTimeZone|owl_Thing|Place
- opsub|designCompany|owl_Thing|MeanOfTransportation
- opsub|lastRace|owl_Thing|FormulaOneRacer
- opsub|riverBranchOf|owl_Thing|River opsub|tonyAward|owl_Thing|Artist
- opsub|governmentPosition|owl_Thing|Island opsub|binomial|owl_Thing|Species
- opsub|structuralSystem|owl_Thing|Building
- opsub|geminiAward|owl_Thing|Actor opsub|youthClub|owl_Thing|SoccerPlayer
- opsub|foundationPlace|owl_Thing|Organisation
- opsub|lyrics|owl_Thing|Musical opsub|hasJunctionWith|owl_Thing|Canal
- opsub|nationality|owl_Thing|Person
- opsub|americanComedyAward|owl_Thing|Comedian
- opsub|family|owl_Thing|Species
- opsub|administrativeCollectivity|owl_Thing|Settlement
- opsub|spacecraft|owl_Thing|SpaceMission opsub|archipelago|owl_Thing|Island
- opsub|landingvehicle|owl_Thing|SpaceMission
- opsub|neighboringMunicipality|owl_Thing|PopulatedPlace
- opsub|partOf|owl_Thing|MilitaryConflict opsub|formerTeam|owl_Thing|Athlete
- opsub|previousWork|owl_Thing|Work
- opsub|screenActorsGuildAward|owl_Thing|Actor
- opsub|coachedTeam|owl_Thing|CollegeCoach
- opsub|fuelSystem|owl_Thing|AutomobileEngine
- opsub|associatedRocket|owl_Thing|LaunchPad
- opsub|lowestState|owl_Thing|Island
- opsub|skatingClub|owl_Thing|FigureSkater
- opsub|sisterNewspaper|owl_Thing|Newspaper
- opsub|place|owl_Thing|MilitaryConflict opsub|crew|owl_Thing|Spacecraft
- opsub|crewMember|owl_Thing|SpaceMission opsub|layout|owl_Thing|Automobile
- opsub|militaryRank|owl_Thing|MilitaryPerson
- opsub|aircraftRecon|owl_Thing|MilitaryUnit
- opsub|vehicle|owl_Thing|Automobile opsub|beatifiedPlace|owl_Thing|Saint
- opsub|parentOrganisation|owl_Thing|Organisation
- opsub|cesarAward|owl_Thing|Artist
- opsub|department|owl_Thing|PopulatedPlace
- opsub|organSystem|owl_Thing|AnatomicalStructure
- opsub|commune|owl_Thing|Settlement
- opsub|openingFilm|owl_Thing|FilmFestival
- opsub|officialOpenedBy|owl_Thing|Olympics
- opsub|mission|owl_Thing|Astronaut opsub|chaplain|owl_Thing|School
- opsub|debutTeam|owl_Thing|Athlete opsub|beltwayCity|owl_Thing|Road
- opsub|previousMission|owl_Thing|SpaceMission
- opsub|bodyStyle|owl_Thing|Automobile opsub|firstWinner|owl_Thing|Race
- opsub|aircraftTrainer|owl_Thing|MilitaryUnit
- opsub|guest|owl_Thing|TelevisionEpisode opsub|heir|owl_Thing|Monarch
- opsub|capitalRegion|owl_Thing|Island opsub|deathPlace|owl_Thing|Person
- opsub|recordPlace|owl_Thing|MusicalWork
- opsub|product|owl_Thing|Organisation opsub|sisterCollege|owl_Thing|College
- opsub|aircraftAttack|owl_Thing|MilitaryUnit opsub|mother|owl_Thing|Person
- opsub|maidenFlightRocket|owl_Thing|YearInSpaceflight
- opsub|lastWin|owl_Thing|FormulaOneRacer opsub|arielAward|owl_Thing|Actor
- opsub|field|owl_Thing|Artist opsub|movement|owl_Thing|Artist
- opsub|mostWinner|owl_Thing|Race opsub|denomination|owl_Thing|School
- opsub|mainOrgan|owl_Thing|Organisation
- opsub|creativeDirector|owl_Thing|TelevisionShow
- opsub|almaMater|owl_Thing|Person opsub|mayor|owl_Thing|PopulatedPlace
- opsub|capitalDistrict|owl_Thing|Island opsub|domain|owl_Thing|Species
- opsub|subsequentWork|owl_Thing|Work opsub|chiefEditor|owl_Thing|Newspaper
- opsub|notableCommander|owl_Thing|MilitaryUnit
- opsub|torchBearer|owl_Thing|Olympics
- opsub|borough|owl_Thing|PopulatedPlace
- opsub|lunarRover|owl_Thing|SpaceMission
- opsub|firstDriverTeam|owl_Thing|GrandPrix
- opsub|formerHighschool|owl_Thing|NationalCollegiateAthleticAssociationAthlete
- opsub|nerve|owl_Thing|AnatomicalStructure opsub|style|owl_Thing|Island
- opsub|discoverer|owl_Thing|Planet
- opsub|statisticLabel|owl_Thing|BaseballPlayer
- opsub|countryWithFirstSatellite|owl_Thing|YearInSpaceflight
- opsub|timeZone|owl_Thing|Place opsub|architectualBureau|owl_Thing|Building
- opsub|person|owl_Thing|PersonFunction
- opsub|lymph|owl_Thing|AnatomicalStructure
- opsub|winterAppearances|owl_Thing|OlympicResult
- opsub|isPartOf|owl_Thing|Brain opsub|leftChild|owl_Thing|Island
- opsub|rightChild|owl_Thing|Island
- opsub|governmentMountain|owl_Thing|Island opsub|author|owl_Thing|Work
- opsub|capitalCountry|owl_Thing|Island
- opsub|derivative|owl_Thing|MusicGenre opsub|club|owl_Thing|SoccerPlayer
- opsub|branchFrom|owl_Thing|AnatomicalStructure
- opsub|hubAirport|owl_Thing|Airline opsub|majorIsland|owl_Thing|Island
- opsub|profession|owl_Thing|Person opsub|occupation|owl_Thing|Person
- opsub|subsidiary|owl_Thing|Company opsub|knownFor|owl_Thing|Person
- opsub|aircraftBomber|owl_Thing|MilitaryUnit
- opsub|custodian|owl_Thing|School opsub|school|owl_Thing|RugbyPlayer
- opsub|restingPlacePosition|owl_Thing|Person
- opsub|billed|owl_Thing|Wrestler
- opsub|foundingPerson|owl_Thing|PopulatedPlace
- opsub|whaDraftTeam|owl_Thing|IceHockeyPlayer
- opsub|precursor|owl_Thing|AnatomicalStructure opsub|child|owl_Thing|Person
- opsub|cpu|owl_Thing|Software opsub|border|owl_Thing|Island
- opsub|rocket|owl_Thing|Spacecraft opsub|station|owl_Thing|Spacecraft
- opsub|aircraftPatrol|owl_Thing|MilitaryUnit
- opsub|riverBranch|owl_Thing|River opsub|award|owl_Thing|Person
- opsub|originalStartPoint|owl_Thing|Canal opsub|canonizedBy|owl_Thing|Saint
- opsub|island|owl_Thing|Lake opsub|endPoint|owl_Thing|Canal
- opsub|resolution|owl_Thing|Software opsub|rightTributary|owl_Thing|River
- opsub|residence|owl_Thing|Person opsub|deathCause|owl_Thing|Person
- opsub|commandStructure|owl_Thing|MilitaryUnit
- opsub|secondCommander|owl_Thing|MilitaryUnit
- opsub|regionServed|owl_Thing|Organisation
- opsub|choreographer|owl_Thing|FigureSkater
- opsub|sisterStation|owl_Thing|Broadcast opsub|musicBy|owl_Thing|Musical
- opsub|capitalPosition|owl_Thing|Island
- opsub|formerCoach|owl_Thing|FigureSkater
- opsub|originalEndPoint|owl_Thing|Canal opsub|trainer|owl_Thing|Wrestler
- opsub|nationalTeam|owl_Thing|SoccerPlayer
- opsub|comparable|owl_Thing|Rocket opsub|aspectRatio|owl_Thing|Software
- opsub|restingPlace|owl_Thing|Person opsub|locatedInArea|owl_Thing|Bridge
- opsub|aircraftHelicopterUtility|owl_Thing|MilitaryUnit
- opsub|aircraftFighter|owl_Thing|MilitaryUnit
- opsub|riverMouth|owl_Thing|River opsub|namedAfter|owl_Thing|SpaceShuttle
- opsub|meetingBuilding|owl_Thing|Legislature
- opsub|previousInfrastructure|owl_Thing|Infrastructure
- opsub|nationalOrigin|owl_Thing|Aircraft
- opsub|teamOwner|owl_Thing|SportsTeam opsub|translator|owl_Thing|Book
- opsub|aircraftHelicopterAttack|owl_Thing|MilitaryUnit
- opsub|goldenGlobeAward|owl_Thing|Artist opsub|government|owl_Thing|Island
- opsub|populationPlace|owl_Thing|EthnicGroup
- opsub|organisation|owl_Thing|Spacecraft
- opsub|territory|owl_Thing|MilitaryConflict
- opsub|usingCountry|owl_Thing|Currency
- opsub|foundationPerson|owl_Thing|Organisation
- opsub|currentPartner|owl_Thing|FigureSkater
- opsub|education|owl_Thing|Person opsub|createdBy|owl_Thing|Painting
- opsub|unitaryAuthority|owl_Thing|PopulatedPlace
- opsub|placeOfOrigin|owl_Thing|Weapon opsub|awards|owl_Thing|Building
- opsub|lounge|owl_Thing|Airline opsub|poleDriver|owl_Thing|GrandPrix
- opsub|actingHeadteacher|owl_Thing|School
- opsub|headAlloy|owl_Thing|AutomobileEngine
- opsub|similar|owl_Thing|WineRegion
- opsub|superintendent|owl_Thing|EducationalInstitution
- opsub|automobilePlatform|owl_Thing|Automobile
- opsub|headquarters|owl_Thing|Newspaper
- opsub|officerInCharge|owl_Thing|University
- opsub|head|owl_Thing|EducationalInstitution
- opsub|fastestDriverCountry|owl_Thing|GrandPrix
- opsub|managingEditor|owl_Thing|Newspaper
- opsub|drainsFrom|owl_Thing|AnatomicalStructure
- opsub|lieutenancyArea|owl_Thing|PopulatedPlace
- opsub|voice|owl_Thing|TelevisionShow
- opsub|aircraftElectronic|owl_Thing|MilitaryUnit
- opsub|lowestRegion|owl_Thing|Island
- opsub|aircraftTransport|owl_Thing|MilitaryUnit
- opsub|relation|owl_Thing|Person opsub|coverArtist|owl_Thing|Book
- opsub|innervates|owl_Thing|Nerve opsub|booster|owl_Thing|SpaceMission
- opsub|governmentRegion|owl_Thing|Island
- opsub|musicalArtist|owl_Thing|Single
- opsub|firstWin|owl_Thing|FormulaOneRacer
- opsub|promotion|owl_Thing|WrestlingEvent
- opsub|countryWithFirstAstronaut|owl_Thing|YearInSpaceflight
- opsub|distributingCompany|owl_Thing|RecordLabel
- opsub|relative|owl_Thing|Person opsub|subject|owl_Thing|Book
- opsub|fastestDriver|owl_Thing|GrandPrix opsub|basedOn|owl_Thing|Work
- opsub|firstRace|owl_Thing|FormulaOneRacer
- opsub|aircraftHelicopterObservation|owl_Thing|MilitaryUnit
- opsub|federalState|owl_Thing|Settlement
- opsub|capital|owl_Thing|PopulatedPlace opsub|service|owl_Thing|Company
- opsub|canonizedPlace|owl_Thing|Saint opsub|subregion|owl_Thing|WineRegion
- opsub|countryWithFirstSatelliteLaunched|owl_Thing|YearInSpaceflight
- opsub|councilArea|owl_Thing|PopulatedPlace
- opsub|largestMetro|owl_Thing|Settlement opsub|engine|owl_Thing|Automobile
- opsub|dean|owl_Thing|EducationalInstitution
- opsub|doctoralStudent|owl_Thing|Scientist
- opsub|thirdDriver|owl_Thing|GrandPrix opsub|musicComposer|owl_Thing|Work
- opsub|university|owl_Thing|RugbyPlayer opsub|compiler|owl_Thing|Album
- opsub|channel|owl_Thing|TelevisionShow
- opsub|metropolitanBorough|owl_Thing|PopulatedPlace
- opsub|citizenship|owl_Thing|Person
- opsub|managerClub|owl_Thing|SoccerPlayer opsub|canton|owl_Thing|Settlement
- opsub|aircraftHelicopter|owl_Thing|MilitaryUnit
- opsub|cinematography|owl_Thing|Film
- opsub|prospectTeam|owl_Thing|IceHockeyPlayer
- opsub|significantBuilding|owl_Thing|Architect
- opsub|distributingLabel|owl_Thing|RecordLabel
- opsub|foundationOrganisation|owl_Thing|Organisation
- opsub|mediaType|owl_Thing|Book opsub|influenced|owl_Thing|Person
- opsub|generalManager|owl_Thing|SportsTeam
- opsub|countryOrigin|owl_Thing|Rocket
- opsub|managementCountry|owl_Thing|Island
- opsub|coolingSystem|owl_Thing|AutomobileEngine
- opsub|programmingLanguage|owl_Thing|Software
- opsub|port2|owl_Thing|Spacecraft
- opsub|formerPartner|owl_Thing|FigureSkater
- opsub|computingInput|owl_Thing|Software
- opsub|secondTeam|owl_Thing|GrandPrix
- opsub|governmentCountry|owl_Thing|Island
- opsub|musicFusionGenre|owl_Thing|MusicGenre
- opsub|veneratedIn|owl_Thing|Saint
- opsub|drainsTo|owl_Thing|AnatomicalStructure
- opsub|previousEditor|owl_Thing|Magazine
- opsub|principalArea|owl_Thing|PopulatedPlace
- opsub|designerCompany|owl_Thing|MeanOfTransportation
- opsub|poleDriverTeam|owl_Thing|GrandPrix
- opsub|ceremonialCounty|owl_Thing|PopulatedPlace
- opsub|operatingSystem|owl_Thing|Software
- opsub|britishComedyAwards|owl_Thing|Comedian
- opsub|retiredRocket|owl_Thing|YearInSpaceflight
- opsub|event|owl_Thing|BadmintonPlayer
- opsub|aircraftHelicopterTransport|owl_Thing|MilitaryUnit
- opsub|company|owl_Thing|Canal
- opsub|olympicOathSwornByJudge|owl_Thing|Olympics
- opsub|assembly|owl_Thing|MeanOfTransportation
- opsub|placeOfBurial|owl_Thing|Monarch opsub|iftaAward|owl_Thing|Actor
- opsub|areaOfSearch|owl_Thing|SiteOfSpecialScientificInterest
- opsub|otherParty|owl_Thing|OfficeHolder opsub|headteacher|owl_Thing|School
- opsub|training|owl_Thing|Artist opsub|highestRegion|owl_Thing|Island
- opsub|trustee|owl_Thing|School opsub|partOfWineRegion|owl_Thing|WineRegion
- opsub|administrativeDistrict|owl_Thing|Settlement
- opsub|publisher|owl_Thing|Work
- opsub|otherAppearances|owl_Thing|OlympicResult
- opsub|stylisticOrigin|owl_Thing|MusicGenre
- opsub|birthPlace|owl_Thing|Person opsub|currentDomicile|owl_Thing|Person
- opsub|openingTheme|owl_Thing|TelevisionShow opsub|narrator|owl_Thing|Film
- opsub|alumni|owl_Thing|School
- opsub|aircraftHelicopterMultirole|owl_Thing|MilitaryUnit
- opsub|leftTributary|owl_Thing|River opsub|port1|owl_Thing|Spacecraft
- opsub|nationalFilmAward|owl_Thing|Actor opsub|ground|owl_Thing|SoccerClub
- opsub|aircraftInterceptor|owl_Thing|MilitaryUnit
- opsub|summerAppearances|owl_Thing|OlympicResult
- opsub|laurenceOlivierAward|owl_Thing|Actor
- opsub|aircraftHelicopterCargo|owl_Thing|MilitaryUnit
- opsub|thirdCommander|owl_Thing|MilitaryUnit
- opsub|executiveHeadteacher|owl_Thing|School
- opsub|peabodyAward|owl_Thing|Comedian opsub|afiAward|owl_Thing|Artist
- opsub|flagBearer|owl_Thing|OlympicResult opsub|component|owl_Thing|Brain
- opsub|march|owl_Thing|MilitaryUnit opsub|nearestCity|owl_Thing|Place
- opsub|architecturalStyle|owl_Thing|Building opsub|father|owl_Thing|Person
- opsub|growingGrape|owl_Thing|WineRegion
- opsub|thirdDriverCountry|owl_Thing|GrandPrix
- opsub|license|owl_Thing|Software opsub|species|owl_Thing|Species
- opsub|capitalMountain|owl_Thing|Island opsub|provost|owl_Thing|University
- opsub|building|owl_Thing|Island opsub|governmentPlace|owl_Thing|Island
- opsub|affiliation|owl_Thing|Organisation
- opsub|meetingCity|owl_Thing|Legislature
- opsub|lastLaunchRocket|owl_Thing|LaunchPad
- opsub|viceChancellor|owl_Thing|University
- opsub|countryWithFirstSpaceflight|owl_Thing|YearInSpaceflight
- opsub|firstLaunchRocket|owl_Thing|LaunchPad
- opsub|selection|owl_Thing|Astronaut
- opsub|poleDriverCountry|owl_Thing|GrandPrix
- opsub|grammyAward|owl_Thing|Artist opsub|beatifiedBy|owl_Thing|Saint
- opsub|varietals|owl_Thing|WineRegion opsub|emmyAward|owl_Thing|Artist
- opsub|administrator|owl_Thing|School
- opsub|clubsRecordGoalscorer|owl_Thing|SoccerClub
- opsub|associationOfLocalGovernment|owl_Thing|Settlement
- opsub|athletics|owl_Thing|University
- opsub|musicSubgenre|owl_Thing|MusicGenre
- opsub|nationalOlympicCommittee|owl_Thing|OlympicResult
- opsub|leaderName|owl_Thing|PopulatedPlace opsub|states|owl_Thing|Language
- opsub|ethnicity|owl_Thing|Person opsub|locationCity|owl_Thing|Organisation
- opsub|rocketFunction|owl_Thing|Rocket opsub|notableWork|owl_Thing|Writer
- opsub|formerChoreographer|owl_Thing|FigureSkater
- opsub|notableStudent|owl_Thing|Scientist opsub|industry|owl_Thing|Company
- opsub|nextMission|owl_Thing|SpaceMission
- opsub|coExecutiveProducer|owl_Thing|TelevisionShow
- opsub|closingFilm|owl_Thing|FilmFestival opsub|mouthState|owl_Thing|River
- opsub|wars|owl_Thing|Weapon opsub|locationCountry|owl_Thing|Organisation
- opsub|lastFlight|owl_Thing|SpaceShuttle opsub|phylum|owl_Thing|Species
- opsub|river|owl_Thing|Island opsub|house|owl_Thing|Legislature
- opsub|computingPlatform|owl_Thing|Software
- opsub|associatedAct|owl_Thing|Artist opsub|architect|owl_Thing|Building
- opsub|binomialAuthority|owl_Thing|Species
- opsub|teamPresident|owl_Thing|SportsTeam opsub|crosses|owl_Thing|Bridge
- opsub|writer|owl_Thing|Work opsub|doctoralAdvisor|owl_Thing|Scientist
- opsub|order|owl_Thing|Species opsub|show|owl_Thing|TelevisionEpisode
- opsub|destination|owl_Thing|Airline
- opsub|presenter|owl_Thing|TelevisionShow opsub|editing|owl_Thing|Film
- opsub|subsequentInfrastructure|owl_Thing|Infrastructure
- opsub|filmFareAward|owl_Thing|Artist
- opsub|launchPad|owl_Thing|SpaceMission opsub|outflow|owl_Thing|Lake
- opsub|jointCommunity|owl_Thing|Settlement opsub|supplies|owl_Thing|Artery
- opsub|partner|owl_Thing|Person opsub|oilSystem|owl_Thing|AutomobileEngine
- opsub|saint|owl_Thing|Settlement opsub|nobelLaureates|owl_Thing|School
- opsub|academyAward|owl_Thing|Artist
- opsub|showJudge|owl_Thing|TelevisionShow
- opsub|secondDriverCountry|owl_Thing|GrandPrix
- opsub|wineRegion|owl_Thing|Grape opsub|inseeCode|owl_Thing|PopulatedPlace
- opsub|significantDesign|owl_Thing|Architect
- opsub|olivierAward|owl_Thing|Comedian opsub|genus|owl_Thing|Species
- opsub|baftaAward|owl_Thing|Artist
- opsub|artery|owl_Thing|AnatomicalStructure
- opsub|film|owl_Thing|FilmFestival opsub|garrison|owl_Thing|MilitaryUnit
- subsumes|Cardinal|Person subsumes|ChristianBishop|Person
- subsumes|Saint|Person subsumes|Pope|Person
- subsumes|University|Organisation subsumes|College|Organisation
- subsumes|School|Organisation subsumes|River|BodyOfWater
- subsumes|Canal|BodyOfWater subsumes|Grape|Plant
- subsumes|Airline|Organisation subsumes|RecordLabel|Organisation
- subsumes|Lake|Place subsumes|Stream|Place subsumes|VicePresident|Person
- subsumes|MemberOfParliament|Person subsumes|Deputy|Person
- subsumes|VicePrimeMinister|Person subsumes|Congressman|Person
- subsumes|Governor|Person subsumes|Mayor|Person
- subsumes|PrimeMinister|Person subsumes|Lieutenant|Person
- subsumes|President|Person subsumes|Chancellor|Person
- subsumes|Senator|Person subsumes|City|PopulatedPlace
- subsumes|Town|PopulatedPlace subsumes|Village|PopulatedPlace
- subsumes|Gnetophytes|Eukaryote subsumes|GreenAlga|Eukaryote
- subsumes|Fern|Eukaryote subsumes|FloweringPlant|Eukaryote
- subsumes|Conifer|Eukaryote subsumes|Cycad|Eukaryote
- subsumes|Ginkgo|Eukaryote subsumes|ClubMoss|Eukaryote
- subsumes|Moss|Eukaryote subsumes|CanadianFootballPlayer|Athlete
- subsumes|AmericanFootballPlayer|Athlete subsumes|Song|Work
- subsumes|Single|Work subsumes|Album|Work subsumes|SoccerClub|Organisation
- subsumes|CanadianFootballTeam|Organisation
- subsumes|HockeyTeam|Organisation
- subsumes|AmericanFootballTeam|Organisation subsumes|VideoGame|Work
- subsumes|Comedian|Person subsumes|ComicsCreator|Person
- subsumes|Actor|Person subsumes|Writer|Person subsumes|MusicalArtist|Person
- subsumes|EurovisionSongContestEntry|MusicalWork subsumes|Hospital|Place
- subsumes|Skyscraper|Place subsumes|Stadium|Place
- subsumes|HistoricBuilding|Place subsumes|Lighthouse|Place
- subsumes|Station|Place subsumes|Airport|Place subsumes|LaunchPad|Place
- subsumes|Bridge|Place subsumes|ShoppingMall|Place
- subsumes|ComicsCharacter|Person subsumes|VideogamesLeague|Organisation
- subsumes|RugbyLeague|Organisation subsumes|IceHockeyLeague|Organisation
- subsumes|CricketLeague|Organisation subsumes|TennisLeague|Organisation
- subsumes|PaintballLeague|Organisation
- subsumes|FieldHockeyLeague|Organisation
- subsumes|BowlingLeague|Organisation
- subsumes|InlineHockeyLeague|Organisation
- subsumes|RadioControlledRacingLeague|Organisation
- subsumes|SoftballLeague|Organisation
- subsumes|BasketballLeague|Organisation subsumes|SoccerLeague|Organisation
- subsumes|SpeedwayLeague|Organisation
- subsumes|CanadianFootballLeague|Organisation
- subsumes|BoxingLeague|Organisation subsumes|CyclingLeague|Organisation
- subsumes|AustralianFootballLeague|Organisation
- subsumes|AutoRacingLeague|Organisation subsumes|PoloLeague|Organisation
- subsumes|MixedMartialArtsLeague|Organisation
- subsumes|CurlingLeague|Organisation subsumes|GolfLeague|Organisation
- subsumes|LacrosseLeague|Organisation subsumes|BaseballLeague|Organisation
- subsumes|AmericanFootballLeague|Organisation
- subsumes|HandballLeague|Organisation
- subsumes|MotorcycleRacingLeague|Organisation
- subsumes|VolleyballLeague|Organisation subsumes|Olympics|Event
- subsumes|GrandPrix|Event subsumes|WrestlingEvent|Event
- subsumes|MixedMartialArtsEvent|Event
- subsumes|WomensTennisAssociationTournament|Event subsumes|Race|Event
- subsumes|Boxer|Person subsumes|Cricketer|Person
- subsumes|NascarDriver|Person subsumes|GaelicGamesPlayer|Person
- subsumes|BasketballPlayer|Person subsumes|FormulaOneRacer|Person
- subsumes|TennisPlayer|Person subsumes|GridironFootballPlayer|Person
- subsumes|IceHockeyPlayer|Person subsumes|Wrestler|Person
- subsumes|Cyclist|Person subsumes|BadmintonPlayer|Person
- subsumes|BaseballPlayer|Person
- subsumes|NationalCollegiateAthleticAssociationAthlete|Person
- subsumes|RugbyPlayer|Person subsumes|FigureSkater|Person
- subsumes|SoccerPlayer|Person subsumes|AdministrativeRegion|Place
- subsumes|Continent|Place subsumes|Island|Place subsumes|Country|Place
- subsumes|Settlement|Place subsumes|Fungus|Species subsumes|Plant|Species
- subsumes|Animal|Species subsumes|Amphibian|Eukaryote
- subsumes|Mammal|Eukaryote subsumes|Fish|Eukaryote
- subsumes|Mollusca|Eukaryote subsumes|Crustacean|Eukaryote
- subsumes|Bird|Eukaryote subsumes|Insect|Eukaryote
- subsumes|Arachnid|Eukaryote subsumes|Reptile|Eukaryote
- subsumes|AdultActor|Artist subsumes|VoiceActor|Artist subsumes|River|Place
- subsumes|Canal|Place subsumes|Grape|Eukaryote subsumes|City|Place
- subsumes|Town|Place subsumes|Village|Place subsumes|Grape|Species
- subsumes|Gnetophytes|Species subsumes|GreenAlga|Species
- subsumes|Fern|Species subsumes|FloweringPlant|Species
- subsumes|Conifer|Species subsumes|Cycad|Species subsumes|Ginkgo|Species
- subsumes|ClubMoss|Species subsumes|Moss|Species
- subsumes|CanadianFootballPlayer|Person
- subsumes|AmericanFootballPlayer|Person
- subsumes|EurovisionSongContestEntry|Work subsumes|VoiceActor|Person
- subsumes|AdultActor|Person subsumes|Reptile|Species
- subsumes|Arachnid|Species subsumes|Insect|Species subsumes|Bird|Species
- subsumes|Crustacean|Species subsumes|Mollusca|Species
- subsumes|Fish|Species subsumes|Mammal|Species subsumes|Amphibian|Species
+ subsumes|University|Academic_Institution subsumes|Conference_Trip|Event
+ subsumes|Poster_Session|Event subsumes|Rejected_Paper|Evaluated_Paper
+ subsumes|Workshop_Session|Workshop subsumes|Evaluated_Paper|Regular_Paper
+ subsumes|Invited_Speaker|Person subsumes|Conference_Session|Session
+ subsumes|Research_Institute|Organisation
+ subsumes|SC_Member|Agency_Staff_Member
+ subsumes|Conference_Proceedings|Proceedings
+ subsumes|Industrial_Paper|Document
+ subsumes|Session_Chair|Conference_Participant
+ subsumes|Camera_Ready_Paper|Paper subsumes|Student|Person
+ subsumes|Poster_Session|Session subsumes|Person|Possible_Reviewer
+ subsumes|Presenter|Conference_Participant
+ subsumes|Evaluated_Paper|Document subsumes|Scientific_Event|Event
+ subsumes|OC_Member|Person subsumes|OC_Chair|Person
+ subsumes|Demo_Session|Conference_Session
+ subsumes|Invited_Talk_Abstract|Abstract subsumes|Conference|Session
+ subsumes|OC_Member|Possible_Reviewer subsumes|Presenter|Person
+ subsumes|Conference_Paper|Document subsumes|SC_Member|Person
+ subsumes|Neutral_Review|Review subsumes|Demo_Paper|Paper
+ subsumes|Contributed_Talk|Conference_Session
+ subsumes|Conference_Banquet|Event subsumes|Positive_Review|Review
+ subsumes|PC_Member|Person subsumes|Demo_Chair|Tutorial_Chair
+ subsumes|Late-Registered_Participant|Person subsumes|Session_Chair|Person
+ subsumes|Tutorial|Session subsumes|Submitted_Paper|Paper
+ subsumes|Demo_Session|Event subsumes|Accepted_Paper|Paper
+ subsumes|Conference|Event subsumes|Proceedings|Document
+ subsumes|Accepted_Paper|Evaluated_Paper
+ subsumes|Regular_Session|Conference_Session
+ subsumes|Agency_Staff_Member|Person
+ subsumes|Conference_Paper|Submitted_Paper subsumes|Assigned_Paper|Document
+ subsumes|Rejected_Paper|Document subsumes|Social_Event|Event
+ subsumes|Assigned_Paper|Paper subsumes|Conference_Participant|Person
+ subsumes|Poster_Paper|Submitted_Paper
+ subsumes|Evaluated_Paper|Submitted_Paper subsumes|Poster_Paper|Document
+ subsumes|Conference_Participant|Possible_Reviewer
+ subsumes|Evaluated_Paper|Paper subsumes|Demo_Session|Session
+ subsumes|Invited_Speaker|Possible_Reviewer
+ subsumes|Tutorial_Abstract|Abstract subsumes|Camera_Ready_Paper|Document
+ subsumes|Early-Registered_Participant|Person
+ subsumes|Conference_Proceedings|Conference_Session
+ subsumes|Workshop_Paper|Paper subsumes|Industrial_Paper|Paper
+ subsumes|Accepted_Paper|Document subsumes|Regular_Session|Session
+ subsumes|Possible_Reviewer|Person subsumes|Event|Contributed_Talk
+ subsumes|Accepted_Paper|Regular_Paper subsumes|Submitted_Paper|Document
+ subsumes|Industrial_Session|Session subsumes|Regular_Paper|Paper
+ subsumes|Workshop_Session|Session subsumes|Paper|Document
+ subsumes|Scientific_Event|Proceedings
+ subsumes|Organising_Agency|Organisation
+ subsumes|Early-Registered_Participant|Conference_Participant
+ subsumes|Paper_Author|Person subsumes|PC_Chair|Conference_Participant
+ subsumes|Abstract|Document subsumes|Accepted_Paper|Submitted_Paper
+ subsumes|Industrial_Session|Conference_Session
+ intersection|OC_Member|Web_Site|owl_Nothing
+ intersection|Invited_Speaker|Session|owl_Nothing
+ intersection|Demo_Chair|Demo_Paper|owl_Nothing
+ intersection|Demo_Paper|PC_Member|owl_Nothing
+ intersection|Individual_Presentation|PC_Chair|owl_Nothing
+ intersection|Assigned_Paper|Poster_Session|owl_Nothing
+ intersection|Invited_Talk|Student|owl_Nothing
+ intersection|Location|Session|owl_Nothing
+ intersection|Person|Poster_Paper|owl_Nothing
+ intersection|Demo_Chair|OC_Chair|owl_Nothing
+ intersection|Invited_Speaker|Programme_Brochure|owl_Nothing
+ intersection|Invited_Speaker|OC_Chair|owl_Nothing
+ intersection|Demo_Session|Event|owl_Nothing
+ intersection|Organising_Agency|Proceedings|owl_Nothing
+ intersection|Proceedings|Workshop_Session|owl_Nothing
+ intersection|Regular_Session|SC_Member|owl_Nothing
+ intersection|Invited_Talk|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Paper|Scientific_Event|owl_Nothing
+ intersection|Conference_Proceedings|Track|owl_Nothing
+ intersection|Conference|Conference_Trip|owl_Nothing
+ intersection|Demo_Chair|Tutorial_Abstract|owl_Nothing
+ intersection|Assigned_Paper|Scientific_Event|owl_Nothing
+ intersection|Conference_Proceedings|Research_Topic|owl_Nothing
+ intersection|OC_Chair|Organisation|owl_Nothing
+ intersection|Event|Location|owl_Nothing
+ intersection|Review|Workshop|owl_Nothing
+ intersection|Conference_Session|Research_Topic|owl_Nothing
+ intersection|Possible_Reviewer|Poster_Paper|owl_Nothing
+ intersection|Conference_Paper|University|owl_Nothing
+ intersection|OC_Chair|Positive_Review|owl_Nothing
+ intersection|Event|Invited_Speaker|owl_Nothing
+ intersection|Flyer|Research_Institute|owl_Nothing
+ intersection|Social_Event|Tutorial_Chair|owl_Nothing
+ intersection|Student|Web_Site|owl_Nothing
+ intersection|Document|Flyer|owl_Nothing
+ intersection|Paper_Author|Session|owl_Nothing
+ intersection|Conference|Research_Topic|owl_Nothing
+ intersection|Poster_Session|Workshop_Session|owl_Nothing
+ intersection|Camera_Ready_Paper|Research_Institute|owl_Nothing
+ intersection|Academic_Institution|Conference_Proceedings|owl_Nothing
+ intersection|Conference_Proceedings|PC_Chair|owl_Nothing
+ intersection|Conference_Participant|Session_Chair|owl_Nothing
+ intersection|Event|Review|owl_Nothing
+ intersection|Organising_Agency|Presenter|owl_Nothing
+ intersection|OC_Chair|Research_Institute|owl_Nothing
+ intersection|Negative_Review|Scientific_Event|owl_Nothing
+ intersection|Programme_Brochure|Workshop_Paper|owl_Nothing
+ intersection|Document|Neutral_Review|owl_Nothing
+ intersection|Presenter|Web_Site|owl_Nothing
+ intersection|Agency_Staff_Member|Review|owl_Nothing
+ intersection|Invited_Talk_Abstract|Poster_Paper|owl_Nothing
+ intersection|Academic_Institution|Demo_Paper|owl_Nothing
+ intersection|Late-Registered_Participant|Paper|owl_Nothing
+ intersection|Industrial_Session|Workshop_Paper|owl_Nothing
+ intersection|Conference_Participant|Conference_Session|owl_Nothing
+ intersection|Early-Registered_Participant|Multi-author_Volume|owl_Nothing
+ intersection|Research_Institute|Session|owl_Nothing
+ intersection|Organisation|Paper_Author|owl_Nothing
+ intersection|Social_Event|Tutorial|owl_Nothing
+ intersection|Abstract|Proceedings_Publisher|owl_Nothing
+ intersection|Negative_Review|Workshop_Session|owl_Nothing
+ intersection|Accepted_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Accepted_Paper|Conference|owl_Nothing
+ intersection|Conference_Session|University|owl_Nothing
+ intersection|Agency_Staff_Member|Poster_Session|owl_Nothing
+ intersection|Early-Registered_Participant|Regular_Paper|owl_Nothing
+ intersection|Early-Registered_Participant|Paper|owl_Nothing
+ intersection|Person|Social_Event|owl_Nothing
+ intersection|Contributed_Talk|Possible_Reviewer|owl_Nothing
+ intersection|Industrial_Paper|Possible_Reviewer|owl_Nothing
+ intersection|SC_Member|University|owl_Nothing
+ intersection|Conference_Participant|Demo_Session|owl_Nothing
+ intersection|Camera_Ready_Paper|Person|owl_Nothing
+ intersection|Early-Registered_Participant|Possible_Reviewer|owl_Nothing
+ intersection|Demo_Session|Industrial_Paper|owl_Nothing
+ intersection|Paper_Author|Submitted_Paper|owl_Nothing
+ intersection|Conference_Banquet|Track|owl_Nothing
+ intersection|Early-Registered_Participant|Social_Event|owl_Nothing
+ intersection|Conference|Programme_Brochure|owl_Nothing
+ intersection|Invited_Talk|Regular_Paper|owl_Nothing
+ intersection|Abstract|Workshop|owl_Nothing
+ intersection|Scientific_Event|Session_Chair|owl_Nothing
+ intersection|Proceedings|SC_Member|owl_Nothing
+ intersection|Session_Chair|Track|owl_Nothing
+ intersection|OC_Chair|Possible_Reviewer|owl_Nothing
+ intersection|Conference_Trip|Proceedings|owl_Nothing
+ intersection|Multi-author_Volume|Regular_Session|owl_Nothing
+ intersection|Multi-author_Volume|Social_Event|owl_Nothing
+ intersection|Neutral_Review|Possible_Reviewer|owl_Nothing
+ intersection|Rejected_Paper|Social_Event|owl_Nothing
+ intersection|Regular_Session|Workshop_Session|owl_Nothing
+ intersection|Contributed_Talk|Industrial_Session|owl_Nothing
+ intersection|Tutorial_Abstract|Workshop_Paper|owl_Nothing
+ intersection|Neutral_Review|Tutorial_Abstract|owl_Nothing
+ intersection|Organising_Agency|PC_Member|owl_Nothing
+ intersection|OC_Member|Tutorial|owl_Nothing
+ intersection|Conference_Paper|Programme_Brochure|owl_Nothing
+ intersection|Individual_Presentation|Location|owl_Nothing
+ intersection|Organising_Agency|Rejected_Paper|owl_Nothing
+ intersection|Event|Flyer|owl_Nothing
+ intersection|Rejected_Paper|University|owl_Nothing
+ intersection|Organising_Agency|Track|owl_Nothing
+ intersection|Assigned_Paper|Early-Registered_Participant|owl_Nothing
+ intersection|Contributed_Talk|Proceedings_Publisher|owl_Nothing
+ intersection|Regular_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Paper|PC_Chair|owl_Nothing
+ intersection|Location|Tutorial_Abstract|owl_Nothing
+ intersection|Industrial_Paper|Regular_Session|owl_Nothing
+ intersection|Conference_Session|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Banquet|Regular_Paper|owl_Nothing
+ intersection|Conference_Trip|Evaluated_Paper|owl_Nothing
+ intersection|Invited_Speaker|Research_Topic|owl_Nothing
+ intersection|Late-Registered_Participant|Web_Site|owl_Nothing
+ intersection|Poster_Session|Workshop|owl_Nothing
+ intersection|Contributed_Talk|Paper_Author|owl_Nothing
+ intersection|Individual_Presentation|Neutral_Review|owl_Nothing
+ intersection|Poster_Paper|Web_Site|owl_Nothing
+ intersection|Tutorial|Workshop_Chair|owl_Nothing
+ intersection|OC_Member|Regular_Session|owl_Nothing
+ intersection|Demo_Chair|University|owl_Nothing
+ intersection|Industrial_Session|Scientific_Event|owl_Nothing
+ intersection|Agency_Staff_Member|Session_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|Proceedings|owl_Nothing
+ intersection|Evaluated_Paper|Track|owl_Nothing
+ intersection|Conference_Trip|Demo_Session|owl_Nothing
+ intersection|Conference_Participant|Organisation|owl_Nothing
+ intersection|Abstract|Workshop_Session|owl_Nothing
+ intersection|Conference_Participant|University|owl_Nothing
+ intersection|Conference_Paper|Poster_Paper|owl_Nothing
+ intersection|Presenter|Scientific_Event|owl_Nothing
+ intersection|Early-Registered_Participant|Workshop_Paper|owl_Nothing
+ intersection|Abstract|Evaluated_Paper|owl_Nothing
+ intersection|Demo_Session|Proceedings|owl_Nothing
+ intersection|Demo_Session|Tutorial_Chair|owl_Nothing
+ intersection|Individual_Presentation|Paper_Author|owl_Nothing
+ intersection|Abstract|Academic_Institution|owl_Nothing
+ intersection|Conference_Paper|Workshop_Paper|owl_Nothing
+ intersection|Person|Regular_Session|owl_Nothing
+ intersection|Negative_Review|Programme_Brochure|owl_Nothing
+ intersection|Industrial_Session|Submitted_Paper|owl_Nothing
+ intersection|Location|Session_Chair|owl_Nothing
+ intersection|Conference_Session|Invited_Talk_Abstract|owl_Nothing
+ intersection|Regular_Paper|University|owl_Nothing
+ intersection|Poster_Paper|Poster_Session|owl_Nothing
+ intersection|Evaluated_Paper|Paper_Author|owl_Nothing
+ intersection|Submitted_Paper|Workshop_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|Flyer|owl_Nothing
+ intersection|Camera_Ready_Paper|Individual_Presentation|owl_Nothing
+ intersection|Late-Registered_Participant|OC_Member|owl_Nothing
+ intersection|Paper_Author|Tutorial_Chair|owl_Nothing
+ intersection|Document|Regular_Session|owl_Nothing
+ intersection|Individual_Presentation|Workshop|owl_Nothing
+ intersection|Flyer|Workshop_Chair|owl_Nothing
+ intersection|Demo_Chair|Review|owl_Nothing
+ intersection|Accepted_Paper|Social_Event|owl_Nothing
+ intersection|Evaluated_Paper|Possible_Reviewer|owl_Nothing
+ intersection|Abstract|Track|owl_Nothing
+ intersection|Location|Positive_Review|owl_Nothing
+ intersection|Event|Invited_Talk_Abstract|owl_Nothing
+ intersection|Demo_Session|Late-Registered_Participant|owl_Nothing
+ intersection|Person|Track|owl_Nothing
+ intersection|Accepted_Paper|Neutral_Review|owl_Nothing
+ intersection|Conference_Participant|Tutorial_Abstract|owl_Nothing
+ intersection|Camera_Ready_Paper|Session|owl_Nothing
+ intersection|Conference|Workshop|owl_Nothing
+ intersection|Demo_Chair|Industrial_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Session|owl_Nothing
+ intersection|Demo_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Contributed_Talk|Track|owl_Nothing
+ intersection|Research_Institute|Student|owl_Nothing
+ intersection|Paper_Author|Poster_Paper|owl_Nothing
+ intersection|Academic_Institution|Poster_Session|owl_Nothing
+ intersection|Research_Institute|Research_Topic|owl_Nothing
+ intersection|Flyer|Individual_Presentation|owl_Nothing
+ intersection|Assigned_Paper|Invited_Talk|owl_Nothing
+ intersection|Proceedings|Session|owl_Nothing
+ intersection|Abstract|Conference_Participant|owl_Nothing
+ intersection|Tutorial_Abstract|Workshop_Session|owl_Nothing
+ intersection|Organisation|Research_Topic|owl_Nothing
+ intersection|Agency_Staff_Member|Poster_Paper|owl_Nothing
+ intersection|Abstract|Industrial_Session|owl_Nothing
+ intersection|Invited_Talk|Paper|owl_Nothing
+ intersection|Neutral_Review|Proceedings_Publisher|owl_Nothing
+ intersection|Academic_Institution|Late-Registered_Participant|owl_Nothing
+ intersection|Late-Registered_Participant|PC_Chair|owl_Nothing
+ intersection|Conference_Paper|Presenter|owl_Nothing
+ intersection|Demo_Chair|Individual_Presentation|owl_Nothing
+ intersection|Contributed_Talk|Location|owl_Nothing
+ intersection|PC_Chair|Programme_Brochure|owl_Nothing
+ intersection|Invited_Talk|Poster_Session|owl_Nothing
+ intersection|Research_Topic|Workshop|owl_Nothing
+ intersection|Industrial_Session|PC_Member|owl_Nothing
+ intersection|Conference|University|owl_Nothing
+ intersection|Abstract|Negative_Review|owl_Nothing
+ intersection|Assigned_Paper|Conference|owl_Nothing
+ intersection|Abstract|Paper_Author|owl_Nothing
+ intersection|Invited_Speaker|University|owl_Nothing
+ intersection|Evaluated_Paper|Workshop|owl_Nothing
+ intersection|Multi-author_Volume|Poster_Paper|owl_Nothing
+ intersection|Poster_Paper|Workshop_Session|owl_Nothing
+ intersection|Programme_Brochure|Tutorial_Chair|owl_Nothing
+ intersection|Invited_Speaker|Workshop_Paper|owl_Nothing
+ intersection|Academic_Institution|OC_Chair|owl_Nothing
+ intersection|Paper|Paper_Author|owl_Nothing
+ intersection|Rejected_Paper|Session|owl_Nothing
+ intersection|Camera_Ready_Paper|OC_Chair|owl_Nothing
+ intersection|Agency_Staff_Member|Multi-author_Volume|owl_Nothing
+ intersection|Workshop|Workshop_Chair|owl_Nothing
+ intersection|Conference_Session|Organisation|owl_Nothing
+ intersection|Contributed_Talk|Workshop_Session|owl_Nothing
+ intersection|Negative_Review|Tutorial_Abstract|owl_Nothing
+ intersection|Industrial_Paper|Negative_Review|owl_Nothing
+ intersection|OC_Member|Social_Event|owl_Nothing
+ intersection|Academic_Institution|Conference_Banquet|owl_Nothing
+ intersection|Agency_Staff_Member|Workshop_Paper|owl_Nothing
+ intersection|Possible_Reviewer|Research_Topic|owl_Nothing
+ intersection|Conference_Participant|Social_Event|owl_Nothing
+ intersection|Negative_Review|Workshop|owl_Nothing
+ intersection|Proceedings_Publisher|Submitted_Paper|owl_Nothing
+ intersection|Session_Chair|Submitted_Paper|owl_Nothing
+ intersection|OC_Member|Paper|owl_Nothing
+ intersection|Organising_Agency|Web_Site|owl_Nothing
+ intersection|Conference_Paper|Individual_Presentation|owl_Nothing
+ intersection|OC_Chair|OC_Member|owl_Nothing
+ intersection|Regular_Paper|Workshop|owl_Nothing
+ intersection|Demo_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Academic_Institution|Submitted_Paper|owl_Nothing
+ intersection|Invited_Talk|Organisation|owl_Nothing
+ intersection|Academic_Institution|Evaluated_Paper|owl_Nothing
+ intersection|Industrial_Paper|Workshop_Session|owl_Nothing
+ intersection|Invited_Talk_Abstract|Paper_Author|owl_Nothing
+ intersection|Conference_Proceedings|Person|owl_Nothing
+ intersection|Evaluated_Paper|Tutorial|owl_Nothing
+ intersection|Session_Chair|Tutorial_Abstract|owl_Nothing
+ intersection|Neutral_Review|Student|owl_Nothing
+ intersection|Conference_Trip|Invited_Talk_Abstract|owl_Nothing
+ intersection|Camera_Ready_Paper|Positive_Review|owl_Nothing
+ intersection|Poster_Session|Tutorial_Abstract|owl_Nothing
+ intersection|Invited_Talk|Social_Event|owl_Nothing
+ intersection|Conference_Session|Session_Chair|owl_Nothing
+ intersection|Invited_Speaker|Tutorial_Chair|owl_Nothing
+ intersection|OC_Member|Tutorial_Abstract|owl_Nothing
+ intersection|Demo_Session|Location|owl_Nothing
+ intersection|Industrial_Paper|PC_Member|owl_Nothing
+ intersection|Proceedings_Publisher|Regular_Paper|owl_Nothing
+ intersection|Abstract|Submitted_Paper|owl_Nothing
+ intersection|Demo_Session|Session_Chair|owl_Nothing
+ intersection|OC_Chair|PC_Member|owl_Nothing
+ intersection|Review|Session_Chair|owl_Nothing
+ intersection|SC_Member|Scientific_Event|owl_Nothing
+ intersection|Conference_Banquet|University|owl_Nothing
+ intersection|Positive_Review|Session_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Presenter|owl_Nothing
+ intersection|Event|OC_Member|owl_Nothing
+ intersection|Programme_Brochure|Submitted_Paper|owl_Nothing
+ intersection|Invited_Talk|PC_Member|owl_Nothing
+ intersection|Evaluated_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Conference|Session_Chair|owl_Nothing
+ intersection|Regular_Session|Social_Event|owl_Nothing
+ intersection|Academic_Institution|Individual_Presentation|owl_Nothing
+ intersection|Review|SC_Member|owl_Nothing
+ intersection|Conference|Evaluated_Paper|owl_Nothing
+ intersection|Social_Event|Workshop_Session|owl_Nothing
+ intersection|Accepted_Paper|Presenter|owl_Nothing
+ intersection|Early-Registered_Participant|Individual_Presentation|owl_Nothing
+ intersection|Session_Chair|Tutorial|owl_Nothing
+ intersection|Conference|Poster_Paper|owl_Nothing
+ intersection|Poster_Paper|Research_Institute|owl_Nothing
+ intersection|Early-Registered_Participant|Industrial_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Rejected_Paper|owl_Nothing
+ intersection|Organising_Agency|Social_Event|owl_Nothing
+ intersection|Conference_Participant|Multi-author_Volume|owl_Nothing
+ intersection|Event|Student|owl_Nothing
+ intersection|Demo_Chair|Negative_Review|owl_Nothing
+ intersection|Submitted_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Industrial_Session|Invited_Talk|owl_Nothing
+ intersection|Agency_Staff_Member|Conference_Paper|owl_Nothing
+ intersection|Demo_Chair|Poster_Session|owl_Nothing
+ intersection|Possible_Reviewer|Programme_Brochure|owl_Nothing
+ intersection|OC_Member|Organising_Agency|owl_Nothing
+ intersection|Negative_Review|Web_Site|owl_Nothing
+ intersection|Abstract|Flyer|owl_Nothing
+ intersection|Early-Registered_Participant|Negative_Review|owl_Nothing
+ intersection|Conference_Trip|Tutorial_Chair|owl_Nothing
+ intersection|Neutral_Review|Tutorial_Chair|owl_Nothing
+ intersection|Event|Proceedings|owl_Nothing
+ intersection|Industrial_Paper|PC_Chair|owl_Nothing
+ intersection|Invited_Speaker|Neutral_Review|owl_Nothing
+ intersection|Research_Topic|University|owl_Nothing
+ intersection|Student|Tutorial_Abstract|owl_Nothing
+ intersection|Presenter|Review|owl_Nothing
+ intersection|Evaluated_Paper|SC_Member|owl_Nothing
+ intersection|Demo_Chair|Proceedings_Publisher|owl_Nothing
+ intersection|Abstract|Web_Site|owl_Nothing
+ intersection|Flyer|SC_Member|owl_Nothing
+ intersection|Location|Web_Site|owl_Nothing
+ intersection|Abstract|Research_Topic|owl_Nothing
+ intersection|OC_Member|Session_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|Early-Registered_Participant|owl_Nothing
+ intersection|Agency_Staff_Member|Demo_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Workshop|owl_Nothing
+ intersection|Industrial_Session|Possible_Reviewer|owl_Nothing
+ intersection|OC_Member|Poster_Session|owl_Nothing
+ intersection|Event|Invited_Talk|owl_Nothing
+ intersection|OC_Chair|Track|owl_Nothing
+ intersection|Contributed_Talk|Session|owl_Nothing
+ intersection|SC_Member|Submitted_Paper|owl_Nothing
+ intersection|Scientific_Event|Workshop_Session|owl_Nothing
+ intersection|Conference_Banquet|Student|owl_Nothing
+ intersection|Paper_Author|SC_Member|owl_Nothing
+ intersection|Neutral_Review|Organising_Agency|owl_Nothing
+ intersection|Conference_Proceedings|Early-Registered_Participant|owl_Nothing
+ intersection|Camera_Ready_Paper|Conference_Proceedings|owl_Nothing
+ intersection|Multi-author_Volume|SC_Member|owl_Nothing
+ intersection|Demo_Chair|Research_Institute|owl_Nothing
+ intersection|Location|Proceedings|owl_Nothing
+ intersection|Academic_Institution|Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Workshop_Session|owl_Nothing
+ intersection|OC_Chair|University|owl_Nothing
+ intersection|Conference_Banquet|Research_Topic|owl_Nothing
+ intersection|Presenter|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Academic_Institution|Invited_Talk_Abstract|owl_Nothing
+ intersection|Person|Workshop_Session|owl_Nothing
+ intersection|Invited_Talk|Neutral_Review|owl_Nothing
+ intersection|Rejected_Paper|Research_Institute|owl_Nothing
+ intersection|Camera_Ready_Paper|Programme_Brochure|owl_Nothing
+ intersection|Assigned_Paper|Conference_Proceedings|owl_Nothing
+ intersection|Organisation|Tutorial|owl_Nothing
+ intersection|Conference_Session|Research_Institute|owl_Nothing
+ intersection|Document|PC_Member|owl_Nothing
+ intersection|Person|Programme_Brochure|owl_Nothing
+ intersection|Session|Tutorial|owl_Nothing
+ intersection|Demo_Paper|Invited_Speaker|owl_Nothing
+ intersection|Poster_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Invited_Speaker|Rejected_Paper|owl_Nothing
+ intersection|Conference_Participant|Negative_Review|owl_Nothing
+ intersection|Demo_Session|Poster_Paper|owl_Nothing
+ intersection|Paper|Possible_Reviewer|owl_Nothing
+ intersection|Camera_Ready_Paper|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Paper_Author|owl_Nothing
+ intersection|Proceedings|Review|owl_Nothing
+ intersection|Evaluated_Paper|OC_Chair|owl_Nothing
+ intersection|Demo_Chair|Location|owl_Nothing
+ intersection|Event|Regular_Session|owl_Nothing
+ intersection|Camera_Ready_Paper|Presenter|owl_Nothing
+ intersection|Individual_Presentation|PC_Member|owl_Nothing
+ intersection|Programme_Brochure|Tutorial_Abstract|owl_Nothing
+ intersection|Demo_Paper|Early-Registered_Participant|owl_Nothing
+ intersection|Industrial_Session|SC_Member|owl_Nothing
+ intersection|Evaluated_Paper|Presenter|owl_Nothing
+ intersection|Possible_Reviewer|Review|owl_Nothing
+ intersection|Accepted_Paper|Industrial_Session|owl_Nothing
+ intersection|SC_Member|Workshop|owl_Nothing
+ intersection|PC_Member|Paper|owl_Nothing
+ intersection|Paper_Author|Tutorial|owl_Nothing
+ intersection|Late-Registered_Participant|Rejected_Paper|owl_Nothing
+ intersection|Industrial_Paper|Paper_Author|owl_Nothing
+ intersection|PC_Chair|University|owl_Nothing
+ intersection|Individual_Presentation|Paper|owl_Nothing
+ intersection|Contributed_Talk|Workshop_Paper|owl_Nothing
+ intersection|Organising_Agency|PC_Chair|owl_Nothing
+ intersection|Proceedings|Tutorial_Abstract|owl_Nothing
+ intersection|Poster_Paper|Social_Event|owl_Nothing
+ intersection|Conference_Banquet|Proceedings|owl_Nothing
+ intersection|Demo_Chair|Social_Event|owl_Nothing
+ intersection|Regular_Session|Student|owl_Nothing
+ intersection|Conference_Banquet|Document|owl_Nothing
+ intersection|Industrial_Paper|Poster_Session|owl_Nothing
+ intersection|Conference_Session|Poster_Session|owl_Nothing
+ intersection|PC_Member|Regular_Paper|owl_Nothing
+ intersection|OC_Chair|Workshop|owl_Nothing
+ intersection|Academic_Institution|Web_Site|owl_Nothing
+ intersection|Paper_Author|Possible_Reviewer|owl_Nothing
+ intersection|Individual_Presentation|OC_Chair|owl_Nothing
+ intersection|Conference_Session|Person|owl_Nothing
+ intersection|Conference_Proceedings|Paper_Author|owl_Nothing
+ intersection|Individual_Presentation|Student|owl_Nothing
+ intersection|OC_Member|Proceedings_Publisher|owl_Nothing
+ intersection|Invited_Speaker|Social_Event|owl_Nothing
+ intersection|Invited_Talk|Track|owl_Nothing
+ intersection|Demo_Paper|Event|owl_Nothing
+ intersection|OC_Chair|Web_Site|owl_Nothing
+ intersection|Accepted_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Neutral_Review|Presenter|owl_Nothing
+ intersection|PC_Chair|Possible_Reviewer|owl_Nothing
+ intersection|Organisation|Person|owl_Nothing
+ intersection|Accepted_Paper|Organisation|owl_Nothing
+ intersection|Conference_Trip|Research_Topic|owl_Nothing
+ intersection|Regular_Session|Session_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Regular_Session|owl_Nothing
+ intersection|Invited_Talk|Research_Topic|owl_Nothing
+ intersection|Scientific_Event|Track|owl_Nothing
+ intersection|Invited_Talk_Abstract|Programme_Brochure|owl_Nothing
+ intersection|Evaluated_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Evaluated_Paper|Review|owl_Nothing
+ intersection|Regular_Session|Research_Institute|owl_Nothing
+ intersection|Demo_Session|Proceedings_Publisher|owl_Nothing
+ intersection|Evaluated_Paper|Session_Chair|owl_Nothing
+ intersection|Demo_Paper|Proceedings|owl_Nothing
+ intersection|Research_Topic|Tutorial_Chair|owl_Nothing
+ intersection|Track|Tutorial_Chair|owl_Nothing
+ intersection|Conference|Proceedings_Publisher|owl_Nothing
+ intersection|OC_Member|Submitted_Paper|owl_Nothing
+ intersection|Early-Registered_Participant|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Participant|Poster_Paper|owl_Nothing
+ intersection|Late-Registered_Participant|University|owl_Nothing
+ intersection|Conference_Banquet|Submitted_Paper|owl_Nothing
+ intersection|Conference_Session|PC_Member|owl_Nothing
+ intersection|Demo_Chair|Tutorial|owl_Nothing
+ intersection|Positive_Review|Web_Site|owl_Nothing
+ intersection|Demo_Chair|Paper_Author|owl_Nothing
+ intersection|Rejected_Paper|Session_Chair|owl_Nothing
+ intersection|Demo_Chair|Tutorial_Chair|owl_Nothing
+ intersection|Location|Negative_Review|owl_Nothing
+ intersection|Location|Poster_Session|owl_Nothing
+ intersection|Event|Multi-author_Volume|owl_Nothing
+ intersection|Contributed_Talk|Document|owl_Nothing
+ intersection|Camera_Ready_Paper|Paper|owl_Nothing
+ intersection|Demo_Paper|Workshop_Paper|owl_Nothing
+ intersection|Session|Track|owl_Nothing
+ intersection|Camera_Ready_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Conference_Trip|Neutral_Review|owl_Nothing
+ intersection|Conference_Trip|Poster_Paper|owl_Nothing
+ intersection|Conference|Conference_Paper|owl_Nothing
+ intersection|Negative_Review|Paper|owl_Nothing
+ intersection|Conference_Session|Workshop_Paper|owl_Nothing
+ intersection|Document|Tutorial_Chair|owl_Nothing
+ intersection|Academic_Institution|Social_Event|owl_Nothing
+ intersection|Early-Registered_Participant|University|owl_Nothing
+ intersection|Conference|Rejected_Paper|owl_Nothing
+ intersection|Invited_Talk_Abstract|University|owl_Nothing
+ intersection|Poster_Session|Track|owl_Nothing
+ intersection|Demo_Session|Web_Site|owl_Nothing
+ intersection|Late-Registered_Participant|Location|owl_Nothing
+ intersection|Positive_Review|Research_Institute|owl_Nothing
+ intersection|Contributed_Talk|Event|owl_Nothing
+ intersection|Conference_Trip|Location|owl_Nothing
+ intersection|Contributed_Talk|Workshop_Chair|owl_Nothing
+ intersection|Agency_Staff_Member|Conference_Trip|owl_Nothing
+ intersection|Camera_Ready_Paper|Location|owl_Nothing
+ intersection|Invited_Talk_Abstract|OC_Chair|owl_Nothing
+ intersection|Proceedings_Publisher|Tutorial_Abstract|owl_Nothing
+ intersection|Scientific_Event|Student|owl_Nothing
+ intersection|Submitted_Paper|Tutorial|owl_Nothing
+ intersection|Conference_Banquet|Tutorial|owl_Nothing
+ intersection|Conference_Participant|Review|owl_Nothing
+ intersection|Location|Possible_Reviewer|owl_Nothing
+ intersection|Demo_Session|Person|owl_Nothing
+ intersection|Conference_Session|Multi-author_Volume|owl_Nothing
+ intersection|Conference_Proceedings|Late-Registered_Participant|owl_Nothing
+ intersection|Camera_Ready_Paper|Tutorial|owl_Nothing
+ intersection|Submitted_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Organising_Agency|Workshop_Session|owl_Nothing
+ intersection|Document|Possible_Reviewer|owl_Nothing
+ intersection|Demo_Paper|Presenter|owl_Nothing
+ intersection|Conference_Session|Conference_Trip|owl_Nothing
+ intersection|OC_Chair|Workshop_Paper|owl_Nothing
+ intersection|Research_Topic|Web_Site|owl_Nothing
+ intersection|Contributed_Talk|Student|owl_Nothing
+ intersection|Contributed_Talk|Regular_Paper|owl_Nothing
+ intersection|Accepted_Paper|Conference_Banquet|owl_Nothing
+ intersection|Negative_Review|Poster_Session|owl_Nothing
+ intersection|Positive_Review|Regular_Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Conference_Session|owl_Nothing
+ intersection|Early-Registered_Participant|Programme_Brochure|owl_Nothing
+ intersection|OC_Member|Programme_Brochure|owl_Nothing
+ intersection|Tutorial_Chair|Workshop|owl_Nothing
+ intersection|Assigned_Paper|Negative_Review|owl_Nothing
+ intersection|Invited_Talk_Abstract|Rejected_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Contributed_Talk|owl_Nothing
+ intersection|Individual_Presentation|Presenter|owl_Nothing
+ intersection|Organising_Agency|Positive_Review|owl_Nothing
+ intersection|Event|Poster_Session|owl_Nothing
+ intersection|PC_Member|Tutorial_Chair|owl_Nothing
+ intersection|Neutral_Review|Web_Site|owl_Nothing
+ intersection|Demo_Session|Rejected_Paper|owl_Nothing
+ intersection|Conference_Trip|Rejected_Paper|owl_Nothing
+ intersection|Conference_Participant|Event|owl_Nothing
+ intersection|Regular_Session|Scientific_Event|owl_Nothing
+ intersection|PC_Member|Regular_Session|owl_Nothing
+ intersection|Conference|Conference_Banquet|owl_Nothing
+ intersection|Academic_Institution|Demo_Session|owl_Nothing
+ intersection|Demo_Chair|Early-Registered_Participant|owl_Nothing
+ intersection|Neutral_Review|Person|owl_Nothing
+ intersection|Conference_Participant|Poster_Session|owl_Nothing
+ intersection|Session_Chair|Social_Event|owl_Nothing
+ intersection|Conference|PC_Chair|owl_Nothing
+ intersection|PC_Member|Workshop_Chair|owl_Nothing
+ intersection|Conference_Paper|Neutral_Review|owl_Nothing
+ intersection|Invited_Talk_Abstract|Regular_Session|owl_Nothing
+ intersection|Conference_Session|Invited_Talk|owl_Nothing
+ intersection|Demo_Paper|Regular_Paper|owl_Nothing
+ intersection|Event|Workshop_Paper|owl_Nothing
+ intersection|Invited_Talk|Negative_Review|owl_Nothing
+ intersection|Early-Registered_Participant|Workshop_Chair|owl_Nothing
+ intersection|Agency_Staff_Member|Early-Registered_Participant|owl_Nothing
+ intersection|Session|Session_Chair|owl_Nothing
+ intersection|Conference_Banquet|Tutorial_Abstract|owl_Nothing
+ intersection|PC_Member|Poster_Paper|owl_Nothing
+ intersection|OC_Chair|Tutorial_Abstract|owl_Nothing
+ intersection|Research_Institute|Session_Chair|owl_Nothing
+ intersection|SC_Member|Track|owl_Nothing
+ intersection|Organisation|Workshop_Session|owl_Nothing
+ intersection|Poster_Session|Tutorial_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|Neutral_Review|owl_Nothing
+ intersection|Conference_Paper|Track|owl_Nothing
+ intersection|PC_Chair|Review|owl_Nothing
+ intersection|Demo_Session|Workshop_Paper|owl_Nothing
+ intersection|OC_Member|PC_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|Submitted_Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Proceedings|owl_Nothing
+ intersection|Location|Tutorial|owl_Nothing
+ intersection|Programme_Brochure|Workshop_Chair|owl_Nothing
+ intersection|Late-Registered_Participant|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Paper|Flyer|owl_Nothing
+ intersection|Assigned_Paper|Research_Topic|owl_Nothing
+ intersection|Assigned_Paper|OC_Member|owl_Nothing
+ intersection|PC_Member|Review|owl_Nothing
+ intersection|Organisation|Workshop_Chair|owl_Nothing
+ intersection|Abstract|Document|owl_Nothing
+ intersection|Location|Review|owl_Nothing
+ intersection|Late-Registered_Participant|Workshop|owl_Nothing
+ intersection|Agency_Staff_Member|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Participant|Flyer|owl_Nothing
+ intersection|SC_Member|Workshop_Chair|owl_Nothing
+ intersection|Social_Event|Submitted_Paper|owl_Nothing
+ intersection|Session|Web_Site|owl_Nothing
+ intersection|Flyer|Regular_Paper|owl_Nothing
+ intersection|Individual_Presentation|Workshop_Session|owl_Nothing
+ intersection|PC_Chair|Regular_Paper|owl_Nothing
+ intersection|Rejected_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Abstract|PC_Chair|owl_Nothing
+ intersection|Invited_Talk_Abstract|Poster_Session|owl_Nothing
+ intersection|Conference_Session|Review|owl_Nothing
+ intersection|Conference_Trip|Programme_Brochure|owl_Nothing
+ intersection|Multi-author_Volume|Rejected_Paper|owl_Nothing
+ intersection|Paper|SC_Member|owl_Nothing
+ intersection|Industrial_Paper|Proceedings|owl_Nothing
+ intersection|Academic_Institution|PC_Member|owl_Nothing
+ intersection|Industrial_Session|Web_Site|owl_Nothing
+ intersection|Conference|Regular_Paper|owl_Nothing
+ intersection|Conference|Early-Registered_Participant|owl_Nothing
+ intersection|University|Workshop_Paper|owl_Nothing
+ intersection|Academic_Institution|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Banquet|Multi-author_Volume|owl_Nothing
+ intersection|Accepted_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Conference_Banquet|Contributed_Talk|owl_Nothing
+ intersection|Assigned_Paper|OC_Chair|owl_Nothing
+ intersection|Industrial_Paper|Person|owl_Nothing
+ intersection|OC_Member|Session|owl_Nothing
+ intersection|Industrial_Session|Presenter|owl_Nothing
+ intersection|Possible_Reviewer|Research_Institute|owl_Nothing
+ intersection|Conference_Participant|Contributed_Talk|owl_Nothing
+ intersection|Invited_Speaker|Invited_Talk_Abstract|owl_Nothing
+ intersection|Negative_Review|Possible_Reviewer|owl_Nothing
+ intersection|Presenter|Research_Topic|owl_Nothing
+ intersection|Location|Poster_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Poster_Session|owl_Nothing
+ intersection|Early-Registered_Participant|Invited_Talk|owl_Nothing
+ intersection|Session|Submitted_Paper|owl_Nothing
+ intersection|Flyer|Industrial_Paper|owl_Nothing
+ intersection|OC_Chair|Scientific_Event|owl_Nothing
+ intersection|Invited_Talk_Abstract|OC_Member|owl_Nothing
+ intersection|Poster_Session|Research_Topic|owl_Nothing
+ intersection|Conference_Banquet|Social_Event|owl_Nothing
+ intersection|Tutorial_Chair|Web_Site|owl_Nothing
+ intersection|Early-Registered_Participant|Location|owl_Nothing
+ intersection|Workshop_Chair|Workshop_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Social_Event|owl_Nothing
+ intersection|Industrial_Paper|Session_Chair|owl_Nothing
+ intersection|OC_Member|Workshop_Session|owl_Nothing
+ intersection|Assigned_Paper|Conference_Trip|owl_Nothing
+ intersection|Individual_Presentation|Track|owl_Nothing
+ intersection|Research_Topic|Workshop_Chair|owl_Nothing
+ intersection|Presenter|Workshop_Session|owl_Nothing
+ intersection|PC_Member|Tutorial_Abstract|owl_Nothing
+ intersection|Document|Event|owl_Nothing
+ intersection|Assigned_Paper|SC_Member|owl_Nothing
+ intersection|Paper_Author|Workshop_Session|owl_Nothing
+ intersection|Conference_Trip|Organising_Agency|owl_Nothing
+ intersection|Conference_Paper|Regular_Session|owl_Nothing
+ intersection|Regular_Session|Submitted_Paper|owl_Nothing
+ intersection|OC_Chair|Workshop_Session|owl_Nothing
+ intersection|Invited_Talk_Abstract|Paper|owl_Nothing
+ intersection|Conference_Session|Document|owl_Nothing
+ intersection|Industrial_Session|Positive_Review|owl_Nothing
+ intersection|Abstract|University|owl_Nothing
+ intersection|Negative_Review|University|owl_Nothing
+ intersection|Flyer|OC_Member|owl_Nothing
+ intersection|Neutral_Review|Regular_Session|owl_Nothing
+ intersection|Poster_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Industrial_Session|Student|owl_Nothing
+ intersection|Evaluated_Paper|Flyer|owl_Nothing
+ intersection|Person|Proceedings|owl_Nothing
+ intersection|Agency_Staff_Member|Organisation|owl_Nothing
+ intersection|Person|Research_Topic|owl_Nothing
+ intersection|Proceedings|Scientific_Event|owl_Nothing
+ intersection|Location|Paper|owl_Nothing
+ intersection|Organisation|Review|owl_Nothing
+ intersection|Paper|Workshop_Chair|owl_Nothing
+ intersection|Proceedings|Tutorial|owl_Nothing
+ intersection|Conference_Participant|Organising_Agency|owl_Nothing
+ intersection|Rejected_Paper|Tutorial|owl_Nothing
+ intersection|Flyer|Regular_Session|owl_Nothing
+ intersection|Conference|Workshop_Chair|owl_Nothing
+ intersection|Assigned_Paper|Proceedings|owl_Nothing
+ intersection|Rejected_Paper|Review|owl_Nothing
+ intersection|Conference_Trip|Industrial_Paper|owl_Nothing
+ intersection|Individual_Presentation|Invited_Talk_Abstract|owl_Nothing
+ intersection|Regular_Paper|Research_Institute|owl_Nothing
+ intersection|Event|Late-Registered_Participant|owl_Nothing
+ intersection|Neutral_Review|Paper_Author|owl_Nothing
+ intersection|Flyer|Person|owl_Nothing
+ intersection|Contributed_Talk|Research_Institute|owl_Nothing
+ intersection|Individual_Presentation|Organisation|owl_Nothing
+ intersection|Academic_Institution|Workshop_Paper|owl_Nothing
+ intersection|Early-Registered_Participant|Session|owl_Nothing
+ intersection|Document|Tutorial|owl_Nothing
+ intersection|Proceedings|Social_Event|owl_Nothing
+ intersection|Abstract|Presenter|owl_Nothing
+ intersection|Document|Industrial_Session|owl_Nothing
+ intersection|Conference_Proceedings|University|owl_Nothing
+ intersection|Invited_Speaker|Regular_Session|owl_Nothing
+ intersection|Multi-author_Volume|Workshop_Chair|owl_Nothing
+ intersection|Paper_Author|Rejected_Paper|owl_Nothing
+ intersection|Industrial_Session|University|owl_Nothing
+ intersection|Assigned_Paper|Review|owl_Nothing
+ intersection|Evaluated_Paper|Scientific_Event|owl_Nothing
+ intersection|Demo_Paper|Track|owl_Nothing
+ intersection|Academic_Institution|Flyer|owl_Nothing
+ intersection|Academic_Institution|Possible_Reviewer|owl_Nothing
+ intersection|Invited_Talk|Programme_Brochure|owl_Nothing
+ intersection|Research_Institute|Tutorial_Abstract|owl_Nothing
+ intersection|Positive_Review|Workshop_Session|owl_Nothing
+ intersection|Conference_Paper|Conference_Participant|owl_Nothing
+ intersection|Academic_Institution|Industrial_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Research_Institute|owl_Nothing
+ intersection|Evaluated_Paper|Negative_Review|owl_Nothing
+ intersection|Location|Student|owl_Nothing
+ intersection|Invited_Talk|Proceedings_Publisher|owl_Nothing
+ intersection|Industrial_Paper|Research_Topic|owl_Nothing
+ intersection|Contributed_Talk|Organising_Agency|owl_Nothing
+ intersection|Contributed_Talk|Late-Registered_Participant|owl_Nothing
+ intersection|Abstract|Organising_Agency|owl_Nothing
+ intersection|Proceedings_Publisher|Programme_Brochure|owl_Nothing
+ intersection|PC_Chair|Poster_Paper|owl_Nothing
+ intersection|Regular_Paper|SC_Member|owl_Nothing
+ intersection|Location|Organising_Agency|owl_Nothing
+ intersection|Assigned_Paper|Organisation|owl_Nothing
+ intersection|Event|Proceedings_Publisher|owl_Nothing
+ intersection|Industrial_Session|Track|owl_Nothing
+ intersection|Conference_Trip|Research_Institute|owl_Nothing
+ intersection|Contributed_Talk|OC_Member|owl_Nothing
+ intersection|Location|Workshop_Chair|owl_Nothing
+ intersection|Organisation|Workshop|owl_Nothing
+ intersection|Individual_Presentation|Tutorial_Chair|owl_Nothing
+ intersection|Conference|Submitted_Paper|owl_Nothing
+ intersection|Assigned_Paper|Presenter|owl_Nothing
+ intersection|Early-Registered_Participant|Poster_Paper|owl_Nothing
+ intersection|Tutorial|University|owl_Nothing
+ intersection|Conference_Trip|Presenter|owl_Nothing
+ intersection|Agency_Staff_Member|PC_Chair|owl_Nothing
+ intersection|Conference|Positive_Review|owl_Nothing
+ intersection|Conference_Proceedings|Neutral_Review|owl_Nothing
+ intersection|Review|Session|owl_Nothing
+ intersection|OC_Chair|Review|owl_Nothing
+ intersection|Location|Social_Event|owl_Nothing
+ intersection|Multi-author_Volume|Poster_Session|owl_Nothing
+ intersection|Paper|Person|owl_Nothing
+ intersection|Possible_Reviewer|Regular_Session|owl_Nothing
+ intersection|Demo_Chair|Scientific_Event|owl_Nothing
+ intersection|Poster_Session|Social_Event|owl_Nothing
+ intersection|Demo_Chair|Document|owl_Nothing
+ intersection|Conference_Trip|Workshop_Paper|owl_Nothing
+ intersection|Research_Topic|Social_Event|owl_Nothing
+ intersection|Research_Topic|SC_Member|owl_Nothing
+ intersection|Conference_Participant|Session|owl_Nothing
+ intersection|Conference_Trip|Paper|owl_Nothing
+ intersection|Poster_Paper|Session_Chair|owl_Nothing
+ intersection|Organising_Agency|Workshop_Paper|owl_Nothing
+ intersection|Multi-author_Volume|Presenter|owl_Nothing
+ intersection|Demo_Chair|SC_Member|owl_Nothing
+ intersection|Proceedings|Submitted_Paper|owl_Nothing
+ intersection|Industrial_Paper|Neutral_Review|owl_Nothing
+ intersection|Conference_Trip|Scientific_Event|owl_Nothing
+ intersection|Industrial_Paper|Workshop|owl_Nothing
+ intersection|Contributed_Talk|Session_Chair|owl_Nothing
+ intersection|Location|Organisation|owl_Nothing
+ intersection|Flyer|Negative_Review|owl_Nothing
+ intersection|Programme_Brochure|Student|owl_Nothing
+ intersection|Conference|Individual_Presentation|owl_Nothing
+ intersection|Abstract|Conference_Banquet|owl_Nothing
+ intersection|Camera_Ready_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|Web_Site|owl_Nothing
+ intersection|Possible_Reviewer|Workshop_Paper|owl_Nothing
+ intersection|PC_Chair|Paper_Author|owl_Nothing
+ intersection|Event|Paper_Author|owl_Nothing
+ intersection|Presenter|University|owl_Nothing
+ intersection|Proceedings_Publisher|Tutorial_Chair|owl_Nothing
+ intersection|Late-Registered_Participant|Scientific_Event|owl_Nothing
+ intersection|Web_Site|Workshop_Session|owl_Nothing
+ intersection|Invited_Speaker|Positive_Review|owl_Nothing
+ intersection|Negative_Review|Rejected_Paper|owl_Nothing
+ intersection|Student|Track|owl_Nothing
+ intersection|Conference|Tutorial_Chair|owl_Nothing
+ intersection|Contributed_Talk|Demo_Paper|owl_Nothing
+ intersection|Programme_Brochure|Session|owl_Nothing
+ intersection|Demo_Paper|Workshop_Session|owl_Nothing
+ intersection|Industrial_Session|Proceedings|owl_Nothing
+ intersection|Positive_Review|Poster_Session|owl_Nothing
+ intersection|Programme_Brochure|Rejected_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Organisation|owl_Nothing
+ intersection|Positive_Review|Session|owl_Nothing
+ intersection|Industrial_Session|Paper_Author|owl_Nothing
+ intersection|Positive_Review|Poster_Paper|owl_Nothing
+ intersection|PC_Chair|Scientific_Event|owl_Nothing
+ intersection|Positive_Review|Presenter|owl_Nothing
+ intersection|Conference_Paper|Research_Institute|owl_Nothing
+ intersection|Possible_Reviewer|Tutorial_Chair|owl_Nothing
+ intersection|Accepted_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Banquet|OC_Chair|owl_Nothing
+ intersection|Neutral_Review|Rejected_Paper|owl_Nothing
+ intersection|Industrial_Paper|Organisation|owl_Nothing
+ intersection|Assigned_Paper|Research_Institute|owl_Nothing
+ intersection|Contributed_Talk|Early-Registered_Participant|owl_Nothing
+ intersection|Abstract|Conference_Session|owl_Nothing
+ intersection|Organisation|Poster_Session|owl_Nothing
+ intersection|Student|Tutorial|owl_Nothing
+ intersection|Invited_Talk_Abstract|Session_Chair|owl_Nothing
+ intersection|Late-Registered_Participant|Organisation|owl_Nothing
+ intersection|Poster_Session|Scientific_Event|owl_Nothing
+ intersection|Regular_Paper|Tutorial|owl_Nothing
+ intersection|Possible_Reviewer|Poster_Session|owl_Nothing
+ intersection|Location|OC_Chair|owl_Nothing
+ intersection|Tutorial_Abstract|University|owl_Nothing
+ intersection|Conference_Session|Demo_Chair|owl_Nothing
+ intersection|Session|University|owl_Nothing
+ intersection|Abstract|Regular_Session|owl_Nothing
+ intersection|Industrial_Session|Neutral_Review|owl_Nothing
+ intersection|Invited_Talk|Regular_Session|owl_Nothing
+ intersection|Invited_Speaker|Track|owl_Nothing
+ intersection|Presenter|Tutorial|owl_Nothing
+ intersection|Accepted_Paper|Review|owl_Nothing
+ intersection|Assigned_Paper|Social_Event|owl_Nothing
+ intersection|Negative_Review|Organisation|owl_Nothing
+ intersection|Document|Session_Chair|owl_Nothing
+ intersection|Accepted_Paper|Contributed_Talk|owl_Nothing
+ intersection|Industrial_Session|Invited_Talk_Abstract|owl_Nothing
+ intersection|Conference_Proceedings|Industrial_Paper|owl_Nothing
+ intersection|Location|PC_Member|owl_Nothing
+ intersection|Event|Organisation|owl_Nothing
+ intersection|Camera_Ready_Paper|Document|owl_Nothing
+ intersection|Conference_Participant|Scientific_Event|owl_Nothing
+ intersection|PC_Member|Research_Topic|owl_Nothing
+ intersection|Conference_Participant|Tutorial|owl_Nothing
+ intersection|Conference_Proceedings|SC_Member|owl_Nothing
+ intersection|Multi-author_Volume|Paper|owl_Nothing
+ intersection|Invited_Speaker|Submitted_Paper|owl_Nothing
+ intersection|Academic_Institution|Conference|owl_Nothing
+ intersection|Organising_Agency|Paper_Author|owl_Nothing
+ intersection|Possible_Reviewer|Session_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|Research_Topic|owl_Nothing
+ intersection|Neutral_Review|University|owl_Nothing
+ intersection|SC_Member|Workshop_Session|owl_Nothing
+ intersection|Camera_Ready_Paper|Proceedings|owl_Nothing
+ intersection|Organising_Agency|Scientific_Event|owl_Nothing
+ intersection|Accepted_Paper|Conference_Trip|owl_Nothing
+ intersection|Conference_Trip|Workshop_Session|owl_Nothing
+ intersection|Conference_Trip|Track|owl_Nothing
+ intersection|PC_Chair|Session|owl_Nothing
+ intersection|Demo_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Location|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Participant|Workshop|owl_Nothing
+ intersection|Session_Chair|University|owl_Nothing
+ intersection|PC_Chair|Presenter|owl_Nothing
+ intersection|Academic_Institution|Proceedings_Publisher|owl_Nothing
+ intersection|Negative_Review|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Banquet|Scientific_Event|owl_Nothing
+ intersection|Poster_Session|Proceedings|owl_Nothing
+ intersection|Accepted_Paper|OC_Chair|owl_Nothing
+ intersection|University|Web_Site|owl_Nothing
+ intersection|Multi-author_Volume|Tutorial|owl_Nothing
+ intersection|Proceedings_Publisher|Social_Event|owl_Nothing
+ intersection|Assigned_Paper|Paper_Author|owl_Nothing
+ intersection|Location|SC_Member|owl_Nothing
+ intersection|Location|PC_Chair|owl_Nothing
+ intersection|Contributed_Talk|Workshop|owl_Nothing
+ intersection|Camera_Ready_Paper|Web_Site|owl_Nothing
+ intersection|Poster_Session|University|owl_Nothing
+ intersection|Academic_Institution|Session_Chair|owl_Nothing
+ intersection|Paper|Session_Chair|owl_Nothing
+ intersection|Evaluated_Paper|Session|owl_Nothing
+ intersection|Demo_Paper|Industrial_Session|owl_Nothing
+ intersection|Contributed_Talk|Poster_Paper|owl_Nothing
+ intersection|Location|Track|owl_Nothing
+ intersection|PC_Member|Tutorial|owl_Nothing
+ intersection|Demo_Session|Neutral_Review|owl_Nothing
+ intersection|Conference|Invited_Talk|owl_Nothing
+ intersection|Contributed_Talk|Negative_Review|owl_Nothing
+ intersection|Camera_Ready_Paper|Student|owl_Nothing
+ intersection|Neutral_Review|Tutorial|owl_Nothing
+ intersection|Agency_Staff_Member|Tutorial|owl_Nothing
+ intersection|Conference|Demo_Chair|owl_Nothing
+ intersection|Poster_Session|Student|owl_Nothing
+ intersection|Paper_Author|Regular_Session|owl_Nothing
+ intersection|Flyer|Late-Registered_Participant|owl_Nothing
+ intersection|Individual_Presentation|Multi-author_Volume|owl_Nothing
+ intersection|Early-Registered_Participant|Review|owl_Nothing
+ intersection|Industrial_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Conference_Participant|Rejected_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Conference_Banquet|owl_Nothing
+ intersection|Document|Web_Site|owl_Nothing
+ intersection|Invited_Talk|Invited_Talk_Abstract|owl_Nothing
+ intersection|Proceedings|University|owl_Nothing
+ intersection|Review|Tutorial|owl_Nothing
+ intersection|Conference_Banquet|Organisation|owl_Nothing
+ intersection|Conference_Trip|Multi-author_Volume|owl_Nothing
+ intersection|Programme_Brochure|SC_Member|owl_Nothing
+ intersection|Late-Registered_Participant|Positive_Review|owl_Nothing
+ intersection|Academic_Institution|Assigned_Paper|owl_Nothing
+ intersection|Person|Session|owl_Nothing
+ intersection|Agency_Staff_Member|Assigned_Paper|owl_Nothing
+ intersection|Positive_Review|Research_Topic|owl_Nothing
+ intersection|Flyer|Tutorial|owl_Nothing
+ intersection|Invited_Talk_Abstract|Social_Event|owl_Nothing
+ intersection|Early-Registered_Participant|Research_Institute|owl_Nothing
+ intersection|Session_Chair|Workshop|owl_Nothing
+ intersection|Rejected_Paper|Web_Site|owl_Nothing
+ intersection|Paper|Workshop|owl_Nothing
+ intersection|Event|Positive_Review|owl_Nothing
+ intersection|Industrial_Session|Tutorial_Abstract|owl_Nothing
+ intersection|Abstract|PC_Member|owl_Nothing
+ intersection|Early-Registered_Participant|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Trip|Possible_Reviewer|owl_Nothing
+ intersection|Flyer|Programme_Brochure|owl_Nothing
+ intersection|Conference_Participant|Industrial_Session|owl_Nothing
+ intersection|Industrial_Session|Regular_Session|owl_Nothing
+ intersection|Industrial_Session|Late-Registered_Participant|owl_Nothing
+ intersection|Invited_Speaker|Tutorial|owl_Nothing
+ intersection|Abstract|SC_Member|owl_Nothing
+ intersection|Abstract|OC_Chair|owl_Nothing
+ intersection|Document|Person|owl_Nothing
+ intersection|Conference_Paper|Contributed_Talk|owl_Nothing
+ intersection|Location|Research_Topic|owl_Nothing
+ intersection|Industrial_Session|Organising_Agency|owl_Nothing
+ intersection|Industrial_Paper|Organising_Agency|owl_Nothing
+ intersection|Organisation|Regular_Paper|owl_Nothing
+ intersection|Late-Registered_Participant|Proceedings|owl_Nothing
+ intersection|Demo_Chair|Evaluated_Paper|owl_Nothing
+ intersection|PC_Member|Proceedings_Publisher|owl_Nothing
+ intersection|Assigned_Paper|Organising_Agency|owl_Nothing
+ intersection|Organising_Agency|Tutorial_Abstract|owl_Nothing
+ intersection|Demo_Chair|Multi-author_Volume|owl_Nothing
+ intersection|Conference_Proceedings|Rejected_Paper|owl_Nothing
+ intersection|Academic_Institution|SC_Member|owl_Nothing
+ intersection|Submitted_Paper|Workshop|owl_Nothing
+ intersection|Conference|Demo_Session|owl_Nothing
+ intersection|Conference_Trip|Early-Registered_Participant|owl_Nothing
+ intersection|Camera_Ready_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Industrial_Paper|Web_Site|owl_Nothing
+ intersection|Contributed_Talk|Research_Topic|owl_Nothing
+ intersection|Industrial_Session|Location|owl_Nothing
+ intersection|Conference_Paper|OC_Member|owl_Nothing
+ intersection|Research_Institute|Scientific_Event|owl_Nothing
+ intersection|OC_Chair|Research_Topic|owl_Nothing
+ intersection|Conference_Session|Evaluated_Paper|owl_Nothing
+ intersection|Individual_Presentation|Web_Site|owl_Nothing
+ intersection|Paper_Author|Web_Site|owl_Nothing
+ intersection|Conference_Paper|Research_Topic|owl_Nothing
+ intersection|Accepted_Paper|Person|owl_Nothing
+ intersection|PC_Chair|Student|owl_Nothing
+ intersection|Evaluated_Paper|Programme_Brochure|owl_Nothing
+ intersection|Academic_Institution|Negative_Review|owl_Nothing
+ intersection|Academic_Institution|Person|owl_Nothing
+ intersection|Poster_Session|Web_Site|owl_Nothing
+ intersection|Camera_Ready_Paper|Evaluated_Paper|owl_Nothing
+ intersection|Submitted_Paper|University|owl_Nothing
+ intersection|Organisation|Possible_Reviewer|owl_Nothing
+ intersection|Conference_Trip|Person|owl_Nothing
+ intersection|Demo_Paper|Person|owl_Nothing
+ intersection|Event|Tutorial_Chair|owl_Nothing
+ intersection|Student|Tutorial_Chair|owl_Nothing
+ intersection|PC_Chair|Regular_Session|owl_Nothing
+ intersection|Conference_Banquet|Individual_Presentation|owl_Nothing
+ intersection|Proceedings|Research_Institute|owl_Nothing
+ intersection|Rejected_Paper|Workshop_Session|owl_Nothing
+ intersection|OC_Chair|Tutorial|owl_Nothing
+ intersection|Assigned_Paper|Flyer|owl_Nothing
+ intersection|Demo_Chair|Submitted_Paper|owl_Nothing
+ intersection|Conference_Participant|Industrial_Paper|owl_Nothing
+ intersection|Demo_Paper|SC_Member|owl_Nothing
+ intersection|Conference|Track|owl_Nothing
+ intersection|Invited_Talk_Abstract|Review|owl_Nothing
+ intersection|Contributed_Talk|Positive_Review|owl_Nothing
+ intersection|Evaluated_Paper|Organisation|owl_Nothing
+ intersection|Invited_Speaker|Scientific_Event|owl_Nothing
+ intersection|Conference_Proceedings|Proceedings_Publisher|owl_Nothing
+ intersection|OC_Chair|Social_Event|owl_Nothing
+ intersection|PC_Chair|Rejected_Paper|owl_Nothing
+ intersection|Demo_Session|Document|owl_Nothing
+ intersection|Paper|Regular_Session|owl_Nothing
+ intersection|Camera_Ready_Paper|Organising_Agency|owl_Nothing
+ intersection|Camera_Ready_Paper|OC_Member|owl_Nothing
+ intersection|Demo_Chair|Organisation|owl_Nothing
+ intersection|Person|Scientific_Event|owl_Nothing
+ intersection|Programme_Brochure|Regular_Paper|owl_Nothing
+ intersection|Conference_Proceedings|Document|owl_Nothing
+ intersection|Conference_Proceedings|Positive_Review|owl_Nothing
+ intersection|Accepted_Paper|Invited_Speaker|owl_Nothing
+ intersection|Evaluated_Paper|Workshop_Session|owl_Nothing
+ intersection|Multi-author_Volume|PC_Member|owl_Nothing
+ intersection|Workshop_Paper|Workshop_Session|owl_Nothing
+ intersection|OC_Chair|Session_Chair|owl_Nothing
+ intersection|Invited_Speaker|Regular_Paper|owl_Nothing
+ intersection|Evaluated_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Conference_Banquet|Workshop_Session|owl_Nothing
+ intersection|Organising_Agency|Session|owl_Nothing
+ intersection|Research_Institute|Tutorial|owl_Nothing
+ intersection|Assigned_Paper|Individual_Presentation|owl_Nothing
+ intersection|Paper_Author|Workshop_Paper|owl_Nothing
+ intersection|Neutral_Review|Scientific_Event|owl_Nothing
+ intersection|Multi-author_Volume|Paper_Author|owl_Nothing
+ intersection|Conference|Proceedings|owl_Nothing
+ intersection|Invited_Speaker|Paper|owl_Nothing
+ intersection|Person|Workshop|owl_Nothing
+ intersection|Possible_Reviewer|Proceedings|owl_Nothing
+ intersection|Flyer|Proceedings|owl_Nothing
+ intersection|Conference_Proceedings|Workshop_Chair|owl_Nothing
+ intersection|Presenter|Submitted_Paper|owl_Nothing
+ intersection|Contributed_Talk|Proceedings|owl_Nothing
+ intersection|Paper_Author|Review|owl_Nothing
+ intersection|Assigned_Paper|Document|owl_Nothing
+ intersection|Evaluated_Paper|Individual_Presentation|owl_Nothing
+ intersection|Positive_Review|Tutorial|owl_Nothing
+ intersection|Agency_Staff_Member|Conference_Proceedings|owl_Nothing
+ intersection|Proceedings_Publisher|Session_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|PC_Chair|owl_Nothing
+ intersection|Multi-author_Volume|Tutorial_Abstract|owl_Nothing
+ intersection|Late-Registered_Participant|OC_Chair|owl_Nothing
+ intersection|OC_Member|Scientific_Event|owl_Nothing
+ intersection|Paper_Author|Workshop|owl_Nothing
+ intersection|PC_Member|Submitted_Paper|owl_Nothing
+ intersection|Industrial_Session|Proceedings_Publisher|owl_Nothing
+ intersection|SC_Member|Tutorial|owl_Nothing
+ intersection|Conference_Paper|Industrial_Paper|owl_Nothing
+ intersection|Tutorial|Workshop_Paper|owl_Nothing
+ intersection|Conference_Banquet|Positive_Review|owl_Nothing
+ intersection|Camera_Ready_Paper|University|owl_Nothing
+ intersection|PC_Member|Rejected_Paper|owl_Nothing
+ intersection|Poster_Paper|SC_Member|owl_Nothing
+ intersection|Research_Topic|Workshop_Session|owl_Nothing
+ intersection|Conference_Banquet|Session_Chair|owl_Nothing
+ intersection|Conference_Banquet|Conference_Participant|owl_Nothing
+ intersection|Conference|Conference_Proceedings|owl_Nothing
+ intersection|Social_Event|Web_Site|owl_Nothing
+ intersection|Negative_Review|OC_Chair|owl_Nothing
+ intersection|Invited_Speaker|Negative_Review|owl_Nothing
+ intersection|Abstract|Location|owl_Nothing
+ intersection|OC_Chair|Poster_Paper|owl_Nothing
+ intersection|Industrial_Session|Regular_Paper|owl_Nothing
+ intersection|Demo_Paper|Negative_Review|owl_Nothing
+ intersection|OC_Member|Rejected_Paper|owl_Nothing
+ intersection|Research_Institute|Workshop_Chair|owl_Nothing
+ intersection|Agency_Staff_Member|Individual_Presentation|owl_Nothing
+ intersection|Flyer|Industrial_Session|owl_Nothing
+ intersection|SC_Member|Tutorial_Chair|owl_Nothing
+ intersection|Programme_Brochure|Scientific_Event|owl_Nothing
+ intersection|PC_Chair|Poster_Session|owl_Nothing
+ intersection|Paper|Tutorial|owl_Nothing
+ intersection|Assigned_Paper|Event|owl_Nothing
+ intersection|Late-Registered_Participant|Presenter|owl_Nothing
+ intersection|Event|Paper|owl_Nothing
+ intersection|Conference_Paper|Demo_Paper|owl_Nothing
+ intersection|Web_Site|Workshop_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Possible_Reviewer|owl_Nothing
+ intersection|Paper_Author|Programme_Brochure|owl_Nothing
+ intersection|Proceedings_Publisher|Tutorial|owl_Nothing
+ intersection|Abstract|Programme_Brochure|owl_Nothing
+ intersection|Session|Workshop|owl_Nothing
+ intersection|Organising_Agency|Student|owl_Nothing
+ intersection|Agency_Staff_Member|Scientific_Event|owl_Nothing
+ intersection|Invited_Talk|Session_Chair|owl_Nothing
+ intersection|Review|Scientific_Event|owl_Nothing
+ intersection|OC_Member|Track|owl_Nothing
+ intersection|Proceedings_Publisher|University|owl_Nothing
+ intersection|Tutorial_Chair|Workshop_Paper|owl_Nothing
+ intersection|Event|Research_Institute|owl_Nothing
+ intersection|Multi-author_Volume|Workshop_Paper|owl_Nothing
+ intersection|Conference_Session|Presenter|owl_Nothing
+ intersection|OC_Chair|Person|owl_Nothing
+ intersection|Student|Submitted_Paper|owl_Nothing
+ intersection|Invited_Talk_Abstract|Research_Institute|owl_Nothing
+ intersection|Invited_Speaker|PC_Member|owl_Nothing
+ intersection|Document|Social_Event|owl_Nothing
+ intersection|Session_Chair|Student|owl_Nothing
+ intersection|Scientific_Event|Tutorial_Chair|owl_Nothing
+ intersection|Research_Topic|Tutorial|owl_Nothing
+ intersection|Positive_Review|Track|owl_Nothing
+ intersection|Industrial_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Multi-author_Volume|Regular_Paper|owl_Nothing
+ intersection|Flyer|PC_Chair|owl_Nothing
+ intersection|Conference_Trip|Invited_Speaker|owl_Nothing
+ intersection|Contributed_Talk|Demo_Session|owl_Nothing
+ intersection|Conference_Session|Possible_Reviewer|owl_Nothing
+ intersection|Industrial_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Session|Paper_Author|owl_Nothing
+ intersection|Presenter|Proceedings|owl_Nothing
+ intersection|Invited_Speaker|Poster_Session|owl_Nothing
+ intersection|Abstract|Individual_Presentation|owl_Nothing
+ intersection|Invited_Talk_Abstract|PC_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|OC_Chair|owl_Nothing
+ intersection|Conference_Paper|SC_Member|owl_Nothing
+ intersection|Conference_Banquet|SC_Member|owl_Nothing
+ intersection|Research_Topic|Workshop_Paper|owl_Nothing
+ intersection|Demo_Chair|Workshop_Paper|owl_Nothing
+ intersection|Demo_Paper|Workshop_Chair|owl_Nothing
+ intersection|Flyer|Paper_Author|owl_Nothing
+ intersection|Event|Organising_Agency|owl_Nothing
+ intersection|Negative_Review|OC_Member|owl_Nothing
+ intersection|Demo_Chair|Workshop|owl_Nothing
+ intersection|Demo_Session|Scientific_Event|owl_Nothing
+ intersection|Possible_Reviewer|Workshop_Chair|owl_Nothing
+ intersection|OC_Member|Organisation|owl_Nothing
+ intersection|Assigned_Paper|Programme_Brochure|owl_Nothing
+ intersection|Conference_Trip|Event|owl_Nothing
+ intersection|Regular_Session|Research_Topic|owl_Nothing
+ intersection|Invited_Talk|Person|owl_Nothing
+ intersection|Paper_Author|Research_Institute|owl_Nothing
+ intersection|Organisation|PC_Member|owl_Nothing
+ intersection|Conference_Participant|Programme_Brochure|owl_Nothing
+ intersection|Location|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Trip|Session|owl_Nothing
+ intersection|Conference|Session|owl_Nothing
+ intersection|Abstract|Late-Registered_Participant|owl_Nothing
+ intersection|Conference_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Neutral_Review|Programme_Brochure|owl_Nothing
+ intersection|Document|Paper_Author|owl_Nothing
+ intersection|Conference_Paper|Session_Chair|owl_Nothing
+ intersection|Conference_Banquet|Programme_Brochure|owl_Nothing
+ intersection|PC_Member|Programme_Brochure|owl_Nothing
+ intersection|Multi-author_Volume|Organisation|owl_Nothing
+ intersection|Demo_Session|Submitted_Paper|owl_Nothing
+ intersection|Evaluated_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Poster_Session|Regular_Session|owl_Nothing
+ intersection|Flyer|Track|owl_Nothing
+ intersection|Industrial_Paper|Track|owl_Nothing
+ intersection|Assigned_Paper|Regular_Session|owl_Nothing
+ intersection|Individual_Presentation|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Research_Topic|owl_Nothing
+ intersection|Industrial_Session|Multi-author_Volume|owl_Nothing
+ intersection|Demo_Chair|Rejected_Paper|owl_Nothing
+ intersection|Conference_Session|Proceedings_Publisher|owl_Nothing
+ intersection|Invited_Talk|Workshop_Paper|owl_Nothing
+ intersection|Poster_Session|Submitted_Paper|owl_Nothing
+ intersection|Individual_Presentation|University|owl_Nothing
+ intersection|Neutral_Review|Workshop_Paper|owl_Nothing
+ intersection|Assigned_Paper|Demo_Chair|owl_Nothing
+ intersection|Regular_Paper|Session|owl_Nothing
+ intersection|Conference_Banquet|Invited_Talk|owl_Nothing
+ intersection|Academic_Institution|Workshop|owl_Nothing
+ intersection|Industrial_Paper|Research_Institute|owl_Nothing
+ intersection|Conference_Session|Positive_Review|owl_Nothing
+ intersection|Possible_Reviewer|University|owl_Nothing
+ intersection|Early-Registered_Participant|Rejected_Paper|owl_Nothing
+ intersection|Conference_Paper|Demo_Session|owl_Nothing
+ intersection|Academic_Institution|Multi-author_Volume|owl_Nothing
+ intersection|Student|Workshop_Session|owl_Nothing
+ intersection|Conference_Trip|OC_Chair|owl_Nothing
+ intersection|Invited_Speaker|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Location|owl_Nothing
+ intersection|OC_Member|Regular_Paper|owl_Nothing
+ intersection|Conference_Paper|Workshop_Chair|owl_Nothing
+ intersection|Invited_Talk_Abstract|Neutral_Review|owl_Nothing
+ intersection|Accepted_Paper|Possible_Reviewer|owl_Nothing
+ intersection|Invited_Talk_Abstract|Proceedings|owl_Nothing
+ intersection|Invited_Talk|Poster_Paper|owl_Nothing
+ intersection|Abstract|Conference_Proceedings|owl_Nothing
+ intersection|Evaluated_Paper|PC_Member|owl_Nothing
+ intersection|Positive_Review|Programme_Brochure|owl_Nothing
+ intersection|Event|University|owl_Nothing
+ intersection|Event|Programme_Brochure|owl_Nothing
+ intersection|Workshop_Chair|Workshop_Paper|owl_Nothing
+ intersection|Flyer|Poster_Paper|owl_Nothing
+ intersection|Positive_Review|Student|owl_Nothing
+ intersection|Camera_Ready_Paper|Track|owl_Nothing
+ intersection|Demo_Session|Regular_Session|owl_Nothing
+ intersection|Conference_Participant|Research_Institute|owl_Nothing
+ intersection|Conference_Participant|Workshop_Paper|owl_Nothing
+ intersection|Industrial_Session|OC_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Research_Institute|owl_Nothing
+ intersection|Flyer|Positive_Review|owl_Nothing
+ intersection|Presenter|Regular_Session|owl_Nothing
+ intersection|Review|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Banquet|Proceedings_Publisher|owl_Nothing
+ intersection|Contributed_Talk|Invited_Speaker|owl_Nothing
+ intersection|Conference_Participant|Tutorial_Chair|owl_Nothing
+ intersection|Abstract|Poster_Session|owl_Nothing
+ intersection|Positive_Review|Possible_Reviewer|owl_Nothing
+ intersection|Proceedings|Rejected_Paper|owl_Nothing
+ intersection|Document|Individual_Presentation|owl_Nothing
+ intersection|Possible_Reviewer|Regular_Paper|owl_Nothing
+ intersection|Document|OC_Member|owl_Nothing
+ intersection|Invited_Speaker|Possible_Reviewer|owl_Nothing
+ intersection|Paper_Author|Tutorial_Abstract|owl_Nothing
+ intersection|PC_Member|Web_Site|owl_Nothing
+ intersection|Proceedings_Publisher|Workshop_Paper|owl_Nothing
+ intersection|Invited_Talk_Abstract|Positive_Review|owl_Nothing
+ intersection|Scientific_Event|Session|owl_Nothing
+ intersection|Regular_Session|Web_Site|owl_Nothing
+ intersection|Social_Event|Track|owl_Nothing
+ intersection|Flyer|Paper|owl_Nothing
+ intersection|Industrial_Session|Tutorial|owl_Nothing
+ intersection|PC_Chair|Social_Event|owl_Nothing
+ intersection|Evaluated_Paper|Location|owl_Nothing
+ intersection|Conference|Review|owl_Nothing
+ intersection|Flyer|Scientific_Event|owl_Nothing
+ intersection|Poster_Session|Review|owl_Nothing
+ intersection|Neutral_Review|Regular_Paper|owl_Nothing
+ intersection|Abstract|Student|owl_Nothing
+ intersection|Camera_Ready_Paper|Review|owl_Nothing
+ intersection|Document|Early-Registered_Participant|owl_Nothing
+ intersection|Camera_Ready_Paper|Rejected_Paper|owl_Nothing
+ intersection|Conference_Participant|Track|owl_Nothing
+ intersection|Student|Workshop_Paper|owl_Nothing
+ intersection|Conference_Participant|Regular_Session|owl_Nothing
+ intersection|Flyer|Session_Chair|owl_Nothing
+ intersection|Demo_Paper|Review|owl_Nothing
+ intersection|Positive_Review|University|owl_Nothing
+ intersection|Review|Social_Event|owl_Nothing
+ intersection|Abstract|Workshop_Chair|owl_Nothing
+ intersection|Conference_Banquet|Regular_Session|owl_Nothing
+ intersection|Industrial_Session|Programme_Brochure|owl_Nothing
+ intersection|Demo_Paper|University|owl_Nothing
+ intersection|OC_Member|Research_Institute|owl_Nothing
+ intersection|Evaluated_Paper|Person|owl_Nothing
+ intersection|Demo_Chair|OC_Member|owl_Nothing
+ intersection|Conference_Session|Industrial_Paper|owl_Nothing
+ intersection|Demo_Paper|Demo_Session|owl_Nothing
+ intersection|Demo_Paper|Location|owl_Nothing
+ intersection|Regular_Paper|Scientific_Event|owl_Nothing
+ intersection|Demo_Session|Invited_Talk_Abstract|owl_Nothing
+ intersection|Conference_Participant|Individual_Presentation|owl_Nothing
+ intersection|Location|Regular_Session|owl_Nothing
+ intersection|Conference_Session|Contributed_Talk|owl_Nothing
+ intersection|Assigned_Paper|Tutorial|owl_Nothing
+ intersection|Invited_Speaker|Proceedings_Publisher|owl_Nothing
+ intersection|Positive_Review|Tutorial_Abstract|owl_Nothing
+ intersection|Poster_Paper|University|owl_Nothing
+ intersection|Academic_Institution|Contributed_Talk|owl_Nothing
+ intersection|Invited_Talk|Scientific_Event|owl_Nothing
+ intersection|Industrial_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Trip|Document|owl_Nothing
+ intersection|Neutral_Review|Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Conference|owl_Nothing
+ intersection|Poster_Paper|Student|owl_Nothing
+ intersection|Positive_Review|SC_Member|owl_Nothing
+ intersection|Conference_Participant|Paper|owl_Nothing
+ intersection|OC_Member|Positive_Review|owl_Nothing
+ intersection|Organisation|Research_Institute|owl_Nothing
+ intersection|OC_Chair|Organising_Agency|owl_Nothing
+ intersection|Early-Registered_Participant|Track|owl_Nothing
+ intersection|Invited_Talk_Abstract|PC_Member|owl_Nothing
+ intersection|PC_Chair|Tutorial_Chair|owl_Nothing
+ intersection|Session|Student|owl_Nothing
+ intersection|Conference_Participant|Conference_Proceedings|owl_Nothing
+ intersection|Conference_Proceedings|Demo_Session|owl_Nothing
+ intersection|Evaluated_Paper|Proceedings|owl_Nothing
+ intersection|OC_Member|University|owl_Nothing
+ intersection|OC_Chair|Proceedings|owl_Nothing
+ intersection|Social_Event|Workshop_Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Demo_Paper|owl_Nothing
+ intersection|Contributed_Talk|Paper|owl_Nothing
+ intersection|Conference_Banquet|Workshop|owl_Nothing
+ intersection|Invited_Talk_Abstract|Session|owl_Nothing
+ intersection|Conference_Proceedings|Organisation|owl_Nothing
+ intersection|PC_Chair|Workshop_Session|owl_Nothing
+ intersection|Event|Research_Topic|owl_Nothing
+ intersection|Regular_Session|Rejected_Paper|owl_Nothing
+ intersection|Assigned_Paper|Location|owl_Nothing
+ intersection|Poster_Session|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Trip|Submitted_Paper|owl_Nothing
+ intersection|Conference_Banquet|Rejected_Paper|owl_Nothing
+ intersection|SC_Member|Workshop_Paper|owl_Nothing
+ intersection|OC_Chair|Submitted_Paper|owl_Nothing
+ intersection|Positive_Review|Proceedings_Publisher|owl_Nothing
+ intersection|Invited_Talk_Abstract|Late-Registered_Participant|owl_Nothing
+ intersection|Invited_Speaker|Proceedings|owl_Nothing
+ intersection|Demo_Paper|Web_Site|owl_Nothing
+ intersection|Conference_Session|Flyer|owl_Nothing
+ intersection|Invited_Talk_Abstract|SC_Member|owl_Nothing
+ intersection|Conference_Paper|Person|owl_Nothing
+ intersection|Conference_Participant|Positive_Review|owl_Nothing
+ intersection|Conference_Trip|Proceedings_Publisher|owl_Nothing
+ intersection|Negative_Review|Positive_Review|owl_Nothing
+ intersection|Conference_Paper|Conference_Trip|owl_Nothing
+ intersection|Individual_Presentation|Late-Registered_Participant|owl_Nothing
+ intersection|Conference_Banquet|Web_Site|owl_Nothing
+ intersection|Accepted_Paper|Demo_Chair|owl_Nothing
+ intersection|Neutral_Review|PC_Member|owl_Nothing
+ intersection|Conference|Person|owl_Nothing
+ intersection|Industrial_Paper|Invited_Talk|owl_Nothing
+ intersection|Demo_Session|Regular_Paper|owl_Nothing
+ intersection|Assigned_Paper|Workshop_Chair|owl_Nothing
+ intersection|Proceedings|Web_Site|owl_Nothing
+ intersection|Conference_Participant|Demo_Chair|owl_Nothing
+ intersection|Flyer|Web_Site|owl_Nothing
+ intersection|Document|Presenter|owl_Nothing
+ intersection|Abstract|Regular_Paper|owl_Nothing
+ intersection|Conference_Participant|OC_Chair|owl_Nothing
+ intersection|Organisation|Tutorial_Abstract|owl_Nothing
+ intersection|Evaluated_Paper|Workshop_Chair|owl_Nothing
+ intersection|Demo_Paper|Social_Event|owl_Nothing
+ intersection|Event|Workshop_Session|owl_Nothing
+ intersection|Industrial_Paper|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Session|owl_Nothing
+ intersection|Conference_Banquet|Demo_Paper|owl_Nothing
+ intersection|Poster_Paper|Session|owl_Nothing
+ intersection|Conference_Proceedings|Student|owl_Nothing
+ intersection|Demo_Paper|Regular_Session|owl_Nothing
+ intersection|Location|Neutral_Review|owl_Nothing
+ intersection|Abstract|Contributed_Talk|owl_Nothing
+ intersection|Demo_Session|Invited_Talk|owl_Nothing
+ intersection|Contributed_Talk|Person|owl_Nothing
+ intersection|Conference_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Negative_Review|Regular_Session|owl_Nothing
+ intersection|Multi-author_Volume|Student|owl_Nothing
+ intersection|Person|Workshop_Paper|owl_Nothing
+ intersection|Conference_Proceedings|Flyer|owl_Nothing
+ intersection|Assigned_Paper|Person|owl_Nothing
+ intersection|Review|Web_Site|owl_Nothing
+ intersection|Industrial_Session|PC_Chair|owl_Nothing
+ intersection|Demo_Paper|Programme_Brochure|owl_Nothing
+ intersection|Conference_Proceedings|Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Negative_Review|owl_Nothing
+ intersection|Individual_Presentation|Rejected_Paper|owl_Nothing
+ intersection|Accepted_Paper|Early-Registered_Participant|owl_Nothing
+ intersection|Conference|SC_Member|owl_Nothing
+ intersection|Conference_Participant|Submitted_Paper|owl_Nothing
+ intersection|Positive_Review|Scientific_Event|owl_Nothing
+ intersection|Regular_Paper|Workshop_Session|owl_Nothing
+ intersection|Organisation|Tutorial_Chair|owl_Nothing
+ intersection|Proceedings_Publisher|Research_Topic|owl_Nothing
+ intersection|Demo_Session|Research_Institute|owl_Nothing
+ intersection|Conference_Session|Early-Registered_Participant|owl_Nothing
+ intersection|Location|Multi-author_Volume|owl_Nothing
+ intersection|Flyer|Rejected_Paper|owl_Nothing
+ intersection|Early-Registered_Participant|Organisation|owl_Nothing
+ intersection|Negative_Review|Regular_Paper|owl_Nothing
+ intersection|Conference_Proceedings|Social_Event|owl_Nothing
+ intersection|Flyer|Submitted_Paper|owl_Nothing
+ intersection|Industrial_Session|Workshop_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|Flyer|owl_Nothing
+ intersection|Late-Registered_Participant|Tutorial|owl_Nothing
+ intersection|Camera_Ready_Paper|Conference_Session|owl_Nothing
+ intersection|Event|Negative_Review|owl_Nothing
+ intersection|Location|Paper_Author|owl_Nothing
+ intersection|Organisation|Submitted_Paper|owl_Nothing
+ intersection|Academic_Institution|Positive_Review|owl_Nothing
+ intersection|Neutral_Review|Workshop|owl_Nothing
+ intersection|Academic_Institution|OC_Member|owl_Nothing
+ intersection|Invited_Talk|PC_Chair|owl_Nothing
+ intersection|Conference_Session|Poster_Paper|owl_Nothing
+ intersection|Evaluated_Paper|Positive_Review|owl_Nothing
+ intersection|Conference|Conference_Session|owl_Nothing
+ intersection|Conference_Banquet|Neutral_Review|owl_Nothing
+ intersection|Conference_Proceedings|Review|owl_Nothing
+ intersection|Individual_Presentation|Workshop_Paper|owl_Nothing
+ intersection|PC_Chair|Positive_Review|owl_Nothing
+ intersection|OC_Member|Poster_Paper|owl_Nothing
+ intersection|Proceedings|Tutorial_Chair|owl_Nothing
+ intersection|Document|Review|owl_Nothing
+ intersection|Individual_Presentation|Negative_Review|owl_Nothing
+ intersection|Event|Track|owl_Nothing
+ intersection|Conference|Tutorial|owl_Nothing
+ intersection|Regular_Session|Tutorial|owl_Nothing
+ intersection|SC_Member|Social_Event|owl_Nothing
+ intersection|Negative_Review|Workshop_Chair|owl_Nothing
+ intersection|Demo_Paper|Invited_Talk|owl_Nothing
+ intersection|Conference_Banquet|Demo_Chair|owl_Nothing
+ intersection|Assigned_Paper|Conference_Session|owl_Nothing
+ intersection|Demo_Paper|Paper_Author|owl_Nothing
+ intersection|Conference_Trip|Invited_Talk|owl_Nothing
+ intersection|Poster_Session|Regular_Paper|owl_Nothing
+ intersection|Document|Late-Registered_Participant|owl_Nothing
+ intersection|Demo_Paper|Individual_Presentation|owl_Nothing
+ intersection|Accepted_Paper|Demo_Session|owl_Nothing
+ intersection|Flyer|Location|owl_Nothing
+ intersection|Paper|Social_Event|owl_Nothing
+ intersection|Session_Chair|Web_Site|owl_Nothing
+ intersection|Camera_Ready_Paper|Neutral_Review|owl_Nothing
+ intersection|Conference_Session|Student|owl_Nothing
+ intersection|Conference_Session|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Participant|Regular_Paper|owl_Nothing
+ intersection|Positive_Review|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Trip|Demo_Paper|owl_Nothing
+ intersection|Tutorial|Workshop|owl_Nothing
+ intersection|Conference_Proceedings|Industrial_Session|owl_Nothing
+ intersection|Academic_Institution|Camera_Ready_Paper|owl_Nothing
+ intersection|Multi-author_Volume|Person|owl_Nothing
+ intersection|Demo_Chair|Workshop_Session|owl_Nothing
+ intersection|Conference_Session|Submitted_Paper|owl_Nothing
+ intersection|Demo_Chair|Late-Registered_Participant|owl_Nothing
+ intersection|Presenter|Regular_Paper|owl_Nothing
+ intersection|Review|Workshop_Session|owl_Nothing
+ intersection|Negative_Review|Neutral_Review|owl_Nothing
+ intersection|Contributed_Talk|Organisation|owl_Nothing
+ intersection|Contributed_Talk|Individual_Presentation|owl_Nothing
+ intersection|Evaluated_Paper|OC_Member|owl_Nothing
+ intersection|Event|PC_Member|owl_Nothing
+ intersection|Regular_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|OC_Chair|Rejected_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Workshop_Session|owl_Nothing
+ intersection|Camera_Ready_Paper|PC_Chair|owl_Nothing
+ intersection|Conference_Session|OC_Member|owl_Nothing
+ intersection|Conference_Participant|Invited_Talk|owl_Nothing
+ intersection|Invited_Talk|OC_Member|owl_Nothing
+ intersection|Conference_Participant|Web_Site|owl_Nothing
+ intersection|Research_Institute|Track|owl_Nothing
+ intersection|Conference_Banquet|Conference_Trip|owl_Nothing
+ intersection|Conference_Trip|Web_Site|owl_Nothing
+ intersection|Demo_Paper|Organising_Agency|owl_Nothing
+ intersection|Conference_Trip|Session_Chair|owl_Nothing
+ intersection|Demo_Chair|Positive_Review|owl_Nothing
+ intersection|Poster_Paper|Programme_Brochure|owl_Nothing
+ intersection|Neutral_Review|Organisation|owl_Nothing
+ intersection|Conference_Trip|Negative_Review|owl_Nothing
+ intersection|Demo_Session|Paper|owl_Nothing
+ intersection|Invited_Talk_Abstract|Student|owl_Nothing
+ intersection|Neutral_Review|Session|owl_Nothing
+ intersection|Organisation|Regular_Session|owl_Nothing
+ intersection|Assigned_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Camera_Ready_Paper|Industrial_Session|owl_Nothing
+ intersection|Conference|Scientific_Event|owl_Nothing
+ intersection|Demo_Paper|Organisation|owl_Nothing
+ intersection|Accepted_Paper|Session_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Location|owl_Nothing
+ intersection|Industrial_Paper|Location|owl_Nothing
+ intersection|Document|Research_Topic|owl_Nothing
+ intersection|Location|OC_Member|owl_Nothing
+ intersection|Track|Web_Site|owl_Nothing
+ intersection|Location|University|owl_Nothing
+ intersection|Agency_Staff_Member|Invited_Talk|owl_Nothing
+ intersection|Agency_Staff_Member|Regular_Paper|owl_Nothing
+ intersection|Accepted_Paper|Individual_Presentation|owl_Nothing
+ intersection|Conference_Trip|Workshop|owl_Nothing
+ intersection|Camera_Ready_Paper|SC_Member|owl_Nothing
+ intersection|Person|Regular_Paper|owl_Nothing
+ intersection|Programme_Brochure|Social_Event|owl_Nothing
+ intersection|Academic_Institution|Early-Registered_Participant|owl_Nothing
+ intersection|Organisation|Session_Chair|owl_Nothing
+ intersection|Organising_Agency|SC_Member|owl_Nothing
+ intersection|Academic_Institution|Tutorial_Chair|owl_Nothing
+ intersection|Evaluated_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Assigned_Paper|PC_Member|owl_Nothing
+ intersection|OC_Member|Proceedings|owl_Nothing
+ intersection|Paper_Author|Proceedings|owl_Nothing
+ intersection|Conference_Banquet|Demo_Session|owl_Nothing
+ intersection|Neutral_Review|Workshop_Session|owl_Nothing
+ intersection|Conference_Paper|Review|owl_Nothing
+ intersection|Late-Registered_Participant|Research_Topic|owl_Nothing
+ intersection|Organisation|SC_Member|owl_Nothing
+ intersection|Poster_Paper|Workshop_Paper|owl_Nothing
+ intersection|Demo_Session|PC_Member|owl_Nothing
+ intersection|Conference_Banquet|Poster_Paper|owl_Nothing
+ intersection|Demo_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Accepted_Paper|Poster_Session|owl_Nothing
+ intersection|Accepted_Paper|PC_Chair|owl_Nothing
+ intersection|Invited_Talk|Workshop_Session|owl_Nothing
+ intersection|Negative_Review|Track|owl_Nothing
+ intersection|Conference_Session|Paper|owl_Nothing
+ intersection|Tutorial|Tutorial_Abstract|owl_Nothing
+ intersection|Industrial_Paper|University|owl_Nothing
+ intersection|Accepted_Paper|Flyer|owl_Nothing
+ intersection|Camera_Ready_Paper|Invited_Speaker|owl_Nothing
+ intersection|Conference_Proceedings|Organising_Agency|owl_Nothing
+ intersection|Neutral_Review|SC_Member|owl_Nothing
+ intersection|Conference|Invited_Speaker|owl_Nothing
+ intersection|Document|Research_Institute|owl_Nothing
+ intersection|Regular_Session|University|owl_Nothing
+ intersection|PC_Member|Possible_Reviewer|owl_Nothing
+ intersection|PC_Chair|Research_Topic|owl_Nothing
+ intersection|SC_Member|Web_Site|owl_Nothing
+ intersection|Poster_Paper|Workshop|owl_Nothing
+ intersection|Invited_Talk|Tutorial_Chair|owl_Nothing
+ intersection|Paper_Author|Scientific_Event|owl_Nothing
+ intersection|Conference_Paper|Early-Registered_Participant|owl_Nothing
+ intersection|Conference_Trip|Late-Registered_Participant|owl_Nothing
+ intersection|Positive_Review|Submitted_Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Demo_Session|owl_Nothing
+ intersection|Paper|Web_Site|owl_Nothing
+ intersection|Assigned_Paper|Demo_Session|owl_Nothing
+ intersection|Contributed_Talk|Scientific_Event|owl_Nothing
+ intersection|Invited_Speaker|Tutorial_Abstract|owl_Nothing
+ intersection|Academic_Institution|Presenter|owl_Nothing
+ intersection|Invited_Talk|Rejected_Paper|owl_Nothing
+ intersection|Session|Tutorial_Chair|owl_Nothing
+ intersection|Positive_Review|Rejected_Paper|owl_Nothing
+ intersection|Scientific_Event|Web_Site|owl_Nothing
+ intersection|Conference_Trip|Flyer|owl_Nothing
+ intersection|Accepted_Paper|Rejected_Paper|owl_Nothing
+ intersection|Conference|Flyer|owl_Nothing
+ intersection|Conference_Trip|Review|owl_Nothing
+ intersection|Neutral_Review|OC_Chair|owl_Nothing
+ intersection|Multi-author_Volume|Session_Chair|owl_Nothing
+ intersection|Accepted_Paper|Organising_Agency|owl_Nothing
+ intersection|Positive_Review|Workshop_Chair|owl_Nothing
+ intersection|Neutral_Review|Submitted_Paper|owl_Nothing
+ intersection|Individual_Presentation|Submitted_Paper|owl_Nothing
+ intersection|Proceedings|Regular_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Paper_Author|owl_Nothing
+ intersection|Scientific_Event|Tutorial|owl_Nothing
+ intersection|Flyer|University|owl_Nothing
+ intersection|Tutorial|Workshop_Session|owl_Nothing
+ intersection|Assigned_Paper|Conference_Banquet|owl_Nothing
+ intersection|Conference_Trip|PC_Member|owl_Nothing
+ intersection|Demo_Chair|Poster_Paper|owl_Nothing
+ intersection|Organising_Agency|Paper|owl_Nothing
+ intersection|Multi-author_Volume|Research_Topic|owl_Nothing
+ intersection|Conference_Trip|Regular_Paper|owl_Nothing
+ intersection|Organising_Agency|Tutorial_Chair|owl_Nothing
+ intersection|Rejected_Paper|Workshop_Chair|owl_Nothing
+ intersection|Poster_Session|SC_Member|owl_Nothing
+ intersection|Accepted_Paper|Camera_Ready_Paper|owl_Nothing
+ intersection|Student|University|owl_Nothing
+ intersection|Camera_Ready_Paper|Possible_Reviewer|owl_Nothing
+ intersection|Conference_Session|OC_Chair|owl_Nothing
+ intersection|Abstract|Paper|owl_Nothing
+ intersection|Neutral_Review|Proceedings|owl_Nothing
+ intersection|Programme_Brochure|Session_Chair|owl_Nothing
+ intersection|Proceedings_Publisher|Workshop_Session|owl_Nothing
+ intersection|Contributed_Talk|Poster_Session|owl_Nothing
+ intersection|Abstract|Session_Chair|owl_Nothing
+ intersection|Poster_Session|Rejected_Paper|owl_Nothing
+ intersection|Programme_Brochure|Tutorial|owl_Nothing
+ intersection|Conference_Trip|Student|owl_Nothing
+ intersection|Conference_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Multi-author_Volume|Organising_Agency|owl_Nothing
+ intersection|Conference_Proceedings|Submitted_Paper|owl_Nothing
+ intersection|Poster_Session|Programme_Brochure|owl_Nothing
+ intersection|Late-Registered_Participant|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Tutorial_Abstract|owl_Nothing
+ intersection|Invited_Talk|Proceedings|owl_Nothing
+ intersection|Regular_Paper|Workshop_Chair|owl_Nothing
+ intersection|Rejected_Paper|Scientific_Event|owl_Nothing
+ intersection|Demo_Session|Possible_Reviewer|owl_Nothing
+ intersection|Abstract|Invited_Speaker|owl_Nothing
+ intersection|Late-Registered_Participant|Poster_Paper|owl_Nothing
+ intersection|Contributed_Talk|Tutorial_Chair|owl_Nothing
+ intersection|Demo_Session|Social_Event|owl_Nothing
+ intersection|Accepted_Paper|Conference_Session|owl_Nothing
+ intersection|Track|Workshop_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|Regular_Session|owl_Nothing
+ intersection|Demo_Session|Early-Registered_Participant|owl_Nothing
+ intersection|Abstract|Neutral_Review|owl_Nothing
+ intersection|Assigned_Paper|Positive_Review|owl_Nothing
+ intersection|Academic_Institution|Workshop_Session|owl_Nothing
+ intersection|Conference_Proceedings|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Workshop_Session|owl_Nothing
+ intersection|Early-Registered_Participant|Session_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|Scientific_Event|owl_Nothing
+ intersection|Abstract|Tutorial_Chair|owl_Nothing
+ intersection|Web_Site|Workshop_Paper|owl_Nothing
+ intersection|Flyer|Proceedings_Publisher|owl_Nothing
+ intersection|Negative_Review|Research_Topic|owl_Nothing
+ intersection|Flyer|Student|owl_Nothing
+ intersection|OC_Member|Review|owl_Nothing
+ intersection|Proceedings_Publisher|SC_Member|owl_Nothing
+ intersection|Location|Submitted_Paper|owl_Nothing
+ intersection|Multi-author_Volume|University|owl_Nothing
+ intersection|PC_Member|Scientific_Event|owl_Nothing
+ intersection|Organisation|Positive_Review|owl_Nothing
+ intersection|Multi-author_Volume|Possible_Reviewer|owl_Nothing
+ intersection|Camera_Ready_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Academic_Institution|Demo_Chair|owl_Nothing
+ intersection|Demo_Session|OC_Chair|owl_Nothing
+ intersection|Invited_Talk|OC_Chair|owl_Nothing
+ intersection|Conference|Organising_Agency|owl_Nothing
+ intersection|Invited_Speaker|Multi-author_Volume|owl_Nothing
+ intersection|Regular_Paper|Web_Site|owl_Nothing
+ intersection|Proceedings_Publisher|Review|owl_Nothing
+ intersection|Event|OC_Chair|owl_Nothing
+ intersection|Person|Session_Chair|owl_Nothing
+ intersection|Conference_Banquet|Poster_Session|owl_Nothing
+ intersection|PC_Member|Workshop|owl_Nothing
+ intersection|Conference_Trip|Social_Event|owl_Nothing
+ intersection|Demo_Session|Multi-author_Volume|owl_Nothing
+ intersection|Negative_Review|PC_Member|owl_Nothing
+ intersection|Assigned_Paper|Student|owl_Nothing
+ intersection|Academic_Institution|Invited_Talk|owl_Nothing
+ intersection|Conference_Paper|Workshop_Session|owl_Nothing
+ intersection|SC_Member|Tutorial_Abstract|owl_Nothing
+ intersection|Conference|Research_Institute|owl_Nothing
+ intersection|Demo_Chair|Event|owl_Nothing
+ intersection|Poster_Paper|Tutorial|owl_Nothing
+ intersection|Organisation|Social_Event|owl_Nothing
+ intersection|Conference_Trip|Individual_Presentation|owl_Nothing
+ intersection|Conference_Trip|University|owl_Nothing
+ intersection|OC_Member|Paper_Author|owl_Nothing
+ intersection|Invited_Talk|Workshop|owl_Nothing
+ intersection|Contributed_Talk|Evaluated_Paper|owl_Nothing
+ intersection|Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Early-Registered_Participant|Workshop_Session|owl_Nothing
+ intersection|Regular_Session|Workshop_Chair|owl_Nothing
+ intersection|Submitted_Paper|Workshop_Session|owl_Nothing
+ intersection|Contributed_Talk|University|owl_Nothing
+ intersection|Multi-author_Volume|Negative_Review|owl_Nothing
+ intersection|Student|Workshop|owl_Nothing
+ intersection|Conference_Paper|Tutorial|owl_Nothing
+ intersection|Individual_Presentation|Poster_Session|owl_Nothing
+ intersection|Organising_Agency|Programme_Brochure|owl_Nothing
+ intersection|Track|Tutorial|owl_Nothing
+ intersection|Agency_Staff_Member|Organising_Agency|owl_Nothing
+ intersection|Conference_Participant|Workshop_Session|owl_Nothing
+ intersection|Regular_Paper|Review|owl_Nothing
+ intersection|Conference_Banquet|Presenter|owl_Nothing
+ intersection|Agency_Staff_Member|Camera_Ready_Paper|owl_Nothing
+ intersection|Accepted_Paper|Research_Institute|owl_Nothing
+ intersection|Organisation|Proceedings|owl_Nothing
+ intersection|Event|Poster_Paper|owl_Nothing
+ intersection|PC_Chair|Workshop_Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Document|owl_Nothing
+ intersection|Evaluated_Paper|Research_Institute|owl_Nothing
+ intersection|Document|Negative_Review|owl_Nothing
+ intersection|Late-Registered_Participant|Programme_Brochure|owl_Nothing
+ intersection|Conference_Trip|PC_Chair|owl_Nothing
+ intersection|Demo_Session|Invited_Speaker|owl_Nothing
+ intersection|Negative_Review|Submitted_Paper|owl_Nothing
+ intersection|Demo_Chair|Flyer|owl_Nothing
+ intersection|Paper_Author|Poster_Session|owl_Nothing
+ intersection|Conference_Participant|Demo_Paper|owl_Nothing
+ intersection|Industrial_Paper|Tutorial|owl_Nothing
+ intersection|PC_Member|Workshop_Session|owl_Nothing
+ intersection|Demo_Chair|Student|owl_Nothing
+ intersection|Social_Event|Student|owl_Nothing
+ intersection|Presenter|Session_Chair|owl_Nothing
+ intersection|Demo_Chair|Invited_Talk|owl_Nothing
+ intersection|Individual_Presentation|Poster_Paper|owl_Nothing
+ intersection|Demo_Session|Tutorial|owl_Nothing
+ intersection|Invited_Talk_Abstract|Organising_Agency|owl_Nothing
+ intersection|Multi-author_Volume|Programme_Brochure|owl_Nothing
+ intersection|Social_Event|University|owl_Nothing
+ intersection|PC_Member|Poster_Session|owl_Nothing
+ intersection|Conference_Paper|Rejected_Paper|owl_Nothing
+ intersection|Abstract|Research_Institute|owl_Nothing
+ intersection|Proceedings|Session_Chair|owl_Nothing
+ intersection|Agency_Staff_Member|Submitted_Paper|owl_Nothing
+ intersection|Proceedings_Publisher|Web_Site|owl_Nothing
+ intersection|Accepted_Paper|Workshop_Chair|owl_Nothing
+ intersection|Conference_Paper|Industrial_Session|owl_Nothing
+ intersection|Evaluated_Paper|Regular_Session|owl_Nothing
+ intersection|Proceedings|Proceedings_Publisher|owl_Nothing
+ intersection|Programme_Brochure|Research_Institute|owl_Nothing
+ intersection|Programme_Brochure|University|owl_Nothing
+ intersection|Person|Workshop_Chair|owl_Nothing
+ intersection|Document|Location|owl_Nothing
+ intersection|Individual_Presentation|Scientific_Event|owl_Nothing
+ intersection|Research_Topic|Track|owl_Nothing
+ intersection|Conference_Paper|Event|owl_Nothing
+ intersection|Person|University|owl_Nothing
+ intersection|SC_Member|Session|owl_Nothing
+ intersection|Tutorial_Chair|Workshop_Chair|owl_Nothing
+ intersection|Conference_Banquet|Negative_Review|owl_Nothing
+ intersection|Accepted_Paper|OC_Member|owl_Nothing
+ intersection|Agency_Staff_Member|Event|owl_Nothing
+ intersection|Organising_Agency|Research_Topic|owl_Nothing
+ intersection|Conference_Banquet|Event|owl_Nothing
+ intersection|Invited_Speaker|Research_Institute|owl_Nothing
+ intersection|Organising_Agency|Submitted_Paper|owl_Nothing
+ intersection|Programme_Brochure|Track|owl_Nothing
+ intersection|Rejected_Paper|Student|owl_Nothing
+ intersection|Early-Registered_Participant|Invited_Talk_Abstract|owl_Nothing
+ intersection|Paper|Poster_Session|owl_Nothing
+ intersection|Conference|Conference_Participant|owl_Nothing
+ intersection|Assigned_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Paper|Demo_Chair|owl_Nothing
+ intersection|Invited_Talk|Tutorial|owl_Nothing
+ intersection|Event|Possible_Reviewer|owl_Nothing
+ intersection|Person|Rejected_Paper|owl_Nothing
+ intersection|Poster_Paper|Track|owl_Nothing
+ intersection|Poster_Session|Research_Institute|owl_Nothing
+ intersection|Evaluated_Paper|Research_Topic|owl_Nothing
+ intersection|Conference_Proceedings|Invited_Talk_Abstract|owl_Nothing
+ intersection|Review|University|owl_Nothing
+ intersection|Agency_Staff_Member|Workshop_Chair|owl_Nothing
+ intersection|Regular_Paper|Social_Event|owl_Nothing
+ intersection|Track|Workshop_Paper|owl_Nothing
+ intersection|Demo_Session|Workshop_Chair|owl_Nothing
+ intersection|Document|Session|owl_Nothing
+ intersection|Demo_Paper|Research_Topic|owl_Nothing
+ intersection|University|Workshop|owl_Nothing
+ intersection|Agency_Staff_Member|Evaluated_Paper|owl_Nothing
+ intersection|Positive_Review|Workshop_Paper|owl_Nothing
+ intersection|Conference_Paper|Paper_Author|owl_Nothing
+ intersection|Accepted_Paper|Session|owl_Nothing
+ intersection|Contributed_Talk|Multi-author_Volume|owl_Nothing
+ intersection|Paper|Presenter|owl_Nothing
+ intersection|Demo_Session|Presenter|owl_Nothing
+ intersection|Conference_Trip|Organisation|owl_Nothing
+ intersection|Conference_Session|Late-Registered_Participant|owl_Nothing
+ intersection|Individual_Presentation|Person|owl_Nothing
+ intersection|Multi-author_Volume|OC_Member|owl_Nothing
+ intersection|Invited_Talk|Research_Institute|owl_Nothing
+ intersection|Accepted_Paper|Location|owl_Nothing
+ intersection|PC_Chair|Web_Site|owl_Nothing
+ intersection|Conference_Trip|Tutorial_Abstract|owl_Nothing
+ intersection|Assigned_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Invited_Talk_Abstract|Web_Site|owl_Nothing
+ intersection|Flyer|Invited_Speaker|owl_Nothing
+ intersection|Assigned_Paper|Late-Registered_Participant|owl_Nothing
+ intersection|Flyer|Tutorial_Chair|owl_Nothing
+ intersection|Research_Institute|Workshop_Paper|owl_Nothing
+ intersection|Conference|Invited_Talk_Abstract|owl_Nothing
+ intersection|PC_Chair|Workshop|owl_Nothing
+ intersection|Conference_Proceedings|Conference_Trip|owl_Nothing
+ intersection|Invited_Talk|Location|owl_Nothing
+ intersection|Research_Institute|SC_Member|owl_Nothing
+ intersection|Demo_Paper|OC_Chair|owl_Nothing
+ intersection|Individual_Presentation|Regular_Session|owl_Nothing
+ intersection|Assigned_Paper|Session|owl_Nothing
+ intersection|Negative_Review|Session_Chair|owl_Nothing
+ intersection|PC_Chair|Research_Institute|owl_Nothing
+ intersection|Evaluated_Paper|Neutral_Review|owl_Nothing
+ intersection|Organising_Agency|Workshop_Chair|owl_Nothing
+ intersection|Regular_Session|Workshop|owl_Nothing
+ intersection|Conference_Banquet|Invited_Talk_Abstract|owl_Nothing
+ intersection|Conference|Web_Site|owl_Nothing
+ intersection|Location|Research_Institute|owl_Nothing
+ intersection|Invited_Talk_Abstract|Proceedings_Publisher|owl_Nothing
+ intersection|Negative_Review|Workshop_Paper|owl_Nothing
+ intersection|Conference_Banquet|Invited_Speaker|owl_Nothing
+ intersection|Demo_Paper|OC_Member|owl_Nothing
+ intersection|Proceedings|Student|owl_Nothing
+ intersection|Demo_Paper|Research_Institute|owl_Nothing
+ intersection|Organising_Agency|Session_Chair|owl_Nothing
+ intersection|Conference|Organisation|owl_Nothing
+ intersection|Conference_Session|Regular_Paper|owl_Nothing
+ intersection|Contributed_Talk|Invited_Talk_Abstract|owl_Nothing
+ intersection|Poster_Session|Session|owl_Nothing
+ intersection|Demo_Chair|Research_Topic|owl_Nothing
+ intersection|Conference_Paper|Session|owl_Nothing
+ intersection|Abstract|Workshop_Paper|owl_Nothing
+ intersection|Location|Scientific_Event|owl_Nothing
+ intersection|Negative_Review|Paper_Author|owl_Nothing
+ intersection|Camera_Ready_Paper|Event|owl_Nothing
+ intersection|Accepted_Paper|Workshop|owl_Nothing
+ intersection|Late-Registered_Participant|Review|owl_Nothing
+ intersection|PC_Member|Positive_Review|owl_Nothing
+ intersection|Late-Registered_Participant|Organising_Agency|owl_Nothing
+ intersection|Invited_Talk|Session|owl_Nothing
+ intersection|Late-Registered_Participant|Negative_Review|owl_Nothing
+ intersection|Conference_Banquet|Person|owl_Nothing
+ intersection|Invited_Talk|Late-Registered_Participant|owl_Nothing
+ intersection|Conference_Paper|Poster_Session|owl_Nothing
+ intersection|Document|PC_Chair|owl_Nothing
+ intersection|Industrial_Paper|Positive_Review|owl_Nothing
+ intersection|Contributed_Talk|Social_Event|owl_Nothing
+ intersection|Conference_Proceedings|Session_Chair|owl_Nothing
+ intersection|Academic_Institution|Tutorial|owl_Nothing
+ intersection|Conference_Banquet|Location|owl_Nothing
+ intersection|Demo_Session|OC_Member|owl_Nothing
+ intersection|Invited_Talk_Abstract|Person|owl_Nothing
+ intersection|OC_Chair|Poster_Session|owl_Nothing
+ intersection|Document|Proceedings_Publisher|owl_Nothing
+ intersection|OC_Member|Workshop_Chair|owl_Nothing
+ intersection|Organising_Agency|Regular_Session|owl_Nothing
+ intersection|Contributed_Talk|Web_Site|owl_Nothing
+ intersection|Organisation|Presenter|owl_Nothing
+ intersection|Demo_Session|Positive_Review|owl_Nothing
+ intersection|Demo_Chair|Session|owl_Nothing
+ intersection|Invited_Talk|University|owl_Nothing
+ intersection|Agency_Staff_Member|Research_Topic|owl_Nothing
+ intersection|Paper_Author|Session_Chair|owl_Nothing
+ intersection|Invited_Talk_Abstract|Workshop_Session|owl_Nothing
+ intersection|Paper|Track|owl_Nothing
+ intersection|Location|Regular_Paper|owl_Nothing
+ intersection|Regular_Session|Workshop_Paper|owl_Nothing
+ intersection|Research_Institute|Web_Site|owl_Nothing
+ intersection|Conference_Trip|Workshop_Chair|owl_Nothing
+ intersection|Organisation|Programme_Brochure|owl_Nothing
+ intersection|Organisation|Student|owl_Nothing
+ intersection|Conference_Session|Tutorial|owl_Nothing
+ intersection|Contributed_Talk|Review|owl_Nothing
+ intersection|Session|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Student|owl_Nothing
+ intersection|Session_Chair|Workshop_Paper|owl_Nothing
+ intersection|Demo_Session|PC_Chair|owl_Nothing
+ intersection|Social_Event|Workshop|owl_Nothing
+ intersection|Demo_Session|Paper_Author|owl_Nothing
+ intersection|Invited_Talk_Abstract|Tutorial_Chair|owl_Nothing
+ intersection|Academic_Institution|Workshop_Chair|owl_Nothing
+ intersection|Track|Workshop|owl_Nothing
+ intersection|Negative_Review|Person|owl_Nothing
+ intersection|Invited_Speaker|Location|owl_Nothing
+ intersection|Multi-author_Volume|PC_Chair|owl_Nothing
+ intersection|Contributed_Talk|Demo_Chair|owl_Nothing
+ intersection|Flyer|Workshop_Paper|owl_Nothing
+ intersection|Industrial_Session|Tutorial_Chair|owl_Nothing
+ intersection|Negative_Review|Research_Institute|owl_Nothing
+ intersection|Demo_Paper|Student|owl_Nothing
+ intersection|Conference_Session|Neutral_Review|owl_Nothing
+ intersection|Abstract|Agency_Staff_Member|owl_Nothing
+ intersection|Demo_Session|Individual_Presentation|owl_Nothing
+ intersection|Conference_Session|SC_Member|owl_Nothing
+ intersection|Conference_Session|Workshop_Chair|owl_Nothing
+ intersection|Abstract|Camera_Ready_Paper|owl_Nothing
+ intersection|Demo_Session|Negative_Review|owl_Nothing
+ intersection|Conference|Negative_Review|owl_Nothing
+ intersection|Multi-author_Volume|Session|owl_Nothing
+ intersection|Event|Tutorial|owl_Nothing
+ intersection|Assigned_Paper|PC_Chair|owl_Nothing
+ intersection|Invited_Talk|Organising_Agency|owl_Nothing
+ intersection|Individual_Presentation|Invited_Speaker|owl_Nothing
+ intersection|Academic_Institution|PC_Chair|owl_Nothing
+ intersection|Invited_Talk|Possible_Reviewer|owl_Nothing
+ intersection|Possible_Reviewer|Web_Site|owl_Nothing
+ intersection|Review|Submitted_Paper|owl_Nothing
+ intersection|Invited_Talk_Abstract|Multi-author_Volume|owl_Nothing
+ intersection|Document|Invited_Speaker|owl_Nothing
+ intersection|Abstract|Multi-author_Volume|owl_Nothing
+ intersection|Conference|OC_Chair|owl_Nothing
+ intersection|Accepted_Paper|Workshop_Session|owl_Nothing
+ intersection|Invited_Talk_Abstract|Regular_Paper|owl_Nothing
+ intersection|Conference_Trip|Positive_Review|owl_Nothing
+ intersection|Organising_Agency|Proceedings_Publisher|owl_Nothing
+ intersection|Scientific_Event|Submitted_Paper|owl_Nothing
+ intersection|Paper|Session|owl_Nothing
+ intersection|Accepted_Paper|Conference_Participant|owl_Nothing
+ intersection|Camera_Ready_Paper|Session_Chair|owl_Nothing
+ intersection|Conference_Session|Event|owl_Nothing
+ intersection|Abstract|Poster_Paper|owl_Nothing
+ intersection|Poster_Session|Tutorial|owl_Nothing
+ intersection|Demo_Paper|Workshop|owl_Nothing
+ intersection|Industrial_Paper|Session|owl_Nothing
+ intersection|Poster_Paper|Presenter|owl_Nothing
+ intersection|Academic_Institution|Regular_Paper|owl_Nothing
+ intersection|Industrial_Session|Social_Event|owl_Nothing
+ intersection|Accepted_Paper|Conference_Proceedings|owl_Nothing
+ intersection|Conference_Banquet|Workshop_Chair|owl_Nothing
+ intersection|Late-Registered_Participant|Workshop_Session|owl_Nothing
+ intersection|Flyer|Social_Event|owl_Nothing
+ intersection|Person|Positive_Review|owl_Nothing
+ intersection|Possible_Reviewer|Workshop_Session|owl_Nothing
+ intersection|Abstract|Demo_Session|owl_Nothing
+ intersection|Possible_Reviewer|Track|owl_Nothing
+ intersection|Contributed_Talk|Tutorial_Abstract|owl_Nothing
+ intersection|Paper|Student|owl_Nothing
+ intersection|Person|Review|owl_Nothing
+ intersection|Late-Registered_Participant|Neutral_Review|owl_Nothing
+ intersection|Poster_Paper|Review|owl_Nothing
+ intersection|OC_Chair|Workshop_Chair|owl_Nothing
+ intersection|Poster_Paper|Research_Topic|owl_Nothing
+ intersection|Industrial_Paper|Invited_Speaker|owl_Nothing
+ intersection|Neutral_Review|OC_Member|owl_Nothing
+ intersection|Assigned_Paper|Contributed_Talk|owl_Nothing
+ intersection|Conference|Tutorial_Abstract|owl_Nothing
+ intersection|Organisation|Session|owl_Nothing
+ intersection|Assigned_Paper|Session_Chair|owl_Nothing
+ intersection|Presenter|Research_Institute|owl_Nothing
+ intersection|Flyer|Invited_Talk_Abstract|owl_Nothing
+ intersection|Multi-author_Volume|Positive_Review|owl_Nothing
+ intersection|Evaluated_Paper|PC_Chair|owl_Nothing
+ intersection|Track|University|owl_Nothing
+ intersection|Neutral_Review|Workshop_Chair|owl_Nothing
+ intersection|Contributed_Talk|Regular_Session|owl_Nothing
+ intersection|Workshop|Workshop_Paper|owl_Nothing
+ intersection|Evaluated_Paper|Student|owl_Nothing
+ intersection|Conference_Proceedings|Session|owl_Nothing
+ intersection|Contributed_Talk|Flyer|owl_Nothing
+ intersection|PC_Chair|Tutorial|owl_Nothing
+ intersection|Invited_Talk|Multi-author_Volume|owl_Nothing
+ intersection|Academic_Institution|Track|owl_Nothing
+ intersection|Invited_Speaker|Poster_Paper|owl_Nothing
+ intersection|Conference|Multi-author_Volume|owl_Nothing
+ intersection|Regular_Session|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Banquet|Evaluated_Paper|owl_Nothing
+ intersection|Possible_Reviewer|Tutorial_Abstract|owl_Nothing
+ intersection|Conference|Contributed_Talk|owl_Nothing
+ intersection|Flyer|Neutral_Review|owl_Nothing
+ intersection|Demo_Paper|Flyer|owl_Nothing
+ intersection|Assigned_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Academic_Institution|Review|owl_Nothing
+ intersection|Proceedings|Programme_Brochure|owl_Nothing
+ intersection|Contributed_Talk|PC_Chair|owl_Nothing
+ intersection|Academic_Institution|Conference_Paper|owl_Nothing
+ intersection|Conference_Trip|Industrial_Session|owl_Nothing
+ intersection|Conference_Banquet|Paper_Author|owl_Nothing
+ intersection|Poster_Session|Session_Chair|owl_Nothing
+ intersection|PC_Chair|Paper|owl_Nothing
+ intersection|Demo_Chair|Programme_Brochure|owl_Nothing
+ intersection|Regular_Paper|Student|owl_Nothing
+ intersection|Paper_Author|Track|owl_Nothing
+ intersection|Conference_Session|Location|owl_Nothing
+ intersection|Programme_Brochure|Web_Site|owl_Nothing
+ intersection|Possible_Reviewer|Workshop|owl_Nothing
+ intersection|Review|Student|owl_Nothing
+ intersection|OC_Member|Workshop|owl_Nothing
+ intersection|Positive_Review|Social_Event|owl_Nothing
+ intersection|Conference_Banquet|Flyer|owl_Nothing
+ intersection|Multi-author_Volume|Review|owl_Nothing
+ intersection|Invited_Talk_Abstract|Workshop_Chair|owl_Nothing
+ intersection|Conference_Banquet|Review|owl_Nothing
+ intersection|Demo_Session|Review|owl_Nothing
+ intersection|Rejected_Paper|Track|owl_Nothing
+ intersection|Multi-author_Volume|Workshop|owl_Nothing
+ intersection|Abstract|Session|owl_Nothing
+ intersection|Location|Programme_Brochure|owl_Nothing
+ intersection|Industrial_Session|Session_Chair|owl_Nothing
+ intersection|Demo_Session|Organising_Agency|owl_Nothing
+ intersection|Academic_Institution|Programme_Brochure|owl_Nothing
+ intersection|Conference|OC_Member|owl_Nothing
+ intersection|Demo_Chair|Demo_Session|owl_Nothing
+ intersection|Industrial_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Abstract|Demo_Paper|owl_Nothing
+ intersection|Conference_Trip|Regular_Session|owl_Nothing
+ intersection|Industrial_Paper|Presenter|owl_Nothing
+ intersection|Camera_Ready_Paper|Submitted_Paper|owl_Nothing
+ intersection|Accepted_Paper|Paper_Author|owl_Nothing
+ intersection|Abstract|Invited_Talk|owl_Nothing
+ intersection|Neutral_Review|Research_Topic|owl_Nothing
+ intersection|Invited_Talk_Abstract|Track|owl_Nothing
+ intersection|PC_Chair|Submitted_Paper|owl_Nothing
+ intersection|Neutral_Review|Positive_Review|owl_Nothing
+ intersection|Industrial_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Document|Organising_Agency|owl_Nothing
+ intersection|Possible_Reviewer|Scientific_Event|owl_Nothing
+ intersection|Document|SC_Member|owl_Nothing
+ intersection|Individual_Presentation|Industrial_Paper|owl_Nothing
+ intersection|Contributed_Talk|Rejected_Paper|owl_Nothing
+ intersection|Industrial_Paper|Scientific_Event|owl_Nothing
+ intersection|Camera_Ready_Paper|Poster_Paper|owl_Nothing
+ intersection|Research_Institute|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Banquet|Workshop_Paper|owl_Nothing
+ intersection|Regular_Session|Review|owl_Nothing
+ intersection|Conference_Paper|Conference_Session|owl_Nothing
+ intersection|Evaluated_Paper|Organising_Agency|owl_Nothing
+ intersection|Conference_Proceedings|Poster_Session|owl_Nothing
+ intersection|Conference_Proceedings|Individual_Presentation|owl_Nothing
+ intersection|Research_Institute|Workshop|owl_Nothing
+ intersection|Proceedings_Publisher|Track|owl_Nothing
+ intersection|Organisation|Track|owl_Nothing
+ intersection|Conference_Session|Scientific_Event|owl_Nothing
+ intersection|Organisation|Poster_Paper|owl_Nothing
+ intersection|Abstract|Demo_Chair|owl_Nothing
+ intersection|Event|Regular_Paper|owl_Nothing
+ intersection|Conference_Participant|Proceedings|owl_Nothing
+ intersection|Individual_Presentation|Programme_Brochure|owl_Nothing
+ intersection|PC_Chair|Proceedings|owl_Nothing
+ intersection|Event|Industrial_Paper|owl_Nothing
+ intersection|OC_Chair|Session|owl_Nothing
+ intersection|Flyer|Multi-author_Volume|owl_Nothing
+ intersection|Assigned_Paper|Possible_Reviewer|owl_Nothing
+ intersection|Conference|PC_Member|owl_Nothing
+ intersection|Regular_Session|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Banquet|Tutorial_Chair|owl_Nothing
+ intersection|Individual_Presentation|SC_Member|owl_Nothing
+ intersection|Student|Workshop_Chair|owl_Nothing
+ intersection|Flyer|Session|owl_Nothing
+ intersection|PC_Member|Proceedings|owl_Nothing
+ intersection|Late-Registered_Participant|Regular_Paper|owl_Nothing
+ intersection|Accepted_Paper|Negative_Review|owl_Nothing
+ intersection|Poster_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Industrial_Session|Research_Topic|owl_Nothing
+ intersection|Academic_Institution|Conference_Participant|owl_Nothing
+ intersection|Positive_Review|Regular_Session|owl_Nothing
+ intersection|Event|Web_Site|owl_Nothing
+ intersection|Invited_Speaker|Invited_Talk|owl_Nothing
+ intersection|Person|Tutorial|owl_Nothing
+ intersection|Camera_Ready_Paper|Workshop|owl_Nothing
+ intersection|Organisation|PC_Chair|owl_Nothing
+ intersection|Programme_Brochure|Workshop|owl_Nothing
+ intersection|Evaluated_Paper|Invited_Talk|owl_Nothing
+ intersection|Demo_Paper|Tutorial|owl_Nothing
+ intersection|Academic_Institution|Scientific_Event|owl_Nothing
+ intersection|Neutral_Review|Social_Event|owl_Nothing
+ intersection|Conference_Paper|Proceedings|owl_Nothing
+ intersection|Conference_Banquet|Possible_Reviewer|owl_Nothing
+ intersection|Paper_Author|Positive_Review|owl_Nothing
+ intersection|Negative_Review|Session|owl_Nothing
+ intersection|Event|Submitted_Paper|owl_Nothing
+ intersection|Academic_Institution|Conference_Trip|owl_Nothing
+ intersection|Accepted_Paper|Tutorial|owl_Nothing
+ intersection|Agency_Staff_Member|Tutorial_Abstract|owl_Nothing
+ intersection|Programme_Brochure|Review|owl_Nothing
+ intersection|Assigned_Paper|Industrial_Session|owl_Nothing
+ intersection|Scientific_Event|Workshop_Paper|owl_Nothing
+ intersection|Assigned_Paper|Invited_Speaker|owl_Nothing
+ intersection|Accepted_Paper|Track|owl_Nothing
+ intersection|Poster_Paper|Proceedings|owl_Nothing
+ intersection|Invited_Talk_Abstract|Scientific_Event|owl_Nothing
+ intersection|Accepted_Paper|Invited_Talk|owl_Nothing
+ intersection|Academic_Institution|Accepted_Paper|owl_Nothing
+ intersection|University|Workshop_Chair|owl_Nothing
+ intersection|Demo_Chair|PC_Member|owl_Nothing
+ intersection|Tutorial|Tutorial_Chair|owl_Nothing
+ intersection|Abstract|Organisation|owl_Nothing
+ intersection|Organising_Agency|Possible_Reviewer|owl_Nothing
+ intersection|Abstract|Early-Registered_Participant|owl_Nothing
+ intersection|Conference_Paper|Organising_Agency|owl_Nothing
+ intersection|Invited_Talk_Abstract|Workshop_Paper|owl_Nothing
+ intersection|Negative_Review|PC_Chair|owl_Nothing
+ intersection|Late-Registered_Participant|Workshop_Chair|owl_Nothing
+ intersection|Negative_Review|Presenter|owl_Nothing
+ intersection|Demo_Session|Poster_Session|owl_Nothing
+ intersection|Industrial_Session|Negative_Review|owl_Nothing
+ intersection|Conference|Presenter|owl_Nothing
+ intersection|Submitted_Paper|Web_Site|owl_Nothing
+ intersection|Evaluated_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Paper|Workshop_Session|owl_Nothing
+ intersection|Neutral_Review|Poster_Session|owl_Nothing
+ intersection|Conference_Trip|SC_Member|owl_Nothing
+ intersection|Flyer|Review|owl_Nothing
+ intersection|OC_Chair|Presenter|owl_Nothing
+ intersection|Conference_Proceedings|Regular_Paper|owl_Nothing
+ intersection|Paper_Author|University|owl_Nothing
+ intersection|Research_Institute|Social_Event|owl_Nothing
+ intersection|Accepted_Paper|Positive_Review|owl_Nothing
+ intersection|Agency_Staff_Member|Paper|owl_Nothing
+ intersection|Industrial_Paper|Review|owl_Nothing
+ intersection|Invited_Talk_Abstract|Submitted_Paper|owl_Nothing
+ intersection|Assigned_Paper|Conference_Participant|owl_Nothing
+ intersection|PC_Member|Workshop_Paper|owl_Nothing
+ intersection|Location|Presenter|owl_Nothing
+ intersection|Scientific_Event|Workshop|owl_Nothing
+ intersection|Invited_Speaker|Late-Registered_Participant|owl_Nothing
+ intersection|Invited_Talk_Abstract|Research_Topic|owl_Nothing
+ intersection|Proceedings|Regular_Session|owl_Nothing
+ intersection|Individual_Presentation|Regular_Paper|owl_Nothing
+ intersection|Conference_Paper|PC_Member|owl_Nothing
+ intersection|Invited_Talk|Review|owl_Nothing
+ intersection|Programme_Brochure|Research_Topic|owl_Nothing
+ intersection|Event|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Industrial_Paper|owl_Nothing
+ intersection|OC_Chair|Regular_Paper|owl_Nothing
+ intersection|Early-Registered_Participant|Positive_Review|owl_Nothing
+ intersection|Scientific_Event|University|owl_Nothing
+ intersection|Late-Registered_Participant|Poster_Session|owl_Nothing
+ intersection|Individual_Presentation|Review|owl_Nothing
+ intersection|Accepted_Paper|University|owl_Nothing
+ intersection|Person|Web_Site|owl_Nothing
+ intersection|Evaluated_Paper|University|owl_Nothing
+ intersection|Conference_Proceedings|Invited_Talk|owl_Nothing
+ intersection|Agency_Staff_Member|University|owl_Nothing
+ intersection|Proceedings_Publisher|Student|owl_Nothing
+ intersection|Conference_Banquet|Session|owl_Nothing
+ intersection|Poster_Session|Presenter|owl_Nothing
+ intersection|OC_Chair|Proceedings_Publisher|owl_Nothing
+ intersection|Accepted_Paper|Event|owl_Nothing
+ intersection|Proceedings_Publisher|Regular_Session|owl_Nothing
+ intersection|Accepted_Paper|Multi-author_Volume|owl_Nothing
+ intersection|Academic_Institution|Poster_Paper|owl_Nothing
+ intersection|Conference_Session|Organising_Agency|owl_Nothing
+ intersection|Possible_Reviewer|SC_Member|owl_Nothing
+ intersection|Demo_Session|Programme_Brochure|owl_Nothing
+ intersection|Conference_Session|Negative_Review|owl_Nothing
+ intersection|Abstract|Industrial_Paper|owl_Nothing
+ intersection|Conference_Banquet|Organising_Agency|owl_Nothing
+ intersection|Neutral_Review|PC_Chair|owl_Nothing
+ intersection|Review|Tutorial_Abstract|owl_Nothing
+ intersection|Industrial_Paper|Social_Event|owl_Nothing
+ intersection|Conference_Banquet|Research_Institute|owl_Nothing
+ intersection|Conference_Proceedings|Demo_Chair|owl_Nothing
+ intersection|Individual_Presentation|Invited_Talk|owl_Nothing
+ intersection|Rejected_Paper|Workshop|owl_Nothing
+ intersection|Abstract|Review|owl_Nothing
+ intersection|Tutorial_Abstract|Tutorial_Chair|owl_Nothing
+ intersection|Conference|Demo_Paper|owl_Nothing
+ intersection|Conference_Proceedings|Demo_Paper|owl_Nothing
+ intersection|Conference|Workshop_Paper|owl_Nothing
+ intersection|Demo_Session|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Participant|Document|owl_Nothing
+ intersection|Proceedings|Research_Topic|owl_Nothing
+ intersection|Conference_Paper|OC_Chair|owl_Nothing
+ intersection|Accepted_Paper|Scientific_Event|owl_Nothing
+ intersection|Organising_Agency|Regular_Paper|owl_Nothing
+ intersection|Conference_Banquet|Early-Registered_Participant|owl_Nothing
+ intersection|Conference_Participant|Location|owl_Nothing
+ intersection|Document|Workshop|owl_Nothing
+ intersection|Academic_Institution|Agency_Staff_Member|owl_Nothing
+ intersection|Tutorial_Chair|Workshop_Session|owl_Nothing
+ intersection|Industrial_Session|Poster_Paper|owl_Nothing
+ intersection|Event|Session_Chair|owl_Nothing
+ intersection|Conference|Student|owl_Nothing
+ intersection|Location|Person|owl_Nothing
+ intersection|Agency_Staff_Member|Conference_Banquet|owl_Nothing
+ intersection|Presenter|Rejected_Paper|owl_Nothing
+ intersection|Conference_Paper|Conference_Proceedings|owl_Nothing
+ intersection|Poster_Paper|Workshop_Chair|owl_Nothing
+ intersection|Multi-author_Volume|Scientific_Event|owl_Nothing
+ intersection|Multi-author_Volume|Proceedings|owl_Nothing
+ intersection|Proceedings_Publisher|Research_Institute|owl_Nothing
+ intersection|Academic_Institution|Regular_Session|owl_Nothing
+ intersection|Accepted_Paper|Student|owl_Nothing
+ intersection|Presenter|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Participant|Invited_Talk_Abstract|owl_Nothing
+ intersection|Invited_Speaker|Review|owl_Nothing
+ intersection|Conference_Session|Proceedings|owl_Nothing
+ intersection|Scientific_Event|Tutorial_Abstract|owl_Nothing
+ intersection|Demo_Paper|Scientific_Event|owl_Nothing
+ intersection|Individual_Presentation|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Proceedings|Poster_Paper|owl_Nothing
+ intersection|Conference_Proceedings|Negative_Review|owl_Nothing
+ intersection|Camera_Ready_Paper|Demo_Session|owl_Nothing
+ intersection|Conference_Trip|Poster_Session|owl_Nothing
+ intersection|Proceedings_Publisher|Rejected_Paper|owl_Nothing
+ intersection|Contributed_Talk|PC_Member|owl_Nothing
+ intersection|Invited_Speaker|Organisation|owl_Nothing
+ intersection|Conference_Participant|Neutral_Review|owl_Nothing
+ intersection|Paper|Programme_Brochure|owl_Nothing
+ intersection|OC_Chair|Paper|owl_Nothing
+ intersection|Conference_Paper|Possible_Reviewer|owl_Nothing
+ intersection|Individual_Presentation|Session_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|PC_Member|owl_Nothing
+ intersection|Late-Registered_Participant|Session_Chair|owl_Nothing
+ intersection|Regular_Paper|Regular_Session|owl_Nothing
+ intersection|Paper_Author|Proceedings_Publisher|owl_Nothing
+ intersection|Multi-author_Volume|Proceedings_Publisher|owl_Nothing
+ intersection|Contributed_Talk|Programme_Brochure|owl_Nothing
+ intersection|Invited_Talk|Paper_Author|owl_Nothing
+ intersection|Flyer|PC_Member|owl_Nothing
+ intersection|Conference_Paper|Invited_Talk|owl_Nothing
+ intersection|Organisation|Rejected_Paper|owl_Nothing
+ intersection|Research_Topic|Review|owl_Nothing
+ intersection|PC_Member|University|owl_Nothing
+ intersection|Paper|Proceedings|owl_Nothing
+ intersection|Conference_Session|Industrial_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Invited_Talk_Abstract|owl_Nothing
+ intersection|Agency_Staff_Member|Programme_Brochure|owl_Nothing
+ intersection|Conference_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Contributed_Talk|OC_Chair|owl_Nothing
+ intersection|Tutorial_Abstract|Workshop_Chair|owl_Nothing
+ intersection|Research_Topic|Session|owl_Nothing
+ intersection|Academic_Institution|Document|owl_Nothing
+ intersection|Contributed_Talk|SC_Member|owl_Nothing
+ intersection|Invited_Talk_Abstract|Organisation|owl_Nothing
+ intersection|University|Workshop_Session|owl_Nothing
+ intersection|Invited_Talk|Submitted_Paper|owl_Nothing
+ intersection|Location|Workshop_Paper|owl_Nothing
+ intersection|Invited_Speaker|Workshop_Session|owl_Nothing
+ intersection|Abstract|Conference_Trip|owl_Nothing
+ intersection|Demo_Session|Organisation|owl_Nothing
+ intersection|Academic_Institution|Organising_Agency|owl_Nothing
+ intersection|Individual_Presentation|Research_Topic|owl_Nothing
+ intersection|Industrial_Session|Rejected_Paper|owl_Nothing
+ intersection|Presenter|Programme_Brochure|owl_Nothing
+ intersection|Neutral_Review|Poster_Paper|owl_Nothing
+ intersection|Session_Chair|Workshop_Session|owl_Nothing
+ intersection|Contributed_Talk|Presenter|owl_Nothing
+ intersection|Conference_Session|Web_Site|owl_Nothing
+ intersection|Conference|Neutral_Review|owl_Nothing
+ intersection|Abstract|Event|owl_Nothing
+ intersection|Early-Registered_Participant|Organising_Agency|owl_Nothing
+ intersection|Conference|Late-Registered_Participant|owl_Nothing
+ intersection|Demo_Session|Evaluated_Paper|owl_Nothing
+ intersection|Flyer|Workshop_Session|owl_Nothing
+ intersection|Event|PC_Chair|owl_Nothing
+ intersection|Multi-author_Volume|Research_Institute|owl_Nothing
+ intersection|Abstract|Conference_Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Trip|Contributed_Talk|owl_Nothing
+ intersection|Assigned_Paper|Workshop_Session|owl_Nothing
+ intersection|Industrial_Session|Workshop|owl_Nothing
+ intersection|Accepted_Paper|PC_Member|owl_Nothing
+ intersection|Early-Registered_Participant|Workshop|owl_Nothing
+ intersection|Conference_Session|Programme_Brochure|owl_Nothing
+ intersection|Location|Rejected_Paper|owl_Nothing
+ intersection|Neutral_Review|Session_Chair|owl_Nothing
+ intersection|Organising_Agency|Poster_Session|owl_Nothing
+ intersection|Poster_Paper|Regular_Session|owl_Nothing
+ intersection|Demo_Session|University|owl_Nothing
+ intersection|Academic_Institution|Event|owl_Nothing
+ intersection|Evaluated_Paper|Invited_Speaker|owl_Nothing
+ intersection|Paper|Review|owl_Nothing
+ intersection|Accepted_Paper|Regular_Session|owl_Nothing
+ intersection|OC_Member|Tutorial_Chair|owl_Nothing
+ intersection|Demo_Session|Workshop|owl_Nothing
+ intersection|Negative_Review|Organising_Agency|owl_Nothing
+ intersection|Demo_Session|Research_Topic|owl_Nothing
+ intersection|Conference_Banquet|Conference_Proceedings|owl_Nothing
+ intersection|Event|Tutorial_Abstract|owl_Nothing
+ intersection|Organisation|Workshop_Paper|owl_Nothing
+ intersection|Demo_Paper|Possible_Reviewer|owl_Nothing
+ intersection|Submitted_Paper|Track|owl_Nothing
+ intersection|Abstract|OC_Member|owl_Nothing
+ intersection|Abstract|Accepted_Paper|owl_Nothing
+ intersection|Conference_Paper|Student|owl_Nothing
+ intersection|Flyer|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Banquet|Late-Registered_Participant|owl_Nothing
+ intersection|Conference|Poster_Session|owl_Nothing
+ intersection|Invited_Talk|Web_Site|owl_Nothing
+ intersection|Document|Poster_Session|owl_Nothing
+ intersection|Conference_Banquet|Industrial_Paper|owl_Nothing
+ intersection|Abstract|Conference|owl_Nothing
+ intersection|Programme_Brochure|Regular_Session|owl_Nothing
+ intersection|Paper_Author|Research_Topic|owl_Nothing
+ intersection|Agency_Staff_Member|Negative_Review|owl_Nothing
+ intersection|Conference_Paper|Workshop|owl_Nothing
+ intersection|PC_Member|Session|owl_Nothing
+ intersection|Session|Workshop_Paper|owl_Nothing
+ intersection|Evaluated_Paper|Web_Site|owl_Nothing
+ intersection|Negative_Review|Social_Event|owl_Nothing
+ intersection|Document|Invited_Talk|owl_Nothing
+ intersection|Demo_Chair|Invited_Speaker|owl_Nothing
+ intersection|Academic_Institution|Invited_Speaker|owl_Nothing
+ intersection|Late-Registered_Participant|Research_Institute|owl_Nothing
+ intersection|Late-Registered_Participant|Proceedings_Publisher|owl_Nothing
+ intersection|Abstract|Rejected_Paper|owl_Nothing
+ intersection|Poster_Session|Workshop_Paper|owl_Nothing
+ intersection|Organisation|Paper|owl_Nothing
+ intersection|Organisation|Scientific_Event|owl_Nothing
+ intersection|Agency_Staff_Member|Industrial_Paper|owl_Nothing
+ intersection|Demo_Chair|Organising_Agency|owl_Nothing
+ intersection|Early-Registered_Participant|Poster_Session|owl_Nothing
+ intersection|Industrial_Session|Research_Institute|owl_Nothing
+ intersection|Agency_Staff_Member|Web_Site|owl_Nothing
+ intersection|Industrial_Session|Person|owl_Nothing
+ intersection|Demo_Paper|Session_Chair|owl_Nothing
+ intersection|Camera_Ready_Paper|Demo_Chair|owl_Nothing
+ intersection|Industrial_Session|Organisation|owl_Nothing
+ intersection|Conference_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Abstract|Possible_Reviewer|owl_Nothing
+ intersection|Agency_Staff_Member|Industrial_Session|owl_Nothing
+ intersection|Flyer|Research_Topic|owl_Nothing
+ intersection|Invited_Talk|Presenter|owl_Nothing
+ intersection|Paper|Scientific_Event|owl_Nothing
+ intersection|Camera_Ready_Paper|Invited_Talk|owl_Nothing
+ intersection|Individual_Presentation|Organising_Agency|owl_Nothing
+ intersection|Assigned_Paper|Track|owl_Nothing
+ intersection|Industrial_Paper|SC_Member|owl_Nothing
+ intersection|Conference|Workshop_Session|owl_Nothing
+ intersection|Document|Organisation|owl_Nothing
+ intersection|Paper|Tutorial_Chair|owl_Nothing
+ intersection|Conference|Paper|owl_Nothing
+ intersection|Demo_Session|Student|owl_Nothing
+ intersection|Conference_Proceedings|Contributed_Talk|owl_Nothing
+ intersection|Camera_Ready_Paper|Conference_Trip|owl_Nothing
+ intersection|Rejected_Paper|SC_Member|owl_Nothing
+ intersection|Research_Topic|Submitted_Paper|owl_Nothing
+ intersection|Invited_Talk_Abstract|Negative_Review|owl_Nothing
+ intersection|Possible_Reviewer|Submitted_Paper|owl_Nothing
+ intersection|Assigned_Paper|Invited_Talk_Abstract|owl_Nothing
+ intersection|Event|Workshop|owl_Nothing
+ intersection|Flyer|Invited_Talk|owl_Nothing
+ intersection|Regular_Paper|Research_Topic|owl_Nothing
+ intersection|Document|Workshop_Session|owl_Nothing
+ intersection|Demo_Chair|Paper|owl_Nothing
+ intersection|Demo_Chair|Regular_Paper|owl_Nothing
+ intersection|Regular_Session|Track|owl_Nothing
+ intersection|Early-Registered_Participant|Industrial_Paper|owl_Nothing
+ intersection|Academic_Institution|Rejected_Paper|owl_Nothing
+ intersection|Invited_Speaker|Organising_Agency|owl_Nothing
+ intersection|Conference_Session|Invited_Speaker|owl_Nothing
+ intersection|Conference_Participant|Conference_Trip|owl_Nothing
+ intersection|Accepted_Paper|Tutorial_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Evaluated_Paper|owl_Nothing
+ intersection|Agency_Staff_Member|Regular_Session|owl_Nothing
+ intersection|Conference_Session|Rejected_Paper|owl_Nothing
+ intersection|Individual_Presentation|Proceedings|owl_Nothing
+ intersection|Invited_Talk_Abstract|Tutorial|owl_Nothing
+ intersection|Camera_Ready_Paper|Demo_Paper|owl_Nothing
+ intersection|Event|Person|owl_Nothing
+ intersection|Regular_Paper|Track|owl_Nothing
+ intersection|PC_Member|Social_Event|owl_Nothing
+ intersection|Invited_Speaker|Session_Chair|owl_Nothing
+ intersection|Invited_Talk_Abstract|Possible_Reviewer|owl_Nothing
+ intersection|Conference_Proceedings|Invited_Speaker|owl_Nothing
+ intersection|Early-Registered_Participant|Event|owl_Nothing
+ intersection|Industrial_Paper|Programme_Brochure|owl_Nothing
+ intersection|Agency_Staff_Member|Track|owl_Nothing
+ intersection|Positive_Review|Workshop|owl_Nothing
+ intersection|Late-Registered_Participant|Session|owl_Nothing
+ intersection|Flyer|Poster_Session|owl_Nothing
+ intersection|Industrial_Session|OC_Member|owl_Nothing
+ intersection|Rejected_Paper|Research_Topic|owl_Nothing
+ intersection|Demo_Chair|Industrial_Paper|owl_Nothing
+ intersection|Research_Institute|Review|owl_Nothing
+ intersection|OC_Member|Research_Topic|owl_Nothing
+ intersection|Negative_Review|Tutorial|owl_Nothing
+ intersection|Location|Workshop_Session|owl_Nothing
+ intersection|Web_Site|Workshop|owl_Nothing
+ intersection|Conference_Participant|Research_Topic|owl_Nothing
+ intersection|Early-Registered_Participant|Scientific_Event|owl_Nothing
+ intersection|Demo_Session|SC_Member|owl_Nothing
+ intersection|Flyer|Organisation|owl_Nothing
+ intersection|Person|Tutorial_Abstract|owl_Nothing
+ intersection|Evaluated_Paper|Poster_Session|owl_Nothing
+ intersection|Invited_Talk_Abstract|Workshop|owl_Nothing
+ intersection|Conference_Banquet|Paper|owl_Nothing
+ intersection|Camera_Ready_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Accepted_Paper|Web_Site|owl_Nothing
+ intersection|Possible_Reviewer|Session|owl_Nothing
+ intersection|Conference_Proceedings|Web_Site|owl_Nothing
+ intersection|Event|Rejected_Paper|owl_Nothing
+ intersection|Conference_Proceedings|Scientific_Event|owl_Nothing
+ intersection|Camera_Ready_Paper|Conference_Participant|owl_Nothing
+ intersection|Social_Event|Workshop_Chair|owl_Nothing
+ intersection|Session|Tutorial_Abstract|owl_Nothing
+ intersection|Demo_Chair|Possible_Reviewer|owl_Nothing
+ intersection|Paper|Research_Institute|owl_Nothing
+ intersection|Multi-author_Volume|Web_Site|owl_Nothing
+ intersection|Industrial_Session|Invited_Speaker|owl_Nothing
+ intersection|Demo_Chair|Web_Site|owl_Nothing
+ intersection|Conference_Proceedings|Tutorial|owl_Nothing
+ intersection|OC_Chair|SC_Member|owl_Nothing
+ intersection|Academic_Institution|Proceedings|owl_Nothing
+ intersection|Invited_Talk_Abstract|Location|owl_Nothing
+ intersection|Social_Event|Tutorial_Abstract|owl_Nothing
+ intersection|Negative_Review|Student|owl_Nothing
+ intersection|Invited_Speaker|Workshop|owl_Nothing
+ intersection|Negative_Review|Proceedings|owl_Nothing
+ intersection|Agency_Staff_Member|Workshop|owl_Nothing
+ intersection|Conference_Session|Demo_Session|owl_Nothing
+ intersection|Tutorial_Abstract|Workshop|owl_Nothing
+ intersection|Possible_Reviewer|Social_Event|owl_Nothing
+ intersection|Demo_Paper|PC_Chair|owl_Nothing
+ intersection|Proceedings_Publisher|Session|owl_Nothing
+ intersection|Organising_Agency|Workshop|owl_Nothing
+ intersection|Accepted_Paper|SC_Member|owl_Nothing
+ intersection|Flyer|Presenter|owl_Nothing
+ intersection|Conference_Trip|Tutorial|owl_Nothing
+ intersection|Presenter|Session|owl_Nothing
+ intersection|Organising_Agency|Person|owl_Nothing
+ intersection|Conference|Possible_Reviewer|owl_Nothing
+ intersection|Paper_Author|Social_Event|owl_Nothing
+ intersection|Document|Workshop_Chair|owl_Nothing
+ intersection|Conference_Paper|Social_Event|owl_Nothing
+ intersection|Proceedings_Publisher|Workshop|owl_Nothing
+ intersection|Agency_Staff_Member|Tutorial_Chair|owl_Nothing
+ intersection|Document|OC_Chair|owl_Nothing
+ intersection|Flyer|Workshop|owl_Nothing
+ intersection|Multi-author_Volume|Neutral_Review|owl_Nothing
+ intersection|Early-Registered_Participant|Evaluated_Paper|owl_Nothing
+ intersection|Conference_Participant|PC_Chair|owl_Nothing
+ intersection|Poster_Paper|Scientific_Event|owl_Nothing
+ intersection|Invited_Talk|Workshop_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Workshop_Paper|owl_Nothing
+ intersection|Late-Registered_Participant|Track|owl_Nothing
+ intersection|Demo_Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Agency_Staff_Member|Late-Registered_Participant|owl_Nothing
+ intersection|Industrial_Paper|OC_Chair|owl_Nothing
+ intersection|Evaluated_Paper|Industrial_Session|owl_Nothing
+ intersection|Conference|Location|owl_Nothing
+ intersection|Individual_Presentation|Research_Institute|owl_Nothing
+ intersection|Demo_Session|Track|owl_Nothing
+ intersection|PC_Member|Track|owl_Nothing
+ intersection|Demo_Chair|Proceedings|owl_Nothing
+ intersection|Paper|Research_Topic|owl_Nothing
+ intersection|Tutorial|Web_Site|owl_Nothing
+ intersection|Event|SC_Member|owl_Nothing
+ intersection|Person|Poster_Session|owl_Nothing
+ intersection|Track|Workshop_Session|owl_Nothing
+ intersection|Conference_Banquet|OC_Member|owl_Nothing
+ intersection|Scientific_Event|Workshop_Chair|owl_Nothing
+ intersection|Conference_Proceedings|Programme_Brochure|owl_Nothing
+ intersection|Regular_Paper|Session_Chair|owl_Nothing
+ intersection|Conference_Trip|OC_Member|owl_Nothing
+ intersection|Industrial_Paper|Student|owl_Nothing
+ intersection|Organising_Agency|Tutorial|owl_Nothing
+ intersection|Review|Track|owl_Nothing
+ intersection|Academic_Institution|Conference_Session|owl_Nothing
+ intersection|Flyer|OC_Chair|owl_Nothing
+ intersection|Conference|Document|owl_Nothing
+ intersection|PC_Chair|Proceedings_Publisher|owl_Nothing
+ intersection|Conference|Regular_Session|owl_Nothing
+ intersection|Industrial_Paper|Industrial_Session|owl_Nothing
+ intersection|Invited_Talk_Abstract|Presenter|owl_Nothing
+ intersection|Conference_Session|PC_Chair|owl_Nothing
+ intersection|Abstract|Proceedings|owl_Nothing
+ intersection|Accepted_Paper|Proceedings|owl_Nothing
+ intersection|Invited_Talk|Positive_Review|owl_Nothing
+ intersection|Conference_Banquet|PC_Member|owl_Nothing
+ intersection|Conference_Session|Demo_Paper|owl_Nothing
+ intersection|Abstract|Positive_Review|owl_Nothing
+ intersection|Camera_Ready_Paper|Regular_Paper|owl_Nothing
+ intersection|Conference_Banquet|PC_Chair|owl_Nothing
+ intersection|Individual_Presentation|Social_Event|owl_Nothing
+ intersection|Demo_Paper|Session|owl_Nothing
+ intersection|Agency_Staff_Member|Flyer|owl_Nothing
+ intersection|Person|Research_Institute|owl_Nothing
+ intersection|Negative_Review|Poster_Paper|owl_Nothing
+ intersection|Late-Registered_Participant|Regular_Session|owl_Nothing
+ intersection|Location|Workshop|owl_Nothing
+ intersection|Review|Workshop_Chair|owl_Nothing
+ intersection|Agency_Staff_Member|Location|owl_Nothing
+ intersection|Early-Registered_Participant|PC_Member|owl_Nothing
+ intersection|Proceedings|Workshop_Paper|owl_Nothing
+ intersection|Industrial_Session|Paper|owl_Nothing
+ intersection|Organising_Agency|Review|owl_Nothing
+ intersection|Assigned_Paper|Workshop|owl_Nothing
+ intersection|Conference_Paper|Web_Site|owl_Nothing
+ intersection|Invited_Speaker|Web_Site|owl_Nothing
+ intersection|Possible_Reviewer|Proceedings_Publisher|owl_Nothing
+ intersection|Assigned_Paper|Web_Site|owl_Nothing
+ intersection|Neutral_Review|Track|owl_Nothing
+ intersection|Poster_Session|Workshop_Chair|owl_Nothing
+ intersection|OC_Chair|Student|owl_Nothing
+ intersection|Multi-author_Volume|Track|owl_Nothing
+ intersection|Presenter|Social_Event|owl_Nothing
+ intersection|Conference|Industrial_Session|owl_Nothing
+ intersection|Late-Registered_Participant|Submitted_Paper|owl_Nothing
+ intersection|Demo_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Proceedings|OC_Member|owl_Nothing
+ intersection|Conference_Proceedings|OC_Chair|owl_Nothing
+ intersection|Conference|Industrial_Paper|owl_Nothing
+ intersection|Individual_Presentation|Possible_Reviewer|owl_Nothing
+ intersection|Event|Presenter|owl_Nothing
+ intersection|Abstract|Person|owl_Nothing
+ intersection|Individual_Presentation|Proceedings_Publisher|owl_Nothing
+ intersection|Conference_Paper|Location|owl_Nothing
+ intersection|Assigned_Paper|Neutral_Review|owl_Nothing
+ intersection|Abstract|Tutorial|owl_Nothing
+ intersection|Negative_Review|SC_Member|owl_Nothing
+ intersection|Individual_Presentation|Industrial_Session|owl_Nothing
+ intersection|Abstract|Scientific_Event|owl_Nothing
+ intersection|Multi-author_Volume|OC_Chair|owl_Nothing
+ intersection|Document|Track|owl_Nothing
+ intersection|Negative_Review|Tutorial_Chair|owl_Nothing
+ intersection|Presenter|Workshop_Paper|owl_Nothing
+ intersection|Industrial_Session|Review|owl_Nothing
+ intersection|Proceedings|Track|owl_Nothing
+ intersection|Evaluated_Paper|Event|owl_Nothing
+ intersection|OC_Member|Workshop_Paper|owl_Nothing
+ intersection|Neutral_Review|Research_Institute|owl_Nothing
+ intersection|Conference_Banquet|Industrial_Session|owl_Nothing
+ intersection|Document|University|owl_Nothing
+ intersection|Multi-author_Volume|Tutorial_Chair|owl_Nothing
+ intersection|Contributed_Talk|Tutorial|owl_Nothing
+ intersection|Document|Proceedings|owl_Nothing
+ intersection|Conference_Paper|Positive_Review|owl_Nothing
+ intersection|Demo_Paper|Positive_Review|owl_Nothing
+ intersection|Demo_Paper|Poster_Session|owl_Nothing
+ intersection|Document|Positive_Review|owl_Nothing
+ intersection|Tutorial_Abstract|Web_Site|owl_Nothing
+ intersection|Late-Registered_Participant|Social_Event|owl_Nothing
+ intersection|Agency_Staff_Member|Neutral_Review|owl_Nothing
+ intersection|Camera_Ready_Paper|Social_Event|owl_Nothing
+ intersection|Demo_Chair|Neutral_Review|owl_Nothing
+ intersection|Early-Registered_Participant|Regular_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Conference|owl_Nothing
+ intersection|Individual_Presentation|OC_Member|owl_Nothing
+ intersection|Demo_Chair|Invited_Talk_Abstract|owl_Nothing
+ intersection|Proceedings_Publisher|Workshop_Chair|owl_Nothing
+ intersection|Academic_Institution|Neutral_Review|owl_Nothing
+ intersection|Organisation|Web_Site|owl_Nothing
+ intersection|Paper|University|owl_Nothing
+ intersection|Industrial_Paper|OC_Member|owl_Nothing
+ intersection|Flyer|Possible_Reviewer|owl_Nothing
+ intersection|Rejected_Paper|Tutorial_Abstract|owl_Nothing
+ intersection|Person|Submitted_Paper|owl_Nothing
+ intersection|Conference_Trip|Demo_Chair|owl_Nothing
+ intersection|Demo_Chair|Track|owl_Nothing
+ intersection|Demo_Session|Flyer|owl_Nothing
+ intersection|Research_Topic|Scientific_Event|owl_Nothing
+ intersection|Research_Topic|Tutorial_Abstract|owl_Nothing
+ intersection|Accepted_Paper|Research_Topic|owl_Nothing
+ intersection|SC_Member|Session_Chair|owl_Nothing
+ intersection|Early-Registered_Participant|Tutorial|owl_Nothing
+ intersection|Demo_Paper|Neutral_Review|owl_Nothing
+ intersection|Individual_Presentation|Positive_Review|owl_Nothing
+ intersection|Conference_Paper|Invited_Speaker|owl_Nothing
+ intersection|Possible_Reviewer|Tutorial|owl_Nothing
+ intersection|Conference_Trip|Paper_Author|owl_Nothing
+ intersection|Paper|Positive_Review|owl_Nothing
+ intersection|Proceedings|Workshop|owl_Nothing
+ intersection|Evaluated_Paper|Social_Event|owl_Nothing
+ intersection|OC_Chair|Regular_Session|owl_Nothing
+ intersection|Early-Registered_Participant|Research_Topic|owl_Nothing
+ intersection|Proceedings_Publisher|Scientific_Event|owl_Nothing
+ intersection|Abstract|Assigned_Paper|owl_Nothing
+ intersection|Conference_Paper|Organisation|owl_Nothing
+ intersection|Conference_Participant|Workshop_Chair|owl_Nothing
+ intersection|Track|Tutorial_Abstract|owl_Nothing
+ intersection|Conference_Proceedings|PC_Member|owl_Nothing
+ intersection|Demo_Chair|Regular_Session|owl_Nothing
+ intersection|Agency_Staff_Member|Positive_Review|owl_Nothing
+ intersection|Early-Registered_Participant|Late-Registered_Participant|owl_Nothing
+ intersection|Abstract|Social_Event|owl_Nothing
+ intersection|Positive_Review|Proceedings|owl_Nothing
+ intersection|Contributed_Talk|Industrial_Paper|owl_Nothing
+ intersection|Accepted_Paper|Programme_Brochure|owl_Nothing
+ intersection|Conference_Banquet|Conference_Session|owl_Nothing
+ intersection|Document|Student|owl_Nothing
+ intersection|Conference_Participant|Evaluated_Paper|owl_Nothing
+ intersection|Paper|Proceedings_Publisher|owl_Nothing
+ intersection|Research_Institute|Workshop_Session|owl_Nothing
+ intersection|Event|Neutral_Review|owl_Nothing
+ intersection|Multi-author_Volume|Submitted_Paper|owl_Nothing
+ intersection|PC_Member|Session_Chair|owl_Nothing
+ intersection|Presenter|Track|owl_Nothing
+ intersection|Contributed_Talk|Submitted_Paper|owl_Nothing
+ intersection|Possible_Reviewer|Rejected_Paper|owl_Nothing
+ intersection|Paper_Author|Regular_Paper|owl_Nothing
+ intersection|Accepted_Paper|Agency_Staff_Member|owl_Nothing
+ intersection|Document|Invited_Talk_Abstract|owl_Nothing
+ intersection|PC_Chair|Track|owl_Nothing
+ intersection|Flyer|Organising_Agency|owl_Nothing
+ intersection|Assigned_Paper|University|owl_Nothing
+ intersection|Tutorial_Chair|University|owl_Nothing
+ intersection|Late-Registered_Participant|Workshop_Paper|owl_Nothing
+ intersection|Research_Topic|Session_Chair|owl_Nothing
+ intersection|Research_Topic|Student|owl_Nothing
+ intersection|Conference_Banquet|Conference_Paper|owl_Nothing
+ intersection|Conference_Paper|Negative_Review|owl_Nothing
+ intersection|Research_Institute|Submitted_Paper|owl_Nothing
+ intersection|Conference_Session|Track|owl_Nothing
+ intersection|PC_Chair|Tutorial_Abstract|owl_Nothing
+ intersection|Person|Tutorial_Chair|owl_Nothing
+ intersection|Document|Scientific_Event|owl_Nothing
+ intersection|Late-Registered_Participant|Multi-author_Volume|owl_Nothing
+ intersection|Proceedings|Workshop_Chair|owl_Nothing
+ intersection|Invited_Speaker|PC_Chair|owl_Nothing
+ intersection|Presenter|Workshop|owl_Nothing
+ intersection|Invited_Talk|SC_Member|owl_Nothing
+ intersection|Programme_Brochure|Workshop_Session|owl_Nothing
+ intersection|Contributed_Talk|Neutral_Review|owl_Nothing
+ intersection|Multi-author_Volume|Workshop_Session|owl_Nothing
+ intersection|Conference_Proceedings|Multi-author_Volume|owl_Nothing
+ intersection|Agency_Staff_Member|Contributed_Talk|owl_Nothing
+ intersection|Conference|Paper_Author|owl_Nothing
+ intersection|Organising_Agency|Poster_Paper|owl_Nothing
+ intersection|OC_Chair|Programme_Brochure|owl_Nothing
+ intersection|PC_Member|Research_Institute|owl_Nothing
+ intersection|Conference_Proceedings|Event|owl_Nothing
+ subsumes|Scientific_Event|owl_Nothing subsumes|Demo_Session|owl_Nothing
+ subsumes|Conference_Proceedings|owl_Nothing
+ subsumes|Workshop_Session|owl_Nothing opsup|partOfEvent|Thing|Demo_Session
+ opsup|hasReview|Thing|Accepted_Paper opsup|hasPart|Thing|Workshop_Session
+ opsup|hasPart|Thing|Demo_Session opsup|partOf|Thing|Session
+ opsup|partOfEvent|Thing|Session
+ opsup|updatedVersionOf|Thing|Camera_Ready_Paper
+ opsup|hasPart|Thing|Regular_Session opsup|hasPart|Thing|Poster_Session
+ opsup|partOfEvent|Thing|Conference_Session
+ opsup|partOfEvent|Thing|Industrial_Session
+ opsup|hasEvent|Thing|Workshop_Session
+ opsup|hasPart|Thing|Industrial_Session
+ opsup|partOf|Thing|Conference_Session
+ opsup|hasEvent|Thing|Industrial_Session
+ opsup|partOfEvent|Thing|Poster_Session
+ opsup|hasReviewer|Thing|Rejected_Paper opsup|hasEvent|Thing|Poster_Session
+ opsup|partOfEvent|Thing|Workshop_Session
+ opsup|partOf|Thing|Workshop_Session opsup|partOf|Thing|Demo_Session
+ opsup|presentationOfPaper|Thing|Contributed_Talk
+ opsup|hasReviewer|Thing|Assigned_Paper
+ opsup|volumeContainsPaper|Thing|Proceedings
+ opsup|hasReview|Thing|Evaluated_Paper opsup|hasReview|Thing|Rejected_Paper
+ opsup|partOf|Thing|Regular_Session opsup|hasReviewer|Thing|Evaluated_Paper
+ opsup|partOf|Thing|Poster_Session opsup|hasPart|Thing|Conference_Session
+ opsup|hasPart|Thing|Session opsup|hasEvent|Thing|Demo_Session
+ opsup|volumeContainsPaper|Thing|Conference_Proceedings
+ opsup|hasReviewer|Thing|Accepted_Paper
+ opsup|partOf|Thing|Industrial_Session
+ opsup|writtenBy|Thing|Camera_Ready_Paper
+ opsup|partOfEvent|Thing|Regular_Session
+ opsup|hasEvent|Thing|Conference_Session opsup|hasEvent|Thing|Session
+ opsup|hasEvent|Thing|Regular_Session subsumes|Workshop_Paper|owl_Thing
+ subsumes|Location|owl_Thing subsumes|Conference_Banquet|owl_Thing
+ subsumes|Regular_Session|owl_Thing subsumes|Thing|owl_Thing
+ subsumes|Poster_Session|owl_Thing subsumes|Abstract|owl_Thing
+ subsumes|Paper_Author|owl_Thing subsumes|Scientific_Event|owl_Thing
+ subsumes|Workshop_Session|owl_Thing subsumes|Session|owl_Thing
+ subsumes|Multi-author_Volume|owl_Thing
+ subsumes|Academic_Institution|owl_Thing subsumes|Event|owl_Thing
+ subsumes|Workshop_Chair|owl_Thing subsumes|Track|owl_Thing
+ subsumes|Programme_Brochure|owl_Thing subsumes|Demo_Paper|owl_Thing
+ subsumes|Tutorial|owl_Thing subsumes|Organisation|owl_Thing
+ subsumes|Individual_Presentation|owl_Thing subsumes|Flyer|owl_Thing
+ subsumes|Social_Event|owl_Thing subsumes|Regular_Paper|owl_Thing
+ subsumes|Person|owl_Thing subsumes|Student|owl_Thing
+ subsumes|Organising_Agency|owl_Thing subsumes|Poster_Paper|owl_Thing
+ subsumes|Document|owl_Thing subsumes|PC_Member|owl_Thing
+ subsumes|Web_Site|owl_Thing subsumes|OC_Chair|owl_Thing
+ subsumes|SC_Member|owl_Thing subsumes|Conference_Participant|owl_Thing
+ subsumes|Conference_Session|owl_Thing subsumes|Session_Chair|owl_Thing
+ subsumes|Early-Registered_Participant|owl_Thing
+ subsumes|Demo_Chair|owl_Thing subsumes|Camera_Ready_Paper|owl_Thing
+ subsumes|Review|owl_Thing subsumes|Conference_Proceedings|owl_Thing
+ subsumes|Proceedings_Publisher|owl_Thing
+ subsumes|Contributed_Talk|owl_Thing subsumes|Industrial_Session|owl_Thing
+ subsumes|Tutorial_Chair|owl_Thing subsumes|Assigned_Paper|owl_Thing
+ subsumes|Submitted_Paper|owl_Thing subsumes|Demo_Session|owl_Thing
+ subsumes|Negative_Review|owl_Thing subsumes|Research_Institute|owl_Thing
+ subsumes|Evaluated_Paper|owl_Thing subsumes|Conference_Paper|owl_Thing
+ subsumes|Agency_Staff_Member|owl_Thing
+ subsumes|Late-Registered_Participant|owl_Thing
+ subsumes|Conference|owl_Thing subsumes|Workshop|owl_Thing
+ subsumes|Positive_Review|owl_Thing subsumes|Industrial_Paper|owl_Thing
+ subsumes|Research_Topic|owl_Thing subsumes|Neutral_Review|owl_Thing
+ subsumes|Conference_Trip|owl_Thing subsumes|Invited_Speaker|owl_Thing
+ subsumes|Invited_Talk_Abstract|owl_Thing
+ subsumes|Possible_Reviewer|owl_Thing subsumes|University|owl_Thing
+ subsumes|Presenter|owl_Thing subsumes|Proceedings|owl_Thing
+ subsumes|OC_Member|owl_Thing subsumes|Paper|owl_Thing
+ subsumes|Accepted_Paper|owl_Thing subsumes|Rejected_Paper|owl_Thing
+ subsumes|Invited_Talk|owl_Thing subsumes|PC_Chair|owl_Thing
+ subsumes|Tutorial_Abstract|owl_Thing subsumes|owl_Thing|owl_Thing
+ subsumes|owl_Nothing|owl_Thing subsumes|Workshop_Paper|Workshop_Paper
+ subsumes|Location|Location subsumes|Conference_Banquet|Conference_Banquet
+ subsumes|Regular_Session|Regular_Session subsumes|Thing|Thing
+ subsumes|Poster_Session|Poster_Session subsumes|Abstract|Abstract
+ subsumes|Paper_Author|Paper_Author
+ subsumes|Scientific_Event|Scientific_Event
+ subsumes|Workshop_Session|Workshop_Session subsumes|Session|Session
+ subsumes|Multi-author_Volume|Multi-author_Volume
+ subsumes|Academic_Institution|Academic_Institution subsumes|Event|Event
+ subsumes|Workshop_Chair|Workshop_Chair subsumes|Track|Track
+ subsumes|Programme_Brochure|Programme_Brochure
+ subsumes|Demo_Paper|Demo_Paper subsumes|Tutorial|Tutorial
+ subsumes|Organisation|Organisation
+ subsumes|Individual_Presentation|Individual_Presentation
+ subsumes|Flyer|Flyer subsumes|Social_Event|Social_Event
+ subsumes|Regular_Paper|Regular_Paper subsumes|Person|Person
+ subsumes|Student|Student subsumes|Organising_Agency|Organising_Agency
+ subsumes|Poster_Paper|Poster_Paper subsumes|Document|Document
+ subsumes|PC_Member|PC_Member subsumes|Web_Site|Web_Site
+ subsumes|OC_Chair|OC_Chair subsumes|SC_Member|SC_Member
+ subsumes|Conference_Participant|Conference_Participant
+ subsumes|Conference_Session|Conference_Session
+ subsumes|Session_Chair|Session_Chair
+ subsumes|Early-Registered_Participant|Early-Registered_Participant
+ subsumes|Demo_Chair|Demo_Chair
+ subsumes|Camera_Ready_Paper|Camera_Ready_Paper subsumes|Review|Review
+ subsumes|Conference_Proceedings|Conference_Proceedings
+ subsumes|Proceedings_Publisher|Proceedings_Publisher
+ subsumes|Contributed_Talk|Contributed_Talk
+ subsumes|Industrial_Session|Industrial_Session
+ subsumes|Tutorial_Chair|Tutorial_Chair
+ subsumes|Assigned_Paper|Assigned_Paper
+ subsumes|Submitted_Paper|Submitted_Paper
+ subsumes|Demo_Session|Demo_Session
+ subsumes|Negative_Review|Negative_Review
+ subsumes|Research_Institute|Research_Institute
+ subsumes|Evaluated_Paper|Evaluated_Paper
+ subsumes|Conference_Paper|Conference_Paper
+ subsumes|Agency_Staff_Member|Agency_Staff_Member
+ subsumes|Late-Registered_Participant|Late-Registered_Participant
+ subsumes|Conference|Conference subsumes|Workshop|Workshop
+ subsumes|Positive_Review|Positive_Review
+ subsumes|Industrial_Paper|Industrial_Paper
+ subsumes|Research_Topic|Research_Topic
+ subsumes|Neutral_Review|Neutral_Review
+ subsumes|Conference_Trip|Conference_Trip
+ subsumes|Invited_Speaker|Invited_Speaker
+ subsumes|Invited_Talk_Abstract|Invited_Talk_Abstract
+ subsumes|Possible_Reviewer|Possible_Reviewer
+ subsumes|University|University subsumes|Presenter|Presenter
+ subsumes|Proceedings|Proceedings subsumes|OC_Member|OC_Member
+ subsumes|Paper|Paper subsumes|Accepted_Paper|Accepted_Paper
+ subsumes|Rejected_Paper|Rejected_Paper subsumes|Invited_Talk|Invited_Talk
+ subsumes|PC_Chair|PC_Chair subsumes|Tutorial_Abstract|Tutorial_Abstract
+ subsumes|owl_Nothing|owl_Nothing
+ opsub|presentationOfPaper|Thing|Individual_Presentation
+ opsub|scientificallyOrganises|Thing|Academic_Institution
+ opsub|organisedBy|Thing|Event opsub|scientificallyOrganisedBy|Thing|Event
+ opsub|reviewerOfPaper|Thing|Possible_Reviewer
+ opsub|eventOnList|Thing|Event opsub|reviewWrittenBy|Thing|Document
+ opsub|technicallyOrganisedBy|Thing|Event
+ opsub|presentationOfPaper|Thing|Event opsub|partOfEvent|Thing|Event
+ opsub|listsEvent|Thing|Document opsub|writtenBy|Thing|Document
+ opsub|technicallyOrganises|Thing|Organisation opsub|authorOf|Thing|Person
+ opsub|hasReview|Thing|Document opsub|heldIn|Thing|Event
+ opsub|updatedVersionOf|Thing|Document
+ opsub|presentationOfPaper|Thing|Scientific_Event
+ opsub|reviewOfPaper|Thing|Review opsub|publisherOf|Thing|Organisation
+ opsub|scientificallyOrganises|Thing|Organisation
+ opsub|hasReview|Thing|Paper opsub|hasReviewer|Thing|Paper
+ opsub|reviewOfPaper|Thing|Document opsub|reviewerOfPaper|Thing|Person
+ opsub|hasReviewer|Thing|Document opsub|locationOf|Thing|Location
+ opsub|paperPresentedAs|Thing|Document
+ opsub|hasUpdatedVersion|Thing|Document opsub|reviewWrittenBy|Thing|Review
+ opsub|topicCoveredBy|Thing|Research_Topic opsub|hasEvent|Thing|Event
+ subsumes|Conference_Trip|Contributed_Talk
+ subsumes|Poster_Session|Contributed_Talk subsumes|Rejected_Paper|Paper
+ subsumes|Rejected_Paper|Submitted_Paper
+ subsumes|Rejected_Paper|Regular_Paper
+ subsumes|Conference_Proceedings|Document
+ subsumes|Session_Chair|Possible_Reviewer
+ subsumes|Student|Possible_Reviewer subsumes|Presenter|Possible_Reviewer
+ subsumes|Scientific_Event|Contributed_Talk
+ subsumes|OC_Chair|Possible_Reviewer
+ subsumes|Invited_Talk_Abstract|Document
+ subsumes|SC_Member|Possible_Reviewer subsumes|Demo_Paper|Document
+ subsumes|Contributed_Talk|Session
+ subsumes|Conference_Banquet|Contributed_Talk
+ subsumes|PC_Member|Possible_Reviewer
+ subsumes|Late-Registered_Participant|Possible_Reviewer
+ subsumes|Demo_Session|Contributed_Talk
+ subsumes|Conference|Contributed_Talk
+ subsumes|Agency_Staff_Member|Possible_Reviewer
+ subsumes|Conference_Paper|Paper subsumes|Social_Event|Contributed_Talk
+ subsumes|Poster_Paper|Paper subsumes|Tutorial_Abstract|Document
+ subsumes|Early-Registered_Participant|Possible_Reviewer
+ subsumes|Conference_Proceedings|Session subsumes|Workshop_Paper|Document
+ subsumes|Event|Conference_Session subsumes|Regular_Paper|Document
+ subsumes|Scientific_Event|Document subsumes|Paper_Author|Possible_Reviewer
+ subsumes|PC_Chair|Possible_Reviewer subsumes|PC_Chair|Person
+ psubsumes|partOfEvent|partOf
+ psubsumes|scientificallyOrganisedBy|organisedBy psubsumes|hasEvent|hasPart
+ psubsumes|scientificallyOrganises|organises
+ psubsumes|technicallyOrganisedBy|organisedBy
+ psubsumes|reviewWrittenBy|writtenBy
+ psubsumes|technicallyOrganises|organises
+ subsumes|Conference_Banquet|owl_Nothing
+ subsumes|Poster_Session|owl_Nothing subsumes|Abstract|owl_Nothing
+ subsumes|Tutorial_Abstract|owl_Nothing
+ subsumes|Invited_Talk_Abstract|owl_Nothing
+ subsumes|Paper_Author|owl_Nothing subsumes|Tutorial|owl_Nothing
+ subsumes|Research_Institute|owl_Nothing subsumes|Session_Chair|owl_Nothing
+ subsumes|Proceedings|owl_Nothing subsumes|PC_Member|owl_Nothing
+ subsumes|OC_Chair|owl_Nothing subsumes|PC_Chair|owl_Nothing
+ subsumes|Event|owl_Nothing subsumes|Industrial_Session|owl_Nothing
+ subsumes|Contributed_Talk|owl_Nothing
+ subsumes|Early-Registered_Participant|owl_Nothing
+ subsumes|Demo_Chair|owl_Nothing subsumes|Camera_Ready_Paper|owl_Nothing
+ subsumes|Social_Event|owl_Nothing subsumes|Conference|owl_Nothing
+ subsumes|Conference_Trip|owl_Nothing subsumes|Assigned_Paper|owl_Nothing
+ subsumes|Invited_Speaker|owl_Nothing subsumes|SC_Member|owl_Nothing
+ subsumes|Social_Event|Conference_Session
+ subsumes|Conference|Conference_Session
+ subsumes|Conference_Banquet|Conference_Session
+ subsumes|Scientific_Event|Conference_Session
+ subsumes|Poster_Session|Conference_Session
+ subsumes|Conference_Trip|Conference_Session subsumes|Event|Session
+ subsumes|Social_Event|Session subsumes|Conference_Banquet|Session
+ subsumes|Scientific_Event|Session subsumes|Conference_Trip|Session
+ opsup|partOf|Thing|Conference_Proceedings
+ opsup|partOf|Thing|Contributed_Talk opsup|partOf|Thing|Tutorial
+ opsup|partOf|Thing|Conference
+ opsup|partOfEvent|Thing|Conference_Proceedings
+ opsup|partOfEvent|Thing|Contributed_Talk opsup|partOfEvent|Thing|Tutorial
+ opsup|partOfEvent|Thing|Conference opsup|partOfEvent|Thing|Event
+ opsup|partOf|Thing|Event opsup|presentationOfPaper|Thing|Social_Event
+ opsup|presentationOfPaper|Thing|Conference
+ opsup|presentationOfPaper|Thing|Demo_Session
+ opsup|presentationOfPaper|Thing|Conference_Banquet
+ opsup|presentationOfPaper|Thing|Scientific_Event
+ opsup|presentationOfPaper|Thing|Poster_Session
+ opsup|presentationOfPaper|Thing|Conference_Trip
+ opsup|presentationOfPaper|Thing|Event
+ opsup|volumeContainsPaper|Thing|Scientific_Event opsup|hasPart|Thing|Event
+ opsup|hasPart|Thing|Conference_Proceedings
+ opsup|hasPart|Thing|Contributed_Talk opsup|hasPart|Thing|Tutorial
+ opsup|hasPart|Thing|Conference opsup|hasEvent|Thing|Event
+ opsup|hasEvent|Thing|Conference_Proceedings
+ opsup|hasEvent|Thing|Contributed_Talk opsup|hasEvent|Thing|Tutorial
+ opsup|hasEvent|Thing|Conference subsumes|Session|Event
+ subsumes|Conference_Session|Event subsumes|Industrial_Session|Event
+ subsumes|Workshop_Session|Event subsumes|Contributed_Talk|Scientific_Event
+ subsumes|Contributed_Talk|Event
+ subsumes|Contributed_Talk|Individual_Presentation
+ subsumes|Regular_Session|Event subsumes|Regular_Session|owl_Nothing
+ subsumes|Contributed_Talk|Document subsumes|Contributed_Talk|Proceedings
+ subsumes|Conference_Proceedings|Event subsumes|Tutorial|Event
+ subsumes|Regular_Session|Contributed_Talk
+ subsumes|Workshop_Session|Conference_Session
+ subsumes|Workshop_Session|Contributed_Talk
+ subsumes|Industrial_Session|Contributed_Talk
+ subsumes|Conference_Session|owl_Nothing
+ subsumes|Conference_Session|Contributed_Talk subsumes|Session|owl_Nothing
+ subsumes|Session|Conference_Session subsumes|Session|Contributed_Talk
+ subsumes|Social_Event|Individual_Presentation
+ subsumes|Social_Event|Scientific_Event
+ subsumes|Conference|Individual_Presentation
+ subsumes|Conference|Scientific_Event
+ subsumes|Demo_Session|Individual_Presentation
+ subsumes|Demo_Session|Scientific_Event
+ subsumes|Conference_Banquet|Individual_Presentation
+ subsumes|Conference_Banquet|Scientific_Event
+ subsumes|Scientific_Event|Individual_Presentation
+ subsumes|Poster_Session|Individual_Presentation
+ subsumes|Poster_Session|Scientific_Event
+ subsumes|Conference_Trip|Individual_Presentation
+ subsumes|Conference_Trip|Scientific_Event
+ subsumes|Event|Individual_Presentation subsumes|Event|Scientific_Event
+ opsup|partOf|Thing|Conference_Trip opsup|partOf|Thing|Scientific_Event
+ opsup|partOf|Thing|Conference_Banquet opsup|partOf|Thing|Social_Event
+ opsup|partOfEvent|Thing|Conference_Trip
+ opsup|partOfEvent|Thing|Scientific_Event
+ opsup|partOfEvent|Thing|Conference_Banquet
+ opsup|partOfEvent|Thing|Social_Event opsup|hasPart|Thing|Conference_Trip
+ opsup|hasPart|Thing|Scientific_Event
+ opsup|hasPart|Thing|Conference_Banquet opsup|hasPart|Thing|Social_Event
+ opsup|hasEvent|Thing|Conference_Trip opsup|hasEvent|Thing|Scientific_Event
+ opsup|hasEvent|Thing|Conference_Banquet opsup|hasEvent|Thing|Social_Event
+ opsup|presentationOfPaper|Thing|Regular_Session
+ opsup|presentationOfPaper|Thing|Workshop_Session
+ opsup|presentationOfPaper|Thing|Industrial_Session
+ opsup|presentationOfPaper|Thing|Conference_Session
+ opsup|presentationOfPaper|Thing|Session
+ opsup|volumeContainsPaper|Thing|Contributed_Talk
+ subsumes|Tutorial|Contributed_Talk subsumes|Tutorial|Conference_Session
+ subsumes|Tutorial|Scientific_Event
+ subsumes|Tutorial|Individual_Presentation
+ subsumes|Conference_Proceedings|Scientific_Event
+ subsumes|Conference_Proceedings|Individual_Presentation
+ subsumes|Regular_Session|Scientific_Event
+ subsumes|Regular_Session|Individual_Presentation
+ subsumes|Workshop_Session|Scientific_Event
+ subsumes|Workshop_Session|Individual_Presentation
+ subsumes|Industrial_Session|Scientific_Event
+ subsumes|Industrial_Session|Individual_Presentation
+ subsumes|Conference_Session|Scientific_Event
+ subsumes|Conference_Session|Individual_Presentation
+ subsumes|Session|Scientific_Event subsumes|Session|Individual_Presentation
+ subsumes|Session|Proceedings subsumes|Session|Document
+ subsumes|Conference_Session|Proceedings
+ subsumes|Conference_Session|Document
+ subsumes|Industrial_Session|Proceedings
+ subsumes|Industrial_Session|Document subsumes|Workshop_Session|Proceedings
+ subsumes|Workshop_Session|Document subsumes|Regular_Session|Proceedings
+ subsumes|Regular_Session|Document opsup|presentationOfPaper|Thing|Tutorial
+ opsup|presentationOfPaper|Thing|Conference_Proceedings
+ opsup|volumeContainsPaper|Thing|Event
+ opsup|volumeContainsPaper|Thing|Conference_Trip
+ opsup|volumeContainsPaper|Thing|Poster_Session
+ opsup|volumeContainsPaper|Thing|Conference_Banquet
+ opsup|volumeContainsPaper|Thing|Demo_Session
+ opsup|volumeContainsPaper|Thing|Conference
+ opsup|volumeContainsPaper|Thing|Social_Event
+ opsup|volumeContainsPaper|Thing|Session
+ opsup|volumeContainsPaper|Thing|Conference_Session
+ opsup|volumeContainsPaper|Thing|Industrial_Session
+ opsup|volumeContainsPaper|Thing|Workshop_Session
+ opsup|volumeContainsPaper|Thing|Regular_Session
+ subsumes|Demo_Session|Document subsumes|Demo_Session|Proceedings
+ subsumes|Conference|Document subsumes|Conference|Proceedings
+ subsumes|Poster_Session|Document subsumes|Poster_Session|Proceedings
+ subsumes|Tutorial|Document subsumes|Tutorial|Proceedings
+ opsup|volumeContainsPaper|Thing|Tutorial
 End
