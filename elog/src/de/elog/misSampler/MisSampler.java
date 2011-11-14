@@ -12,13 +12,16 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLAnnotationValue;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 
 import com.clarkparsia.owlapi.explanation.PelletExplanation;
@@ -85,6 +88,7 @@ public class MisSampler {
 			default:
 				//error!
 				System.out.println("Start the reasoner with 2, 3 or 4 arguments:");
+				System.out.println("Arguments specific to the -sm reaosner:");
 				System.out.println("-sNUMBER number of samples (optional)");
 				System.out.println("-eNUMBER number of explanations per unsatisfiable class (optional)");
 				System.out.println("filename of input ontology");
@@ -399,13 +403,39 @@ public class MisSampler {
 			axiomProbability.add(new SampleAxiom(currAx, (double)count.get(currAx)/(double)(numOfSamples-burn_in)));
 		}	
 		
-		
+		//sort the axioms using the probabilities
         Collections.sort(axiomProbability);
         
+        //we need the factory to build annotations for the axioms
+        OWLDataFactory factory = manager.getOWLDataFactory();
+        
+        //create the second ontology that only contains axioms without annotations
+      	OWLOntology outputOntology = manager.createOntology();
+        
+      	//the annotation property we will use for the probabilities
+      	OWLAnnotationProperty annotationProbability = factory.getOWLAnnotationProperty(IRI.create("http://elog#probability"));
+      	
+      	//iterate over the sorted axioms with their probability
         for (int i = 0; i < axiomProbability.size(); i++) {
+        	
         	SampleAxiom wAxiom = axiomProbability.get(i);
+        	
+        	//build an axiom with the annotation "probability"
+        	OWLAnnotation b = factory.getOWLAnnotation(annotationProbability, factory.getOWLLiteral(wAxiom.getWeight()));
+        	HashSet<OWLAnnotation> annotationSet = new HashSet<OWLAnnotation>();
+        	annotationSet.add(b);
+        	OWLAxiom annotatedAxiom = wAxiom.getAxiom().getAnnotatedAxiom(annotationSet);
+        	manager.addAxiom(outputOntology, annotatedAxiom);
+        	//print the output of the samplet
         	System.out.println(wAxiom.getAxiom().toString() + "   " + wAxiom.getWeight());
         }
+        
+        File file = new File("data/output/test.owl");
+        try {
+			manager.saveOntology(outputOntology, IRI.create(file.toURI()));
+		} catch (OWLOntologyStorageException e) {
+			e.printStackTrace();
+		}
 	}
 		
 

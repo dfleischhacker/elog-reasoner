@@ -110,11 +110,11 @@ public class ELOntology{
 	 */
 	public HashSet<OWLAxiom> loadOntology(String path) throws OWLOntologyCreationException{
 		manager = OWLManager.createOWLOntologyManager();
-		this.factory =OWLManager.getOWLDataFactory();
+		this.factory = OWLManager.getOWLDataFactory();
 		owlOntology = manager.loadOntologyFromOntologyDocument(new File(path));
 		// set classes and properties
-		this.classes =owlOntology.getClassesInSignature();
-		this.properties =owlOntology.getObjectPropertiesInSignature();
+		this.classes = owlOntology.getClassesInSignature();
+		this.properties = owlOntology.getObjectPropertiesInSignature();
 		
 		axioms = new HashSet<OWLAxiom>();
 		
@@ -125,7 +125,7 @@ public class ELOntology{
 		
 		OWL2ELProfile profile = new OWL2ELProfile();
 		OWLProfileReport report = profile.checkOntology(owlOntology);
-		System.out.println("The following axioms are more expressive than OWL EL. They are deleted:");
+		System.out.println("The following axioms are more expressive than OWL2 EL. They are removed from the ontology:");
 		for(OWLProfileViolation v :report.getViolations()){
 			System.out.println(v);
 			
