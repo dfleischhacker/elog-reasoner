@@ -7,8 +7,6 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAnnotation;
-import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
@@ -28,6 +26,9 @@ import org.semanticweb.owlapi.model.RemoveAxiom;
 import org.semanticweb.owlapi.profiles.OWL2ELProfile;
 import org.semanticweb.owlapi.profiles.OWLProfileReport;
 import org.semanticweb.owlapi.profiles.OWLProfileViolation;
+
+import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
+import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLClassImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl;
@@ -61,6 +62,8 @@ import de.elog.elConverter.transformators.TransitiveRoleTransformator;
 public class ELOntology{
 	private OWLDataFactory factory ;
 	private HashSet<OWLAxiom> axioms;
+	
+	private PelletReasoner reasoner;
 
 	private Set<OWLClass> classes;
 	private Set<OWLObjectProperty> properties;
@@ -94,6 +97,7 @@ public class ELOntology{
 	/**
 	 * 
 	 */
+	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 
 	public IRI getOntologyId(){
@@ -116,12 +120,13 @@ public class ELOntology{
 		this.classes = owlOntology.getClassesInSignature();
 		this.properties = owlOntology.getObjectPropertiesInSignature();
 		
+		//initialize the reasoner
+		reasoner = PelletReasonerFactory.getInstance().createReasoner(owlOntology);
+		
 		axioms = new HashSet<OWLAxiom>();
 		
 		axioms.addAll(owlOntology.getAxioms());
 		System.out.println("Axioms:" + axioms.size());
-		
-		
 		
 		OWL2ELProfile profile = new OWL2ELProfile();
 		OWLProfileReport report = profile.checkOntology(owlOntology);
@@ -173,9 +178,10 @@ public class ELOntology{
 		// normalize range (now the range axioms have been transformed)
 		this.axioms=result;
 		
+		System.out.println("Normalizing range restriction axioms... this might take some time...");
 		result = new HashSet<OWLAxiom>();
 		for(OWLAxiom axiom:axioms){
-			result.addAll(this.normalizeRange(axiom, result));
+			result.addAll(this.normalizeRange(axiom, result, reasoner));
 		}
 		// normalize everything (inclusive transformed range axioms). This should work very fast.
 		this.axioms=result;
@@ -208,11 +214,18 @@ public class ELOntology{
 	 * @param allOtherNormalizedAxioms
 	 * @return
 	 */
-	private HashSet<OWLAxiom> normalizeRange(OWLAxiom axiom, HashSet<OWLAxiom> allOtherNormalizedAxioms){
-		this.rangeConverter = new PropertyRangeTransformator(allOtherNormalizedAxioms);
+	private HashSet<OWLAxiom> normalizeRange(OWLAxiom axiom, HashSet<OWLAxiom> allOtherNormalizedAxioms, PelletReasoner pelletReasoner){
+		this.rangeConverter = new PropertyRangeTransformator(allOtherNormalizedAxioms, pelletReasoner);
 		return rangeConverter.convert(axiom, this.getFactory(),this);
 	}
 	
+	/**
+	 * Normalizes one individual axiom. This is necessary to assign weights to a conjunctions
+	 * of predicates equivalent to the original axiom
+	 * @param axiom
+	 * @param allOtherNormalizedAxioms
+	 * @return
+	 */
 	public HashSet<OWLAxiom> normalizeAxiom(OWLAxiom axiom, HashSet<OWLAxiom> allOtherNormalizedAxioms){
 		HashSet<OWLAxiom> temp = new HashSet<OWLAxiom>();
 		HashSet<OWLAxiom> results = new HashSet<OWLAxiom>();
@@ -226,7 +239,7 @@ public class ELOntology{
 		
 		temp = new HashSet<OWLAxiom>();
 		for(OWLAxiom a:results){
-			temp.addAll(this.normalizeRange(a, temp));
+			temp.addAll(this.normalizeRange(a, temp, reasoner));
 		}
 		// normalize everything (inclusive transformed range axioms). This should work very fast.
 		results=temp;
@@ -235,10 +248,9 @@ public class ELOntology{
 			temp.addAll(this.normalizeWithoutRange(a));
 		}
 		results = temp;
+		
 		return results;
-		
-		
-		
+
 	}
 	
 	public OWLDataFactory getFactory() {

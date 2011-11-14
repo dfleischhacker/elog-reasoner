@@ -261,8 +261,14 @@ public class OWLReader {
 				//there is at least one annotated axiom in the ontology
 				containsAnnotatedAxiom = true;
 				
+				
+				if (specificNormalizationAxioms.size() <= 0) {
+					//here we have to do something as this can happen 
+					//due to the range restriction normalization
+				}
 				// if normalized axioms size == 1
-				if(specificNormalizationAxioms.size()==1) {
+				else if(specificNormalizationAxioms.size()==1) {
+				
 					for(OWLAxiom specAxiom : specificNormalizationAxioms) {
 						this.addAxiomToCategorySoft(specAxiom, confidenceValue, elOntology);
 					}
