@@ -32,7 +32,7 @@ import de.elog.elConverter.ELOntology;
  * Use ELOntology class for downsizing and normalizing OWL Ontologies to EL++.
 
  * 
- * Must be called as last converter with all other converted axioms ax arguments.
+ * Must be called as last converter with all other converted axioms as arguments.
  * @author jan
  *
  */

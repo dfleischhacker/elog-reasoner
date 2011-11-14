@@ -240,6 +240,8 @@ public class OWLReader {
 			propArray[0] = ELOntology.toString(p.toString());
 			this.objectProperty.add(propArray);
 		}
+		//are there any annotated axioms in the ontology
+		boolean containsAnnotatedAxiom = false;
 		
 		for(OWLAxiom axiom : originalAxioms){
 			// get confidence value (null if hard)
@@ -249,17 +251,22 @@ public class OWLReader {
 			// get normalization for this specific axiom
 			HashSet<OWLAxiom> specificNormalizationAxioms = elOntology.normalizeAxiom(axiom, prenormalizedOntology);
 			
-			if(confidenceValue==null){
-				for(OWLAxiom specAxiom : specificNormalizationAxioms){
+			//distinguish between annotated and unannotated axioms
+			if(confidenceValue==null) {
+				for(OWLAxiom specAxiom : specificNormalizationAxioms) {
 					this.addAxiomToCategoryHard(specAxiom, elOntology);
 				}
-			}else {
+			} else {
+				
+				//there is at least one annotated axiom in the ontology
+				containsAnnotatedAxiom = true;
+				
 				// if normalized axioms size == 1
-				if(specificNormalizationAxioms.size()==1){
-					for(OWLAxiom specAxiom : specificNormalizationAxioms){
+				if(specificNormalizationAxioms.size()==1) {
+					for(OWLAxiom specAxiom : specificNormalizationAxioms) {
 						this.addAxiomToCategorySoft(specAxiom, confidenceValue, elOntology);
 					}
-				}else{
+				} else {
 					numberOfComplexSoft++;
 					GurobiConnector grbConnector = GurobiConnector.getGurobiConnector();
 
@@ -279,7 +286,7 @@ public class OWLReader {
 			}
 		}
 
-		
+		//Print some statistics about the read axioms
 		System.out.println("Number of subsumes axioms: hard " + this.getSubsumesHard().size() + " soft " + this.getSubsumesEvidence().size());
 		System.out.println("Number of intersection axioms: hard " + this.getIntersectionHard().size() + " soft " + this.getIntersectionEvidence().size());
 		System.out.println("Number of opsub axioms: hard " + this.getOpsubHard().size() + " soft " + this.getOpsubEvidence().size());
@@ -287,6 +294,12 @@ public class OWLReader {
 		System.out.println("Number of psubsumes axioms: hard " + this.getPsubsumesHard().size() + " soft " + this.getOpsupEvidence().size());
 		System.out.println("Number of pcom axioms: hard " + this.getPcomHard().size() + " soft " + this.getPcomEvidence().size());
 		System.out.println("Number of complex soft axioms: " + numberOfComplexSoft);
+		
+		if (!containsAnnotatedAxiom) {
+			System.err.println("There are no annotated axioms in the ontology!");
+			System.exit(0);
+		}
+		
 		return elOntology.getOntologyId();
 	}
 	
