@@ -26,27 +26,39 @@ public class OWLSamplingEventReader {
 	 * 
 	 * Returns true if the event is positive, false if it is negative.
 	 * 
-	 * If no confidence value exist, the function returns "null".
+	 * If no annotation property value exist but a confidence, the
+	 * method assumes that the axiom is supposed to be sampled
 	 * 
 	 * @param axiom
 	 * @return
 	 * @throws Exception 
 	 */
 	private Boolean isPositiveEvent(OWLAxiom axiom) {
+		
+		boolean hasConfidenceValue = false;
+		
 		for(OWLAnnotation annotation : axiom.getAnnotations()){
 			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(Constants.ANNOTATION_PROPERTY_FOR_SAMPLING_POSITIVE_EVENT)){
 				OWLAnnotationValue annValue = annotation.getValue();
 				if(annValue instanceof OWLLiteralImpl){
 					OWLLiteral literalValue = (OWLLiteral) annValue;
-					if(literalValue.isBoolean()){
+					if(literalValue.isBoolean()) {
 						return literalValue.parseBoolean();
 					}					
 				}
-			}			
+			}
+			if(annotation.getProperty().getIRI().getFragment().toString().equalsIgnoreCase(Constants.ANNOTATION_PROPERTY_FOR_REASONING_CONFIDENCE_VALUE)) {
+				hasConfidenceValue = true;			
+			}
 		}
-		System.err.println("The boolean annotation-property " + Constants.ANNOTATION_PROPERTY_FOR_SAMPLING_POSITIVE_EVENT + " is missing. " +
-				"The application will assume that the axiom " + axiom + " is a positive event.");
-		return true;
+
+		if (hasConfidenceValue) {
+			System.err.println("The boolean annotation-property " + Constants.ANNOTATION_PROPERTY_FOR_SAMPLING_POSITIVE_EVENT + " is missing. " +
+				"The application will assume that the axiom " + axiom + " with confidence value is supposed to be sampled.");
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/**

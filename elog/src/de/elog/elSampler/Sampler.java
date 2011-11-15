@@ -52,16 +52,21 @@ public class Sampler {
 	 * @throws OWLOntologyStorageException 
 	 */
 	public static void main(String[] args) throws ParseException, SQLException, SolveException, ReadOrWriteToFileException, OWLOntologyCreationException, OWLOntologyStorageException {
-		if(args.length!=3){
+		if(args.length!=2 && args.length!=3){
 			System.out.println("Start the sampler with 3 arguments:");
 			System.out.println("- existing filename of input ontology");
-			System.out.println("- existing filename of ontology with positive and negative events");
+			System.out.println("- existing filename of ontology with positive and negative events (optional)");
 			System.out.println("- number of samples l");
 			System.out.println();
-			System.out.println("Example: elog -s \"data/input/ontology1.owl\" \"data/input/events.owl\" 200");
+			System.out.println("Example: elog -si \"data/input/ontology1.owl\" \"data/input/events.owl\" 200");
 		}else{
+			int numberOfSamplingRounds = 1000;
 			long startTime = System.currentTimeMillis();
-			int numberOfSamplingRounds = Integer.parseInt(args[2]);
+			if (args.length==3) {
+				numberOfSamplingRounds = Integer.parseInt(args[2]);
+			} else if (args.length==2) {
+				numberOfSamplingRounds = Integer.parseInt(args[1]);
+			}
 			System.out.println("====================================================");
 			System.out.println("Read ontology from file: " + args[0]);
 			System.out.println("====================================================");
