@@ -44,8 +44,7 @@ public class Reasoner {
 		OWLOntologyManager manager = OWL.manager;
 		
 		HashMap<String, OwnAxiom> axioms = reader.getAxioms();
-		
-			
+					
 		//initially load the ontology
 		HashSet<OWLAxiom> ontAxioms = new HashSet<OWLAxiom>();
 		for(OwnAxiom a : axioms.values()){
