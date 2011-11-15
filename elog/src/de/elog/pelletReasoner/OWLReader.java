@@ -3,7 +3,6 @@ package de.elog.pelletReasoner;
 import java.io.File;
 import java.util.HashMap;
 
-import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLAnnotationValue;
@@ -14,20 +13,25 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
+
+import com.clarkparsia.owlapiv3.OWL;
+
 import uk.ac.manchester.cs.owl.owlapi.OWLLiteralImpl;
 import de.elog.Constants;
 
 public class OWLReader {
 
 	private OWLOntology owlOntology;
-	private OWLOntologyManager manager;
 	private HashMap<String, OwnAxiom> axioms = new HashMap<String,OwnAxiom>();	
+	private OWLOntologyManager manager;
 	
+	OWLReader() {
+		manager = OWL.manager;
+	}
 
 	public IRI read(String filename) throws OWLOntologyCreationException{
 		
 		axioms = new HashMap<String, OwnAxiom>();	
-		manager = OWLManager.createOWLOntologyManager();
 		owlOntology = manager.loadOntologyFromOntologyDocument(new File(filename));
 		
 		for(OWLAxiom axiom : owlOntology.getAxioms()){
@@ -68,8 +72,14 @@ public class OWLReader {
 		return null;
 	}
 	
-	public void write (OWLOntology ont, String path) throws OWLOntologyStorageException{
-		this.manager.saveOntology(ont, IRI.create(new File(path)));
+	public void write (OWLOntology ontology, String filePath) {
+		File file = new File(filePath);
+		try {
+			manager.saveOntology(ontology, IRI.create(file.toURI()));
+		} catch (OWLOntologyStorageException e) {
+			System.err.println("ELOG could not write to the ontology file.");
+			e.printStackTrace();
+		}
 	}
 	
 	public HashMap<String, OwnAxiom> getAxioms() {

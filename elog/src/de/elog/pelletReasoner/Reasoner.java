@@ -68,6 +68,7 @@ public class Reasoner {
 		Set<Set<OWLAxiom>> conflictSet = new HashSet<Set<OWLAxiom>>();
 		int counter = 0;
 		do {
+			
 			// Create the reasoner and load the ontology
 			PelletReasoner reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology );
 			// Create an explanation generator
@@ -89,7 +90,7 @@ public class Reasoner {
 				//System.out.println("-----------> " + incoh + " <-----------");
 				
 				//Set<OWLAxiom> exp = expGen.getUnsatisfiableExplanation(incoh);
-				Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoh, 5);
+				Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoh, 1);
 				Iterator<Set<OWLAxiom>> explanationSet = exp.iterator();
 				while ( explanationSet.hasNext() ) {
 					Set<OWLAxiom> axiomSet = explanationSet.next();
@@ -102,7 +103,7 @@ public class Reasoner {
 					for(OWLAxiom a : axiomSet){
 						variableNames.add(a.toString());
 						if(!axioms.containsKey(a.toString())) {
-							System.err.println("Axiom " + a.toString() + " of conflict set not found in original axioms.");
+							System.err.println("Axiom " + a.toString() + " of minimal inconsistent subset not found in original axioms.");
 						}
 					}
 					connector.addCardinalityConstraint(variableNames, (variableNames.size()-1));
@@ -111,7 +112,7 @@ public class Reasoner {
 					conflictSet.add(axiomSet);
 				}
 			}
-			System.out.println("Still " + conflictSet.size() + " conflicts remaining.");
+			System.out.println("There are " + conflictSet.size() + " minimal inconsistent subsets remaining.");
 			if(conflictSet.size()>0){
 				result = connector.solve();
 				System.err.println("Size of actual Result set :" + result.size());
@@ -121,18 +122,19 @@ public class Reasoner {
 					if(ownAxiom!=null){
 						ontAxioms.add(ownAxiom.getAxiomWithoutAnnotation());
 					}else{
-						System.err.println("Axiom " +r + " of ilp solution not found in original ont.");
+						System.err.println("Axiom " + r + " of ilp solution not found in original ontology.");
 					}
 					
 				}
 				
 				ontology = manager.createOntology(ontAxioms);
 			}
-			counter ++;
+			counter++;
 			System.out.println("Finished cutting plane loop number " + counter);
+			System.out.println();
 		} while (conflictSet.size()>0);
-		return ontology;
 		
+		return ontology;
 	}
 	
 	/**
@@ -157,22 +159,21 @@ public class Reasoner {
 		}else{
 			long startTime = System.currentTimeMillis();
 			System.out.println("====================================================");
-			System.out.println("Read ontology from file: " + args[0]);
+			System.out.println("Reading ontology from file: " + args[0]);
 			System.out.println("====================================================");
 			OWLReader reader = new OWLReader();
 			reader.read(args[0]);
-			System.out.println("Successfully read in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
+			System.out.println("Successfully read the ontology in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			System.out.println("====================================================");
-			System.out.println("Reason ontology: Get the most probable consistent ontology");
+			System.out.println("Computing most probable coherent ontology");
 			System.out.println("====================================================");
 
 			OWLOntology resultOntology = Reasoner.getOntologyWithHighestProbability(reader);
 			
 			System.out.println("Successfully reasoned in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
-			
-			
+						
 			System.out.println("====================================================");
-			System.out.println("Write ontology");
+			System.out.println("Writing ontology" + " " + args[1]);
 			System.out.println("====================================================");
 			reader.write(resultOntology, args[1]);			
 			System.out.println("Successfully written in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
