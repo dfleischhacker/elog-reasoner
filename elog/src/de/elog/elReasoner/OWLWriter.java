@@ -33,7 +33,7 @@ public class OWLWriter {
 	public OWLOntology write(IRI ontologyIRI, String filenameToSave, ArrayList<String> axioms) throws OWLOntologyCreationException, OWLOntologyStorageException{
 		// Create the document IRI for our ontology
 		File fileToSave = new File(filenameToSave);
-		IRI documentIRI = IRI.create(fileToSave);
+		IRI documentIRI = IRI.create(fileToSave.toURI());
 		// Set up a mapping, which maps the ontology to the document IRI
 		SimpleIRIMapper mapper = new SimpleIRIMapper(ontologyIRI, documentIRI);
 		manager.addIRIMapper(mapper);
@@ -68,7 +68,7 @@ public class OWLWriter {
 		}
 		
 		// Now save the ontology.
-		manager.saveOntology(ontology);
+		manager.saveOntology(ontology, documentIRI);
 		System.out.println("Filename of output: "+ filenameToSave);
 		return ontology;
 	}
