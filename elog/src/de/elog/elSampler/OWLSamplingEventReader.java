@@ -153,8 +153,7 @@ public class OWLSamplingEventReader {
 					}
 				}
 			}
-			
-			
+
 		}
 		
 		return elOntology.getOntologyId();

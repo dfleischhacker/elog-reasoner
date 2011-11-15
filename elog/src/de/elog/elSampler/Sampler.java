@@ -60,12 +60,15 @@ public class Sampler {
 			System.out.println();
 			System.out.println("Example: elog -si \"data/input/ontology1.owl\" \"data/input/events.owl\" 200");
 		}else{
+			String sampleFilePath = "";
 			int numberOfSamplingRounds = 1000;
 			long startTime = System.currentTimeMillis();
 			if (args.length==3) {
 				numberOfSamplingRounds = Integer.parseInt(args[2]);
+				sampleFilePath = args[1];
 			} else if (args.length==2) {
 				numberOfSamplingRounds = Integer.parseInt(args[1]);
+				sampleFilePath = "";
 			}
 			System.out.println("====================================================");
 			System.out.println("Read ontology from file: " + args[0]);
@@ -76,7 +79,7 @@ public class Sampler {
 			reader.read(args[0]);
 			//Read event axioms
 			OWLSamplingEventReader eventReader = new OWLSamplingEventReader();
-			eventReader.read(args[1]);
+			eventReader.read(sampleFilePath);
 			System.out.println("Successfully read in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			System.out.println("====================================================");
 			System.out.println("Sample marginal probabilities using MC-ILP...");
