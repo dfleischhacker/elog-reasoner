@@ -49,18 +49,13 @@ public class Greedy {
 		
 		System.out.println( "axioms: "+ axioms.size() );
 		int i=0;
-		long iCheckTime = 0;
 		double sum = 0;
 		for( OWLAxiom axiom: sortedAxioms )
 		{
 			m_ontology.addAxiom( axiom );
 			
 			
-			long iCheckStart = System.currentTimeMillis();
 			boolean bCoherent = m_ontology.isCoherent();
-			long iCheckEnd = System.currentTimeMillis();
-			iCheckTime += ( iCheckEnd - iCheckStart );
-			
 			if( !bCoherent )
 			{
 				
