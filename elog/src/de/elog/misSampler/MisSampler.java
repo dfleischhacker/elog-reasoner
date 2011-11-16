@@ -216,7 +216,7 @@ public class MisSampler {
 		//iterate over all incoherent classes in the merged ontology
 		for (OWLClass incoherentClass : incoherentClasses) {
 			
-			System.out.println("Computing explanations for unsatsifiable class " + incoherentClass + "...");
+			System.out.println("Computing explanations for unsatisfiable class " + incoherentClass + "...");
 			
 			Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoherentClass, numOfExplanations);
 			//iterate over all explanations found by the reasoner
@@ -224,7 +224,7 @@ public class MisSampler {
 
 				//only keep the axioms that have a confidence value
 				axiomSet.retainAll(sampleAxioms);
-				//System.out.println(axiomSet);
+				System.out.println(axiomSet);
 				
 				for (OWLAxiom currentAxiom : axiomSet) {
 					//stores the degree of the axiom for statistics and convergence tests
