@@ -141,18 +141,17 @@ public class Evaluator {
 			ArrayList<OWLAxiom> axioms = axiomsToCheck.getAxiomsToCheck(this.getClasses(gold, generated), this.getObjectProperties(generated, gold));
 
 			
-			for(OWLAxiom axiom: axioms){
+			for(OWLAxiom axiom: axioms) {
 				boolean entailedInGold = reasonerGold.isEntailed(axiom);
 				boolean entailedInGenerated = reasonerGenerated.isEntailed(axiom);
 				
 				if(entailedInGold && entailedInGenerated){
 					//System.out.println("tp;"+axiom);
 					
-					getProbabilityValue(axiom);
-					
 					truePositives++;
 				}else if(entailedInGold && !entailedInGenerated){
 					//System.out.println("fn;"+axiom);
+
 					falseNegatives++;
 				}else if(!entailedInGold && entailedInGenerated){
 					//System.out.println("fp;"+axiom);
@@ -222,6 +221,7 @@ public class Evaluator {
 	}
 	
 	public Set<OWLObjectProperty> getObjectProperties(OWLOntology ont1, OWLOntology ont2){
+		
 		Set<OWLObjectProperty> result1 = ont1.getObjectPropertiesInSignature();
 		Set<OWLObjectProperty> result2 = ont2.getObjectPropertiesInSignature();
 		
