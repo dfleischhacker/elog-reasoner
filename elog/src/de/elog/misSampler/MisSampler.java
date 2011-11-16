@@ -62,6 +62,13 @@ public class MisSampler {
 					numOfExplanations = Integer.valueOf(args[0].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
+					System.out.println("Arguments specific to the -sm reaosner:");
+					System.out.println("-sNUMBER number of samples (optional)");
+					System.out.println("-eNUMBER number of explanations per unsatisfiable class (optional)");
+					System.out.println("filename of input ontology");
+					System.out.println();
+					System.out.println("Example: elog -sm \"data/input/ontology.owl\" ");
+					System.out.println("Example: elog -sm -s1000 -e10 \"data/input/ontology.owl\"");
 					return;
 				}
 				break;
@@ -73,6 +80,13 @@ public class MisSampler {
 					numOfExplanations = Integer.valueOf(args[0].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
+					System.out.println("Arguments specific to the -sm reaosner:");
+					System.out.println("-sNUMBER number of samples (optional)");
+					System.out.println("-eNUMBER number of explanations per unsatisfiable class (optional)");
+					System.out.println("filename of input ontology");
+					System.out.println();
+					System.out.println("Example: elog -sm \"data/input/ontology1.owl\" ");
+					System.out.println("Example: elog -sm -s1000 -e10 \"data/input/ontology2.owl\"");
 					return;
 				}
 				if (args[1].startsWith("-s")) {
@@ -81,6 +95,13 @@ public class MisSampler {
 					numOfExplanations = Integer.valueOf(args[1].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
+					System.out.println("Arguments specific to the -sm reaosner:");
+					System.out.println("-sNUMBER number of samples (optional)");
+					System.out.println("-eNUMBER number of explanations per unsatisfiable class (optional)");
+					System.out.println("filename of input ontology");
+					System.out.println();
+					System.out.println("Example: elog -sm \"data/input/ontology1.owl\" ");
+					System.out.println("Example: elog -sm -s1000 -e10 \"data/input/ontology2.owl\"");
 					return;
 				}
 				break;
@@ -92,11 +113,9 @@ public class MisSampler {
 				System.out.println("-sNUMBER number of samples (optional)");
 				System.out.println("-eNUMBER number of explanations per unsatisfiable class (optional)");
 				System.out.println("filename of input ontology");
-				//System.out.println("- new filename of materialized output ontology");
-				//System.out.println("- reference Ontology / Gold standard (optional)");
 				System.out.println();
-				System.out.println("Example: elog -ms \"data/input/ontology1.owl\" ");
-				System.out.println("Example: elog -ms -s1000 -e10 \"data/input/ontology2.owl\"");
+				System.out.println("Example: elog -sm \"data/input/ontology1.owl\" ");
+				System.out.println("Example: elog -sm -s1000 -e10 \"data/input/ontology2.owl\"");
 				return;
 		}
 		
@@ -145,27 +164,28 @@ public class MisSampler {
 		//stores the degree of each node
 		Hashtable<OWLAxiom,Integer> degree = new Hashtable<OWLAxiom,Integer>();
 					
-		//load all axioms with a confidence value
+		//iterate over all axioms in the loaded ontology
 		Set<OWLAxiom> allAxioms = ontology1.getAxioms();
-		Iterator<OWLAxiom> axiomIter = allAxioms.iterator();
-		while (axiomIter.hasNext() ){
-			OWLAxiom axiom = axiomIter.next();
-			//if the axioms has a confidence value, add it to the sample axioms
+		for (OWLAxiom axiom : allAxioms) {
 			
+			//get the axiom without the annotation
 			OWLAxiom axWithoutAnnotation = axiom.getAxiomWithoutAnnotations();
-			//System.out.println(axWithoutAnnotation);
-			
+			//stores the confidence value of the current axiom
+			Double confidence = 0.0;	
 			//add to the sample sets only if it has confidence
-			if (  mSampler.getConfidenceValue(axiom) != null) {
-				double confidence = mSampler.getConfidenceValue(axiom);
-								
+			if ( (confidence = mSampler.getConfidenceValue(axiom)) != null) {
+			
+				//check if the axiom is already part of the ones to be sampled
 				if (sampleAxioms.indexOf(axWithoutAnnotation) == -1) {
+					//if not, add it to the set of axioms to be sampled
 					sampleAxioms.add(axWithoutAnnotation);
+					//set the count to zero
 					count.put(axWithoutAnnotation, new Integer(0));
+					//set the confidence to the given value
 					axiomConfidence.put(axWithoutAnnotation, confidence);
 				}
 			}
-
+			//add the axiom to the identical ontology without annotations
 			manager.addAxiom(ontology2, axWithoutAnnotation);
 		}
 		
@@ -190,38 +210,31 @@ public class MisSampler {
 		//determine all incoherent classes in the ontology
 		Set<OWLClass> incoherentClasses = reasoner.getUnsatisfiableClasses().getEntitiesMinusBottom();
 		System.out.println("There are " + incoherentClasses.size() + " unsatisfiable classes.");
-		
-		//System.exit(0);
-		
+
 		System.out.println("Computing minimial inconsistent subsets...");
-		
-		
+				
 		//iterate over all incoherent classes in the merged ontology
-		Iterator<OWLClass> incohClassIter = incoherentClasses.iterator();
-		while (incohClassIter.hasNext() ){
-			//incoherent class
-			OWLClass incoh = incohClassIter.next();
+		for (OWLClass incoherentClass : incoherentClasses) {
 			
-			System.out.println("Computing explanations for unsatsifiable class " + incoh + "...");
+			System.out.println("Computing explanations for unsatsifiable class " + incoherentClass + "...");
 			
-			//Set<OWLAxiom> exp = expGen.getUnsatisfiableExplanation(incoh);
-			Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoh, numOfExplanations);
-			Iterator<Set<OWLAxiom>> explanationSet = exp.iterator();
-			while ( explanationSet.hasNext() ) {
-				Set<OWLAxiom> axiomSet = explanationSet.next();
-				//axiomSet.retainAll(sampleAxioms);
+			Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoherentClass, numOfExplanations);
+			//iterate over all explanations found by the reasoner
+			for (Set<OWLAxiom> axiomSet : exp) {
+
+				//only keep the axioms that have a confidence value
+				axiomSet.retainAll(sampleAxioms);
 				//System.out.println(axiomSet);
 				
-				Iterator<OWLAxiom> axiomIterator = axiomSet.iterator();
-				while ( axiomIterator.hasNext() ) {
-					OWLAxiom currentAxiom = axiomIterator.next();
+				for (OWLAxiom currentAxiom : axiomSet) {
+					//stores the degree of the axiom for statistics and convergence tests
 					degree.put(currentAxiom, new Integer(0));
 					
 					//remove axiom from ontology if it is the only one
+					//it will have probability 0!
 					if (axiomSet.size() <= 1) {
 						manager.removeAxiom(ontology2, currentAxiom);
 					}
-					
 				}
 				
 				//add the set of axioms (a conflict) to the set of conflicts
@@ -260,16 +273,12 @@ public class MisSampler {
 				}
 				degree.put(vertex, new Integer(new_degree));
 			}
-			
 		}
-		
-		
+
 		System.out.println("Maximum edge size: " + max_edge_size);
 		System.out.println("Maximum degree: " + max_degree + "  axiom: " + maxDegreeAxiom);
-	
-		
-		//generate random number between 0 and size of correpsondences - 1
-		
+
+		//stores one individual sample
 		Set<OWLAxiom> sample = new HashSet<OWLAxiom>();
 		
 		//burn in iterations
@@ -368,8 +377,7 @@ public class MisSampler {
 						//and, thus, we remove the candidate (i.e., we leave the sample as it is)
 						sample.remove(candidate);
 					}
-					
-					
+
 				} else {
 					//no conflict, with probability t / (1 + t) we add the candidate (i.e., do not remove the candidate)
 					double r = new Random().nextDouble();
