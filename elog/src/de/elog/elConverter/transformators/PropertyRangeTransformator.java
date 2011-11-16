@@ -21,7 +21,7 @@ import uk.ac.manchester.cs.owl.owlapi.OWLObjectSomeValuesFromImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLSubClassOfAxiomImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLSubObjectPropertyOfAxiomImpl;
 
-import de.elog.elConverter.Constants;
+import de.elog.elConverter.ConverterConstants;
 import de.elog.elConverter.ELOntology;
 
 
@@ -155,7 +155,7 @@ public class PropertyRangeTransformator implements Transformator{
 		 */
 	private OWLClass getNextClass(OWLDataFactory factory, ELOntology ontology){
 		StringBuilder sb=new StringBuilder();
-		sb.append(Constants.NEW_CLASS_IRI).append(TransformatorManager.getNextFreeVariableCounter());
+		sb.append(ConverterConstants.NEW_CLASS_IRI).append(TransformatorManager.getNextFreeVariableCounter());
 		OWLClass result = factory.getOWLClass(IRI.create(sb.toString()));
 		ontology.addClass(result);
 		return result;
@@ -178,7 +178,7 @@ public class PropertyRangeTransformator implements Transformator{
 					OWLObjectProperty epsilon = (OWLObjectProperty) leftObjectProperty;
 					OWLObjectProperty rCheck = (OWLObjectProperty) rightObjectProperty;
 					
-					if(epsilon.getIRI().toString().contains(Constants.NEW_REFLEXIVE_ROLE_SUB_IRI)
+					if(epsilon.getIRI().toString().contains(ConverterConstants.NEW_REFLEXIVE_ROLE_SUB_IRI)
 						&& rCheck.equals(r)){
 						return true;
 					}

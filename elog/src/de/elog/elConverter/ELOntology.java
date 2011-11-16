@@ -480,9 +480,9 @@ public class ELOntology{
 	
 	public static String toString(OWLClass concept){
 		if(concept.equals(OWLDataFactoryImpl.getInstance().getOWLNothing())){
-			return Constants.BOTTOM_ELEMENT;
+			return ConverterConstants.BOTTOM_ELEMENT;
 		}else if(concept.equals(OWLDataFactoryImpl.getInstance().getOWLThing())){
-			return Constants.TOP_ELEMENT;
+			return ConverterConstants.TOP_ELEMENT;
 		}else{
 			String output = concept.toString();
 			String output2 = output.replace("<", "");
@@ -509,9 +509,9 @@ public class ELOntology{
 	
 	public static String toString(OWLEntity concept){
 		if(concept.equals(OWLDataFactoryImpl.getInstance().getOWLNothing())){
-			return Constants.BOTTOM_ELEMENT;
+			return ConverterConstants.BOTTOM_ELEMENT;
 		}else if(concept.equals(OWLDataFactoryImpl.getInstance().getOWLThing())){
-			return Constants.TOP_ELEMENT;
+			return ConverterConstants.TOP_ELEMENT;
 		}else{
 			String output = concept.toString();
 			String output2 = output.replace("<", "");

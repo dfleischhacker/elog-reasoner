@@ -6,7 +6,7 @@ package de.elog.elConverter;
  * @author jan
  *
  */
-public class Constants {
+public class ConverterConstants {
 	public static final String TOP_ELEMENT = "owl:Thing";
 	public static final String BOTTOM_ELEMENT = "owl:Nothing";
 	

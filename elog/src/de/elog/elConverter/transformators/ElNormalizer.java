@@ -16,7 +16,7 @@ import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.OWLSubPropertyChainOfAxiom;
 
-import de.elog.elConverter.Constants;
+import de.elog.elConverter.ConverterConstants;
 import de.elog.elConverter.ELOntology;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLClassImpl;
@@ -359,7 +359,7 @@ public class ElNormalizer implements Transformator{
 				if(this.isBasicConcept(c)){
 					OWLClass cBase = (OWLClass) c;
 					// if we did not transform it already.
-					if(!cBase.getIRI().toString().contains(Constants.NEW_OPSUP_CONCEPT_IRI) && !cBase.getIRI().toString().contains("Thing")){
+					if(!cBase.getIRI().toString().contains(ConverterConstants.NEW_OPSUP_CONCEPT_IRI) && !cBase.getIRI().toString().contains("Thing")){
 						OWLClass x = this.getNextOpsupClass(factory);
 						OWLObjectPropertyExpression r = some.getProperty();
 						OWLClassExpression b = subClassAxiom.getSubClass();
@@ -444,7 +444,7 @@ public class ElNormalizer implements Transformator{
 	
 	private OWLClass getNextClass(OWLDataFactory factory){
 		StringBuilder sb=new StringBuilder();
-		sb.append(Constants.NEW_CLASS_IRI).append(TransformatorManager.getNextFreeVariableCounter());
+		sb.append(ConverterConstants.NEW_CLASS_IRI).append(TransformatorManager.getNextFreeVariableCounter());
 		OWLClass result = factory.getOWLClass(IRI.create(sb.toString()));
 		ontology.addClass(result);
 		return result;
@@ -452,7 +452,7 @@ public class ElNormalizer implements Transformator{
 	
 	private OWLClass getNextOpsupClass(OWLDataFactory factory){
 		StringBuilder sb=new StringBuilder();
-		sb.append(Constants.NEW_OPSUP_CONCEPT_IRI).append(TransformatorManager.getNextFreeVariableCounter());
+		sb.append(ConverterConstants.NEW_OPSUP_CONCEPT_IRI).append(TransformatorManager.getNextFreeVariableCounter());
 		OWLClass result = factory.getOWLClass(IRI.create(sb.toString()));
 		ontology.addClass(result);
 		return result;
@@ -460,7 +460,7 @@ public class ElNormalizer implements Transformator{
 	
 	private OWLObjectProperty getNextObjectProperty(OWLDataFactory factory){
 		StringBuilder sb=new StringBuilder();
-		sb.append(Constants.NEW_PROP_IRI).append(TransformatorManager.getNextFreeVariableCounter());
+		sb.append(ConverterConstants.NEW_PROP_IRI).append(TransformatorManager.getNextFreeVariableCounter());
 		OWLObjectProperty result = factory.getOWLObjectProperty(IRI.create(sb.toString()));
 		ontology.addProperty(result);
 		return result;
