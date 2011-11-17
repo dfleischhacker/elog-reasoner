@@ -56,7 +56,7 @@ public class Reasoner {
 		PredicateDouble subsumesEvidenceP = new PredicateDouble("subsumesEvidence",false, conceptT, conceptT);subsumesEvidenceP.setGroundValues(subsumesEvidence);
 		PredicateDouble intersectionEvidenceP = new PredicateDouble("intersectionEvidence",false, conceptT, conceptT, conceptT);intersectionEvidenceP.setGroundValues(intersectionEvidence);
 		PredicateDouble opsubEvidenceP = new PredicateDouble("opsubEvidence",false, objectPropertyT, conceptT, conceptT);opsubEvidenceP.setGroundValues(opsubEvidence);
-		PredicateDouble opsupEvidenceP = new PredicateDouble("opsupEvidence",false, objectPropertyT, conceptT, conceptT);opsubEvidenceP.setGroundValues(opsubEvidence);
+		PredicateDouble opsupEvidenceP = new PredicateDouble("opsupEvidence",false, objectPropertyT, conceptT, conceptT);opsupEvidenceP.setGroundValues(opsupEvidence);
 		PredicateDouble psubsumesEvidenceP = new PredicateDouble("psubsumesEvidence", false, objectPropertyT, objectPropertyT);psubsumesEvidenceP.setGroundValues(psubsumesEvidence);
 		PredicateDouble pcomEvidenceP = new PredicateDouble("pcomEvidence", false, objectPropertyT, objectPropertyT, objectPropertyT);pcomEvidenceP.setGroundValues(pcomEvidence);
 
