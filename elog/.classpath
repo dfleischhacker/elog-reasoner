@@ -21,7 +21,7 @@
 	<classpathentry kind="lib" path="lib/pellet/pellet-test.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/servlet.jar"/>
 	<classpathentry kind="lib" path="lib/pellet/aterm-java-1.6.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/rockit"/>
-	<classpathentry kind="lib" path="C:/gurobi460/win64/lib/gurobi.jar"/>
+	<classpathentry kind="lib" path="/home/mathias/gurobi460/linux32/lib/gurobi.jar"/>
+	<classpathentry kind="lib" path="/home/mathias/workspace/elog-reasoner/lib/rockIt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
