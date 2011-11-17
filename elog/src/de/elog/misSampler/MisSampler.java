@@ -252,20 +252,16 @@ public class MisSampler {
 		//stores the max degree of a vertex in the hypergraph
 		int max_degree = 0;
 		OWLAxiom maxDegreeAxiom = null;
-		Iterator<Set<OWLAxiom>> MIS = conflictSet.iterator();
-		while ( MIS.hasNext() ) {
 			
-			Set<OWLAxiom> axiomSet = MIS.next();
-			
+		for (Set<OWLAxiom> axiomSet : conflictSet) {
+								
 			int sz = axiomSet.size();
 			if (sz > max_edge_size) {
 				max_edge_size = sz;
 			}
 			
-			
-			Iterator<OWLAxiom> conflictMember = axiomSet.iterator();
-			while ( conflictMember.hasNext() ) {
-				OWLAxiom vertex = conflictMember.next();
+			for (OWLAxiom vertex : axiomSet) {
+
 				int new_degree = degree.get(vertex)+1;
 				if (new_degree > max_degree) { 
 					max_degree = new_degree;
@@ -318,14 +314,10 @@ public class MisSampler {
 				int numOfConflicts = 0;
 				
 				//iterate over all conflict sets (edges in the HG)
-				MIS = conflictSet.iterator();
-				while ( MIS.hasNext() ) {
-					
-					//the current MIS we are investigating (edge in the HG)
-					Set<OWLAxiom> currMIS = MIS.next();
-					
+				for (Set<OWLAxiom> currentMIS : conflictSet) {
+									
 					//check if the current sample violates the independent set property
-					if (sample.containsAll(currMIS)) {
+					if (sample.containsAll(currentMIS)) {
 						independentSet = false;
 						numOfConflicts++;
 						
@@ -335,7 +327,7 @@ public class MisSampler {
 						}
 						
 						//uniqueConflict is the edge that would cause a unique conflict without the candidate
-						uniqueConflict = new HashSet<OWLAxiom>(currMIS);
+						uniqueConflict = new HashSet<OWLAxiom>(currentMIS);
 						uniqueConflict.remove(candidate);
 					}
 				}
