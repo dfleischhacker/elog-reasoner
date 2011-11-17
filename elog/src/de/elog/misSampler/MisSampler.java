@@ -391,14 +391,20 @@ public class MisSampler {
 			
 			//update counts (after burn-in iterations)
 			if (s >= burn_in) {
-				for (int i = 0; i < sampleAxioms.size(); i++) {
+				
+				
+				for (OWLAxiom sAx : sample) {
+					count.put(sAx, new Integer(count.get(sAx)+1));
+				}
+								
+				/*for (int i = 0; i < sampleAxioms.size(); i++) {
 					
 					if (sample.contains(sampleAxioms.get(i))) {
 					
 						OWLAxiom currAx = sampleAxioms.get(i);
 						count.put(sampleAxioms.get(i), new Integer(count.get(currAx)+1));
 					}
-				}
+				}*/
 			}
 		}
 		
