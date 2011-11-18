@@ -262,6 +262,7 @@ public class MisSampler {
 		int max_degree = 0;
 		OWLAxiom maxDegreeAxiom = null;
 			
+		//compute the size of the largest hyperedge and the maximal degree of a vertex
 		for (Set<OWLAxiom> axiomSet : conflictSet) {
 								
 			int sz = axiomSet.size();
@@ -314,7 +315,7 @@ public class MisSampler {
 					}
 					
 				} else {
-					//sample is does NOT contain candidate
+					//sample does NOT contain candidate
 					//stores the unique conflict (edge in the HG) that the candidate causes
 					Set<OWLAxiom> uniqueConflict = new HashSet<OWLAxiom>();
 					
@@ -348,16 +349,17 @@ public class MisSampler {
 					//it is NOT an independent set, i.e., there's a conflict
 					if (!independentSet) {
 						
-					//we have exactly one conflict
+						//we have exactly one conflict
 						if (numOfConflicts == 1 && (uniqueConflict.size() > 0)) {
+							
 							double r = new Random().nextDouble();
 							double tau = Math.exp(axiomConfidence.get(candidate));
 							double m = (double)max_edge_size;
 							double p = ((m-1)*tau) / (2*m*(tau+1));
-							
+								
 							//with probability p choose an axiom in the conflict uniformly at random and remove it
 							if (r <= p) {
-							
+								
 								//choose a random number between 0 and the size of the unique conflict minus 1
 								int n = new Random().nextInt(uniqueConflict.size());
 								//use an iterator and a variable (equal) to choose the axiom at random
@@ -366,7 +368,7 @@ public class MisSampler {
 								while ( axm.hasNext() ) {
 									OWLAxiom axiom = axm.next();
 									if (equal == n) {
-										//remove than axiom
+										//remove that axiom
 										sample.remove(axiom);
 										break;
 									}
@@ -391,7 +393,6 @@ public class MisSampler {
 							sample.remove(candidate);
 						}
 					}
-					
 				}
 				
 				//update counts (after burn-in iterations)
@@ -400,7 +401,7 @@ public class MisSampler {
 						count.put(sAx, new Integer(count.get(sAx)+1));
 					}
 				}
-			}
+			}// end for loop
 		
 		} finally {
 			endTimeSampling = System.nanoTime();
