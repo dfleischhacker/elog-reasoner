@@ -191,69 +191,71 @@ public class MisSampler {
 		
 		System.out.println("Number of axioms to sample: " + sampleAxioms.size());
 		
-		System.out.println("Computing set of unsatisfiable classes...");
-				
-		// Create the reasoner and load the ontology
-		PelletReasoner reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology2 );
-		// Create an explanation generator
-		PelletExplanation expGen = new PelletExplanation( reasoner );
-		
 		//stores the conflicts as a set of axiom sets
 		Set<Set<OWLAxiom>> conflictSet = new HashSet<Set<OWLAxiom>>();
 		
-		// Create the reasoner and load the ontology
-		reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology2 );
-		// Create an explanation generator
-		expGen = new PelletExplanation( reasoner );
-				
+		if (numOfExplanations >= 1) { 
 		
-		//determine all incoherent classes in the ontology
-		Set<OWLClass> incoherentClasses = reasoner.getUnsatisfiableClasses().getEntitiesMinusBottom();
-		System.out.println("There are " + incoherentClasses.size() + " unsatisfiable classes.");
-		
-		System.out.println("Computing minimial inconsistent subsets...");
-		
-		final long startTimeReasoning = System.nanoTime();
-		final long endTimeReasoning;
-		try {
-	
-			//iterate over all incoherent classes in the merged ontology
-			for (OWLClass incoherentClass : incoherentClasses) {
-				
-				System.out.println("Computing explanations for unsatisfiable class " + incoherentClass + "...");
-				
-				Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoherentClass, numOfExplanations);
-				//iterate over all explanations found by the reasoner
-				for (Set<OWLAxiom> axiomSet : exp) {
-	
-					//only keep the axioms that have a confidence value
-					axiomSet.retainAll(sampleAxioms);
-					System.out.println(axiomSet);
+			System.out.println("Computing set of unsatisfiable classes...");
 					
-					for (OWLAxiom currentAxiom : axiomSet) {
-						//stores the degree of the axiom for statistics and convergence tests
-						degree.put(currentAxiom, new Integer(0));
-						
-						//remove axiom from ontology if it is the only one
-						//it will have probability 0!
-						if (axiomSet.size() <= 1) {
-							manager.removeAxiom(ontology2, currentAxiom);
-						}
-					}
-					
-					//add the set of axioms (a conflict) to the set of conflicts
-					conflictSet.add(axiomSet);
-				}
-			}
+			// Create the reasoner and load the ontology
+			PelletReasoner reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology2 );
+			// Create an explanation generator
+			PelletExplanation expGen = new PelletExplanation( reasoner );
 
-		} finally {
-			  endTimeReasoning = System.nanoTime();
-			}
-		final long durationReasoning = endTimeReasoning - startTimeReasoning;
+			// Create the reasoner and load the ontology
+			reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology2 );
+			// Create an explanation generator
+			expGen = new PelletExplanation( reasoner );
+
+			//determine all incoherent classes in the ontology
+			Set<OWLClass> incoherentClasses = reasoner.getUnsatisfiableClasses().getEntitiesMinusBottom();
+			System.out.println("There are " + incoherentClasses.size() + " unsatisfiable classes.");
+			
+			System.out.println("Computing minimial inconsistent subsets...");
+			
+			final long startTimeReasoning = System.nanoTime();
+			final long endTimeReasoning;
+			try {
 		
-		System.out.println("...computation finished in " + String.format("%.1g", (double)durationReasoning/1000000.0) + " milliseconds!");
-		System.out.println(conflictSet.size() + " minimal inconsistent subsets found.");
-		//System.out.println(conflictSet);
+				//iterate over all incoherent classes in the merged ontology
+				for (OWLClass incoherentClass : incoherentClasses) {
+					
+					System.out.println("Computing explanations for unsatisfiable class " + incoherentClass + "...");
+					
+					Set<Set<OWLAxiom>> exp = expGen.getUnsatisfiableExplanations(incoherentClass, numOfExplanations);
+					//iterate over all explanations found by the reasoner
+					for (Set<OWLAxiom> axiomSet : exp) {
+		
+						//only keep the axioms that have a confidence value
+						axiomSet.retainAll(sampleAxioms);
+						System.out.println(axiomSet);
+						
+						for (OWLAxiom currentAxiom : axiomSet) {
+							//stores the degree of the axiom for statistics and convergence tests
+							degree.put(currentAxiom, new Integer(0));
+							
+							//remove axiom from ontology if it is the only one
+							//it will have probability 0!
+							if (axiomSet.size() <= 1) {
+								manager.removeAxiom(ontology2, currentAxiom);
+							}
+						}
+						
+						//add the set of axioms (a conflict) to the set of conflicts
+						conflictSet.add(axiomSet);
+					}
+				}
+	
+			} finally {
+				  endTimeReasoning = System.nanoTime();
+				}
+			final long durationReasoning = endTimeReasoning - startTimeReasoning;
+			
+			System.out.println("...computation finished in " + String.format("%.1g", (double)durationReasoning/1000000.0) + " milliseconds!");
+			System.out.println(conflictSet.size() + " minimal inconsistent subsets found.");
+			//System.out.println(conflictSet);
+		}
 		
 		//stores the maximum size of an edge in the hypergraph
 		int max_edge_size = 0;
