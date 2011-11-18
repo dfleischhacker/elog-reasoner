@@ -251,7 +251,7 @@ public class MisSampler {
 			}
 		final long durationReasoning = endTimeReasoning - startTimeReasoning;
 		
-		System.out.println("...computation finished in " + String.format("%.1g%n", durationReasoning/1000000.0) + " milliseconds!");
+		System.out.println("...computation finished in " + String.format("%.1g%n", (double)durationReasoning/1000000.0) + " milliseconds!");
 		System.out.println(conflictSet.size() + " MIS found.");
 		//System.out.println(conflictSet);
 		
@@ -407,7 +407,7 @@ public class MisSampler {
 		}
 		final long durationSampling = endTimeSampling - startTimeSampling;
 		
-		System.out.println("Sampling process finished in " + String.format("%.1g%n", durationSampling/1000000.0) + " milliseconds.");
+		System.out.println("Sampling process finished in " + String.format("%.1g%n", (double)durationSampling/1000000.0) + " milliseconds.");
 		
 		//compute the probabilities form the generated samples
 		for (int i = 0; i < sampleAxioms.size(); i++) {
