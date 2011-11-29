@@ -152,6 +152,9 @@ public class MisSampler {
 		//stores the axioms so be sampled
 		ArrayList<OWLAxiom> sampleAxioms = new ArrayList<OWLAxiom>();
 		
+		//stores the "hard" axioms that we don't want to sample
+		ArrayList<OWLAxiom> hardAxioms = new ArrayList<OWLAxiom>();
+		
 		//we need to built a set that counts the number of occurrences of the axioms in independent sets
 		Hashtable<OWLAxiom,Integer> count = new Hashtable<OWLAxiom,Integer>();
 		
@@ -184,6 +187,8 @@ public class MisSampler {
 					//set the confidence to the given value
 					axiomConfidence.put(axWithoutAnnotation, confidence);
 				}
+			} else {
+				hardAxioms.add(axiom);
 			}
 			//add the axiom to the identical ontology without annotations
 			manager.addAxiom(ontology2, axWithoutAnnotation);
@@ -456,6 +461,10 @@ public class MisSampler {
         	manager.addAxiom(outputOntology, annotatedAxiom);
         	//print the output of the samplet
         	System.out.println(wAxiom.getAxiom().toString() + "   " + wAxiom.getWeight());
+        }
+        
+        for (OWLAxiom axiom : hardAxioms) {
+        	manager.addAxiom(outputOntology, axiom);
         }
         
         //store the probabilities in an OWL file

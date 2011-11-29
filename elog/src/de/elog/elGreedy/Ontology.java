@@ -49,9 +49,9 @@ public class Ontology {
 	
 	public void create( File file, IRI iri ) throws Exception {
 		m_logicalIRI = iri;
-		m_physicalIRI = IRI.create( file );
-		OWLOntologyID mapper = new OWLOntologyID( m_logicalIRI, m_physicalIRI );
-		m_ontology = m_manager.createOntology( mapper );
+		m_physicalIRI = IRI.create( file.toURI() );
+		//OWLOntologyID mapper = new OWLOntologyID( m_logicalIRI, m_physicalIRI );
+		m_ontology = m_manager.createOntology( m_physicalIRI );
 		m_reasoner = PelletReasonerFactory.getInstance().createNonBufferingReasoner( m_ontology );
 		// m_manager.addOntologyChangeListener( m_reasoner );
 	}

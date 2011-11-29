@@ -48,17 +48,23 @@ public class Greedy {
 		List<OWLAxiom> sortedAxioms = this.sort(axioms);
 		
 		System.out.println( "axioms: "+ axioms.size() );
+		int removedAxioms = 0;
 		int i=0;
 		double sum = 0;
+		double threshold = 0.0;
 		for( OWLAxiom axiom: sortedAxioms )
 		{
+			if (axioms.get(axiom) < threshold) {
+				break;
+			}
+			
 			m_ontology.addAxiom( axiom );
 			
 			
 			boolean bCoherent = m_ontology.isCoherent();
 			if( !bCoherent )
 			{
-				
+				removedAxioms++;
 				//System.out.println( "remove ("+ i +"): "+ axiom.getAxiom() );
 				m_ontology.removeAxiom( axiom );
 			}else{
@@ -68,7 +74,8 @@ public class Greedy {
 			}
 			i++;
 		}
-		System.out.println( "axioms: "+ i );
+		System.out.println( "checked axioms: "+ i );
+		System.out.println( "conflicting axioms: " + removedAxioms);
 		System.out.println("objective: "+ sum);
 		m_ontology.save();
 		return addedAxioms;

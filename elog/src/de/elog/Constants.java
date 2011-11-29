@@ -8,7 +8,4 @@ public class Constants {
 	public static final String ANNOTATION_PROPERTY_FOR_REASONING_PROBABILITY_VALUE = "probability";
 	public static final String ANNOTATION_PROPERTY_FOR_SAMPLING_POSITIVE_EVENT = "isPositiveEvent";
 
-	
-	
-
 }
