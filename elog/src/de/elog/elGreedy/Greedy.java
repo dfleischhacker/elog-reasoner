@@ -52,9 +52,11 @@ public class Greedy {
 		int i=0;
 		double sum = 0;
 		double threshold = 0.0;
+		//int precisionAt = 1000;
+		
 		for( OWLAxiom axiom: sortedAxioms )
 		{
-			if (axioms.get(axiom) < threshold) {
+			if ((axioms.get(axiom) < threshold)) {// || (i > precisionAt)) {
 				break;
 			}
 			
@@ -74,7 +76,7 @@ public class Greedy {
 			}
 			i++;
 		}
-		System.out.println( "checked axioms: "+ i );
+		System.out.println( "checked axioms: "+ (i-1) );
 		System.out.println( "conflicting axioms: " + removedAxioms);
 		System.out.println("objective: "+ sum);
 		m_ontology.save();

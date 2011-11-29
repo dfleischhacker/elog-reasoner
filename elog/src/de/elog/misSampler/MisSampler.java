@@ -266,6 +266,8 @@ public class MisSampler {
 
 				}
 
+				sampleAxioms.clear();
+				
 				//here we iterate over the set one more time to store 
 				//the degree of the axiom and the index of the axiom
 				for (Set<OWLAxiom> axiomSet : conflictSet) {
@@ -273,6 +275,10 @@ public class MisSampler {
 
 						//stores the degree of the axiom for statistics and convergence tests
 						degree.put(currentAxiom, new Integer(0));
+						
+						if (sampleAxioms.indexOf(currentAxiom) == -1) {
+							sampleAxioms.add(currentAxiom);
+						}
 						
 						//build an index that maps axioms to theiry conflicts
 						Set<Set<OWLAxiom>> currentConflictSet = conflictIndex.get(currentAxiom);
@@ -460,7 +466,14 @@ public class MisSampler {
 			
 			//compute the probabilities form the generated samples
 			for (OWLAxiom currentAxiom : axiomConfidence.keySet()) {
-				axiomProbability.add(new SampleAxiom(currentAxiom, (double)count.get(currentAxiom)/(double)(numOfSamples-burn_in)));
+				
+				if (sampleAxioms.contains(currentAxiom)) {
+					axiomProbability.add(new SampleAxiom(currentAxiom, (double)count.get(currentAxiom)/(double)(numOfSamples-burn_in)));
+				} else {
+					double tau = Math.exp(axiomConfidence.get(currentAxiom));
+					double p = tau / (1 + tau);
+					axiomProbability.add(new SampleAxiom(currentAxiom, p));
+				}
 			}
 		
 		} else {
