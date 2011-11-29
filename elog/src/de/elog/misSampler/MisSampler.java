@@ -239,32 +239,54 @@ public class MisSampler {
 						//only keep the axioms that have a confidence value
 						axiomSet.retainAll(sampleAxioms);
 						System.out.println(axiomSet);
-						
-						for (OWLAxiom currentAxiom : axiomSet) {
-							//stores the degree of the axiom for statistics and convergence tests
-							degree.put(currentAxiom, new Integer(0));
-							
-							//build an index that maps axioms to theiry conflicts
-							Set<Set<OWLAxiom>> currentConflictSet = conflictIndex.get(currentAxiom);
-							if (currentConflictSet != null) {
-								currentConflictSet.add(axiomSet);
-								conflictIndex.put(currentAxiom, currentConflictSet);
-							} else {
-								//build the emptys index here (will be filled later)
-								Set<Set<OWLAxiom>> newConflictSet = new HashSet<Set<OWLAxiom>>();
-								newConflictSet.add(axiomSet);
-								conflictIndex.put(currentAxiom, newConflictSet);
-							}
-							
-							//remove axiom from ontology if it is the only one
-							//it will have probability 0!
-							if (axiomSet.size() <= 1) {
-								manager.removeAxiom(ontology2, currentAxiom);
-							}
-						}
-						
+
 						//add the set of axioms (a conflict) to the set of conflicts
 						conflictSet.add(axiomSet);
+					}
+				}
+
+				//here we iterate over the conflict sets and remove 
+				//conflicts of size 1 as long as there are only conflicts of size >= 2 left
+				boolean somethingWasRemoved = true;
+				while (somethingWasRemoved) {
+					somethingWasRemoved = false;
+					//only look at axioms that are not a conflict in themselves
+					for (Set<OWLAxiom> axiomSet : conflictSet) {
+						
+						if (axiomSet.size() <= 1) {
+							for (OWLAxiom currentAxiom : axiomSet) {
+									sampleAxioms.remove(currentAxiom);
+									somethingWasRemoved = true;
+							}
+							
+							conflictSet.remove(axiomSet);
+							break;
+						}
+					}
+					
+					
+					
+				}
+
+				//here we iterate over the set one more time to store 
+				//the degree of the axiom and the index of the axiom
+				for (Set<OWLAxiom> axiomSet : conflictSet) {
+					for (OWLAxiom currentAxiom : axiomSet) {
+
+						//stores the degree of the axiom for statistics and convergence tests
+						degree.put(currentAxiom, new Integer(0));
+						
+						//build an index that maps axioms to theiry conflicts
+						Set<Set<OWLAxiom>> currentConflictSet = conflictIndex.get(currentAxiom);
+						if (currentConflictSet != null) {
+							currentConflictSet.add(axiomSet);
+							conflictIndex.put(currentAxiom, currentConflictSet);
+						} else {
+							//build the emptys index here (will be filled later)
+							Set<Set<OWLAxiom>> newConflictSet = new HashSet<Set<OWLAxiom>>();
+							newConflictSet.add(axiomSet);
+							conflictIndex.put(currentAxiom, newConflictSet);
+						}
 					}
 				}
 	
@@ -439,21 +461,17 @@ public class MisSampler {
 			System.out.println("Sampling process finished in " + (double)((double)durationSampling/1000000000.0) + " seconds.");
 			
 			//compute the probabilities form the generated samples
-			for (int i = 0; i < sampleAxioms.size(); i++) {
-				
-				OWLAxiom currenAxiom = sampleAxioms.get(i);
-				axiomProbability.add(new SampleAxiom(currenAxiom, (double)count.get(currenAxiom)/(double)(numOfSamples-burn_in)));
-			}	
-			
+			for (OWLAxiom currentAxiom : axiomConfidence.keySet()) {
+				axiomProbability.add(new SampleAxiom(currentAxiom, (double)count.get(currentAxiom)/(double)(numOfSamples-burn_in)));
+			}
+		
 		} else {
 			
 			//compute the probabilities form the generated samples
-			for (int i = 0; i < sampleAxioms.size(); i++) {
-				
-				OWLAxiom currenAxiom = sampleAxioms.get(i);
-				double tau = Math.exp(axiomConfidence.get(currenAxiom));
+			for (OWLAxiom currentAxiom : axiomConfidence.keySet()) {
+				double tau = Math.exp(axiomConfidence.get(currentAxiom));
 				double p = tau / (1 + tau);
-				axiomProbability.add(new SampleAxiom(currenAxiom, p));
+				axiomProbability.add(new SampleAxiom(currentAxiom, p));
 			}	
 		}
 		
