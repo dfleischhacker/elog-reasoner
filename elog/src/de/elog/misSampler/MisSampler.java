@@ -263,9 +263,7 @@ public class MisSampler {
 							break;
 						}
 					}
-					
-					
-					
+
 				}
 
 				//here we iterate over the set one more time to store 
