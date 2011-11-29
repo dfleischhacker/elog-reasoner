@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -166,6 +167,9 @@ public class MisSampler {
 		
 		//stores the degree of each node
 		Hashtable<OWLAxiom,Integer> degree = new Hashtable<OWLAxiom,Integer>();
+		
+		//the index for the conflicts (indexed by the axiom)
+		HashMap<OWLAxiom, Set<Set<OWLAxiom>>> conflictIndex = new HashMap<OWLAxiom, Set<Set<OWLAxiom>>>();
 					
 		//iterate over all axioms in the loaded ontology
 		Set<OWLAxiom> allAxioms = ontology1.getAxioms();
@@ -240,6 +244,18 @@ public class MisSampler {
 							//stores the degree of the axiom for statistics and convergence tests
 							degree.put(currentAxiom, new Integer(0));
 							
+							//build an index that maps axioms to theiry conflicts
+							Set<Set<OWLAxiom>> currentConflictSet = conflictIndex.get(currentAxiom);
+							if (currentConflictSet != null) {
+								currentConflictSet.add(axiomSet);
+								conflictIndex.put(currentAxiom, currentConflictSet);
+							} else {
+								//build the emptys index here (will be filled later)
+								Set<Set<OWLAxiom>> newConflictSet = new HashSet<Set<OWLAxiom>>();
+								newConflictSet.add(axiomSet);
+								conflictIndex.put(currentAxiom, newConflictSet);
+							}
+							
 							//remove axiom from ontology if it is the only one
 							//it will have probability 0!
 							if (axiomSet.size() <= 1) {
@@ -257,10 +273,11 @@ public class MisSampler {
 				}
 			final long durationReasoning = endTimeReasoning - startTimeReasoning;
 			
-			System.out.println("...computation finished in " + String.format("%.1g", (double)durationReasoning/1000000.0) + " milliseconds!");
+			System.out.println("...computation finished in " + (double)((double)durationReasoning/1000000000.0) + " seconds!");
 			System.out.println(conflictSet.size() + " minimal inconsistent subsets found.");
 			//System.out.println(conflictSet);
 		
+			System.out.println(conflictIndex);
 		
 			//stores the maximum size of an edge in the hypergraph
 			int max_edge_size = 0;
@@ -292,7 +309,7 @@ public class MisSampler {
 			System.out.println("Maximum degree: " + max_degree + "  axiom: " + maxDegreeAxiom);
 	
 			//stores one individual sample
-			Set<OWLAxiom> sample = new HashSet<OWLAxiom>();
+			HashSet<OWLAxiom> sample = new HashSet<OWLAxiom>();
 			
 			//burn in iterations
 			int burn_in = 10;
@@ -335,21 +352,25 @@ public class MisSampler {
 						int numOfConflicts = 0;
 						
 						//iterate over all conflict sets (edges in the HG)
-						for (Set<OWLAxiom> currentMIS : conflictSet) {
-											
-							//check if the current sample violates the independent set property
-							if (sample.containsAll(currentMIS)) {
-								independentSet = false;
-								numOfConflicts++;
+						if (conflictIndex.containsKey(candidate)) {
+							for (Set<OWLAxiom> currentMIS : conflictIndex.get(candidate)) {
+																	
+								//System.out.println(conflictIndex.get(candidate).size());
 								
-								//if we have more than one conflict, we can stop here
-								if (numOfConflicts > 1) {
-									break;
+								//check if the current sample violates the independent set property
+								if (sample.containsAll(currentMIS)) {
+									independentSet = false;
+									numOfConflicts++;
+									
+									//if we have more than one conflict, we can stop here
+									if (numOfConflicts > 1) {
+										break;
+									}
+									
+									//uniqueConflict is the edge that would cause a unique conflict without the candidate
+									uniqueConflict = new HashSet<OWLAxiom>(currentMIS);
+									uniqueConflict.remove(candidate);
 								}
-								
-								//uniqueConflict is the edge that would cause a unique conflict without the candidate
-								uniqueConflict = new HashSet<OWLAxiom>(currentMIS);
-								uniqueConflict.remove(candidate);
 							}
 						}
 											
@@ -415,7 +436,7 @@ public class MisSampler {
 			}
 			final long durationSampling = endTimeSampling - startTimeSampling;
 			
-			System.out.println("Sampling process finished in " + String.format("%.1g", (double)durationSampling/1000000.0) + " milliseconds.");
+			System.out.println("Sampling process finished in " + (double)((double)durationSampling/1000000000.0) + " seconds.");
 			
 			//compute the probabilities form the generated samples
 			for (int i = 0; i < sampleAxioms.size(); i++) {
