@@ -156,6 +156,9 @@ public class MisSampler {
 		//stores the "hard" axioms that we don't want to sample
 		ArrayList<OWLAxiom> hardAxioms = new ArrayList<OWLAxiom>();
 		
+		//stores the "hard" axioms that we don't want to sample
+		HashSet<OWLAxiom> zeroAxioms = new HashSet<OWLAxiom>();
+		
 		//we need to built a set that counts the number of occurrences of the axioms in independent sets
 		Hashtable<OWLAxiom,Integer> count = new Hashtable<OWLAxiom,Integer>();
 		
@@ -201,7 +204,7 @@ public class MisSampler {
 		System.out.println("Number of axioms to sample: " + sampleAxioms.size());
 		
 		//stores the conflicts as a set of axiom sets
-		Set<Set<OWLAxiom>> conflictSet = new HashSet<Set<OWLAxiom>>();
+		HashSet<HashSet<OWLAxiom>> conflictSet = new HashSet<HashSet<OWLAxiom>>();
 		
 		if (numOfExplanations >= 1) { 
 		
@@ -241,7 +244,7 @@ public class MisSampler {
 						System.out.println(axiomSet);
 
 						//add the set of axioms (a conflict) to the set of conflicts
-						conflictSet.add(axiomSet);
+						conflictSet.add((HashSet<OWLAxiom>)axiomSet);
 					}
 				}
 
@@ -254,10 +257,30 @@ public class MisSampler {
 					for (Set<OWLAxiom> axiomSet : conflictSet) {
 						
 						if (axiomSet.size() <= 1) {
+							
+							//System.out.println("AAAAAAAAARGH   " + axiomSet);
+							
 							for (OWLAxiom currentAxiom : axiomSet) {
 									sampleAxioms.remove(currentAxiom);
+									//here we have to add the axiom to the 0-axioms
+									//and we have to remove all conflicts of size 2 it is part of
+									zeroAxioms.add(currentAxiom);
+									
+									HashSet<HashSet<OWLAxiom>> conflictSetTemp = new HashSet<HashSet<OWLAxiom>>();
+									conflictSetTemp.addAll(conflictSet);
+									
+									HashSet<HashSet<OWLAxiom>> toBeRemoved = new HashSet<HashSet<OWLAxiom>>();
+									for (HashSet<OWLAxiom> axiomSetTemp : conflictSetTemp) {
+										if (axiomSetTemp.contains(currentAxiom)) {
+											//System.out.println("AAAAAAAAARGH ---  " + axiomSetTemp);
+											toBeRemoved.add(axiomSetTemp);
+										}
+									}
+									
+									conflictSet.removeAll(toBeRemoved);
 									somethingWasRemoved = true;
 							}
+							
 							
 							conflictSet.remove(axiomSet);
 							break;
@@ -469,6 +492,8 @@ public class MisSampler {
 				
 				if (sampleAxioms.contains(currentAxiom)) {
 					axiomProbability.add(new SampleAxiom(currentAxiom, (double)count.get(currentAxiom)/(double)(numOfSamples-burn_in)));
+				} else if (zeroAxioms.contains(currentAxiom)) {
+					axiomProbability.add(new SampleAxiom(currentAxiom, 0));
 				} else {
 					double tau = Math.exp(axiomConfidence.get(currentAxiom));
 					double p = tau / (1 + tau);
