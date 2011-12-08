@@ -303,6 +303,7 @@ public class MisSampler {
 						//stores the degree of the axiom for statistics and convergence tests
 						degree.put(currentAxiom, new Integer(0));
 						
+						//add the axiom to the ones to be sampled
 						if (sampleAxioms.indexOf(currentAxiom) == -1) {
 							sampleAxioms.add(currentAxiom);
 						}
