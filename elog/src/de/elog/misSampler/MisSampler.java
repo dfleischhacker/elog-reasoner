@@ -241,7 +241,7 @@ public class MisSampler {
 		
 						//only keep the axioms that have a confidence value
 						axiomSet.retainAll(sampleAxioms);
-						System.out.println(axiomSet);
+						//System.out.println(axiomSet);
 
 						//add the set of axioms (a conflict) to the set of conflicts
 						conflictSet.add((HashSet<OWLAxiom>)axiomSet);
@@ -263,21 +263,22 @@ public class MisSampler {
 							for (OWLAxiom currentAxiom : axiomSet) {
 									sampleAxioms.remove(currentAxiom);
 									//here we have to add the axiom to the 0-axioms
-									//and we have to remove all conflicts of size 2 it is part of
 									zeroAxioms.add(currentAxiom);
 									
+									//and we have to remove all conflicts of size 2 it is part of
+									//we first need to generate a copy of the conflictSet
 									HashSet<HashSet<OWLAxiom>> conflictSetTemp = new HashSet<HashSet<OWLAxiom>>();
 									conflictSetTemp.addAll(conflictSet);
-									
-									HashSet<HashSet<OWLAxiom>> toBeRemoved = new HashSet<HashSet<OWLAxiom>>();
+									//here we store all the conflict sets that ought to be removed
+									HashSet<HashSet<OWLAxiom>> conflictSetsToBeRemoved = new HashSet<HashSet<OWLAxiom>>();
 									for (HashSet<OWLAxiom> axiomSetTemp : conflictSetTemp) {
 										if (axiomSetTemp.contains(currentAxiom)) {
 											//System.out.println("AAAAAAAAARGH ---  " + axiomSetTemp);
-											toBeRemoved.add(axiomSetTemp);
+											conflictSetsToBeRemoved.add(axiomSetTemp);
 										}
 									}
 									
-									conflictSet.removeAll(toBeRemoved);
+									conflictSet.removeAll(conflictSetsToBeRemoved);
 									somethingWasRemoved = true;
 							}
 							
@@ -294,6 +295,9 @@ public class MisSampler {
 				//here we iterate over the set one more time to store 
 				//the degree of the axiom and the index of the axiom
 				for (Set<OWLAxiom> axiomSet : conflictSet) {
+					
+					System.out.println(axiomSet);
+					
 					for (OWLAxiom currentAxiom : axiomSet) {
 
 						//stores the degree of the axiom for statistics and convergence tests
@@ -326,7 +330,7 @@ public class MisSampler {
 			System.out.println(conflictSet.size() + " minimal inconsistent subsets found.");
 			//System.out.println(conflictSet);
 		
-			System.out.println(conflictIndex);
+			//System.out.println(conflictIndex);
 		
 			//stores the maximum size of an edge in the hypergraph
 			int max_edge_size = 0;
